@@ -1,0 +1,547 @@
+/* ==========================================================================
+   CSS code for Site Search Results
+   
+   Author: Max Quattromani
+   Version: 1.0 - Updated: 8/14/13
+   ========================================================================== */
+   
+/*
+
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+ 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/* base styles are being handled by base main.css */ 
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* layout styles are being handled by base main.css */
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.twc-box-column { padding: 0; }
+
+.page-header { 
+	padding: .5em .5em 0;
+	background-color: #5d92c0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(93, 146, 192)), to(rgb(44, 96, 143)));
+	background-image: -webkit-linear-gradient(top, rgb(93, 146, 192), rgb(44, 96, 143));
+	background-image: -moz-linear-gradient(top, rgb(93, 146, 192), rgb(44, 96, 143));
+	background-image: -o-linear-gradient(top, rgb(93, 146, 192), rgb(44, 96, 143));
+	background-image: -ms-linear-gradient(top, rgb(93, 146, 192), rgb(44, 96, 143));
+	background-image: linear-gradient(top, rgb(93, 146, 192), rgb(44, 96, 143));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#5d92c0', EndColorStr='#2c608f');
+	color: #fff; }
+
+.mobile-page-header { display: none; }
+
+/* ==========================
+	Tabs
+   ========================== */
+
+/* ==========================
+	Tabs
+   ========================== */ 
+
+.tabs { 
+	display: table;
+	width: 100%;
+	border-radius: 3px; }
+	
+.tabs ul { display: table-row; }
+	
+.tabs li { 
+	display: table-cell;
+	position: relative; 
+	padding: 0 .5em .5em;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	vertical-align: middle;
+    font-variant: small-caps; }
+
+	.tabs li a {
+		display: inline-block;
+		position: relative;
+		padding: 10px 0;
+		font-weight: bold;
+		text-decoration: none;
+		color: #fff; }
+
+	.tabs li:first-child {
+		border-radius: 3px 0 0 0; }
+	
+	.tabs li:last-child {
+		border-radius: 0 3px 0 0; }
+	
+	.tabs li.active {
+		background: #fff;
+		box-shadow: 0 -8px 16px -8px rgba(0, 0, 0, 0.7);
+		color: #222; }
+	
+		.tabs li.active a {
+			color: #222;
+			font-weight: bold; }
+
+.twc-col2_8218 { padding: 1em 1em 2em; }
+
+.main-search-body {
+	padding-right: 1em;
+	border-right: 1px solid #e1e1e1; }
+
+.parbase.section.search-results { 
+	padding-left: 1em;
+	border-left: 1px solid #e1e1e1; }
+
+.search-results { overflow: auto; }
+
+.search-results-info { 
+	overflow: auto;
+	margin-bottom: 1em;
+	padding: .5em 1em;
+	border-radius: 3px;
+	background: #e9e9e9; }
+
+.search-results .twc-module { 
+	float: left;
+	width: 35%;
+	margin: 0; }
+
+	.search-results .twc-module button:before {
+    	content:'\f002';
+    	font-family: 'FontAwesome', sans-serif; }
+
+.did-you-mean { margin-bottom: 1em; }
+
+/* ==========================
+	Pagination
+   ========================== */
+
+.pagination { float: right; }
+
+.twc-topicFAQs .pagination { 
+	clear: right;
+	margin-top: 1em; }
+
+.results-legend { margin-bottom: 1em; }
+
+.twc-topicFAQs ul.content div {
+	display: block;
+	background: #f7f7f7;
+	margin-bottom: 1em;
+	padding: 1em 0; }
+	
+	.twc-topicFAQs ul.content div > li {
+		display: table-cell;
+		width: 26.9%;
+		padding: 0 1em;
+		border-right: 1px solid #e1e1e1;
+		border-bottom: none; }
+			
+			.twc-topicFAQs ul.content div > li.twc-last { border-right: 0; }
+
+.twc-topicFAQs ul.content li {
+	padding: 1em 0;
+	border-bottom: 1px solid #e1e1e1; }
+
+.twc-topicFAQs ul.content li a { 
+	display: block;
+	margin: 0 0 .5em; }
+
+	.twc-topicFAQs ul.content li.twc-last { border-bottom: none; } 
+
+figure img { margin: 0; }
+
+/* ==========================
+    Share
+   ========================== */
+   
+.search-results div.share {
+	position: relative; 
+	text-align: right; }
+
+/* ==========================
+    Filters
+   ========================== */
+
+.filters-control { margin-bottom: 1em; }
+
+.search-filters b.label { 
+	display: block;
+	margin-bottom: .5em;
+	line-height: 2; 
+	border-bottom: 1px solid #e1e1e1; } 
+ 
+.filters-mobile-wrapper b { 
+	display: block;
+	margin-bottom: .5em; }
+   
+.filters-mobile-wrapper a {
+	display: block;
+	margin-bottom: .5em; }  
+   
+.search-filters ul { margin-bottom: 2em; }
+
+	.search-filters li { line-height: 1.5; }
+	
+		.search-filters input[type='checkbox'] { 
+			float: left;
+			margin-right: .5em;
+			margin-left: 0; }
+	
+span.showing { 
+	display: block;
+	float: right; }	
+
+.email-module {
+	display: none;
+	position: absolute;
+	right: 0;
+	width: 250px;
+	padding: 1em;
+	border-radius: 3px;
+	border: 1px solid #fff;
+	background-color: #e0ebf5;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(224, 235, 245)), to(rgb(248, 250, 252)));
+	background-image: -webkit-linear-gradient(top, rgb(224, 235, 245), rgb(248, 250, 252));
+	background-image: -moz-linear-gradient(top, rgb(224, 235, 245), rgb(248, 250, 252));
+	background-image: -o-linear-gradient(top, rgb(224, 235, 245), rgb(248, 250, 252));
+	background-image: -ms-linear-gradient(top, rgb(224, 235, 245), rgb(248, 250, 252));
+	background-image: linear-gradient(top, rgb(224, 235, 245), rgb(248, 250, 252));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#e0ebf5', EndColorStr='#f8fafc');
+	box-shadow: 0 1px 2px 0 #888;
+	text-align: justify;
+	z-index: 99999; }
+
+	.email-module:before {
+		position: absolute;
+		content: "";
+		left: 48%;
+		bottom: 100%;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent; 
+		border-bottom: 8px solid #e1ebf5; }
+
+	.email-module .close {
+		position: absolute;
+		top: .5em;
+		right: .5em; }
+
+.filters-options .btn {
+	display: block;
+	width: 100%;
+	margin-bottom: 1em; }
+
+/* ==========================
+   Forms
+   ========================== */
+
+
+fieldset { border: 0; }
+
+label { 
+	display: block;
+	line-height: 2; }
+
+input[type=checkbox] + label { margin-left: 2em; }
+
+input[type=checkbox] {
+	width: 1em;
+	height: 1em;
+	padding: 0;
+	border: 0;
+	font-size: 16px;
+	font-size: 1.6rem;
+	-webkit-appearance: checkbox; }
+		
+/* ==========================
+    Need Help?
+   ========================== */
+
+.need-help li { 
+	line-height: 3;
+	border-top: 1px solid #e1e1e1; }
+
+	.need-help li figure { margin-top: 1em; }
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+
+/* Webkit: Chrome/Safari */ 
+
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.did-you-mean { width: 100%; }
+
+.search-results-info { 
+	padding: 0;
+	background: none; }
+
+.search-bar .twc-module { 
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 1em;
+	padding: 1em; 
+	border-radius: 3px;
+	border: 1px solid #fff;
+	background: #e9e9e9; 
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	   		box-sizing: border-box; }
+
+.main-search-body { 
+	padding-right: 0;
+	border-right: none; }
+
+.twc-topicFAQs ul.content div { 
+	margin: 0;
+	padding: 0; }
+
+.twc-topicFAQs ul.content div > li {
+	display: block;
+	width: auto; 
+	padding: 1em;
+	border-right: 0;
+	border-bottom: 1px solid #e1e1e1; }
+	
+	.twc-topicFAQs ul.content li { padding: 1em; }
+
+.parbase.section.need-help { display: none; }
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+/* ==========================================================================
+   Theme
+   ========================================================================== */	
+
+} /* End Tablet Breakpoint */
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.page-header { display: none; }
+
+.mobile-page-header { 
+	display: block;
+	padding: 1em 4%;
+	background-color: #5d92c0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(93, 146, 192)), to(rgb(44, 96, 143)));
+	background-image: -webkit-linear-gradient(top, rgb(93, 146, 192), rgb(44, 96, 143));
+	background-image: -moz-linear-gradient(top, rgb(93, 146, 192), rgb(44, 96, 143));
+	background-image: -o-linear-gradient(top, rgb(93, 146, 192), rgb(44, 96, 143));
+	background-image: -ms-linear-gradient(top, rgb(93, 146, 192), rgb(44, 96, 143));
+	background-image: linear-gradient(top, rgb(93, 146, 192), rgb(44, 96, 143));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#5d92c0', EndColorStr='#2c608f');
+	color: #fff; }
+
+.mobile-page-header select { 
+	float: right;
+	width: 60%; }
+
+.mobile-page-header > span {
+    display: inline-block;
+    padding: 0.7em 0;
+    vertical-align: inherit; }
+
+.twc-box-column { 
+	border-radius: 0;
+	background: none; 
+	box-shadow: none; }
+
+.twc-col2_8218 { padding: 0; }
+
+.tabs li.twc-first { display: none; }
+
+.did-you-mean { 
+	margin:  0 0 1em; }
+
+.parbase.section.search-results {
+    padding-left: 0;
+    border-left: none; }
+
+.filters-mobile-wrapper { display: none; }
+
+.search-filters ul {
+	margin-bottom: 0;
+	-webkit-column-count: 2;
+	   -moz-column-count: 2;
+			column-count: 2; }
+
+/* ==========================
+	Pagination
+   ========================== */
+
+.search-results .pagination { float: none; }
+
+/* ==========================
+    Share
+   ========================== */
+
+.share-emailPrint { float: none; } 
+
+/* ==========================
+	Filters
+   ========================== */
+
+.filters-control { margin-bottom: 0; }
+
+.filters-mobile-wrapper { 
+	border-radius: 0 0 3px 3px;
+	border-left: 2px solid #fff;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	background: #edf2f8;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	   		box-sizing: border-box; }
+
+.search-filters b.label { margin: 0; }
+
+.filters-control b { 
+	padding: .5em;
+	background-color: #5d92c0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(93, 146, 192)), to(rgb(44, 96, 143)));
+	background-image: -webkit-linear-gradient(top, rgb(93, 146, 192), rgb(44, 96, 143));
+	background-image: -moz-linear-gradient(top, rgb(93, 146, 192), rgb(44, 96, 143));
+	background-image: -o-linear-gradient(top, rgb(93, 146, 192), rgb(44, 96, 143));
+	background-image: -ms-linear-gradient(top, rgb(93, 146, 192), rgb(44, 96, 143));
+	background-image: linear-gradient(top, rgb(93, 146, 192), rgb(44, 96, 143));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#5d92c0', EndColorStr='#2c608f');
+	color: #fff;
+	text-align: center; }
+
+.filters-control b:after {
+	content: '\f106';
+	padding-left: 5px;
+	font-family: 'FontAwesome',sans-serif;
+}
+
+	.filters-control b.rotate_chevron:after {
+		content: '\f107';
+	}
+
+.filters-control a { display: none; }
+
+.filters-options { 
+	display: block; 
+	padding: 1em; 
+	overflow: auto; }
+
+	.filters-options button {
+		display: inline-block; 
+		width: 49%; }
+		
+.search-filters form fieldset { padding: 1em; }
+
+	.search-filters form fieldset:nth-of-type(even) { background: #f8f9fe; }
+
+	.search-filters legend { margin-bottom: 0; }
+
+/* ==========================
+	Results
+   ========================== */
+
+span.topic { 
+	display: inline-block;
+	margin-top: 1em; }
+
+.twc-topicFAQs .content { 
+	border-radius: 3px;
+	background: #fff;
+	box-shadow: 0 1px 2px 0 #888; }
+
+.results-legend { margin-bottom: 0; }
+    
+span.showing { 
+	float: none;
+	display: block;
+	margin-top: 1em;
+	padding: 1em;
+	background: #fff;
+	text-align: center;
+	color: #666; }
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+   
+   		
+} /* End SmartPhone Breakpoint */ 
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+    

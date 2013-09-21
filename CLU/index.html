@@ -1,0 +1,1170 @@
+<!-- Unchanged -->
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/yui/2.6.0/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/channelFinder.css" type="text/css">
+    <!--[if IE 7]> <html class="ie7"> <![endif]-->
+    <!--[if IE 8]> <html class="ie8"> <![endif]-->
+    <!--[if IE 9]> <html class="ie9"> <![endif]--><!-- enable HTML5 elements in IE7+8 -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript">
+</script>
+    <script src="js/jquery.tablesorter.js" type="text/javascript">
+</script>
+    <script src="js/jquery.jcarousel.js" type="text/javascript">
+</script>
+    <script src="js/jquery.screwdefaultbuttons.js" type="text/javascript">
+</script>
+    <script type="text/javascript">
+    
+    	$(function(){
+			$('input:radio').screwDefaultButtons({
+				checked: 	"url(images/radio_checked.png)",
+				unchecked:	"url(images/radio_unchecked.png)",
+				width:		20,
+				height:		20
+			});
+		});
+
+        // tablesorter load
+        $(function(){ 
+            // call the tablesorter plugin 
+            $("table").tablesorter({ 
+                // sort on the first column and third column, order asc 
+            sortList: [[0,0],[2,0]] 
+            }); 
+        }); 
+        
+        //hide and show script
+        $(function(){
+            $('.toggle').click(function(){
+                $('.expand').show(); return false;
+            });
+        });
+        //clear the table
+        $(function(){
+            $('.clear').click(function(){
+                $('.expand').hide();
+            });
+        });
+            
+        // carousel selector load
+        $(function(){
+            jQuery('#viewChannelsCarousel').jcarousel();
+        });
+            
+        // placeholder workaround for non-HTML5 
+        // This adds 'placeholder' to the items listed in the jQuery .support object. 
+        $(function(){
+           jQuery.support.placeholder = false;
+           test = document.createElement('input');
+           if('placeholder' in test) jQuery.support.placeholder = true;
+        });
+        // This adds placeholder support to browsers that wouldn't otherwise support it. 
+        $(function() {
+           if(!$.support.placeholder) { 
+              var active = document.activeElement;
+              $(':text').focus(function () {
+                 if ($(this).attr('placeholder') != '' && $(this).val() == $(this).attr('placeholder')) {
+                    $(this).val('').removeClass('hasPlaceholder');
+                 }
+              }).blur(function () {
+                 if ($(this).attr('placeholder') != '' && ($(this).val() == '' || $(this).val() == $(this).attr('placeholder'))) {
+                    $(this).val($(this).attr('placeholder')).addClass('hasPlaceholder');
+                 }
+              });
+              $(':text').blur();
+              $(active).focus();
+              $('form:eq(0)').submit(function () {
+                 $(':text.hasPlaceholder').val('');
+              });
+           }
+        }); 
+        
+		//hide and show script for filters
+        $(function(){
+            $('.selectToggle').click(function(){
+                $('.formContainer').show();
+            });
+        });
+        //close the filters
+        $(function(){
+            $('.close').click(function(){
+                $('.formContainer').hide();
+            });
+        });
+		
+		  
+		
+    	// highlight table columns
+		/*
+        For functions getElementsByClassName, addClassName, and removeClassName
+        Copyright Robert Nyman, http://www.robertnyman.com
+        Free to use if this text is included
+    	*/
+	    function getElementsByClassName(className, tag, elm){
+	        var testClass = new RegExp("(^|\\s)" + className + "(\\s|$)");
+	        var tag = tag || "*";
+	        var elm = elm || document;
+	        var elements = (tag == "*" && elm.all)? elm.all : elm.getElementsByTagName(tag);
+	        var returnElements = [];
+	        var current;
+	        var length = elements.length;
+	        for(var i=0; i<length; i++){
+	            current = elements[i];
+	            if(testClass.test(current.className)){
+	                returnElements.push(current);
+	            }
+	        }
+	        return returnElements;
+	    }
+	
+	    function addClassName(elm, className){
+	        var currentClass = elm.className;
+	        if(!new RegExp(("(^|\\s)" + className + "(\\s|$)"), "i").test(currentClass)){
+	            elm.className = currentClass + ((currentClass.length > 0)? " " : "") + className;
+	        }
+	        return elm.className;
+	    }
+	
+	    function removeClassName(elm, className){
+	        var classToRemove = new RegExp(("(^|\\s)" + className + "(\\s|$)"), "i");
+	        elm.className = elm.className.replace(classToRemove, "").replace(/^\s+|\s+$/g, "");
+	        return elm.className;
+	    }
+	
+	    function activateThisColumn(column) {
+	        var table = document.getElementById('channelsTable');
+	        
+	        // first, remove the 'on' class from all other th's
+	        var ths = table.getElementsByTagName('th');
+	        for (var g=0; g<ths.length; g++) {
+	            removeClassName(ths[g], 'on');
+	        }
+	        // then, remove the 'on' class from all other td's
+	        var tds = table.getElementsByTagName('td');
+	        for (var m=0; m<tds.length; m++) {
+	            removeClassName(tds[m], 'on');
+	        }
+	        
+	        // now, add the class 'on' to the selected th
+	        var newths = getElementsByClassName(column, 'th', table);
+	        for (var h=0; h<newths.length; h++) {
+	            addClassName(newths[h], 'on');
+	        }
+	        // and finally, add the class 'on' to the selected td
+	        var newtds = getElementsByClassName(column, 'td', table);
+	        for (var i=0; i<newtds.length; i++) {
+	            addClassName(newtds[i], 'on');
+	        }
+	    }
+	    
+    </script>
+    
+</head>
+
+<body class="es-us">
+    <div class="wrapper">
+        <nav class="cluTopNav">
+            <ul>
+                <li class="active"><a href="http://maxquattromani.com/test/CLU/">CLU Sizzle</a></li>
+
+                <li><a href="#">CLU Tutorial</a></li>
+
+                <li><a href="#">CLU FAQs</a></li>
+            </ul>
+        </nav>
+
+        <section class="clu">
+            <header class="regionalMessage">
+                <h4>Regional Alerts and Messaging for Channel Changes</h4>
+
+                <p>Additional support text for Alert Message</p>
+
+                <p>Extra line; just because we can</p>
+            </header>
+
+            <div class="locationArea clearfix">
+                <div class="locInfo">
+                    <span class="primaryLoc">Chino - Pomona</span> <span class="SecondaryLoc">San Bernadino County <a href="#" class="">(Change Location)</a></span> <span class="alternateLineups"><a href="#">Other Lineups in Your Area</a></span>
+                </div>
+
+                <div id="channelFinder">
+                    <form>
+                        <div class="channelFinder">
+                            <hgroup class="TWCchannelFinder">
+                                <h1>Buscador de Canales TWC</h1>
+
+                                <h2>Encuentra el nuevo numero de un canal</h2>
+                            </hgroup>
+
+                            <div class="channelFinder_search">
+                                <input type="text" placeholder="Enter Name / Number"> <button type="submit" class="toggle">Submit</button>
+                            </div>
+
+                            <div class="expand">
+                                <!-- hide all of this, then reveal on submit -->
+
+                                <div class="tableContainer">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <table class="fixedHeader">
+                                                    <tr>
+                                                        <th class="top old" colspan="1">ANTIGUO</th>
+
+                                                        <th class="top new" colspan="3">NUEVO</th>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <th class="bottom number" colspan="1">Number</th>
+
+                                                        <th class="bottom HD" colspan="1">HD</th>
+
+                                                        <th class="bottom SD" colspan="1">SD</th>
+
+                                                        <th class="bottom CN">Channel Number</th>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="scrollTable">
+                                            <td>
+                                                <div class="tableBody">
+                                                    <table class="tabborder">
+                                                        <tr>
+                                                            <td class="number" colspan="1">1</td>
+
+                                                            <td class="HD">1111</td>
+
+                                                            <td class="SD">111</td>
+
+                                                            <td class="CN">Videos On Demand</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="number">5</td>
+
+                                                            <td class="HD">5555</td>
+
+                                                            <td class="SD">555</td>
+
+                                                            <td class="CN">KTLA (CW)</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="number">6</td>
+
+                                                            <td class="HD">6666</td>
+
+                                                            <td class="SD">666</td>
+
+                                                            <td class="CN">KDOC (IND)</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="number">99</td>
+
+                                                            <td class="HD">9</td>
+
+                                                            <td class="SD">99</td>
+
+                                                            <td class="CN">The Quattromani Entertainment Channel</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="number">33</td>
+
+                                                            <td class="HD">3311</td>
+
+                                                            <td class="SD">331</td>
+
+                                                            <td class="CN">The Weather Channel*</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="number" colspan="1">1</td>
+
+                                                            <td class="HD">1111</td>
+
+                                                            <td class="SD">111</td>
+
+                                                            <td class="CN">Videos On Demand</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="number">5</td>
+
+                                                            <td class="HD">5555</td>
+
+                                                            <td class="SD">555</td>
+
+                                                            <td class="CN">KTLA (CW)</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="number">6</td>
+
+                                                            <td class="HD">6666</td>
+
+                                                            <td class="SD">666</td>
+
+                                                            <td class="CN">KDOC (IND)</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="number">99</td>
+
+                                                            <td class="HD">9</td>
+
+                                                            <td class="SD">99</td>
+
+                                                            <td class="CN">The Quattromani Entertainment Channel</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="number">33</td>
+
+                                                            <td class="HD">3311</td>
+
+                                                            <td class="SD">331</td>
+
+                                                            <td class="CN">The Weather Channel*</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="number" colspan="1">1</td>
+
+                                                            <td class="HD">1111</td>
+
+                                                            <td class="SD">111</td>
+
+                                                            <td class="CN">Videos On Demand</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="number">5</td>
+
+                                                            <td class="HD">5555</td>
+
+                                                            <td class="SD">555</td>
+
+                                                            <td class="CN">KTLA (CW)</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="number">6</td>
+
+                                                            <td class="HD">6666</td>
+
+                                                            <td class="SD">666</td>
+
+                                                            <td class="CN">KDOC (IND)</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="number">99</td>
+
+                                                            <td class="HD">9</td>
+
+                                                            <td class="SD">99</td>
+
+                                                            <td class="CN">The Quattromani Entertainment Channel</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="number">33</td>
+
+                                                            <td class="HD">3311</td>
+
+                                                            <td class="SD">331</td>
+
+                                                            <td class="CN">The Weather Channel*</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div><button type="reset" class="clear">Clear</button>
+                            </div><!-- end expand -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="filtersSection">
+                <div class="viewFilterChannels">
+                    <div class="viewAtoZ left">
+                        <label class="greyLabel">View Channels A - Z:</label>
+
+                        <ul id="viewChannelsCarousel" class="jcarousel-skin">
+                            <li><a href="#">A</a></li>
+
+                            <li><a href="#">B</a></li>
+
+                            <li><a href="#">C</a></li>
+
+                            <li><a href="#">D</a></li>
+
+                            <li><a href="#">E</a></li>
+
+                            <li><a href="#">F</a></li>
+
+                            <li><a href="#">G</a></li>
+
+                            <li><a href="#">H</a></li>
+
+                            <li><a href="#">I</a></li>
+
+                            <li><a href="#">J</a></li>
+
+                            <li><a href="#">K</a></li>
+
+                            <li><a href="#">L</a></li>
+
+                            <li><a href="#">M</a></li>
+
+                            <li><a href="#">N</a></li>
+
+                            <li><a href="#">O</a></li>
+
+                            <li><a href="#">P</a></li>
+
+                            <li><a href="#">Q</a></li>
+
+                            <li><a href="#">R</a></li>
+
+                            <li><a href="#">S</a></li>
+
+                            <li><a href="#">T</a></li>
+
+                            <li><a href="#">U</a></li>
+
+                            <li><a href="#">V</a></li>
+
+                            <li><a href="#">W</a></li>
+
+                            <li><a href="#">X</a></li>
+
+                            <li><a href="#">Y</a></li>
+
+                            <li><a href="#">Z</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="printPDF right">
+                        <ul>
+                            <li><img src="images/print.png" alt="print icon"><a href="#" class="print-icon">Print</a></li>
+
+                            <li><img src="images/download.png" alt="download icon"><a href="#" class="pdf-icon">Download PDF</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="optionChannelSelectors">
+                    <label class="greyLabel">Filter Channels By:</label>
+
+                    <form id="genreFilter">
+				        <div class="selectHeader">
+				            <div class="selectHeaderLabel genre">
+				                Genre
+				            </div>
+				
+				            <div class="arrowDown selectToggle"></div>
+				        </div>
+				
+				        <div class="formContainer genre">
+				            <div class="styledFilters">
+				                <ul>
+				                    <li><label for "genreOne"><input type="checkbox" id="genreOne" value=""> Genre One</label></li>
+				
+				                    <li><label for "genreTwo"><input type="checkbox" id="genreTwo" value=""> Genre Two</label></li>
+				                    
+				                    <li><label for "genreThree"><input type="checkbox" id="genreThree" value=""> Genre Three</label></li>
+				                    
+				                    <li><label for "genreFour"><input type="checkbox" id="genreFour" value=""> Genre Four</label></li>
+				                    
+				                    <li><label for "genreFive"><input type="checkbox" id="genreFive" value=""> Genre Five</label></li>
+				                    
+				                    <li><label for "genreOne"><input type="checkbox" id="genreOne" value=""> Genre One</label></li>
+				
+				                    <li><label for "genreTwo"><input type="checkbox" id="genreTwo" value=""> Genre Two</label></li>
+				                    
+				                    <li><label for "genreThree"><input type="checkbox" id="genreThree" value=""> Genre Three</label></li>
+				                    
+				                    <li><label for "genreFour"><input type="checkbox" id="genreFour" value=""> Genre Four</label></li>
+				                    
+				                    <li><label for "genreFive"><input type="checkbox" id="genreFive" value=""> Genre Five</label></li>
+				                </ul>
+				            </div>
+				            <div class="closeClear">
+				                <input type="reset" value="Clear" class="reset"><span class="right close">Close X</span>
+				            </div>
+				        </div>
+				    </form>
+
+                    <form id="premiumFilter">
+				        <div class="selectHeader">
+				            <div class="selectHeaderLabel premium">
+				                Premium/Additional Channels
+				            </div>
+				
+				            <div class="arrowDown selectToggle"></div>
+				        </div>
+				
+				        <div class="formContainer premium">
+				            <div class="styledFilters">
+				                <ul>
+				                    <li><label for "premiumOne"><input type="checkbox" class="squareRadio" id="premiumOne" value=""> Premium One</label></li>
+				
+				                    <li><label for "premiumTwo"><input type="checkbox" id="premiumTwo" value=""> Premium Two</label></li>
+				                    
+				                    <li><label for "premiumThree"><input type="checkbox" id="premiumThree" value=""> Premium Three</label></li>
+				                    
+				                    <li><label for "premiumFour"><input type="checkbox" id="premiumFour" value=""> Premium Four</label></li>
+				                    
+				                    <li><label for "premiumFive"><input type="checkbox" id="premiumFive" value=""> Premium Five</label></li>
+				                </ul>
+				            </div>
+				
+				            <div class="closeClear">
+				                <input type="reset" value="Clear" class="reset"><span class="right close">Close X</span>
+				            </div>
+				        </div>
+				    </form>
+				    
+				    <form id="includedFilter">
+				        <div class="selectHeader">
+				            <div class="selectHeaderLabel included">
+				                Included Channels
+				            </div>
+				
+				            <div class="arrowDown selectToggle"></div>
+				        </div>
+				
+				        <div class="formContainer included">
+				            <div class="styledFilters">
+				                <ul>
+				                    <li><label for "includedChannelOne"><input type="checkbox" id="includedChannelOne" value=""> Included Channel One</label></li>
+				
+				                    <li><label for "includedChannelTwo"><input type="checkbox" id="includedChannelTwo" value=""> Included Channel Two</label></li>
+				
+				                    <li><label for "includedChannelThree"><input type="checkbox" id="includedChannelThree" value=""> Included Channel Three</label></li>
+				
+				                    <li><label for "includedChannelFour"><input type="checkbox" id="includedChannelFour" value=""> Included Channel Four</label></li>
+				
+				                    <li><label for "includedChannelFive"><input type="checkbox" id="includedChannelFive" value=""> Included Channel Five</label></li>
+				                </ul>
+				            </div>
+				
+				            <div class="closeClear">
+				                <input type="reset" value="Clear" class="reset"><span class="right close">Close X</span>
+				            </div>
+				        </div>
+				    </form>
+				    
+                </div>
+            </div>
+
+            <div class="viewChannelTable">
+                <table class="tablesorter" id="channelsTable">
+                    <thead class="fixHead">
+                        <tr class="top">
+                         
+                            <th class="topGrad top" colspan=2><input type="radio" checked="checked" name="all" id="allChannels"><label for="radioHD">All Channels &#x25BC;&#x25B2;</label></th>
+                            <th class="topGrad top channelName">Channel Name &#x25BC;&#x25B2;</th>
+
+                            <th class="top digitalTV">Digital TV</th>
+
+                            <th class="top standardTV">Standard TV</th>
+
+                            <th class="top basicTV">Basic TV</th>
+
+                            <th class="top elPaquetazo">El Paquetazo</th>
+
+                            <th class="top fifthPackage">Fifth Package</th>
+                        </tr>
+
+                        <tr class="bottom">
+                            <th class="bottom hdsd"><input type="radio" name="HD" id="radioHD" value="HD"><label for="radioHD">HD</label></th>
+
+                            <th class="bottom hdsd"><input type="radio" name="SD" id="radioSD" value="SD"><label for="radioSD">SD</label></th>
+
+                            <th class="bottom"></th>
+
+                            <th class="digitalTV"><div onclick="activateThisColumn('digitalTV');return false;"></div></th>
+
+                            <th class="standardTV"><div onclick="activateThisColumn('standardTV');return false;"></div></th>
+
+                            <th class="basicTV"><div onclick="activateThisColumn('basicTV');return false;"></div></th>
+
+                            <th class="elPaquetazo"><div onclick="activateThisColumn('elPaquetazo');return false;"></div></th>
+
+                            <th class="fifthPackage"><div onclick="activateThisColumn('fifthPackage');return false;"></div></th>
+                        </tr>
+                    </thead>
+                    <tbody class="scrollContent">
+                        <tr>
+                            <td class="hdsd">121</td>
+
+                            <td class="hdsd">1</td>
+
+                            <td>NY1 - New York One - The Entertainment Channel</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>222</td>
+
+                            <td>2</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>333</td>
+
+                            <td>3</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>444</td>
+
+                            <td>4</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>555</td>
+
+                            <td>5</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>666</td>
+
+                            <td>6</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>777</td>
+
+                            <td>7</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>888</td>
+
+                            <td>8</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>999</td>
+
+                            <td>9</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>110</td>
+
+                            <td>11</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>220</td>
+
+                            <td>22</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>330</td>
+
+                            <td>33</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>440</td>
+
+                            <td>44</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>550</td>
+
+                            <td>55</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>660</td>
+
+                            <td>66</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>770</td>
+
+                            <td>77</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>880</td>
+
+                            <td>88</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>990</td>
+
+                            <td>99</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>560</td>
+
+                            <td>56</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>570</td>
+
+                            <td>57</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>580</td>
+
+                            <td>58</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>590</td>
+
+                            <td>59</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>600</td>
+
+                            <td>60</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>610</td>
+
+                            <td>61</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>620</td>
+
+                            <td>62</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>630</td>
+
+                            <td>63</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>640</td>
+
+                            <td>64</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>650</td>
+
+                            <td>65</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>660</td>
+
+                            <td>66</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+
+                        <tr>
+                            <td>670</td>
+
+                            <td>67</td>
+
+                            <td>NY1</td>
+
+                            <td class="digitalTV trueDot">&#149;</td>
+
+                            <td class="standardTV trueDot">&#149;</td>
+
+                            <td class="basicTV trueDot">&#149;</td>
+
+                            <td class="elPaquetazo trueDot">&#149;</td>
+
+                            <td class="fifthPackage trueDot"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="orderFeatureButtons">
+        	<a class="white-button" href="#"><span class="blue-arrow">Explore Features</span></a>
+            <a class="blue-button" href="#"><span class="white-arrow">Ready to Order</span></a> 
+        </div>
+    </div>
+</body>
+</html>

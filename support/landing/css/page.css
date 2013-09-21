@@ -1,0 +1,355 @@
+/* ==========================================================================
+   CSS code for Support Landing Page
+   
+   Author: Max Quattromani
+   Version: 1.1.5 - Updated: 8/29/13
+   ========================================================================== */
+   
+/*
+
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+ 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+ 
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* layout styles are being handled by base main.css */
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.twc-banner h1 {
+	text-align: center;
+}
+
+section{
+	margin-left: 0;
+}
+	
+.tileList {
+	padding: 0px;
+	margin-bottom: 2em;
+	background: #fff;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px 0 #888;
+	overflow: hidden;
+}	
+
+.tileList ul {
+	width: 100%;
+}
+
+.parsys_column h3 {
+	display: none;
+}
+
+.tileList li {
+	float: left;
+	display: inline-block;
+	width: 16.66666667%;
+	margin: 1em 0;
+	padding: 1em 0;
+	text-align: center;
+	border-left: 1px dotted #ccc;
+	line-height: 10px;
+}
+
+	.tileList li.twc-first {
+		border: 0;
+	}
+	
+	.tileList li:hover {
+		background: #f3f6f9;
+		margin: 0;
+		padding: 2em 0;
+	}
+	
+		.tileList li.nextHover {
+			margin: 0;
+			padding: 2em 0;
+		}
+	
+	.tileList li img {
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 10px;
+	}
+	
+		.tileList li:hover img {
+			 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+			 filter: alpha(opacity=90);
+			 -moz-opacity: .9;
+			 -khtml-opacity: .9;
+			 opacity: .9;
+		}
+
+	.tileList li a {
+		font-family: 'Arial', sans-serif;
+		font-size: 14px;
+		font-size: 1.4rem;
+		color: #000;
+	}
+
+[class*='25-25-50'] .labelList h5.label:last-of-type { height: 22px; }
+
+[class*='twc-col3_252550-c'] ul {
+	margin: 10px 0;
+}
+		
+[class*='twc-col3_252550-c'] li { 
+	clear: left;
+	width: 100%;
+	padding: 2px 0;
+	border-bottom: 1px dotted #ccc;	
+}
+
+[class*='twc-col3_252550-c'] li.twc-last {
+	border-bottom: none;
+}
+
+[class*='twc-col3_252550-c'] li a { 
+	padding: 0;	
+	border: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 2;
+	color: #3376b2;
+	text-transform: none;
+}
+
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+section{
+	margin-left: 0;
+	margin-bottom: 20px;
+}
+
+
+.twc-subHead {
+	display: none;
+}
+
+.twc-banner h1 {
+	line-height: 1;
+}
+
+.tileList {
+	background: #fff;
+}
+
+.parsys_column h3 {
+	display: inline-block;
+}
+
+.tileList li {
+	width: 100%;
+	margin: 0;
+	padding: 1.5em;
+	text-align: left;
+	border-left: 0;
+	border-bottom: 1px solid #ccc;
+	line-height: 10px;
+}
+
+	.tileList li.twc-first {
+		border: 0;
+		border-bottom: 1px solid #ccc;
+	}
+	
+	.tileList li:hover {
+		background: #f6f6f6;
+		margin: 0;
+		padding: 1.5em;
+		text-align: left; }
+
+	.tileList li.nextHover {
+		margin: 0;
+		padding: 1.5em;
+	}
+
+.tileList li img {
+	display: none;
+}
+
+.tileList li a:after {
+	float: right;
+	font-family: 'FontAwesome', sans-serif;
+	font-size: 20px;
+	font-size: 2rem;
+	content:'\f105';
+	color: #b1b2af;
+}
+
+.tileList li a {
+	font-size: 16px;
+	font-size: 1.6rem;
+	color: #3376b2;
+}
+   
+.supportTopics li,
+.supportNotices li {
+	border-bottom: 0;
+	list-style: disc inside;
+}   
+   
+.parsys_column ul {
+	margin: 0;
+}
+
+.parsys_column[class*='twc-col']:nth-child(2) {
+	margin: 0;
+}
+
+[class*='25-25-50'] .twc-col3_252550-c2 { margin-top: 1em; }
+   
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+
+
+
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */	
+
+} /* End Tablet Breakpoint */
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+ 
+ 
+ 
+ 
+   
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+[class*='25-25-50'] .labelList h5.label:last-of-type { 
+    height: auto;
+    margin: 0; }
+
+[class*='twc-col3_252550-c'] li { 
+	clear: left;
+	width: 100%;
+	padding: 2px 0;
+	border-bottom: none;
+	list-style: inside disc;	
+}
+
+
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+   
+   
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+  
+  
+  
+  
+   		
+} /* End SmartPhone Breakpoint */
+
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+    

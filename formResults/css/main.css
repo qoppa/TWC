@@ -1,0 +1,251 @@
+/* Unchanged */
+/* ==========================================================================
+   CSS code for Form Results (success/failure)
+   ========================================================================== */
+
+/*
+ 
+ * Base
+ 		* Colors
+ 		* Defaults
+ 
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+
+
+
+
+
+/* ==========================================================================
+   Base: Colors
+   ========================================================================== */
+/* 
+ 
+ 	e9eaee -> fdfdfd = background gray
+ 	333333	= dark grey (grey text)
+ 	3376b2 = light blue (blue text)
+ 	387ab4 = mid blue
+ 	2c608e = dark blue
+ 	a3a4a4 = mid gray
+ 	6e4976 = purple
+ 
+*/
+
+
+
+
+
+/* ==========================================================================
+   Base: Font-Face
+   ========================================================================== */
+
+@font-face {
+	font-family: 'Entypo';
+	src: url('../../../etc/clientlibs/fonts/Entypo/entypo.eot?#iefix') format('embedded-opentype'),
+	url('../../../etc/clientlibs/fonts/Entypo/entypo.woff') format('woff'),
+	url('../../../etc/clientlibs/fonts/Entypo/entypo.ttf') format('truetype'),
+	url('../../../etc/clientlibs/fonts/Entypo/entypo.svg#svgEntypoRegular') format('svg');
+}
+
+
+
+
+
+/* ==========================================================================
+   Base: Defaults
+   ========================================================================== */
+
+body {
+	height: 100%;
+	padding-top: 30px;
+	background: #f2f4f6;	
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.box-column {
+	padding: 0;
+	-webkit-box-shadow: 0 4px 3px -3px #888;
+	   -moz-box-shadow: 0 4px 3px -3px #888;
+	        box-shadow: 0 4px 3px -3px #888;	
+	margin-bottom: 30px; /*this is for the test sheet only, remove */
+}
+
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.box-column .wrap {
+	padding: 8px;
+}
+
+.twcBanner {
+	margin-bottom: 20px;
+	width: 100%;
+	
+	-webkit-border-top-right-radius: 2px;	
+	 -webkit-border-top-left-radius: 2px;
+	    -moz-border-radius-topright: 2px;
+         -moz-border-radius-topleft: 2px;
+      		border-top-right-radius: 2px;
+			 border-top-left-radius: 2px;
+			 
+	background: #5d82a9; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVkODJhOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0NTZjOTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #5d82a9 0%, #456c94 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5d82a9), color-stop(100%,#456c94)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #5d82a9 0%,#456c94 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #5d82a9 0%,#456c94 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #5d82a9 0%,#456c94 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #5d82a9 0%,#456c94 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d82a9', endColorstr='#456c94',GradientType=0 ); /* IE6-8 */
+		
+	font: bold 1.3em/2.6 "TWC Round Book",Arial,Sans-Serif;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center
+}
+
+strong {
+	font-weight: bold;
+}
+
+hr {
+	margin-bottom: 20px;
+}
+
+[role="alert"] { padding: 0 20px; }
+
+[role="alert"] > h2 { text-align:center; }
+
+.wrap.error {	
+	background: none repeat scroll 0 0 #FFC0CB;
+    border: 1px solid #c23e56;
+    border-radius: 3px 3px 3px 3px;
+    font-size: 1em;
+    line-height: 3em;
+    text-align: center;
+}
+
+.error h3,
+.error p,
+.error a {
+	color: #222;
+}
+
+.error h3:before {
+	font-family: Entypo;
+	font-size: 44px;
+	content: "⚠ ";
+	vertical-align: middle;
+}
+
+.error p {
+	line-height: 24px;
+}
+
+.error a {
+	text-decoration: underline;
+}
+
+.error a:nth-of-type(1) {
+	float: left;
+}
+.error a:nth-of-type(2) {
+	float: right;
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Browser Specific
+   ========================================================================== */
+   
+/* Safari/Chrome/Webkit */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* selectors goes here */
+
+}
+
+/* Firefox */
+/* Ah, Internet Explorer */
+/* ie7 (.ie7) */
+
+.ie7 .box-column {
+	border: 1px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+
+.ie7 .greyGradientBox {
+	border-bottom: 2px solid #ccc;
+}
+
+.ie7 .gradient {
+ 	background-color: #5b8eb2;
+}
+
+/* ie8 (.ie8) */  
+  
+.ie8 .box-column {
+	border: 1px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}  
+  
+.ie8 .greyGradientBox {
+	border-bottom: 2px solid #ccc;
+}
+
+
+.ie8 .gradient {
+   	background-color: #5b8eb2;
+}  
+  
+/* ie9 (.ie9) */
+

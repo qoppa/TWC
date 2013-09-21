@@ -1,0 +1,211 @@
+<!-- Unchanged -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+    <meta name="description" content="CLU Channel Finder">
+    <meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/yui/2.6.0/build/reset-fonts-grids/reset-fonts-grids.css">
+    <link rel="stylesheet" href="css/main.css"> 
+ 
+	<!--[if IE 7]> <html class="ie7"> <![endif]-->
+	<!--[if IE 8]> <html class="ie8"> <![endif]-->
+	<!--[if IE 9]> <html class="ie9"> <![endif]-->  
+	   	
+	<!-- enable HTML5 elements in IE7+8 -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->    
+	
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+	<script type="text/javascript">	        
+			//hide and show script
+			$(function(){
+   				$('.toggle').click(function(){
+   					$('.expand').show(); return false;
+   					});
+   	 			});
+   			//clear the table
+   			$(function(){
+   				$('.clear').click(function(){
+     				$('.expand').hide();
+ 				});
+   			});
+   			
+   			// placeholder workaround for non-HTML5 
+   			// This adds 'placeholder' to the items listed in the jQuery .support object. 
+			$(function(){
+			   jQuery.support.placeholder = false;
+			   test = document.createElement('input');
+			   if('placeholder' in test) jQuery.support.placeholder = true;
+			});
+			// This adds placeholder support to browsers that wouldn't otherwise support it. 
+			$(function() {
+			   if(!$.support.placeholder) { 
+			      var active = document.activeElement;
+			      $(':text').focus(function () {
+			         if ($(this).attr('placeholder') != '' && $(this).val() == $(this).attr('placeholder')) {
+			            $(this).val('').removeClass('hasPlaceholder');
+			         }
+			      }).blur(function () {
+			         if ($(this).attr('placeholder') != '' && ($(this).val() == '' || $(this).val() == $(this).attr('placeholder'))) {
+			            $(this).val($(this).attr('placeholder')).addClass('hasPlaceholder');
+			         }
+			      });
+			      $(':text').blur();
+			      $(active).focus();
+			      $('form:eq(0)').submit(function () {
+			         $(':text.hasPlaceholder').val('');
+			      });
+			   }
+			});    
+</script>
+
+</head>
+<body>
+
+<form method="GET">
+    <div class="channelFinder">
+	    <hgroup class="TWCchannelFinder">
+			<h1>TWC Channel Finder</h1>
+			<h2>Find New Channel Numbers</h2>
+		</hgroup>
+		
+		<div class="channelFinder_search">
+			<input style="display: none" disabled siz=1 type=text>
+			<input type=text placeholder="Enter Name / Number" />
+			<button type=submit class="toggle">Submit</button>
+		</div>
+		<div class="expand"><!-- hide all of this, then reveal on submit -->	
+			
+				<div class="tableContainer">
+					<table>
+						<tr>
+							<td>
+								<table class="fixedHeader">
+									<tr>
+										<th class="top old" colspan=1>OLD</th>
+										<th class="top new" colspan=3 >NEW</th>
+									</tr>
+									<tr>
+										<th class="bottom number" colspan=1>Number</th>
+										<th class="bottom HD" colspan=1>HD</th>
+										<th class="bottom SD" colspan=1>SD</th>
+										<th class="bottom CN">Channel Number</th>
+									</tr>
+								</table>  
+							</td>
+						</tr>			
+						<tr class="scrollTable">
+							<td>
+								
+								<div class="tableBody">  
+									<table class="tabborder">
+					    				<tr>
+									        <td class="number" colspan=1>1</td>
+									        <td class="HD">1111</td>
+									        <td class="SD">111</td>
+									    	<td class="CN">Videos On Demand</td>
+									    </tr>
+									    <tr>
+									        <td class="number">5</td>
+									        <td class="HD">5555</td>
+									        <td class="SD">555</td>
+									    	<td class="CN">KTLA (CW)</td>
+									    </tr>
+									    <tr>
+									        <td class="number">6</td>
+									        <td class="HD">6666</td>
+									        <td class="SD">666</td>
+									    	<td class="CN">KDOC (IND)</td>
+									    </tr>
+									    <tr>
+									        <td class="number">99</td>
+									        <td class="HD">9</td>
+									        <td class="SD">99</td>
+									    	<td class="CN">The Quattromani Entertainment Channel</td>
+									    </tr>
+									    <tr>
+									        <td class="number">33</td>
+									        <td class="HD">3311</td>
+									        <td class="SD">331</td>
+									    	<td class="CN">The Weather Channel*</td>
+									    </tr>
+									    <tr>
+									        <td class="number" colspan=1>1</td>
+									        <td class="HD">1111</td>
+									        <td class="SD">111</td>
+									    	<td class="CN">Videos On Demand</td>
+									    </tr>
+									    <tr>
+									        <td class="number">5</td>
+									        <td class="HD">5555</td>
+									        <td class="SD">555</td>
+									    	<td class="CN">KTLA (CW)</td>
+									    </tr>
+									    <tr>
+									        <td class="number">6</td>
+									        <td class="HD">6666</td>
+									        <td class="SD">666</td>
+									    	<td class="CN">KDOC (IND)</td>
+									    </tr>
+									    <tr>
+									        <td class="number">99</td>
+									        <td class="HD">9</td>
+									        <td class="SD">99</td>
+									    	<td class="CN">The Quattromani Entertainment Channel</td>
+									    </tr>
+									    <tr>
+									        <td class="number">33</td>
+									        <td class="HD">3311</td>
+									        <td class="SD">331</td>
+									    	<td class="CN">The Weather Channel*</td>
+									    </tr>
+					    				<tr>
+									        <td class="number" colspan=1>1</td>
+									        <td class="HD">1111</td>
+									        <td class="SD">111</td>
+									    	<td class="CN">Videos On Demand</td>
+									    </tr>
+									    <tr>
+									        <td class="number">5</td>
+									        <td class="HD">5555</td>
+									        <td class="SD">555</td>
+									    	<td class="CN">KTLA (CW)</td>
+									    </tr>
+									    <tr>
+									        <td class="number">6</td>
+									        <td class="HD">6666</td>
+									        <td class="SD">666</td>
+									    	<td class="CN">KDOC (IND)</td>
+									    </tr>
+									    <tr>
+									        <td class="number">99</td>
+									        <td class="HD">9</td>
+									        <td class="SD">99</td>
+									    	<td class="CN">The Quattromani Entertainment Channel</td>
+									    </tr>
+									    <tr>
+									        <td class="number">33</td>
+									        <td class="HD">3311</td>
+									        <td class="SD">331</td>
+									    	<td class="CN">The Weather Channel*</td>
+									    </tr>
+					
+									</table>
+								</div>
+							</td>
+						</tr>	
+					</table>				
+				</div>
+				<button type="reset" class="clear">Clear</button>
+	
+		</div><!-- end expand -->		
+	</div>
+</form>
+	</body>
+</html>

@@ -1,0 +1,382 @@
+/* ==========================================================================
+   CSS code for Watermarking 
+   
+   Author: Max Quattromani/Zach Wise
+   Version: 1.7 - Updated: 10 February, 2013
+   ========================================================================== */
+
+/*
+ 
+ * Base
+ 	* Colors
+ 	* Defaults
+ 
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 	* Internet Explorer
+ 
+ */
+
+
+
+
+
+/* ==========================================================================
+   Base: Colors
+   ========================================================================== */
+/* 
+ 
+ 	e9eaee -> fdfdfd = background gray
+ 	333333	= dark grey (grey text)
+ 	3376b2 = light blue (blue text)
+ 	387ab4 = mid blue
+ 	2c608e = dark blue
+ 	a3a4a4 = mid gray
+ 	6e4976 = purple
+ 
+*/
+
+
+
+
+
+/* ==========================================================================
+   Base: Defaults
+   ========================================================================== */
+/* ==========================
+	Reset
+   ========================== */
+
+* {
+	/*simple reset*/
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	
+	/*important for scaling technique*/
+	font-size: 100%;
+	font: inherit;
+
+	/*critical for small text on iOS*/
+	-webkit-text-size-adjust: 100%;
+
+	background: transparent;
+	list-style: none outside none;
+	vertical-align: baseline;
+
+	/*because ie6 loves us*/
+	zoom: 1;
+}
+
+/* ==========================
+	Base Stucture
+   ========================== */
+
+body {
+  /* use absolute positioning for everything */
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* ==========================================================================
+   Base: Font-Face
+   ========================================================================== */
+
+@font-face {
+	font-family:'TWC Round Light';
+	src:url(/test/_assets/fonts/twcround-light.eot?#iefix) format("embedded-opentype"),
+		url(/test/_assets/fonts/twcround-light.woff) format("woff"),
+		url(/test/_assets/fonts/twcround-light.ttf) format("truetype"),
+		url(/test/_assets/fonts/twcround-light.svg#svgTWCLight) format("svg");
+}
+
+/* ==========================
+	Typography
+   ========================== */
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+		  	box-sizing: border-box;
+}
+
+html {
+	text-rendering:optimizelegibility;
+	-webkit-font-smoothing:antialiased;
+	   -moz-font-smoothing:antialiased;
+		-ms-font-smoothing:antialiased;
+		 -o-font-smoothing:antialiased;
+			font-smoothing:antialiased;
+}
+
+a:link,
+a:visited,
+a:focus {
+	color: inherit;
+	text-decoration: none;
+}
+
+sup {
+	font-size: smaller;
+	vertical-align: super;
+}
+
+
+
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* for demo purposes only, delete from final code */
+/*
+body {
+	background: url(../images/michSig.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+}
+*/
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+#container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+    left: 0;
+	-webkit-border-radius: .35em;  /* changed all border radii to use ems; I would recommend dropping the above */
+	   -moz-border-radius: .35em;
+			border-radius: .35em;
+	-webkit-box-shadow: 0 0 .25em #070707;  /* changed all box shadows radii to use ems */
+	   -moz-box-shadow: 0 0 .25em #040404;
+   			box-shadow: 0 0 .25em #070707;
+   	font-family: 'TWC Round Light',Arial,Sans-Serif;
+	font-size: 1.25em;
+	color: #fff;
+}
+
+.content {
+	display: table;
+	height: 100%;
+	width: 100%;
+	-webkit-border-radius: .35em;  /* changed all border radii to use ems; I would recommend dropping the above */
+	   -moz-border-radius: .35em;
+			border-radius: .35em;
+}
+
+	.content span {
+		background: rgba(255,255,255,.01); /* fixes a very obscure android browser bug */
+		display: table-cell;
+		height: 100%;
+		overflow: hidden;
+		padding: 0 5%;
+		text-align: center;
+		vertical-align: middle;
+	}
+	
+	.content img {
+		position: absolute;
+	}
+
+#close {
+	position: absolute;
+	width: 1em;
+	top: .25em;
+    right: .25em;
+	background: url('../images/x24@2x.png') no-repeat 0 0;
+    background-size: 1em auto;
+    height: 1em;
+	overflow: hidden;
+	z-index: 10000;
+	cursor: pointer;
+}
+
+	.white > #close,
+	.silver > #close {
+		background: url('../images/x24@2x_grey.png') no-repeat 0 0;
+	    background-size: .8em auto;
+	}
+
+.blue {
+	color: #00A9E0;
+}
+
+
+
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+
+img.left {
+	float: left;
+	top: 8.5%;
+	left: 3%;	
+}
+
+img.right {
+	float: right;
+	bottom: 0;
+	right: 0;
+}
+
+span.left {
+	padding-left: 0;
+	padding-right: 20%;
+}
+
+span.right {
+	padding-right: 0;
+	padding-left: 17%;
+}
+
+.map {
+	background: url(../images/map.png) no-repeat 0 0; /* changed this to a relative path */
+	background-size: 100%;
+}
+
+.lighker {
+	background: #8a8c8d;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhhOGM4ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #8a8c8d 0%, #000000 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8a8c8d), color-stop(100%,#000000));
+	background: -webkit-linear-gradient(top,  #8a8c8d 0%,#000000 100%);
+	background: -o-linear-gradient(top,  #8a8c8d 0%,#000000 100%);
+	background: -ms-linear-gradient(top,  #8a8c8d 0%,#000000 100%);
+	background: linear-gradient(to bottom,  #8a8c8d 0%,#000000 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#D08a8c8d",endColorstr="#D0000000",GradientType=0);
+}
+
+.dark {
+	background: #000;
+	background: rgba(0,0,0,.85); /* based on the black background, making an exception to the 92% opacity rule */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#d9000000',GradientType=0 ); /* IE6-9 */
+}
+
+.semiDark {
+	background: #000;
+	background: rgba(0,0,0,.70);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+}
+
+.upMidnight {
+	background: #005e94;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwNWU5NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDBkMTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #005e94 0%, #000d14 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#005e94), color-stop(100%,#000d14));
+	background: -webkit-linear-gradient(top,  #005e94 0%,#000d14 100%);
+	background: -o-linear-gradient(top,  #005e94 0%,#000d14 100%);
+	background: -ms-linear-gradient(top,  #005e94 0%,#000d14 100%);
+	background: linear-gradient(to bottom,  #005e94 0%,#000d14 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#D0005e94",endColorstr="#D0000d14",GradientType=0);
+}
+
+.downMidnight {
+	background: #00111b;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMTExYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjdhYjUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #00111b 0%, #027ab5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00111b), color-stop(100%,#027ab5));
+	background: -webkit-linear-gradient(top,  #00111b 0%,#027ab5 100%);
+	background: -o-linear-gradient(top,  #00111b 0%,#027ab5 100%);
+	background: -ms-linear-gradient(top,  #00111b 0%,#027ab5 100%);
+	background: linear-gradient(to bottom,  #00111b 0%,#027ab5 100%);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#D000111b",endColorstr="#D0027ab5",GradientType=0);
+}
+
+.silver {
+	background: #fefefe; 
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZmVmZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkOGQ4ZGEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #fefefe 0%, #d8d8da 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d8d8da));
+	background: -webkit-linear-gradient(top,  #fefefe 0%,#d8d8da 100%);
+	background: -o-linear-gradient(top,  #fefefe 0%,#d8d8da 100%);
+	background: -ms-linear-gradient(top,  #fefefe 0%,#d8d8da 100%);
+	background: linear-gradient(to bottom,  #fefefe 0%,#d8d8da 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D0fefefe', endColorstr='#D0d8d8da',GradientType=0 );
+	color: #222;
+}
+
+.white {
+	background: #fff;
+	color: #222;
+}
+
+
+
+
+
+/* ==========================================================================
+   Browser Specific
+   ========================================================================== */
+
+/* ==========================
+	IE: 6/7/8/9
+   ========================== */
+   
+/* ie (.ie) */   
+/* make buttons play nice in IE */
+button { 
+	overflow: visible;
+	width: auto;
+}
+
+/* scale images in IE7 more attractively */
+.ie img {-ms-interpolation-mode: bicubic;}
+
+
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));} 
+.ie6 input {vertical-align: text-bottom;}
+
+/* ie7 (.ie7) */
+.ie7 .container {
+	overflow: visible; 
+}
+
+.ie7 .white,
+.ie7 .silver { 	
+	font-weight: 600;
+}
+
+/* ie8 (.ie8) */
+.ie8 .white,
+.ie8 .silver { 	
+	font-weight: 600;
+}
+
+/* ie9 (.ie9) */
+	/* Fix IE9 overflow bug */
+.ie9 svg:not(:root) { overflow: hidden; }
+	
+.ie9 .gradient {
+   filter: none;
+}

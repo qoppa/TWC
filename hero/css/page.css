@@ -1,0 +1,727 @@
+/* ==========================================================================
+   CSS code for Hero Carousel Comp
+   
+   Author: Max Quattromani
+   Version: 1.4 - Updated: 3/13/13
+   ========================================================================== */
+   
+/*
+
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+ 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+ 
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* layout styles are being handled by base main.css */
+
+.twc-container.lowSlider {
+	margin-top: -20px;
+	padding-bottom: 30px;
+}
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.twc-top {
+	height: 50px;
+    background-color: #959595;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#959595), to(#383f46));
+	background-image: -webkit-linear-gradient(top, #959595, #383f46);
+	background-image: -moz-linear-gradient(top, #959595, #383f46);
+	background-image: -o-linear-gradient(top, #959595, #383f46);
+	background-image: -ms-linear-gradient(top, #959595, #383f46);
+	background-image: linear-gradient(top, #959595, #383f46);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#959595', EndColorStr='#383f46');
+	-webkit-box-shadow: 0 0 5px 2px #000;
+	   -moz-box-shadow: 0 0 5px 2px #000;
+	   		box-shadow: 0 0 5px 2px #000;
+    border-bottom: none;
+}
+
+.twc-top .twc-container {
+    background: #2b2b2d;
+}
+
+#header.twc-container {
+	padding: 10px 4%;
+}
+
+.twc-logo {
+	margin-top: 20px;
+}
+
+.twc-header-search {
+	margin-top: 32px;
+}
+
+.twc-top-nav li,
+.twc-top-nav li a {
+	color: #fff;
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+
+	html.js body#AllFAQs header.twc-header div.twc-top div.twc-container nav ul.twc-top-nav li.twc-right div.smartLink a,
+	html.js body#AllFAQs header.twc-header div.twc-top div.twc-container nav ul.twc-top-nav li.twc-right div.twc-location div.twc-customerLocation ul li.twc-custLoc,
+	html.js body#AllFAQs header.twc-header div.twc-top div.twc-container nav ul.twc-top-nav li.twc-right div.twc-location div.twc-customerLocation ul li.twc-drop-nav a.twc-icon {
+		font-size: 13px;
+		font-size: 1.3rem;
+	}
+
+header.twc-header div.twc-top nav ul.twc-top-nav li .list ul li,
+.twc-top-nav li.twc-right {
+	width: 106px;
+	padding: 23px 0 5px;
+	border-radius: 0 0 2px 2px;
+	border-left: 1px solid #959697;
+	background-color: #959595;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#959595), to(#383f46));
+	background-image: -webkit-linear-gradient(top, #959595, #383f46);
+	background-image: -moz-linear-gradient(top, #959595, #383f46);
+	background-image: -o-linear-gradient(top, #959595, #383f46);
+	background-image: -ms-linear-gradient(top, #959595, #383f46);
+	background-image: linear-gradient(top, #959595, #383f46);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#959595', EndColorStr='#383f46');
+	text-align: center;
+}
+
+	html.js body#AllFAQs header.twc-header div.twc-top div.twc-container nav ul.twc-top-nav li.twc-right { 
+		width: 296px; 
+		padding: 14px 9px;
+		border-radius: 0 0 0 2px;
+	}
+
+.twc-top-nav li.twc-active:before,
+.twc-top-nav li:before {
+	position: absolute;
+	top: 7px;
+	left: 42px;
+	right: 0;
+	content: '';
+	width: 21px;
+	height: 17px;
+	z-index: 999999;
+}
+
+	.twc-top-nav li:before {
+		background: url(../images/twc-eye-small-grey.png);
+	}
+
+	.twc-top-nav li.twc-active:before {
+		background: url(../images/twc-eye-small-white.png);	
+	}
+
+	.twc-top-nav li.twc-right:before,
+	.twc-top-nav li.twc-right .twc-customerLocation li:before {
+		content: '';
+		float: none;
+		width: 0;
+		height: 0;
+		margin: 0;
+		background: none;
+	}
+
+.twc-top-nav li.twc-active .smartLink {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding: 5px 20px 20px;
+    position: relative;
+    left: -5px;
+    z-index: 99999;
+    text-align: center;
+    background-color: #292a2c;
+}
+
+	.twc-header .twc-top .twc-container nav ul.twc-top-nav li.twc-first div.list ul li.twc-active {
+		background: #2b2b2d;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#292a2c), to(#292a2c));
+		background-image: -webkit-linear-gradient(top, #292a2c, #292a2c);
+		background-image: -moz-linear-gradient(top, #292a2c, #292a2c);
+		background-image: -o-linear-gradient(top, #292a2c, #292a2c);
+		background-image: -ms-linear-gradient(top, #292a2c, #292a2c);
+		background-image: linear-gradient(top, #292a2c, #292a2c);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#292a2c', EndColorStr='#292a2c');
+		border-left: none;
+		-webkit-box-shadow: none;
+		   -moz-box-shadow: none;
+	   			box-shadow: none;
+	}
+
+.twc-header-search {
+	width: 550px;
+}
+
+.twc-login-module {
+	width: 190px;
+	padding: 5px 20px;
+	-webkit-box-shadow: inset 0 0 15px 10px rgba(255,255,255,.05);
+	-moz-box-shadow: inset 0 0 15px 10px rgba(255,255,255,.05);
+	box-shadow: inset 0 0 15px 10px rgba(255,255,255,.05);
+	text-align: center;
+}
+
+.twc-login-module span,
+span.small {
+	display: block;
+	color: #fff;
+}
+
+.twc-login-module span.headline {
+	font-family: 'TWC Round Book',Arial,Sans-Serif;
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+
+.twc-login-module button.twc-blue-button {
+	position: relative;
+	margin: 5px 0;
+	width: 100%;
+	text-align: left;
+}
+
+	.twc-login-module button.twc-blue-button:after {
+		position: absolute;
+		right: 13px;
+	}
+
+#c-carouSell {
+	height: 100%;
+	min-height: 320px;
+	padding: 0;
+	margin: 0;
+	background: #ebecf0;
+}
+
+#c-carouSell * {
+	font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+	font-size: 14px;
+	color: #333;
+	line-height: 22px;
+}
+
+#carouSell-wrapper {
+	background-color: transparent;
+	width: 100%;
+	height: 345px;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	text-align: center;
+}
+
+#carouSell img {
+	display: block;
+	float: left;
+	position: relative;
+	width: 980px;
+	height: 345px;
+}
+
+#carouSell-prev, 
+#carouSell-next {
+	border-bottom: 15px solid #ebecf0;
+	background: url('http://maxquattromani.com/test/hero/images/line-pattern.png') repeat;
+	background-color: rgba(0,0,0,.5);
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000,endColorstr=#B2000000);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000,endColorstr=#B2000000);
+	zoom: 1;
+	display: block;
+	height: 330px;
+	width: 50%;
+	top: 0;
+	position: absolute;
+}
+
+#carouSell-prev:hover, 
+#carouSell-next:hover {
+	background-color: rgba(0,0,0,.3);
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+	zoom: 1;
+}
+
+#carouSell-prev {
+	left: -490px;
+}
+
+#carouSell-next {
+	right: -490px;
+}
+
+#carouSell-pager {
+	width: 120px;
+	margin: 0 auto;
+	position: relative;
+	bottom: 40px;
+	padding: 5px 100px;
+}
+
+#carouSell-pager a:after {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 7px 0 0;
+	font-family: 'FontAwesome', sans-serif;
+	font-weight: 100;
+	content: "\f10c";
+	color: #dedede;
+}
+
+#carouSell-pager a span {
+	display: none;
+}
+
+#carouSell-pager a.selected:after {
+	font-family: 'FontAwesome', sans-serif;	
+	content: "\f111";  
+	color: #dbdbdb;
+}
+
+#carouSell-pager a:hover {
+	color: #f3f4f5;
+}
+
+.carouSell-shadow {
+	position: relative;
+	top: 315px;
+	left: 26px;
+	height: 43px;
+	width: 1160px;
+	margin: 0 auto;
+	background: url(http://maxquattromani.com/test/hero/images/drop-shadow-carousel.png) no-repeat;
+	text-align: center;
+}
+
+.twc-content {
+	padding: 20px 0;
+}
+
+.twc-col {
+	margin-left: 19px;
+}
+
+	.twc-row .twc-col:first-child,
+	.twc-row .twc-col.first {
+		margin-left: 0;
+	}
+
+li.jcarousel-item div.twc-col {
+	margin: 0;
+}
+
+[class*='twc-col4_4-c'] {
+	padding: 20px;
+	background: none;
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+	zoom: 1;
+	background: rgba(255,255,255,.7);
+	overflow: hidden;
+}	
+
+	[class*='twc-col4_4'].last {
+		padding: 0;
+		background: 0;
+		filter: none;
+	}
+
+[class*='twc-col4_4'] ul {
+	margin-top: 10px;
+}
+		
+[class*='twc-col4_4'] li { 
+	clear: left;
+	width: 100%;
+	padding: 2px 0;
+	border-bottom: 1px solid #ccc;	
+}
+
+[class*='twc-col4_4'] li.twc-last {
+	border-bottom: none;
+}
+
+[class*='twc-col4_4'] li a { 
+	padding: 0;	
+	border: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	line-height: 2;
+	color: #3376b2;
+	text-transform: none;
+}
+
+[class*='twc-col4_4'] img.twc-last {
+	margin-top: 26px;
+}
+
+figure {
+	padding: 1px;
+}
+
+.slider h3 {
+	padding-bottom: 20px;
+}
+
+.slider {
+	width: 228px;
+	padding: 0;
+	border: 1px solid #e6e6e7;
+}
+
+/* ==========================
+    jCarousel lowSlider
+   ========================== */
+
+.jcarousel-skin-lowSlider {
+	margin-top: 10px;	
+}
+
+.jcarousel-skin-lowSlider .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-lowSlider .jcarousel-container-vertical {
+    width: 75px;
+    height: 245px;
+    padding: 40px 20px;
+}
+
+.jcarousel-skin-lowSlider .jcarousel-clip {
+    overflow: hidden;
+}
+
+#lowSlider.jcarousel-list li {
+	margin-right: 19px;
+}
+
+.jcarousel-skin-lowSlider .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-lowSlider .jcarousel-prev:after {
+    position: absolute;
+    top: 40px;
+    left: -35px;
+    width: 32px;
+    height: 32px;
+    font-family: 'FontAwesome', sans-serif;
+	content: "\f053"; 
+    font-size: 40px;
+    font-size: 4rem;
+    color: #3372a3;
+}
+
+.jcarousel-skin-lowSlider .jcarousel-next:after {
+    position: absolute;
+    top: 40px;
+    right: -40px;
+    width: 32px;
+    height: 32px;
+    font-family: 'FontAwesome', sans-serif;
+	content: "\f054";
+    font-size: 40px;
+    font-size: 4rem;
+    color: #3372a3;
+}
+
+	.jcarousel-skin-lowSlider .jcarousel-prev:hover,
+	.jcarousel-skin-lowSlider .jcarousel-next:hover {
+		color: #c2c2c2;
+		cursor: pointer;
+	}
+
+.lowSliderContent {
+		padding: 10px 10px 5px;
+	}
+
+.lowSliderContent p {
+	font-family: 'Arial', sans-serif;
+	font-weight: 100;
+	color: #333;
+}
+	
+	a.learnMore {
+		display: block;
+		padding-bottom: 5px;
+	}
+
+.shadow {
+	position: relative;
+	top: -20px;
+	width: 92%;
+	max-width: 980px;
+	height: 20px;
+	margin: 0 auto;
+}
+
+.shadow:before {
+	position: absolute;
+	content: '';
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	border-radius: 50% / 20px; 
+	box-shadow: rgba(0, 0, 0, 0.1) 0 5px 15px;
+	clip: rect(20px, auto, 50px, 0);
+}
+
+.shadow:after {
+	position: absolute;
+	content: '';
+	left: 0;
+	right: 0;
+	bottom: -2px;
+	top: 0;
+	border-bottom: 1px solid white;
+}
+
+form#emailSignup {
+	padding-bottom: 20px;
+}
+
+.emailSignup .twc-search-input-wrap {
+	float: right;
+	position: relative;
+	width: 82%;
+}
+
+.emailSignup {
+	position: relative;
+}
+
+	.emailSignup:before {
+		position: absolute;
+		top: -27px;
+		left: 27px;
+		right: 0;
+		content: '';
+		width: 89px;
+		height: 100px;
+		background: url(../images/mail-swoosh.png) no-repeat;
+	}
+
+form#emailSignup h3 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.emailSignup {
+	height: 33px;
+	width: 65%;
+	margin: 0 auto;
+	padding: 5px 0;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 2px 0 #888;
+	   -moz-box-shadow: 0 1px 2px 0 #888;
+	   		box-shadow: 0 1px 2px 0 #888;
+}
+
+#stickyFooter.twc-container {
+	padding: 10px 4%;
+}
+
+.stickyFooter {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #3779b3;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#3779b3), to(#02447e));
+	background-image: -webkit-linear-gradient(top, #3779b3, #02447e);
+	background-image: -moz-linear-gradient(top, #3779b3, #02447e);
+	background-image: -o-linear-gradient(top, #3779b3, #02447e);
+	background-image: -ms-linear-gradient(top, #3779b3, #02447e);
+	background-image: linear-gradient(top, #3779b3, #02447e);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#3779b3', EndColorStr='#02447e');
+}
+
+	.stickyFooter span {
+		color: #fff;
+		padding: 0 4px;
+	}
+	
+	.stickyFooter span.h1:before {
+		font-family: 'FontAwesome', sans-serif;
+		content: '\f086';
+		margin-right: 5px;
+		color: #fff;
+	}
+	
+	#stickyFooter.twc-container button {
+		margin-top: 7px;
+	}
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+.twc-ie .lowSliderContent p {
+	margin-bottom: 0;
+}
+
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */
+.twc-ie8 .twc-span_3 {
+	background:none;
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2ffffff,endColorstr=#B2ffffff);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2ffffff,endColorstr=#B2ffffff);
+	zoom: 1;
+}
+
+	
+/* ie9 (.ie9) */
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+[class*='twc-col4_4'] {
+	width: 100%;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+[class*='twc-col4_4'].last {
+	text-align: center;
+}
+
+.carouSell-shadow {
+	width: auto;
+	max-width: 99%;
+	top: 300px;
+	left: 0;
+	background: none;
+	-webkit-box-shadow: 0 0 5px 5px #000;
+	-moz-box-shadow: 0 0 5px 5px #000;
+	box-shadow: 0 0 5px 5px #000;
+}
+
+
+
+
+
+   
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+.twc-ie8 .shadow {
+	height: 1px;
+	border-bottom: 1px solid grey;
+}
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */	
+
+} /* End Tablet Breakpoint */
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+ 
+ 
+ 
+ 
+   
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+   
+   
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+  
+  
+  
+  
+   		
+} /* End SmartPhone Breakpoint */
+
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+    

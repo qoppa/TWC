@@ -1,0 +1,243 @@
+/* ==========================================================================
+   CSS code for XXXXXXX
+   ========================================================================== */
+
+/*
+ 
+ * Base
+ 		* Colors
+ 		* Defaults
+ 
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+
+
+
+
+
+/* ==========================================================================
+   Base: Colors
+   ========================================================================== */
+/* 
+ 
+ 	e9eaee -> fdfdfd = background gray
+ 	333333	= dark grey (grey text)
+ 	3376b2 = light blue (blue text)
+ 	387ab4 = mid blue
+ 	2c608e = dark blue
+ 	a3a4a4 = mid gray
+ 	6e4976 = purple
+ 
+*/
+
+
+
+
+
+/* ==========================================================================
+   Base: Defaults
+   ========================================================================== */
+
+b,
+strong {
+	font-weight: bold;
+}
+
+
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.tvPlans {
+	width: 800px;
+	margin: 0 auto;
+	padding: 40px 20px 20px;
+    background: #fff;
+	border: 1px solid #f2f4f8;
+}
+
+table {
+ 	float:left;
+ 	width: 33%;
+ 	border-right: 1px solid #ccc;
+}
+
+table:last-of-type {
+	border-right: none;
+}
+
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+/********* Tabs *********/
+
+ul.tabs
+{
+    font-size: 0;
+    margin:0;
+    background: #fff;
+    list-style-type: none;
+    text-align: left; /*set to left, center, or right to align the tabs as desired*/
+}
+        
+ul.tabs li {
+    display: inline;
+    width: 150px;
+    margin: 0;
+    margin-right: 2px; /*distance between tabs*/
+}
+        
+ul.tabs li a {
+  	font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    zoom: 1;
+    bottom: 8px;
+    z-index: 1;
+    padding: 7px 16px;
+    border: 1px solid #CCC;
+    border-bottom-color:#B7B7B7;
+    color: #fff;
+    -webkit-border-top-right-radius: 5px;
+     -webkit-border-top-left-radius: 5px;
+        -moz-border-radius-topright: 5px;
+ 		 -moz-border-radius-topleft: 5px;
+	        border-top-right-radius: 5px;  
+   			 border-top-left-radius: 5px;
+  	background-color: #7c9eb3;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#7c9eb3), to(#4c748f));
+	background-image: -webkit-linear-gradient(top, #7c9eb3, #4c748f);
+	background-image: -moz-linear-gradient(top, #7c9eb3, #4c748f);
+	background-image: -o-linear-gradient(top, #7c9eb3, #4c748f);
+	background-image: -ms-linear-gradient(top, #7c9eb3, #4c748f);
+	background-image: linear-gradient(top, #7c9eb3, #4c748f);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#7c9eb3', EndColorStr='#4c748f');
+   	behavior: url('css/PIE.htc');
+    outline:none;
+}
+        
+ul.tabs li.selected a
+{
+    /*selected tab style */
+    font-weight:bold;
+    background: #fff;
+    border-bottom-color: transparent;
+    color: #222;
+}
+        
+        
+ul.tabs li.selected a:hover
+{
+    /*selected tab style */
+    text-decoration: none;
+}
+        
+div.tabcontent
+{
+    display: block;
+}
+
+div.tabcontents
+{
+    padding: 15px 30px;
+    margin-bottom: 1em;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-bottom: 6px solid #d6d6d6;
+	-webkit-border-radius: 0 2px 2px 2px;
+	   -moz-border-radius: 0 2px 2px 2px;
+			border-radius: 0 2px 2px 2px;
+	behavior: url(css/PIE.htc);
+}
+
+.content {
+	height: 300px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.content p {
+	margin: 1em 0 3em;
+}
+
+tr {
+	height: 2.5em;
+}
+
+td {
+	width: 50px;
+	text-align: center;
+}
+
+td.heavy {
+	width: 20px;
+	font-weight: 700;
+}
+
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Browser Specific
+   ========================================================================== */
+   
+/* Safari/Chrome/Webkit */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+}
+
+/* Firefox */
+/* Ah, Internet Explorer */
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */  
+  
+/* ie9 (.ie9) */
+

@@ -1,0 +1,459 @@
+#chatwindow { 
+  position: fixed;
+  display: none;
+  top: 10px;
+  left: 100px;
+  width: 300px; 
+  height: 330px; 
+  border: 1px solid #C7C7C7;
+  z-index: 10000;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;  
+  -webkit-box-shadow: 5px 5px 25px 1px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 5px 5px 25px 1px rgba(0, 0, 0, .8);
+  box-shadow: 5px 5px 25px 1px rgba(0, 0, 0, .8);
+} 	
+#dragbar {
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-radius: 6px 6px 0px 0px;
+  border-radius: 6px 6px 0px 0px;  
+  cursor: move;       
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 28px;
+  width: 100%; 
+  color: white;
+  overflow: hidden;
+  background: rgb(125,185,232); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(125,185,232,1) 0%, rgba(32,124,202,1) 49%, rgba(41,137,216,1) 50%, rgba(30,87,153,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,185,232,1)), color-stop(49%,rgba(32,124,202,1)), color-stop(50%,rgba(41,137,216,1)), color-stop(100%,rgba(30,87,153,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(125,185,232,1) 0%,rgba(32,124,202,1) 49%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(125,185,232,1) 0%,rgba(32,124,202,1) 49%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 100%); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, rgba(125,185,232,1) 0%,rgba(32,124,202,1) 49%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 100%); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+  background: linear-gradient(top, rgba(125,185,232,1) 0%,rgba(32,124,202,1) 49%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 100%); /* W3C */
+}  
+#container {
+  -moz-border-radius-bottomright: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-radius: 0px 0px 6px 6px;
+  border-radius: 0px 0px 6px 6px;   
+  position: absolute;
+  width: 100%;
+  top: 28px;
+  bottom: 0px;
+  background: rgb(207,231,250); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(207,231,250,1) 0%, rgba(99,147,193,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(207,231,250,1)), color-stop(100%,rgba(99,147,193,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=0 ); /* IE6-9 */
+  background: linear-gradient(top, rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* W3C */ 
+}
+#content {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  overflow: hidden;
+}
+#hidewindow {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  cursor: pointer;
+}
+#chaticon {
+  padding-top: 2px;
+  padding-left: 5px;
+  padding-right: 4px;
+  float: left;
+}
+#chatgirl {
+  position: absolute;
+  cursor: pointer;
+  right: 0px;
+  bottom: 0px;
+}
+#header {
+  position: relative;
+}
+#chatinvite {
+  width: 245px;
+  height: 110px;
+  position: relative;
+  top: 0px;
+}
+#ccContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#ccPostSurvey {
+  padding: 5px;
+  position: relative;
+  width: 250px;
+  display: none;
+  text-align: left;
+}
+
+#ccChatOutput {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border: #d8d8d8 1px solid;
+  overflow-y: scroll;
+  word-wrap: break-word;
+  background-color: white;
+}
+
+#ccChatStatusImg {
+  margin-top: 1px;
+  margin-left: 1px;
+}
+
+#ccChatStatusBar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%; 
+  padding: 2px;
+  background-color: #009ada;
+  vertical-align: middle;   
+  display: none;
+}
+
+#ccChatStatusMsg {
+  position: absolute;
+  top: 8px;
+  left: 35px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#ccTypingStatus {
+  position: absolute;
+  top: 202px;
+  padding: 2px;
+  color: white;
+  font-size: 10px;
+  display: none;
+  z-index: 11000;
+}
+
+#controlsdiv {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+#ccChatInput {
+  position: relative;
+  margin-top: 17px;
+  resize: none; 
+  width: 100%; 
+  border: #d8d8d8 1px solid; 
+  height: 50px; 
+  overflow: auto; 
+}
+
+#ccWait {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  background-color: white;
+  border: #d8d8d8 1px solid; 
+  text-align: center;
+}
+
+#ccWaitMessage {
+  margin-top: 50px;
+}
+
+#ccSpinner {
+  height: 100px;
+}
+
+#ccPreSurvey {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.ccChatDescription {
+	display: block;
+	font: 12px "Trebuchet MS", halvetica, Verdana, sans-serif;
+}
+
+.ccPreSurveyTextInput {
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;   
+  border: #d8d8d8 1px solid;  
+  font: 12px Verdana, Arial, Helvetica, sans-serif;   
+}
+
+.ccPreSurveyTextAreaInput {
+  display: block;
+  margin-bottom: 5px;
+  overflow: auto;
+  width: 100%;   
+  height: 35px;
+  border: #d8d8d8 1px solid;  
+  resize: none;
+  font: 12px Verdana, Arial, Helvetica, sans-serif; 
+}
+
+.ccPreSurveyLabel {
+  margin-bottom: 3px;
+}
+
+.ccShortField {
+  width: 140px !important;
+}
+
+#ccDeviceSelect {
+  border: 1px solid grey;
+  float: right;
+  padding: 5px;
+}
+
+#ccLanguageSelect {
+  border: 1px solid grey;
+  float: left;
+  padding: 5px;
+}
+
+.ccPreSurveyRadioInputLabel {
+  vertical-align: baseline; 
+}
+
+.ccPreSurveyRadioInput {
+  margin-top: 2px;
+}
+
+#ccStartChatButton {
+  margin-top: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+#ccSubmitSurveyButton {
+  cursor: pointer;
+  float: left;
+  margin-bottom: 5px;
+}
+#ccCancelSurveyButton {
+  cursor: pointer;
+  float: right;
+  margin-bottom: 5px;  
+}
+
+.ccMessage {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  padding-left: 10px;
+  text-indent: -10px;
+}
+
+.ccMessagFrom {
+  font-weight: bold;
+}
+
+.cc_usertype_user {
+  color: blue;
+}
+
+.cc_usertype_analyst {
+  color: green;
+}
+
+.cc_usertype_system {
+  color: red;
+}
+
+.cc_msgtype_advlog_none {
+  color: dimgray;
+  font-style:italic;
+}
+
+.cc_msgtype_internal {
+  color: firebrick;
+  font-style:italic;
+}
+
+.ConsonaFormField {
+  margin-bottom: 5px;
+}
+
+.ConsonaFieldSet {
+  padding: 7px;
+}
+
+.ConsonaFieldSet legend{
+  padding-bottom: 3px;
+  white-space: normal;
+  word-wrap: normal;
+  width: 245px;  
+}  
+
+.ConsonaLegendText {
+  white-space: normal;
+  word-wrap: break-word;
+  width: 250px;
+}  
+
+.ConsonaFormRadioInput {
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.ConsonaFormRadioLabel {
+
+}
+
+.ConsonaFormRadioLine {
+  display: block;
+}
+
+.ConsonaFormSelect {
+  width: 100%;
+}
+
+.ConsonaFormTextArea {
+  width: 100%;
+  overflow: auto;
+  height: 70px;
+}
+
+.ConsonaFormTextInput {
+  width: 100%;
+}
+
+.ConsonaFormInput {
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+#ccPreSurveyWarning {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  display: none;
+}
+#ccPreSurveyWarningBar {
+  background-color: firebrick;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+}
+#ccPreSurveyWarningImg {
+  vertical-align: text-bottom;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#ccPreSurveyWarningMsg {
+  width: 100%;
+  border: 1px solid firebrick;
+}
+
+#ccSendButton {
+  position: absolute;
+  top: 273px; 
+  left: 0px;
+  width: 70px;
+  height: 20px;
+  text-align: center;
+  padding-top: 2px;
+  color: white;
+  font-weight: bold;
+  background-image: url('/sdcxuser/test/images/send.png');
+  cursor: pointer;
+}
+
+#ccRemoteControl {
+  position: absolute;
+  display: none;
+  top: 280px;
+  right: 5px;
+  height: 20px;
+  width: 200px;
+  z-index 12000;
+  text-align: right;
+}
+
+#ccRCDisable {
+  display: none;
+  font-size: 12px;
+  height: 20px;
+  width: 150px;  
+}
+
+#ccRCEnable {
+  display: none;
+  font-size: 12px;
+  height: 20px;
+  width: 150px;
+}
+
+#ccEULA {
+  position: absolute;
+  top:0px;
+  left:0px;
+  width: 600px;
+  height: 400px;
+  display: block;
+  z-index: 50000;
+  background-color: white;
+  padding: 10px;
+  display: none;
+}
+#ccContentEULA {
+  margin-top: 10px;
+  width: 100%;
+  height: 330px;
+  border: 1px solid grey;
+}
+#ccAcceptEULA {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 100px;
+}
+#ccDeclineEULA {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 100px;  
+}
+
+#Line_43398284-c9c0-447f-abd8-d97689893509 { 
+}
+#Line_43398284-c9c0-447f-abd8-d97689893509.ConsonaFormRadioLine {
+  float: left;
+  position: relative;
+  width: 40px;
+  padding-bottom: 5px;
+}
+#Line_43398284-c9c0-447f-abd8-d97689893509.ConsonaFormRadioLine .ConsonaFormInput{
+}
+#Line_43398284-c9c0-447f-abd8-d97689893509.ConsonaFormRadioLine .ConsonaFormRadioLabel{
+  float: left;  
+  padding-left: 5px;                                                                               
+}
+
+
+
+

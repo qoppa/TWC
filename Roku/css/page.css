@@ -1,0 +1,237 @@
+/* ==========================================================================
+   CSS code for WiFi Map Coverage
+   
+   Author: Max Quattromani
+   Version: 1.0 - Updated: 6/18/13
+   ========================================================================== */
+   
+/*
+
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+ 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/* base styles are being handled by base main.css */ 
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* layout styles are being handled by base main.css */
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.twc-banner {
+	background-image: url('../images/roku_banner.jpg');
+	height: 306px;
+}
+
+.roku_pitch_content {
+	overflow: auto;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+	.roku_pitch_content > div {
+		width: 50%;
+		margin: 2% 0;
+		padding: 0 2%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+	   	 		box-sizing: border-box;
+	}
+	
+		.roku_advantages { border-left: 1px dotted #ccc;}
+		
+		.roku_pitch_content span { 
+			display: block;
+			margin: 1em 0;
+		}
+		
+		.roku_pitch_content ul li {
+			list-style: outside disc;
+			margin-left: 1em;
+		}
+
+.roku_video_faqs {
+	overflow: auto;
+	width: 100%;
+}
+
+.roku_video_faqs .roku_video { padding-left: 0; }
+
+.roku_video_faqs .roku_faqs { padding-right: 0; }
+	
+	video {
+		width: 100%;
+		margin-top: 1em;
+	}
+	
+	.video-container {
+		display: inline-block;
+		text-align: center;
+	}
+	
+	.roku_video_faqs > div {
+		width: 50%;
+		margin: 2% 0;
+		padding: 0 2%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+	   	 		box-sizing: border-box;
+	}
+
+		.roku_video_faqs .roku_faqs li {
+			margin: 1em 0;
+		}
+
+		.roku_video_faqs .roku_faqs li:before {
+			content: '\f04b';
+			width: 20px;
+			height: 20px;
+			margin-right: 5px;
+			font-family: 'FontAwesome',sans-serif;
+			color: #3376b2;
+		}
+		
+		.roku_video_faqs .roku_faqs li.openFAQ:before {
+			content: '\f04b';
+			-webkit-transform: rotate(90deg);
+			   -moz-transform: rotate(90deg);
+			    -ms-transform: rotate(90deg);
+				 -o-transform: rotate(90deg);
+			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+		}
+		
+		.roku_video_faqs .roku_faqs > div {
+			display: block;
+		}
+		
+		.roku_video_faqs .roku_faqs span {
+			display: block;
+			margin-left: 1em;
+			padding: 2%;
+			border: 1px solid #3376b2;
+			background: #f6f6f6;
+		}
+		
+.roku_footnote { text-align: center; }
+
+a.get_roku { float: right; }
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Theme
+   ========================================================================== */	
+
+} /* End Tablet Breakpoint */
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+   
+   		
+} /* End SmartPhone Breakpoint */ 
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+    

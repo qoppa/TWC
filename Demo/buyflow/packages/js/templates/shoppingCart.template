@@ -1,0 +1,162 @@
+<div class="cart-module">
+
+    <div class="services collapsible current ">
+        <header>
+            <ul>
+                <li><h4><div class="text parbase currentCartHeader twc-plain-text"><b>## </b>Current Services</div></h4></li>
+                <li><a class="toggle" href="#">Show/Hide</a></li>
+            </ul>
+
+            <table class="total">
+                <tbody><tr>
+                    <td><div class="text parbase twc-plain-text monthlyTotalHeader"><b>## </b>MONTHLY TOTAL</div></td>
+                    <td class="price last"><sup class="sign">{currentMonthlyTotal|s}</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </header>
+        <section>
+			{#current}
+            <div class="collapsible">
+                <header>
+                    <ul>
+                        <li><a class="toggle" href="#">Show/Hide</a></li>
+                        <li><h6>{label|s}</h6></li>
+                    </ul>
+                </header>
+                <section>
+                    <div class="content-wrap">
+                        <ul>
+                            {#mainAsset}
+                              <li><strong>{displayName|s}</strong></li>
+                            {/mainAsset}
+                            {#options}
+                              <li>{displayName|s}</li>
+			    {/options}
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            {/current}
+            <div class="disclaimer">
+                <div class="currentFooter twc-base-text">
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+				Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+				pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, 
+				rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.<br>
+				</p></div>
+            </div>
+        </section>
+    </div>
+
+    <div class="services new-services-cart-module">
+        <header>
+            <ul>
+                <li><h4><div class="newCartHeader text parbase twc-plain-text"><b>## </b>New Services</div></h4></li>
+            </ul>
+        </header>
+        <section>
+            <div class="charges">
+                <h5><div class="text parbase twc-plain-text firstHeader"><b>## </b>Monthly Charges</div></h5>
+
+                {#bundle}
+                <table class="bundle">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong><div class="text parbase twc-plain-text bundlePriceLabel"><b>## </b>Bundle Price</div></strong>
+                                <em>{discountTerm|s}</em>
+                            </td>
+                            <td class="last">{price|s}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                {/bundle}
+                {#products}
+                <div class="collapsible {#disabled}disabled{/disabled}">
+                    <header>
+                        <ul>
+                            <li><a class="toggle" href="#">Show/Hide</a></li>
+                            <li><h6>{lineOfBusiness|s}</h6></li>
+                            <li class="price">{LOBTotalMonthlyPrice|s}</li>
+                        </ul>
+                    </header>
+                    <section>
+                        <div class="content-wrap">
+                            <table>
+                                <tbody>
+                                    {#mainItem}
+                                    <tr>
+                                        <td><strong>{name|s}</strong></td>
+                                        <td class="last">{netPrice|s}</td>
+                                    </tr>
+                                    {/mainItem}
+                                    {#optionItems}
+                                    <tr>
+                                        <td>
+                                            {name|s}
+                                            <ul>
+                                            {#subOptions}
+                                            <li>{name|s}</li>    
+                                             {/subOptions}      
+                                            </ul>
+                                        </td>
+                                        <td class="last">{netPrice|s}</td>
+                                    </tr>
+                                    {/optionItems}
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+                {/products}
+
+                <table class="total">
+                    <tbody>
+                        <tr>
+                            <td><div class="totalCharges text parbase twc-plain-text"><b>## </b>Total Monthly Charges*</div></td>
+                            <td class="last">{totalMonthlyPrice|s}</td>
+                        </tr>
+                        {?totalMonthlySavings}
+                        <tr class="savings">
+                            <td><div class="text parbase totalSavings twc-plain-text"><b>## </b>Total Monthly Savings*</div></td>
+                            <td class="last">{totalMonthlySavings|s}</td>
+                        </tr>
+                        {:else}
+                        {/totalMonthlySavings}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="charges">
+                <h5><div class="secondHeader text parbase twc-plain-text"><b>## </b>ONE-TIME CHARGES</div></h5>
+                <section class="one-time">
+                    <table>
+                        <tbody>
+                            {#oneTime}
+                            <tr>
+                                <td>{name|s}</td>
+                                <td class="last">{netPrice|s}</td>
+                            </tr>
+                            {/oneTime}
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            <table class="total">
+                <tbody><tr>
+                    <td><div class="text parbase twc-plain-text totalOneTime"><b>## </b>TOTAL ONE-TIME CHARGES*</div></td>
+                    <td class="last">{totalOneTimePrice|s}</td>
+                </tr>
+            </tbody></table>
+            <div class="disclaimer">
+                <div class="newFooter twc-base-text"><p><b>## </b>*This amount excludes taxes and fees. After placing your order, 
+				the actual amount of taxes and fees will be calculated and reflected in your next bill statement.</p>
+                                {#oneTimePayments}
+                                <p>{displayName|s}</p>
+                                {/oneTimePayments}
+				</div>
+            </div>
+        </section>
+    </div>

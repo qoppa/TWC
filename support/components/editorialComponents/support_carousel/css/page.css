@@ -1,0 +1,215 @@
+/* ==========================================================================
+   CSS code for 
+   
+   Author: Max Quattromani
+   Version: 1.0 - Updated: 5/7/13
+   ========================================================================== */
+   
+/*
+
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+ 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+ 
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* layout styles are being handled by base main.css */
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+#carousel_inner {  
+	float: left; /* important for inline positioning */  
+	width: 980px; /* important (this width = width of list item(including margin) * items shown */  
+	overflow: hidden;  /* important (hide the items outside the div) */  
+}  
+  
+#carousel_ul {  
+	position:relative;  
+	left:-340px; /* important (this should be negative number of list items width(including margin) */  
+	list-style-type: none; /* removing the default styling for unordered list items */  
+	margin: 0px;  
+	padding: 0px;  
+	width: 9999px; /* important */  
+	/* non-important styling bellow */  
+	padding-bottom:10px;  
+}  
+  
+#carousel_ul li{  
+	float: left; /* important for inline positioning of the list items */  
+	width: 320px;  /* fixed width, important */  
+/* just styling bellow*/  
+	padding:0px;  
+	height:110px;  
+	background: #000000;  
+	margin-top:10px;  
+	margin-bottom:10px;  
+	margin-left:5px;  
+	margin-right:5px;  
+}  
+  
+#carousel_ul li img {  
+.margin-bottom:-4px; /* IE is making a 4px gap bellow an image inside of an anchor (<a href...>) so this is to fix that */  
+/* styling */  
+	cursor:pointer;  
+	cursor: hand;  
+	border:0px;  
+} 
+ 
+#left_scroll, 
+#right_scroll{  
+	float: left;  
+	height: 150px;  
+	width: 15px;  
+}
+  
+#left_scroll img, 
+#right_scroll img{  
+	border:0; /* remove the default border of linked image */  
+/*styling*/  
+	cursor: pointer;  
+	cursor: hand;  
+} 
+
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+  
+   
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+
+
+
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */	
+
+} /* End Tablet Breakpoint */
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+ 
+ 
+ 
+ 
+   
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+   
+   
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+  
+  
+  
+  
+   		
+} /* End SmartPhone Breakpoint */
+
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+    

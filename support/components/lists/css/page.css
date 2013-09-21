@@ -1,0 +1,238 @@
+/* ==========================================================================
+   CSS code for Buttons
+   
+   Author: Max Quattromani
+   Version: 1.0 - Updated: 7/3/13
+   ========================================================================== */
+   
+/*
+
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+ 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+ 
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* layout styles are being handled by base main.css */
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+/* ==========================
+   Buttons
+   ========================== */
+
+.btn {
+	display: inline-block;
+	border: none;
+	border-radius: 3px;
+	background: none;
+	font-family: 'TWC Round Medium',Arial,Sans-Serif;
+	font-weight: 100;
+	line-height: 1;
+	color: inherit;
+	cursor: pointer;
+}
+
+/* Blue Buttons */
+.btn.blue {
+	background-color: #3779b3;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#3779b3), to(#02447e));
+	background-image: -webkit-linear-gradient(top, #3779b3, #02447e);
+	background-image: -moz-linear-gradient(top, #3779b3, #02447e);
+	background-image: -o-linear-gradient(top, #3779b3, #02447e);
+	background-image: -ms-linear-gradient(top, #3779b3, #02447e);
+	background-image: linear-gradient(top, #3779b3, #02447e);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#3779b3', EndColorStr='#02447e');
+	color: #fff;
+}
+	
+	.btn.blue:hover,
+	.btn.blue.hover  {
+		background-color: #265a83;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#265a83), to(#1b405e));
+		background-image: -webkit-linear-gradient(top, #265a83, #1b405e);
+		background-image: -moz-linear-gradient(top, #265a83, #1b405e);
+		background-image: -o-linear-gradient(top, #265a83, #1b405e);
+		background-image: -ms-linear-gradient(top, #265a83, #1b405e);
+		background-image: linear-gradient(top, #265a83, #1b405e);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#265a83', EndColorStr='#1b405e');
+		color: #fff;
+	}
+
+	.btn.blue:active,
+	.btn.blue.active,
+	.btn.blue:focus {
+	    background: #444545;
+	    background-image: 0;
+	}
+
+/* Buttons with checkbox */
+.btn input[type="checkbox"] {
+	margin: 0;
+	margin-left: 1em;
+}
+
+.btn.blue.checked {
+	background-color: #19a919;
+    background-image: -moz-linear-gradient(270deg,  #33cc33 0%, #008700 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom,  color-stop(0%, #33cc33), color-stop(100%, #008700));
+    background-image: -webkit-linear-gradient(270deg,  #33cc33 0%, #008700 100%);
+    background-image: -o-linear-gradient(270deg,  #33cc33 0%, #008700 100%);
+    background-image: -ms-linear-gradient(270deg,  #33cc33 0%, #008700 100%);
+    background-image: linear-gradient(to bottom,  #33cc33 0%, #008700 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF33CC33', endColorstr='#FF008700',GradientType=0);
+}
+
+/* Buttons with Icons */	
+.btn .twc-icon-after {
+	margin-left: 1em;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+.btn .twc-icon-before {
+	margin-right: 1em;
+}
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+  
+   
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+
+
+
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */	
+
+} /* End Tablet Breakpoint */
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+ 
+ 
+ 
+ 
+   
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.btn.full { width: 100%; }
+
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+   
+   
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+  
+  
+  
+  
+   		
+} /* End SmartPhone Breakpoint */
+
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+    

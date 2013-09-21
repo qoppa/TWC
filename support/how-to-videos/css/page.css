@@ -1,0 +1,302 @@
+/* ==========================================================================
+   CSS code for 
+   
+   Author: Max Quattromani
+   Version: 1.0 - Updated: 8/14/13
+   ========================================================================== */
+   
+/*
+
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+ 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* layout styles are being handled by base main.css */
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.page-header .horizontal ul li { display: inline-block; }   
+
+li.refineSearch ul.vertical li { 
+    display: block;
+    text-align: left; } 
+
+.page-header {
+	padding: 0 1.5em;
+	background: #333534;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMzMzUzNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYTFiMWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #333534 0%, #1a1b1f 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333534), color-stop(100%,#1a1b1f));
+	background: -webkit-linear-gradient(top,  #333534 0%,#1a1b1f 100%);
+	background: -o-linear-gradient(top,  #333534 0%,#1a1b1f 100%);
+	background: -ms-linear-gradient(top,  #333534 0%,#1a1b1f 100%);
+	background: linear-gradient(to bottom,  #333534 0%,#1a1b1f 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333534', endColorstr='#1a1b1f',GradientType=0 ); 
+	color: #fff; }
+
+.page-header .twc-module { width: 300px; }
+
+.page-header .twc-module button:before {
+    content: "";
+    font-family: 'FontAwesome',sans-serif; }
+
+.page-header .horizontal ul { margin-bottom: 0; }
+
+.page-header .horizontal ul li { padding: .5em 1em; }
+
+	li.refineSearch {
+		position: relative; 
+		padding: .5em 1em;
+		border-radius: 3px;
+		background: #4F799F;
+		color: #fff;
+		text-align: center; }
+
+.page-header div.horizontal ul li ul { 
+	display: none;
+	padding: .5em; }
+
+/*
+	li.refineSearch:hover { 
+        border-left: 2px solid #fff;  
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #dcdcdc;
+        background: #dcdcdc;
+        color: #333; }
+*/
+
+.page-header .horizontal ul li.twc-last ul.vertical li input { display: none; }
+
+    .page-header .horizontal ul li.twc-last ul.vertical li label { 
+        display: block;
+        width: 100%;
+        padding: .5em 1em; }
+    
+    input[type=checkbox]:checked + label { 
+        background: #3376B2;
+        color: #fff; }
+        
+            input[type=checkbox]:checked + label:after {
+                content: 'X';
+                float: right; }
+	
+	.page-header .horizontal li.twc-last ul.vertical li.twc-last { 
+	    border-left: none;
+	    border-top: none;
+	    border-right: none; }
+	    
+	   .page-header .horizontal li.twc-last ul.vertical li.twc-last:hover { box-shadow: none; }
+	
+	.page-header .horizontal ul li:hover ul {
+		display: block;
+		position: absolute;
+		width: 163%;
+		left: 0;
+		top: 30px;
+		outline: 2px solid #fff;
+		background: #dcdcdc;
+		color: #333;
+		z-index: 9999; }
+
+.filter-section {
+	padding: .75em 1.5em;
+	background: #e4e7ea; }
+
+	.filter-section .horizontal ul { margin-bottom: 0; }
+
+.filter-section select { 
+	width: 200px;
+	margin-right: 3em; }
+
+.mobile-view { display: none; }
+
+[class*='youtube-video-'] figure { margin-bottom: 0; }
+
+[class*='youtube-video-'] { 
+	margin-bottom: 1em; 
+	padding: .5em; 
+	overflow: auto; }
+	
+	[class*='youtube-video-']:hover { background: #e4e7ea; }
+
+[class*='youtube-video-'] a {
+	display: block;
+	margin-bottom: 1em; }
+	
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */	
+
+} /* End Tablet Breakpoint */
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+ 
+[class*="twc-col4"]:nth-of-type(2) { margin-top: 0; } 
+   
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.mainVideo { display: none; }
+
+.page-header { padding: 0; }
+
+.page-header .horizontal ul li { 
+    width: 100%;
+    padding: 1em; }
+
+.page-header .twc-module { width: 100%; }
+
+.horizontal ul { display: block; }
+
+.desktop-hidden { 
+	display: block;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #ccc;
+	text-align: center; }
+
+.filter-section { background: #353535; }
+
+.filter-section select { margin: 0; }
+
+li.refineSearch { 
+    background: #4F799F;
+    padding: .5em;
+    border: none;
+    border-radius: 0; }
+
+    li.refineSearch ul.vertical li { text-align: left; }
+
+.refineSearch .submit { float: right; }
+
+.page-header .horizontal ul li:hover ul {
+    display: none;
+    top: 42px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    text-align: center; }
+
+.page-header .horizontal ul li ul li { border-bottom: 1px dotted #ccc; }
+    
+    .page-header .horizontal ul li ul li.twc-last { border-bottom: none; }
+    
+.sortBy { color: #fff; }
+
+[class*='youtube-video-'] { 
+	margin-bottom: 0;
+	padding: 1em .5em; }
+
+[class*='youtube-video-'] > div { float: left; }
+
+[class*='youtube-video-']:hover { background: none; }
+
+.video-container { width: 48%; }
+
+.video-container a { margin-bottom: 0; }
+
+.video-container a figure img { margin-bottom: 0; }
+
+.video-info { 
+	width: 48%;
+	margin-left: 4%; }
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+.page-header .horizontal ul li ul.is-active { display: block; }
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+  		
+} /* End SmartPhone Breakpoint */
+
+/* ==========================================================================
+   Theme
+   ========================================================================== */

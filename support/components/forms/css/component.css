@@ -1,0 +1,272 @@
+/* ==========================================================================
+   CSS code for Responsive Forms
+   
+   Author: Max Quattromani
+   Version: 1.0 - Updated: 6/28/13
+   ========================================================================== */
+   
+/*
+
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+ 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+form .parsys_column { padding: 0 2%; }
+
+form .parsys_column .parsys_column { padding: 0; }
+
+/* ==========================
+   Forms
+   ========================== */
+
+fieldset { border: 0; }
+
+label { 
+	display: block;
+	line-height: 2;
+	font-weight: bold;
+}
+
+input[type=checkbox] + label {
+    display: inline-block;
+    margin-left: .5em;
+    line-height: 1em;
+    font-weight: normal;
+}
+
+	label.required:after {
+		content: '*';
+	}
+
+input, 
+textarea,
+select {
+	width: 100%;
+	max-width: 100%;
+	padding: .25em .5em;
+	border: 1px solid #e6e6e7;
+	border-radius: 2px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.1);
+	   -moz-box-shadow: inset 0 0 3px rgba(0,0,0,.1);
+	   		box-shadow: inset 0 0 3px rgba(0,0,0,.1);
+	-webkit-appearance: none;
+}  
+
+	select {
+		padding: .2em 1em;
+	}
+
+input[type=checkbox] {
+	width: 1em;
+	height: 1em;
+	padding: 0;
+	border: 0;
+	font-size: 16px;
+	font-size: 1.6rem;
+	-webkit-appearance: checkbox;
+}
+
+input:invalid, 
+textarea:invalid {
+	border: 1px solid rgba(255,0,0,.25);
+}
+
+.formrow {
+	overflow: auto;
+	display: block;
+	margin-bottom: .5em;
+}
+
+.form-item {
+	display: inline;
+	margin-bottom: 1em;
+}
+
+form .parsys_column { margin-top: 0; }
+
+form.form_right {
+	padding: 0 0 0 4%;
+	border-left: 1px dotted #ccc;	
+}
+
+	form.form_right .parsys_column { padding: 0; }
+
+#form .h5 { color: #3376b2; }
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+form [class*='twc-col3_252550-c'] { width: 24.25%; }
+		
+form [class*='twc-col3_252550-c2'] { 
+	width: 48.5%;
+	margin-left: 1.5%;
+}
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+form.form_right {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0;
+	border-left: none;	
+}
+  
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+
+
+
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */	
+
+} /* End Tablet Breakpoint */
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+ 
+ 
+ 
+ 
+   
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+[class*='_column_'] {
+	-webkit-column-count: 1;
+	   -moz-column-count: 1;
+	   		column-count: 1;
+}
+
+[class*='-button'] {
+	width: 100%;
+}
+
+form .parsys_column { padding: 0; }
+
+input[type=checkbox] {
+	-webkit-appearance: checkbox;
+}
+
+select {
+	margin-bottom: 1em;	
+}
+
+input[type=checkbox] + label {
+	vertical-align: middle;
+}
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+   
+   
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+  
+  
+  
+  
+   		
+} /* End SmartPhone Breakpoint */
+
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+    

@@ -1,0 +1,808 @@
+/* ==========================================================================
+   CSS code for stores Map Coverage
+   
+   Author: Max Quattromani
+   Version: 1.0 - Updated: 8/26/13
+   ========================================================================== */
+   
+/*
+
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+ 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/* base styles are being handled by base main.css */ 
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* layout styles are being handled by base main.css */
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+small { line-height: 2; }
+
+.locate-stores {
+	overflow: auto;
+	margin-bottom: 2em;
+	border: 3px solid #fff;
+	border-radius: 3px;
+	background-color: #e0ebf5;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(224, 235, 245)), to(rgb(248, 250, 252)));
+	background-image: -webkit-linear-gradient(top, rgb(224, 235, 245), rgb(248, 250, 252));
+	background-image: -moz-linear-gradient(top, rgb(224, 235, 245), rgb(248, 250, 252));
+	background-image: -o-linear-gradient(top, rgb(224, 235, 245), rgb(248, 250, 252));
+	background-image: -ms-linear-gradient(top, rgb(224, 235, 245), rgb(248, 250, 252));
+	background-image: linear-gradient(top, rgb(224, 235, 245), rgb(248, 250, 252));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#e0ebf5', EndColorStr='#f8fafc');
+	box-shadow: 0 1px 2px 0 #888; }
+
+fieldset { border: 0; }
+
+label { display: block; }
+
+.filter-section ul { margin-bottom: 2em; }
+
+	.filter-section li { line-height: 1.5; }
+	
+		.filter-section input[type='checkbox'] { 
+			float: left;
+			margin-right: .5em;
+			margin-left: 0; }
+
+input[type=checkbox] + label { 
+    margin-left: 2em;
+    font-weight: 100;
+    text-transform: capitalize; }
+
+input[type=checkbox] {
+	width: 1em;
+	padding: 0;
+	border: 0; }
+
+.stores-find-me {
+	float: left;
+	padding: 2em; }
+
+.locate-stores .twc-col2_3367-c1 {
+	border-left: 3px solid #fff; }
+
+.locate-stores .parsys_column,
+.pickup-exchange .parsys_column,
+.map-stores .parsys_column { 
+	margin-left: 0;
+	margin-top: 0; }
+
+#paymentcenterresults .parsys_column .twc-col2_5050-c1 { margin-left: 2.5%; }
+
+.locate-stores-filters .twc-col3_255025 { 
+	background: #fff; 
+	padding: .5em 0; }
+
+.pickup-exchange { display: none; }
+
+legend {
+	width: 100%;
+	padding: 2%;
+	background: #4f799e;
+	font-weight: bold;
+	color: #fff; }
+
+.mobile-filters-options { display: none; }
+
+.locate-stores-filters [class*='twc-col3_255025-c'] {
+	padding: 0 .5em; 
+	border-right: 1px dotted #ccc; }
+
+	.locate-stores-filters [class*='twc-col3_255025-c']:last-child {
+		border-right: 0; }
+
+.locate-stores-filters label { 
+	line-height: 2;
+	text-transform: uppercase;
+	font-weight: 900; }
+
+.locate-stores-filters ul.two_column_list {
+	-webkit-column-gap: 0;
+	-moz-column-gap: 0;
+	column-gap: 0; }
+
+.locate-stores-filters li {
+	font-weight: 900;
+	color: #3376b2; }
+
+.locate-stores-filters .filter-section input { width: auto; }
+
+.locate-stores-filters .btn { 
+	margin: .25em 1em; }
+
+.location_listing {
+    height: 310px;
+	overflow: auto;
+	border-radius: 3px; }
+
+	.location_listing ul {  }
+
+		.location_listing li { 
+			display: block;
+			position: relative;
+			padding: 1em;
+			border-bottom: 1px dotted #ccc;
+			vertical-align: top; }
+
+            .location_listing li:nth-of-type(even) {
+                background: #f2f7fb; } 
+
+ul#paymentcenterresults div[class*='service_'] { 
+    display: list-item;
+    list-style: disc inside; }
+
+/* ==========================
+   33/67
+   ========================== */
+   
+	[class*='twc-col2_3367-c'] { width: 67%; }
+	
+		[class*='twc-col2_3367-c0'] { width: 33%; }
+
+.stores_details_map_container .twc-col2_3367-c0 { width: 33%; }
+
+.stores_details_map_container .twc-col2_3367-c1 { width: 64.5%; }
+
+/* ==========================
+   25/50/25
+   ========================== */
+   
+	.locate-stores [class*='twc-col3_255025-c'] { width: 25%; }
+		
+		.locate-stores [class*='twc-col3_255025-c1'] { width: 50%; }
+
+/* ==========================
+   Search Section
+   ========================== */
+
+header .h2 { 
+	font-size: 36px;
+	font-size: 3.6rem; }
+
+.stores_access,
+.stores_details_map,
+.stores_instructions { 
+	overflow: auto;
+	margin-bottom: 2em;
+	border-radius: 3px;
+	background: #fff;
+	box-shadow: 0 1px 2px 0 #888; }
+
+
+
+.stores_banner {
+	float: right;
+	width: 33%;
+	padding: 2em ; }
+
+	.stores_banner h6 { color: #222; }
+
+	.stores_banner > img { 
+		float: right;
+		width: 35%; }
+	
+	.stores_banner > span.h5 { font-size: 16px; } 
+
+.pickup-exchange {
+	overflow: auto;
+	margin-bottom: 2em;
+	border: 3px solid #fff;
+	border-radius: 3px;
+	background: #6699c8;
+	box-shadow: 0 1px 2px 0 #888; }
+
+.pickup-exchange .banner { 
+	padding: 2em 1em;
+	background: #597d9f; }
+
+	.pickup-exchange .banner h4 { margin-bottom: 0; }
+
+.pickup-exchange .find-location { padding: 2em; }
+
+.pickup-exchange li { display: inline-block; }
+
+	.pickup-exchange .find-location label { 
+		margin-right: 1em;
+		color: #fff;
+		font-weight: 500; }
+
+.pickup-exchange .find-location input { 
+    width: auto; 
+    min-width: 190px; }
+
+/* ==========================
+   Map Section
+   ========================== */
+
+.page-header { display: none; }
+
+.stores_details_map_container {
+	overflow: hidden;
+	margin: 2em; }
+
+.stores_details_map_info { 
+	display: inline-block;
+	width: 100%; }
+
+	.stores_details_map_info_distance select { 
+	    width: auto;
+	    border: 1px solid #ccc; }
+
+.stores_details_map { margin-bottom: 0; }
+
+.stores_locations_details_results legend {
+	text-align: center; }
+
+.stores_map_address .address ul { 
+	width: 96%;
+	padding: 4% 2% 0; }
+
+.stores_map_address .address ul:nth-of-type(even) {
+	border-top: 1px dotted #ccc;
+	background: #F6F7F8; }
+
+.stores_map_address .address ul li { 
+	display: inline-block;
+	width: 45%;
+	margin-bottom: 1em;
+	vertical-align: top; }
+
+.stores_map_address .address ul li ul li { display: block; }
+
+
+.stores_map_address .address ul li ul li { width: 100%; }
+
+.stores_map_address {
+	height: 400px;
+	margin-right: 5px; }
+
+address { font-style: normal; }
+
+.stores_map_address > div {
+	margin: 10px 0 40px;; }
+
+.stores_location_details {
+	float: left;
+	height: 555px; }
+	
+	.search_results {
+		width: 92%;
+		margin-bottom: 2em;
+		padding: 4%;
+		background: #f6f7f8;
+		text-align: center; }
+	
+.stores_map { 
+	float: right;
+	height: 555px; }
+
+#map-canvas {
+    margin: 0 0 5px;
+    padding: 0;
+    height: 100%;
+    width: 100%; }
+
+
+/* ==========================
+   Legend
+   ========================== */
+
+.stores_locations_details_legend {
+	display: inline-block;
+	margin-bottom: 1em;
+	border: 1px solid #ccc;
+	background: #f6f6f6; }
+
+	.stores_locations_details_legend > div {
+		padding: .5em; }
+
+.stores_locations_details_legend .legend_icons li { line-height: 2; }
+
+	.stores_locations_details_legend .legend_note { background: #d4d4d4; }
+	
+.stores_locations_details_results ul {
+	margin-bottom: 0;
+	padding: .5em; }
+
+ol li { list-style: none; }
+
+	.stores_locations_details_results ol > li { padding: .5em; }
+
+	.stores_locations_details_results .two_column_list > li {
+    	margin-bottom: 0.5em; }
+
+		.stores_locations_details_results ol > li:nth-of-type(even) {
+    		background: #f2f7fb;	 }
+
+.stores_locations_details_results ol { padding-left: 0; }
+
+.map-stores.twc-box-column { padding: 0; }
+
+span.flag { 
+	background: #4F799E;
+	cursor: default; }
+
+.map-stores .btn.flag { padding: .375em 1em; }
+
+.map-stores div.flag { padding: 1em 2em; }
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+ }
+
+/* Webkit: Chrome/Safari */ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+ }
+
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+/* ==========================
+   33/67
+   ========================== */
+   
+	[class*='twc-col2_3367-c'],
+	.stores_details_map_container [class*='twc-col2_3367-c'] { 
+		width: 100%; 
+		border-left: 0; }
+
+	.locate-stores .twc-col2_3367-c1 {
+		border-left: 0; }		
+
+/* ==========================
+   Legend
+   ========================== */
+
+[class*='twc-col2_5050-c'] { width: 48.75% }
+
+.stores_locations_details_legend {
+	width: 100%;
+	margin: 1em 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	   		box-sizing: border-box; }
+
+.locate-stores-filters legend {
+	text-align: center; }
+
+.locate-stores-filters legend:after {
+	content: '\f106';
+	padding-left: 5px;
+	font-family: 'FontAwesome',sans-serif; }
+
+	.locate-stores-filters legend.rotate_chevron:after {
+		content: '\f107'; }
+		
+
+/* ==========================
+   Search Section
+   ========================== */
+
+.twc-header span.h1,
+.twc-header span.h2 { 
+	font-size: 22px;
+	font-size: 2.2rem; }
+
+
+.locate-stores-filters .submit { display: none; }
+
+.mobile-filters-options { 
+	display: block; 
+	margin: 1em 0;
+	overflow: auto; }
+
+	.mobile-filters-options button { display: block; }
+
+.stores-find-me { 
+	width: 100%;
+	padding: 1em;
+	border-right: 0; }
+  
+	.stores-find-me .stores-search-input-wrap { 
+		width: 96%;
+		margin-top: 1em;
+		margin-bottom: 0;
+		padding: 2%; }
+		  
+	.stores-find-me .stores-search-input-wrap input#stores-search { 
+		width: 75%; }
+	
+	.stores-find-me .stores-search-input-wrap .twc-blue-button { 
+		float: right;
+		width: 15%;
+		max-width: 25px;
+		min-width: 40px; }
+		
+		.stores-find-me .stores-search-input-wrap .twc-blue-button span { display: none; }
+  	
+  	.twc-blue-button.twc-icon-screenshot:after {
+		padding-left: 0; }
+	
+	.stores-find-me .stores-search-input-wrap .twc-blank-button { display: none; }
+
+.pickup-exchange .find-location input {
+    width: 45%;
+    margin-top: 1em; }
+
+/* ==========================
+   Map Section
+   ========================== */
+
+.page-header { display: block; }
+
+.stores_details_map_container {
+	margin: 1em; }
+	
+/* ==========================
+	Tabs
+   ========================== */ 
+
+.tabs { 
+	display: table;
+	width: 100%;
+	border-radius: 3px; }
+	
+.tabs ul { display: table-row; }
+	
+.tabs li { 
+	display: table-cell;
+	position: relative; 
+	width: 50%;
+	text-align: center;
+	background: #517999;
+	color: #fff;
+	cursor: pointer;
+    font-variant: small-caps; }
+
+	.tabs li a {
+		display: inline-block;
+		position: relative;
+		padding: 10px 0;
+		font-family: 'TWC Round Book',Arial,Sans-Serif;
+		font-weight: normal;
+		text-decoration: none;
+		color: #fff; }
+
+	.tabs li:first-child {
+		border-radius: 3px 0 0 0; }
+	
+	.tabs li:last-child {
+		border-radius: 0 3px 0 0; }
+	
+	.tabs li.active {
+		background: #fff;
+		color: #222; }
+	
+		.tabs li.active a {
+			color: #222; }
+
+.stores_list_tab:before {
+	content: "\f0c9"; 
+	padding-right: 8px;
+	font-family: 'FontAwesome', sans-serif; }
+
+.stores_map_tab:before {
+	content: "\f0ac"; 
+	padding-right: 8px;
+	font-family: 'FontAwesome', sans-serif; }
+
+.stores_location_details { 
+	display: none;
+	height: auto;
+	overflow: auto;  }
+
+	.stores_legend_list {
+		border-right: none; }
+	
+		.stores_location_details h5 {
+			width: 100%; }
+	
+	.stores_map_address {
+		overflow: auto;
+		height: auto; }
+	
+		.stores_map_address .address ul {
+			width: 92%;
+			padding: 4%; }
+	
+.back_to_results_button { display: none; }
+
+#map-canvas { width: 100%; }
+
+/* ==========================
+   Legend
+   ========================== */
+   	
+	.stores_legend h4 {
+		line-height: 2; }
+	
+		.stores_legend h4:after {
+			content: '\f106';
+			padding-left: 5px;
+			font-family: 'FontAwesome',sans-serif; }
+		
+			.stores_legend.rotate_chevron h4:after {
+				content: '\f107';
+			}
+		
+	.stores_legend_banner ul { 
+		width: 96%;
+		padding: 0 2%; }
+	
+		.stores_legend_banner ul:nth-of-type(even) {
+			margin-left: 10px; }
+
+		.stores_legend_banner li { 
+			width: 46%;
+			vertical-align: top; }
+	
+			.stores_legend_banner li:before { float: left; }
+
+  .stores_banner { display: none; }
+
+/* ==========================
+   Connect Easily Button
+   ========================== */
+
+.stores_connect_easily img {
+	display: block;
+	margin: 0 auto; }
+
+.twc-container.stores_instructions_container {
+	width: 100%;
+	padding: 0; }
+ 
+.stores_instructions > div > .stores_resources { 
+	width: 100%;
+	min-height: 0;
+	padding: 0;
+	margin-bottom: 2em;
+	background: none;
+	border-left: none; }
+
+  	.stores_instructions [class*='stores_']:nth-of-type(4) {
+		background: none; }
+  	
+  	.stores_instructions > div > .stores_connect_easily {
+  		display: block;
+  		min-height: 0;
+	  	width: 100%;
+	  	margin-bottom: 2em;
+	  	padding: 0;
+	  	background: transparent; }
+
+	.stores_instructions {
+		margin-bottom: 0;
+		background-color: transparent;
+		background-image: none;
+		border-radius: none;
+		-webkit-box-shadow: none;
+		   -moz-box-shadow: none;
+		   		box-shadow: none; }
+
+.stores_signup,
+.stores_download,
+.stores_guest {
+	display: none; }
+
+.stores_resources h5 {
+	display: none; }
+  	
+  	.stores_resources > span { display: none; }
+  	
+  	.stores_resources ul { width: 100%; }
+  	
+	  	.stores_resources li {
+	  		float: left;
+	  		width: 50%;
+		  	margin: 0;
+	        padding: 15px 4%;
+	        background: #eeeeef;
+	        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZGRmZTIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	        background: -moz-linear-gradient(top,  #eeeeef 0%, #dddfe2 100%);
+	        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeef), color-stop(100%,#dddfe2));
+	        background: -webkit-linear-gradient(top,  #eeeeef 0%,#dddfe2 100%);
+	        background: -o-linear-gradient(top,  #eeeeef 0%,#dddfe2 100%);
+	        background: -ms-linear-gradient(top,  #eeeeef 0%,#dddfe2 100%);
+	        background: linear-gradient(to bottom,  #eeeeef 0%,#dddfe2 100%);
+	        -webkit-box-sizing: border-box;
+	           -moz-box-sizing: border-box;
+			   		box-sizing: border-box;
+	        font-family: arial, sans-serif;
+	        font-size: 14px;
+	        font-size: 1.4rem;
+	        font-weight: 700;
+	        color: #333;
+	        text-align: center; }
+	  	
+	  		.stores_resources li:nth-of-type(even) {
+		  		border-left: 1px solid #ccc; }
+	  	
+	  		.stores_resources li a {
+	  			font-family: 'TWC Round Book',Arial,Sans-Serif;
+	  			font-size: 20px;
+	  			font-size: 2rem;
+	  			font-weight: 100;
+	  			color: #222; }
+  	
+			  	.stores_resources li a.read-more:after {
+			  		display: none; }
+  
+.stores_places { display: none; }
+  
+.stores_support { 
+	display: block;
+	margin-bottom: 2em;  }
+  
+  	.stores_support h6 {
+  		color: #222;
+  		font-size: 16px;
+  		font-size: 1.6rem;
+  		text-align: center; }
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Theme
+   ========================================================================== */	
+ } /* End Tablet Breakpoint */
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+/* ==========================
+   25/50/25
+   ========================== */
+   
+	.locate-stores [class*='twc-col3_255025-c'] { 
+		width: 100%;
+		border-right: 0; }
+
+/* ==========================
+   Search Section
+   ========================== */
+
+.pickup-exchange li { display: block; }
+
+  .stores-find-me .stores-search-input-wrap input#stores-search { 
+  	 width: 65%; }
+	
+.stores_banner { display: none; }
+
+.search_results { 
+	margin-bottom: 1em;
+	text-align: left; }
+
+.filter-section-payment li,
+.filter-section-office li { 
+    display: inline-block;
+    margin-right: 4%; }
+
+.pickup-exchange .find-location input { 
+	width: 100%;
+	margin-bottom: 1em;  }
+
+/* ==========================
+   Map Section
+   ========================== */
+  
+.stores_map {
+	height: 300px; }
+
+	.stores_map_address .address ul ul {
+		width: 100%;
+		padding: 0; }
+
+.stores_map_address .address ul li { 
+	display: block;
+	width: 100%;
+	margin-bottom: 0; }
+
+[class*="_column_"] {
+    -moz-column-count: 2; }
+
+.locate-stores-filters .twc-col3_255025 { 
+	padding: 0; }
+
+.locate-stores-filters [class*='twc-col3_255025-c']:nth-of-type(odd) {
+	background: #eaf1f8;
+	border-bottom: 1px dotted #ccc; }
+
+.locate-stores-filters [class*='twc-col3_255025-c']:nth-of-type(even) {
+	background: #f5f9fc;
+	border-bottom: 1px dotted #ccc; }
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+   
+   		 } /* End SmartPhone Breakpoint */ 
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+    

@@ -1,0 +1,508 @@
+/* ==========================================================================
+   CSS code for Wireframe Kit 
+   
+   Author: Max Quattromani
+   Version: 1.0 - Updated: 4/27/13
+   ========================================================================== */
+   
+/*
+ 
+ * Base
+ 		* Colors
+ 		* Defaults
+ 
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+/* ==========================================================================
+   Base: Colors
+   ========================================================================== */
+
+/* ==========================================================================
+   Base: Defaults
+   ========================================================================== */
+
+#wf a {
+	color: #333;
+}
+
+/* ==========================
+	HTML5 Display Definitions
+   ========================== */
+
+/* ==========================
+	Base Stucture
+   ========================== */
+
+/* ==========================================================================
+   Base: Font-Face
+   ========================================================================== */
+
+/* ==========================
+	Links
+   ========================== */
+
+a.contReading {
+	position: absolute;
+	bottom: 10px;
+}
+
+a.contReading:after {
+	padding-left: 5px;
+	font-family: 'FontAwesome', sans-serif;
+	font-size: inherit;
+	font-weight: 100;
+	content:'\f105';
+}
+
+/* ==========================
+	Headers
+   ========================== */
+
+pre {
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+ 
+
+/* ==========================
+	Images
+   ========================== */
+
+#wf img {
+	display: block;
+	margin: 0 10px 10px 0;
+}
+
+	#wf img.large {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	#wf img.snippet {
+		width: 150px;
+		margin: 0 10px 0 0;
+	}
+
+	#wf img.article {
+		width: 250px;
+	}
+
+/* ==========================
+	Lists
+   ========================== */
+
+#wf ul { margin: 10px 0; }
+
+#wf li {
+	background: none repeat scroll 0 0 transparent;
+    border-bottom: 1px dotted #CCCCCC;
+    display: block;
+    padding: 7px 0;
+    font-weight: 900;
+    color: #3376B2;
+}
+
+/* ==========================
+	Buttons
+   ========================== */
+
+.twc-blue-button {
+	background-color: #ababab;
+	background-image: none;
+	background-size: 100% auto;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+	color: #fff;
+	font-family: 'TWC Round Light',Arial,Sans-Serif;
+	font-size: 18px;
+	font-size: 1.8rem;
+	cursor: pointer;
+	min-width: 125px;
+}
+
+	.twc-blue-button:hover {
+		background-color: #ababab;
+		background-image: none;
+	}
+
+
+/* ==========================
+	Repeatable Helper Classes
+   ========================== */
+.desktop {
+	display: inline-block;
+	width: 100%;
+}
+.tablet,
+.mobile {
+	display: none;
+}
+
+#wf .internal {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 2%;
+	background-color: #387AB4;
+	font-family: 'TWC Round Book',Arial,Sans-Serif;
+	color: #d4d5d6;
+	text-align: center;	
+}
+
+#all .internal {
+	font-size: 38px;
+	font-size: 3.8rem;
+}
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+/*
+[class*='1_1'] {
+	zoom: 1;
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+[class*='twc-col2_7624-c0'] {
+	zoom: 1;
+	filter: alpha(opacity=76);
+	opacity: .76;
+}
+
+	[class*='twc-col2_7624-c1'] {
+		zoom: 1;
+		filter: alpha(opacity=24);
+		opacity: .24;
+	}
+
+
+[class*='twc-col2_7525-c0'] {
+	zoom: 1;
+	filter: alpha(opacity=75);
+	opacity: .75;
+}
+
+	[class*='twc-col2_7525-c1'] {
+		zoom: 1;
+		filter: alpha(opacity=25);
+		opacity: .25;
+	}
+
+
+[class*='twc-col2_6733-c0'] {
+	zoom: 1;
+	filter: alpha(opacity=67);
+	opacity: .67;
+}
+
+	[class*='twc-col2_6733-c1'] {
+		zoom: 1;
+		filter: alpha(opacity=33);
+		opacity: .33;
+	}
+	
+[class*='twc-col2_6040-c0'] {
+	zoom: 1;
+	filter: alpha(opacity=60);
+	opacity: .60;
+}
+
+	[class*='twc-col2_6040-c1'] {
+		zoom: 1;
+		filter: alpha(opacity=40);
+		opacity: .40;
+	}
+
+[class*='twc-col2_5545-c0'] {
+	zoom: 1;
+	filter: alpha(opacity=55);
+	opacity: .55;
+}
+
+	[class*='twc-col2_5545-c1'] {
+		zoom: 1;
+		filter: alpha(opacity=55);
+		opacity: .45;
+	}
+	
+[class*='twc-col2_5050-c'] {
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: .50;
+}
+
+[class*='twc-col3_502525-c'] {
+	zoom: 1;
+	filter: alpha(opacity=25);
+	opacity: .25;
+}
+	
+	[class*='twc-col3_502525-c0'] {
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: .50;
+}
+
+[class*='twc-col2_4555-c0'] {
+	zoom: 1;
+	filter: alpha(opacity=45);
+	opacity: .45;
+}
+
+	[class*='twc-col2_4555-c1'] {
+		zoom: 1;
+		filter: alpha(opacity=55);
+		opacity: .55;
+	}
+	
+[class*='twc-col2_4060-c0'] {
+	zoom: 1;
+	filter: alpha(opacity=40);
+	opacity: .40;
+}
+
+	[class*='twc-col2_4060-c1'] {
+		zoom: 1;
+		filter: alpha(opacity=60);
+		opacity: .60;
+	}
+	
+[class*='twc-col2_3367-c0'] {
+	zoom: 1;
+	filter: alpha(opacity=33);
+	opacity: .33;
+}
+
+	[class*='twc-col2_3367-c1'] {
+		zoom: 1;
+		filter: alpha(opacity=67);
+		opacity: .67;
+	}
+
+[class*='twc-col3_333333-c'] {
+	zoom: 1;
+	filter: alpha(opacity=33);
+	opacity: .33;
+}
+	
+[class*='twc-col3_252550-c'] {
+	zoom: 1;
+	filter: alpha(opacity=25);
+	opacity: .25;
+}
+	
+	[class*='twc-col3_252550-c2'] {
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: .50;
+}
+
+[class*='twc-col2_2575-c0'] {
+	zoom: 1;
+	filter: alpha(opacity=25);
+	opacity: .25;
+}
+
+	[class*='twc-col2_2575-c1'] {
+		zoom: 1;
+		filter: alpha(opacity=75);
+		opacity: .75;
+	}
+
+[class*='twc-col4_4-c'] {
+	zoom: 1;
+	filter: alpha(opacity=25);
+	opacity: .25;
+}
+	
+[class*='twc-col5_5-c'] {
+	zoom: 1;
+	filter: alpha(opacity=20);
+	opacity: .20;
+}
+
+[class*='twc-col3_175617-c'] {
+	zoom: 1;
+	filter: alpha(opacity=17);
+	opacity: .17;
+}
+
+	[class*='twc-col3_175617-c1'] {
+		zoom: 1;
+		filter: alpha(opacity=56);
+		opacity: .56;
+	}
+
+[class*='twc-col6_6-c'] {
+	zoom: 1;
+	filter: alpha(opacity=15);
+	opacity: .15;
+}
+*/
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */
+   
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+}
+	
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+/* make buttons play nice in IE */
+
+
+/* scale images in IE7 more attractively */
+
+
+
+/* ie6 (.ie6) */
+
+
+/* ie7 (.ie7) */
+
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+
+/* ==========================
+	Base
+   ========================== */
+.desktop,
+.mobile { display: none; }
+.tablet { 
+	display: inline-block; 
+	width: 100%;
+} 
+/* ==========================
+	Layout
+   ========================== */
+	
+	.readMore {
+		float: right;
+	}
+
+
+/* ==========================
+	Module
+   ========================== */
+   
+/* ==========================
+	State
+   ========================== */
+   
+/* ==========================
+	Theme
+   ========================== */	
+
+}
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+/* ==========================
+	Base
+   ========================== */
+.tablet { display: none; }
+.mobile { 
+	display: inline-block; 
+	width: 100%;
+}
+   
+/* ==========================
+	Layout
+   ========================== */	
+
+   #wf [class*='twc-col'] {
+	   width: 100%;
+	   margin-left: 0;
+   }
+  
+  
+
+
+/* ==========================
+	Module
+   ========================== */
+
+	figure {
+		width: 100%;
+	}
+
+	#wf img.snippet,
+	#wf img.article {
+		width: 100%;
+		margin: 0 10px 10px 0;
+		-webkit-background-size: cover;
+		   -moz-background-size: cover;
+		   		background-size: cover;
+	}
+	
+	#wf li {
+		font-size: 16px;
+		font-size: 1.6rem;
+	}
+
+   
+/* ==========================
+	State
+   ========================== */
+   
+/* ==========================
+	Theme
+   ========================== */
+   		
+}
+
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+    

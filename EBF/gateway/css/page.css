@@ -1,0 +1,464 @@
+/* ==========================================================================
+   CSS code for EBF Gateway
+   
+   Author: Max Quattromani
+   Version: 1.0 - Updated: 6/12/13
+   ========================================================================== */
+   
+/*
+
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+ 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* layout styles are being handled by base main.css */
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+/* ==========================
+	Gateway - Shared
+   ========================== */ 
+   
+body#gateway {
+	background-image: url(http://maxquattromani.com/TWC/EBF/gateway/images/rapunzel.png), background-color: #53595d;
+	background-image: url(http://maxquattromani.com/TWC/EBF/gateway/images/rapunzel.png), -webkit-gradient(linear, left top, left bottom,  color-stop(0%, #1e2328), color-stop(5%, #192127), color-stop(10%, #192127), color-stop(15%, #13181d), color-stop(20%, #13181d), color-stop(25%, #192127), color-stop(30%, #2a3237), color-stop(35%, #4a4e53), color-stop(40%, #7c8185), color-stop(45%, #aaaeb1), color-stop(50%, #d4d7d9), color-stop(100%, #f2f4f6));
+	background-image: url(http://maxquattromani.com/TWC/EBF/gateway/images/rapunzel.png), -webkit-linear-gradient(270deg,  #1e2328 0%, #192127 5%, #192127 10%, #13181d 15%, #13181d 20%, #192127 25%, #2a3237 30%, #4a4e53 35%, #7c8185 40%, #aaaeb1 45%, #d4d7d9 50%, #f2f4f6 100%);
+	background-image: url(http://maxquattromani.com/TWC/EBF/gateway/images/rapunzel.png), -moz-linear-gradient(270deg,  #1e2328 0%, #192127 5%, #192127 10%, #13181d 15%, #13181d 20%, #192127 25%, #2a3237 30%, #4a4e53 35%, #7c8185 40%, #aaaeb1 45%, #d4d7d9 50%, #f2f4f6 100%);
+	background-image: url(http://maxquattromani.com/TWC/EBF/gateway/images/rapunzel.png), -o-linear-gradient(270deg,  #1e2328 0%, #192127 5%, #192127 10%, #13181d 15%, #13181d 20%, #192127 25%, #2a3237 30%, #4a4e53 35%, #7c8185 40%, #aaaeb1 45%, #d4d7d9 50%, #f2f4f6 100%);
+	background-image: url(http://maxquattromani.com/TWC/EBF/gateway/images/rapunzel.png), -ms-linear-gradient(270deg,  #1e2328 0%, #192127 5%, #192127 10%, #13181d 15%, #13181d 20%, #192127 25%, #2a3237 30%, #4a4e53 35%, #7c8185 40%, #aaaeb1 45%, #d4d7d9 50%, #f2f4f6 100%);
+	background-image: url(http://maxquattromani.com/TWC/EBF/gateway/images/rapunzel.png),linear-gradient(to bottom,  #1e2328 0%, #192127 5%, #192127 10%, #13181d 15%, #13181d 20%, #192127 25%, #2a3237 30%, #4a4e53 35%, #7c8185 40%, #aaaeb1 45%, #d4d7d9 50%, #f2f4f6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#192127', EndColorStr='#dfe2e4');
+    background-repeat: no-repeat;
+	background-position: 50% 0; 
+	background-size: contain;
+}
+
+#gateway .gateway-container {
+	max-width: 720px; 
+	width: 73.5%;
+	margin: 0 auto;
+}
+
+#gateway h1 { 
+	margin: 1em 0;
+	color: #fff;
+	text-shadow: 0 0 3px rgba(0,0,0,.3); 
+}
+
+#gateway .gateway {
+	position: relative;
+	border-top: 1px solid #777;
+	border-radius: 0 0 3px 3px;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2NjY2NiIgc3RvcC1vcGFjaXR5PSIwLjg1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC44NSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, rgba(102,102,102,.975) 0%, rgba(0,0,0,.975) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(102,102,102,.975)), color-stop(100%,rgba(0,0,0,.975)));
+	background: -webkit-linear-gradient(top, rgba(102,102,102,.975) 0%,rgba(0,0,0,.975) 100%);
+	background: -o-linear-gradient(top, rgba(102,102,102,.975) 0%,rgba(0,0,0,.975) 100%);
+	background: -ms-linear-gradient(top, rgba(102,102,102,.975) 0%,rgba(0,0,0,.975) 100%);
+	background: linear-gradient(to bottom, rgba(102,102,102,.975) 0%,rgba(0,0,0,.975) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9666666', endColorstr='#d9000000',GradientType=0 );
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	color: #fff;
+	z-index: 99;
+}
+
+	#gateway .gateway:before {
+	    position: absolute;
+	    bottom: 0;
+	    left: 2%;
+	    width: 100%;
+	    margin: 0 auto;
+	    content: '';
+	    background: rgba(0,0,0,1);
+	    box-shadow: 0 0 15px 5px #222;
+	    z-index: 0;
+	}
+
+	#gateway .gateway:after {
+	    position: absolute;
+	    left: -2%;
+	    bottom: 0;
+	    width: 100%;
+	    margin: 0 auto;
+	    content: '';
+	    box-shadow: 0 0 15px 5px #222;
+	    z-index: 0;
+	}
+
+#gateway .gateway-headline { 
+	padding: 30px 10%;
+	border-bottom: 1px solid #555;
+}
+
+#gateway .gateway-form .formitem {
+	width: 100%;
+}
+
+#gateway .gateway-form .formitem.left {
+  	float: left;
+  	width: 48%;
+}
+
+#gateway .gateway-form .formitem.right {
+	float: right;
+  	width: 48%;
+}
+
+#gateway .gateway-form .formitem.left select {
+	width: 100%;
+	background-color: #ffffff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(226, 226, 226)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(226, 226, 226));
+	background-image: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(226, 226, 226));
+	background-image: -o-linear-gradient(top, rgb(255, 255, 255), rgb(226, 226, 226));
+	background-image: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(226, 226, 226));
+	background-image: linear-gradient(top, rgb(255, 255, 255), rgb(226, 226, 226));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#e2e2e2');
+}
+
+#gateway .gateway-form input { width: 96%; }
+
+#gateway .gateway-form .input-section {
+	overflow: hidden;
+	background: rgba(0,0,0,.25);
+}
+
+		#gateway .gateway-form .formrow {
+			overflow: auto;
+			margin-bottom: 30px;
+		}
+		
+		#gateway .gateway-form form .formrow:last-child {
+			margin-bottom: 0;
+		}
+
+#gateway hr {
+	background: rgba(88, 88, 88);
+	background-image: none; 
+	border-top: 1px solid rgb(0,0,0);
+	border-bottom: 1px solid rgb(53, 52, 53);
+}
+
+/* ==========================
+	Tabs
+   ========================== */ 
+
+#gateway .tabs { 
+	display: table;
+	width: 100%;
+	border-radius: 3px;
+	border-top: 1px solid #999; 
+}
+	
+#gateway .tabs ul { display: table-row; }
+	
+#gateway .tabs li { 
+	display: table-cell;
+	position: relative; 
+	width: 50%;
+	text-align: center;
+	background-color: #747474;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(116, 116, 116,.75)), to(rgba(133, 133, 133,.75)));
+	background-image: -webkit-linear-gradient(top, rgba(116, 116, 116,.75), rgba(133, 133, 133,.75));
+	background-image: -moz-linear-gradient(top, rgba(116, 116, 116,.75), rgba(133, 133, 133,.75));
+	background-image: -o-linear-gradient(top, rgba(116, 116, 116,.75), rgba(133, 133, 133,.75));
+	background-image: -ms-linear-gradient(top, rgba(116, 116, 116,.75), rgba(133, 133, 133,.75));
+	background-image: linear-gradient(top, rgba(116, 116, 116,.75), rgba(133, 133, 133,.75));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#747474', EndColorStr='#858585');
+	-webkit-box-shadow: 0 -3px 11px 2px rgba(0, 0, 0, 0.1) inset;
+	   -moz-box-shadow: 0 -3px 11px 2px rgba(0, 0, 0, 0.1) inset;
+	   		box-shadow: 0 -3px 11px 2px rgba(0, 0, 0, 0.1) inset;
+	color: #fff;
+	cursor: pointer;
+    font-variant: small-caps;
+}
+
+	#gateway .tabs li a {
+		display: inline-block;
+		position: relative;
+		padding: 10px 25px;
+		font-family: 'TWC Round Book',Arial,Sans-Serif;
+		font-weight: normal;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	#gateway .tabs li:first-child {
+		border-radius: 3px 0 0 0;
+	}
+	
+	#gateway .tabs li:last-child {
+		border-radius: 0 3px 0 0;
+	}
+	
+	#gateway .tabs li.active {
+		background-color: #3980b4;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(57, 128, 180, .8)), to(rgba(41, 95, 155, .8)));
+		background-image: -webkit-linear-gradient(top, rgba(57, 128, 180, .8), rgba(41, 95, 155, .8));
+		background-image: -moz-linear-gradient(top, rgba(57, 128, 180, .8), rgba(41, 95, 155, .8));
+		background-image: -o-linear-gradient(top, rgba(57, 128, 180, .8), rgba(41, 95, 155, .8));
+		background-image: -ms-linear-gradient(top, rgba(57, 128, 180, .8), rgba(41, 95, 155, .8));
+		background-image: linear-gradient(top, rgba(57, 128, 180, .8), rgba(41, 95, 155, .8));
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#3980b4', EndColorStr='#295f9b');
+	}
+	
+		#gateway .tabs li.active a:after {
+			position: absolute;
+			content: "";
+			top: 100%;
+			left: 40%;
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent; 
+			border-top: 15px solid rgb(40, 93, 149);
+			z-index: 999;
+		}
+
+/* ==========================
+	New Customer
+   ========================== */ 
+		
+#gateway #buyflow-new .input-section {
+	padding: 30px 20%;
+}
+
+#gateway #buyflow-new .gateway-submit {
+	padding: 30px 20%;
+	border-top: 1px solid #222;
+	background: rgba(0,0,0,.9);
+}
+
+/* ==========================
+	Current Customer
+   ========================== */
+
+#gateway #buyflow-current {
+	display: none;
+}
+
+#gateway #buyflow-current .input-skip_container {
+	overflow: hidden;
+	background: rgba(0,0,0,.25);
+}
+		
+#gateway #buyflow-current .input-section {
+	float: left;
+	width: 30%;
+	padding: 30px 10%;
+	background: rgba(255,255,255,.1);
+	outline: #333 1px solid;
+}
+
+#gateway #buyflow-current .skip-section {
+	float: right;
+	width: 30%;
+	padding: 30px 10%;
+}
+
+#gateway label.h5 { line-height: 2; }
+
+#gateway input[type=checkbox] {
+	vertical-align: baseline;
+	width: auto;
+	margin-right: 5px;
+}
+
+#gateway .twc-blue-button.active {
+	width: 90%;
+}
+		
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+#gateway .gateway-container { 
+	width: 94%;
+	margin: 3% auto;
+}
+
+#gateway .twc-content { background-position: 20% center; }
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+/* ==========================
+	New Customer
+   ========================== */
+
+#gateway #buyflow-new .input-section {
+	padding: 30px 10%;
+}
+ 
+#gateway #buyflow-new .gateway-submit {
+	padding: 30px 10%;
+} 
+
+/* ==========================
+	Current Customer
+   ========================== */
+   
+#gateway #buyflow-current .input-section {
+	width: 40%;
+	padding: 20px 5%;
+	outline: #333 1px solid;
+}
+ 
+#gateway #buyflow-current .skip-section {
+	width: 40%;
+	padding: 20px 5%;
+} 
+   
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */	
+
+} /* End Tablet Breakpoint */
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */ 
+   
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+	#gateway .gateway-form .formitem.left input, 
+	#gateway .gateway-form .formitem.left input {
+		padding: 8px 2%;
+	}
+
+#gateway .gateway-form .formrow { 
+	width: 100%;
+	margin-bottom: 0;
+}
+
+#gateway .gateway-form .formitem,
+#gateway .gateway-form .formitem.left,
+#gateway .gateway-form .formitem.right {
+	display: inline-block;
+	width: 100%;
+	float: none;
+	margin: 15px 0;
+}
+
+/* ==========================
+	New Customer
+   ========================== */
+
+#gateway .gateway-headline { 
+	padding: 20px 5%;
+}
+  
+#gateway #new .gateway-form .input-section { padding: 20px 5%; }
+
+#gateway #new .gateway-form .gateway-submit { padding: 20px 5%; }
+
+/* ==========================
+	Current Customer
+   ========================== */
+
+#gateway #buyflow-current .input-section {
+	float: none;
+	width: 90%;
+	padding: 20px 5%;
+}
+
+#gateway #buyflow-current .skip-section {
+	float: none;
+	width: 90%;
+	padding: 20px 5%;
+}
+
+#gateway .formitem a.twc-blue-button {
+	width: 90%;
+}
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+   		
+} /* End SmartPhone Breakpoint */
+  
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+    

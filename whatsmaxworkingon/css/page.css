@@ -1,0 +1,406 @@
+/* ==========================================================================
+   CSS code for Wireframe Kit 
+   
+   Author: Max Quattromani
+   Version: 1.0 - Updated: 4/27/13
+   ========================================================================== */
+   
+/*
+ 
+ * Base
+ 		* Colors
+ 		* Defaults
+ 
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+/* ==========================================================================
+   Base: Colors
+   ========================================================================== */
+
+/* ==========================================================================
+   Base: Defaults
+   ========================================================================== */
+
+/* ==========================
+	HTML5 Display Definitions
+   ========================== */
+
+/* ==========================
+	Base Stucture
+   ========================== */
+
+/* ==========================================================================
+   Base: Font-Face
+   ========================================================================== */
+
+/* ==========================
+	Links
+   ========================== */
+
+a.contReading {
+	position: absolute;
+	bottom: 10px;
+}
+
+a.contReading:after {
+	padding-left: 5px;
+	font-family: 'FontAwesome', sans-serif;
+	font-size: inherit;
+	font-weight: 100;
+	content:'\f105';
+}
+
+/* ==========================
+	Headers
+   ========================== */
+
+
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.row {
+	clear: both;
+}
+
+.col {
+	border: 0;
+	float: left;
+	margin-left: 1.5%;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	   		box-sizing: border-box;
+	-webkit-background-clip: padding-box!important;
+	   -moz-background-clip: padding-box!important;
+	   		background-clip: padding-box!important;
+}
+
+.row .col:first-child {
+	margin-left: 0;
+}
+
+#wf [class*='span_'] {
+	position: relative;
+	margin-bottom: 20px;
+	padding: 20px;
+	-webkit-border-radius:3 px;
+	   -moz-border-radius: 3px;
+	   		border-radius: 3px;
+	-webkit-box-shadow: inset 0 0 1px #ababab;
+	   -moz-box-shadow: inset 0 0 1px #ababab;
+	   		box-shadow: inset 0 0 1px #ababab;
+	background: #fff;
+}
+
+#wf article {
+
+}
+
+#wf aside[class*='span_'] {
+	padding: 0 20px;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	   		box-shadow: none;
+	background: none;
+}
+
+.span_3 {
+	width: 23.875%;
+}
+
+.span_4 {
+	width: 32.3333333333%;
+}
+
+.span_5 {
+	width:39.9166666667%;
+}
+
+.span_6 {
+	width:48.5%;
+}
+
+.span_7 {
+	width:57.0833333333%;
+}
+
+.span_8 {
+	width:65.6666666667%;
+}
+
+.span_9 {
+	width:74.25%;
+}
+
+.span_12 {
+	margin-left: 0;
+	width: 100%;
+}
+
+#wf .cap {
+	position: absolute;
+	top: 0;
+	width: 96%;
+	background: #333;
+	text-align: center;
+	padding: 10px 2%;
+	-webkit-border-radius: 3px 3px 0 0;
+	   -moz-border-radius: 3px 3px 0 0;
+	   		border-radius: 3px 3px 0 0;
+}
+
+	#wf .cap h5 {
+		margin: .3em;
+	}
+
+/* ==========================
+	Images
+   ========================== */
+
+#wf img {
+	display: block;
+	margin: 0 10px 10px 0;
+}
+
+	#wf img.large {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	#wf img.snippet {
+		width: 150px;
+		margin: 0 10px 0 0;
+	}
+
+	#wf img.article {
+		width: 250px;
+	}
+
+figure {
+	position: relative;	
+	float: left;
+}
+
+	figcaption {
+		width: 90%;
+		font-size: 14px;
+		font-size: 1.4rem;
+		font-style: italic;
+	}
+
+/* ==========================
+	Lists
+   ========================== */
+
+#wf ul { margin: 1em 0; }
+
+#wf li {
+	background: none repeat scroll 0 0 transparent;
+    border-bottom: 1px dotted #CCCCCC;
+    display: block;
+    padding: 7px 3%;
+    font-weight: 900;
+    color: #3376B2;
+}
+
+/* ==========================
+	Buttons
+   ========================== */
+
+.twc-blue-button {
+	background-color: #ababab;
+	background-image: none;
+	background-size: 100% auto;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+	color: #fff;
+	font-family: 'TWC Round Light',Arial,Sans-Serif;
+	font-size: 18px;
+	font-size: 1.8rem;
+	cursor: pointer;
+	min-width: 125px;
+}
+
+	.twc-blue-button:hover {
+		background-color: #ababab;
+		background-image: none;
+	}
+
+
+/* ==========================
+	Repeatable Helper Classes
+   ========================== */
+
+#wf .internal {
+	margin-bottom: 0;
+	background: grey;
+	color: #fff;	
+}
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */
+   
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+}
+	
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+/* make buttons play nice in IE */
+
+
+/* scale images in IE7 more attractively */
+
+
+
+/* ie6 (.ie6) */
+
+
+/* ie7 (.ie7) */
+
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+
+/* ==========================
+	Base
+   ========================== */
+ 
+/* ==========================
+	Layout
+   ========================== */
+
+	#wf [class*='span_'] {
+		width: 100%;
+	}
+	
+	.col {
+		margin-left: 0;
+		height: auto !important;
+	}
+	
+	#wf [class*='internal'] {
+		margin-top: 20px;
+	}
+	
+	#wf [class*='internal']:first-child {
+		margin: 0;
+	}
+	
+	.readMore {
+		float: right;
+	}
+
+
+/* ==========================
+	Module
+   ========================== */
+   
+/* ==========================
+	State
+   ========================== */
+   
+/* ==========================
+	Theme
+   ========================== */	
+
+}
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+/* ==========================
+	Base
+   ========================== */
+   
+/* ==========================
+	Layout
+   ========================== */	
+
+/* ==========================
+	Module
+   ========================== */
+
+	figure {
+		width: 100%;
+	}
+
+	#wf img.snippet,
+	#wf img.article {
+		width: 100%;
+		margin: 0 10px 10px 0;
+		-webkit-background-size: cover;
+		   -moz-background-size: cover;
+		   		background-size: cover;
+	}
+	
+	#wf li {
+		font-size: 16px;
+		font-size: 1.6rem;
+	}
+
+   
+/* ==========================
+	State
+   ========================== */
+   
+/* ==========================
+	Theme
+   ========================== */
+   		
+}
+
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+    

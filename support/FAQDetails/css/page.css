@@ -1,0 +1,612 @@
+/* ==========================================================================
+   CSS code for FAQ Details
+   
+   Author: Max Quattromani
+   Version: 1.0.1 - Updated: 5/8/13
+   ========================================================================== */
+   
+/*
+
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+ 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+.twc-box-column li a,
+span.FAQLabel {
+	font: inherit;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* layout styles are being handled by base main.css */
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.faq_container {
+	padding: 20px;
+}
+
+h3.faq-label {
+	font-family: 'TWC Round Book',Arial,Sans-Serif;
+}
+
+p:nth-last-child(1) { margin-bottom: 2em; }
+
+.twc-FAQTopics {
+	position: relative;
+	float: left;
+	width: 21%;
+	padding: 2%;
+	background-color: #487a97;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#487a97), to(#0e4460));
+	background-image: -webkit-linear-gradient(top, #487a97, #0e4460);
+	background-image: -moz-linear-gradient(top, #487a97, #0e4460);
+	background-image: -o-linear-gradient(top, #487a97, #0e4460);
+	background-image: -ms-linear-gradient(top, #487a97, #0e4460);
+	background-image: linear-gradient(top, #487a97, #0e4460);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#487a97', EndColorStr='#0e4460');
+	overflow: hidden;
+}
+
+.twc-topicFAQs {
+	position: relative;
+	float: left;
+	width: 69%;
+	padding: 2% 2% 2% 4%;
+}
+
+	.twc-FAQs h3 {
+		margin: 0 0 10px;
+	}
+	
+		.twc-FAQTopics h3 {
+			color: #fff;
+		}
+		
+span.FAQLabel,
+.twc-FAQTopics ul li,
+.twc-topicFAQs li,
+aside li {
+	padding: 7px 3%;
+	background: none;
+	border-bottom: 1px dotted #ccc;
+	color: #fff;
+}
+
+	aside li {
+		padding: 7px 0;
+	}
+
+	.twc-FAQTopics span.FAQLabel.removeBorder { border-bottom: 1px solid transparent; }
+
+	.twc-FAQTopics span.FAQLabel.twc-last,
+	.twc-FAQTopics ul li.twc-last,
+	.twc-topicFAQs li.twc-last {
+		margin-bottom: 20px;
+		border-bottom: none;
+	}
+
+	.twc-topicFAQs li {
+		padding: 5px 0;
+	}
+	
+		.twc-topicFAQs ul.content div {
+			display: block;
+			background: #f7f7f7;
+			margin-bottom: 10px;
+		}
+	
+		.twc-topicFAQs ul.content div > li {
+			display: table-cell;
+			width: 26.9%;
+			padding: 3%;
+			border-bottom: none;
+		}
+		
+		.twc-topicFAQs ul.content li:nth-of-type(4) {
+			margin-top: 10px;
+		}
+		
+		.twc-topicFAQs li > p {
+			margin-top: 1em;
+			color: #333;
+		}
+		
+
+	span.FAQLabel.active {
+		width: 104%;
+		border-bottom: 1px solid #356d9d;
+		background-color: #ebebeb;
+		background-image: -webkit-gradient(linear, left center, right center, from(#ebebeb), to(#ffffff));
+		background-image: -webkit-linear-gradient(left, #ebebeb, #ffffff);
+		background-image: -moz-linear-gradient(left, #ebebeb, #ffffff);
+		background-image: -o-linear-gradient(left, #ebebeb, #ffffff);
+		background-image: -ms-linear-gradient(left, #ebebeb, #ffffff);
+		background-image: linear-gradient(left, #ebebeb, #ffffff);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#ebebeb', EndColorStr='#ffffff');
+		color: #333;
+	}
+	
+/*
+		.twc-FAQTopics label.active:after {
+			float: right;
+			font-family: 'FontAwesome', sans-serif;
+			font-size: 18px;
+			font-size: 1.8rem;
+			content:'\f105';
+			color: #fff;
+			line-height: 1.2;
+		}
+*/
+
+	.twc-FAQTopics div.content {
+		display: none;
+	}
+
+span.selected {
+	width: 85%;
+	-webkit-box-shadow: inset 0 0 1px 0 #333;
+	   -moz-box-shadow: inset 0 0 1px 0 #333;
+	   		box-shadow: inset 0 0 1px 0 #333;
+	z-index: 99999;
+}
+
+span.selectArrow {
+	width: 15%;
+}
+
+.selectBox {
+	min-height: 50px;
+}
+
+span.selectOption {
+	width: 80%;
+}
+
+div.selectOptions {
+	position: relative;
+	top: 13px;
+	width: 84%;
+	margin-bottom: 15px;
+	overflow: visible;
+}
+
+hr {
+	margin: 20px 0;
+}
+
+.faq-content li {
+	position: relative;
+	left: 3%;
+	width: 97%;
+	font-family: 'TWC Round Light',Arial,Sans-Serif;
+	list-style: disc outside;		
+}
+
+.faq-content ol,
+.faq-content ul {
+	padding-left: 20px;
+}
+
+.faq-content ol li {
+	list-style: decimal;
+	list-style-position: outside;
+}
+
+.answer span,
+.faq-survey span {
+	font-weight: 700;
+}
+
+.faq-survey label {
+	font-weight: 700;
+	line-height: 2.5;
+}
+
+.faq-survey {
+	display: inline-block;
+	position: relative;
+	width: 96%;
+	margin: 20px 0 0;
+	padding: 2%;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	   		border-radius: 3px;
+	background: #f0f3f2;
+}
+
+.faq-survey p {
+	margin: 0;
+}
+
+.faq-survey-right {
+	float: right;
+	display: inline;
+}
+
+.faq-survey input {
+	margin-left: 20px;
+}
+
+button#faq-survey-feedback { margin-left: 2em; }
+
+button#faq-survey-feedback-response {
+	display: none;
+	float: right;
+}
+
+.faq-survey-yes-response,
+.faq-survey-no,
+.faq-survey-no-response {
+	display: none;
+	clear: both;
+}
+
+.faq-survey-no-response p {
+	float: left;
+	width: 75%;
+}
+
+button#faq-survey-feedback-live-chat {
+	float: right;
+	margin-left: 0;
+}
+
+textarea {
+	width: 98%;
+	height: 150px;
+	margin-bottom: 5px;
+}
+
+.twc-col2_7525-c1 h5 { margin-top: 1em; }
+
+.twc-col2_7525-c1 .twc-share-module div.twc-block ul.twc-share li {
+	border-bottom: 0;
+}
+
+.twc-col2_7525-c1 ul li {
+	padding: .5em 0;
+	border-bottom: 1px dotted #e1e1e1;
+}
+
+	.twc-col2_7525-c1 ul li:last-child {
+		border-bottom: 0;
+	}
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Webkit: Chrome/Safari */ 
+
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */
+
+.twc-ie8 section {
+	border: 1px solid #c2c2c2;
+}
+
+
+.twc-ie8 .twc-topicFAQs ul.content li:first-child,
+.twc-ie8 .twc-topicFAQs ul.content li:first-child + li,
+.twc-ie8 .twc-topicFAQs ul.content li:first-child + li + li {
+	display: inline-block;
+	width: 28%;
+	padding: 2%;
+	margin-bottom: 10px;
+	border-bottom: none;
+	vertical-align: top;
+}
+
+.twc-ie8 span.FAQLabel.active,
+.twc-ie8 span.FAQLabel.removeBorder { 
+	border-bottom: none; 
+}
+
+.twc-ie8 .selectBox {
+	min-height: 150px;
+}
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.twc-FAQTopics {
+	width: 92%;
+	padding: 4%;
+	border-right: none;
+	background: #fff;
+}
+
+.twc-FAQTopics h3 {
+	color: #333;
+}
+
+.twc-FAQs ul {
+	margin: 10px 0 20px;
+}
+
+.twc-FAQTopics div.content.mobile {
+		display: block;
+	}
+
+	span.FAQLabel,
+	span.FAQLabel.active {
+		border-bottom: 1px solid #fff;
+		background: #eeeeef;
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZGRmZTIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  #eeeeef 0%, #dddfe2 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeef), color-stop(100%,#dddfe2));
+		background: -webkit-linear-gradient(top,  #eeeeef 0%,#dddfe2 100%);
+		background: -o-linear-gradient(top,  #eeeeef 0%,#dddfe2 100%);
+		background: -ms-linear-gradient(top,  #eeeeef 0%,#dddfe2 100%);
+		background: linear-gradient(to bottom,  #eeeeef 0%,#dddfe2 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', endColorstr='#dddfe2',GradientType=0 );
+		font-size: 18px;
+		font-size: 1.8rem;
+		font-family: 'TWC Round Book',Arial,Sans-Serif;
+		font-weight: 900;
+		color: #333;
+		line-height: 1.4;
+	}
+	
+	span.FAQLabel.active {
+		width: 94%;
+	}
+	
+	span.FAQLabel:after,
+	span.FAQLabel.active:after {
+		float: right;
+		font-family: 'FontAwesome', sans-serif;
+		font-size: 18px;
+		font-size: 1.8rem;
+		content:'\f107';
+		color: #B1B2AF;
+		line-height: 1.4;
+		-webkit-transition: all .4s ease-in-out;
+    	   -moz-transition: all .4s ease-in-out;
+    	   	 	transition: all .4s ease-in-out;
+	}
+	
+	span.FAQLabel.expanded:after {
+    	-webkit-transform: rotate(180deg);
+    	   -moz-transform: rotate(180deg);
+    	   		transform: rotate(180deg);
+    }
+	
+		.twc-FAQTopics li a,
+		.twc-FAQTopics li.active a {
+			font-size: 13px;
+			font-size: 1.3rem;
+		}
+		
+		.twc-FAQTopics p.expandedFAQContent,
+		.twc-FAQTopics a.contReading {
+			display: none;
+		}
+		
+		.twc-FAQTopics ul li {
+			padding: 7px 0;
+		}
+		
+	span.FAQLabel.twc-last {
+		margin-bottom: 20px;
+	}
+	
+	.twc-FAQTopics h6 {
+		color: #333;
+	}
+
+.twc-topicFAQs {
+	display: none;
+}
+
+span.selected {
+	width: 89%;
+}
+
+.selectBox {
+	min-height: 0;
+}
+
+div.selectOptions {
+	width: 88%;
+}
+
+.faq-survey-right {
+	width: 55%;
+}
+
+
+.faq-survey input {
+	margin-left: 10px;
+}
+
+.faq-survey button {
+	margin-left: 5px;
+}
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+
+
+
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */	
+
+} /* End Tablet Breakpoint */
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+ 
+ 
+ 
+ 
+   
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+span.FAQLabel {
+	width: 92%;
+	padding: 7px 6% 7px 3%;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+	span.FAQLabel.active {
+		width: 92%;
+	}
+
+	span.FAQLabel:after {
+		position: absolute;
+		right: 6%;
+		line-height: 1.4;
+	}
+
+.captcha {
+	width: 76%;
+}
+
+.faq-survey {
+	width: 94%;
+	padding: 3%;
+}
+
+.faq-survey fieldset {
+	text-align: center;
+}
+
+.faq-survey fieldset label {
+	float: none;
+}
+
+.faq-survey-right {
+	display: block;
+	float: none;
+	width: auto;
+}
+
+.faq-survey-right div.twc-right {
+	float: none;
+}
+
+.faq-survey button {
+	margin: 10px auto;	
+}
+
+.faq-survey-no-response p {
+	width: 100%;
+}
+
+button#faq-survey-feedback-response {
+	position: relative;
+}
+
+.faq-survey em p {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.captcha {
+	display: none;
+}
+
+button#faq-survey-feedback-live-chat {
+	float: left;
+}
+
+aside h5 {
+	margin-top: 0;
+}
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+   
+   
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+  
+  
+  
+  
+   		
+} /* End SmartPhone Breakpoint */
+
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+    

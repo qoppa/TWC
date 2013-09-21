@@ -1,0 +1,167 @@
+/* Unchanged */
+/* ==========================================================================
+   CSS code for Podio: Webforms
+   ========================================================================== */
+
+/*
+ 
+ * Base
+ 	* Colors
+ 
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ */
+
+
+
+
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+select:active, 
+select:focus { 
+	outline: 0 none; 
+	-moz-outline-style:none; 
+}
+
+
+
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+#content {
+	margin-bottom: 30px;
+	border: 2px solid #fff !important;
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(201, 201, 201, 1);
+	   -moz-box-shadow: 0px 0px 1px 1px rgba(201, 201, 201, 1);
+			box-shadow: 0px 0px 1px 1px rgba(201, 201, 201, 1); 
+
+	background: #eeeeee !important; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+) !important;
+	background: -moz-linear-gradient(top,  #eeeeee 0%, #ffffff 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#ffffff)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eeeeee 0%,#ffffff 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eeeeee 0%,#ffffff 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eeeeee 0%,#ffffff 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom,  #eeeeee 0%,#ffffff 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=0 ) !important; /* IE6-8 */
+}
+
+h5 { display: none; }
+
+.form-description {
+	margin: 0;
+	margin-bottom: 20px !important;
+	font: lighter 1.3em "TWC Round Book", Arial, Sans-Serif;
+}
+
+.label em {
+	color: inherit !important;
+}
+
+.contact-fields { padding: 0; }
+
+input {
+	-webkit-border-radius: 2px !important;
+	   -moz-border-radius: 2px !important;
+	   		border-radius: 2px !important;
+}
+
+.date-input,
+.time-input {
+	background: #3177a9;
+	color: #fff !important;
+	font-weight: bold;
+}
+
+.buttons input.submit {
+	padding: 5px;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #387ab4),color-stop(18%, #3173ad),color-stop(74,#0d4f89),color-stop(100,#01437d));
+	background-image: -webkit-linear-gradient(top, #387ab4 0%,#3173ad 18%,#0d4f89 74%,#01437d 100%);
+	background-image: -moz-linear-gradient(top, #387ab4 0%,#3173ad 18%,#0d4f89 74%,#01437d 100%);
+	background-image: -ms-linear-gradient(top, #387ab4 0%,#3173ad 18%,#0d4f89 74%,#01437d 100%);
+	background-image: -o-linear-gradient(top, #387ab4 0%,#3173ad 18%,#0d4f89 74%,#01437d 100%);
+	background: -pie-linear-gradient(top, #387ab4 0%,#3173ad 18%,#0d4f89 74%,#01437d 100%);
+	background-image: linear-gradient(top, #387ab4 0%,#3173ad 18%,#0d4f89 74%,#01437d 100%);
+	  
+	font: lighter 1.3em "TWC Round Book", Arial, Sans-Serif;
+	color: #fff;
+/*http://www.timewarnercable.com/etc/designs/residential/clientlibs/images/arrow-white-right.png*/
+}
+
+
+select {
+	min-width: 90px;
+  	-webkit-appearance: button;
+  	   -moz-appearance: button;
+  	-webkit-border-radius: 2px;
+  	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  	-webkit-padding-end: 20px;
+  	-webkit-padding-start: 2px;
+  	-webkit-user-select: none;
+  	background: url(../images/down-select-arrow.jpg) no-repeat right center;
+  	border: 1px solid #AAA;
+  	color: #555;
+  	font-weight: bold;
+  	margin: 0;
+  	overflow: hidden;
+	padding: 5px;
+  	text-overflow: ellipsis;
+  	white-space: nowrap;
+}
+
+
+/********* popups *********/
+.ballon .balloon-inner {
+	padding: 5px 10px;
+	background: #eeeeee !important; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #eeeeee 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #eeeeee 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #eeeeee 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #eeeeee 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #eeeeee 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */	
+}
+
+.date-wrapper input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+
+
+

@@ -1,0 +1,429 @@
+/* ==========================================================================
+   CSS code for Buyflow Packages
+   
+   Author: Max Quattromani
+   Version: 1.0 - Updated: 6/19/13
+   ========================================================================== */
+   
+/*
+
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+ 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+a img { 
+	border: 0;
+	text-decoration: none;
+}
+
+body { background: #222; }
+ 
+small { 
+	font-size: 11px;
+	font-size: 1.1rem;
+}
+
+.twc-container { overflow: hidden; }
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* layout styles are being handled by base main.css */
+
+.twc-content {
+	clear: both;
+	overflow: hidden;
+	background: #53595d;
+	background-image: url(../images/harry_potter2.png);
+	background-image: url(../images/harry_potter2.png),-moz-linear-gradient(270deg,  #1e2328 0%, #192127 5%, #192127 10%, #13181d 15%, #13181d 20%, #192127 25%, #2a3237 30%, #4a4e53 35%, #7c8185 40%, #aaaeb1 45%, #d4d7d9 50%, #f2f4f6 100%);
+	background-image: url(../images/harry_potter2.png),-webkit-gradient(linear, left top, left bottom,  color-stop(0%, #1e2328), color-stop(5%, #192127), color-stop(10%, #192127), color-stop(15%, #13181d), color-stop(20%, #13181d), color-stop(25%, #192127), color-stop(30%, #2a3237), color-stop(35%, #4a4e53), color-stop(40%, #7c8185), color-stop(45%, #aaaeb1), color-stop(50%, #d4d7d9), color-stop(100%, #f2f4f6));
+	background-image: url(../images/harry_potter2.png),-webkit-linear-gradient(270deg,  #1e2328 0%, #192127 5%, #192127 10%, #13181d 15%, #13181d 20%, #192127 25%, #2a3237 30%, #4a4e53 35%, #7c8185 40%, #aaaeb1 45%, #d4d7d9 50%, #f2f4f6 100%);
+	background-image: url(../images/harry_potter2.png),-o-linear-gradient(270deg,  #1e2328 0%, #192127 5%, #192127 10%, #13181d 15%, #13181d 20%, #192127 25%, #2a3237 30%, #4a4e53 35%, #7c8185 40%, #aaaeb1 45%, #d4d7d9 50%, #f2f4f6 100%);
+	background-image: url(../images/harry_potter2.png),-ms-linear-gradient(270deg,  #1e2328 0%, #192127 5%, #192127 10%, #13181d 15%, #13181d 20%, #192127 25%, #2a3237 30%, #4a4e53 35%, #7c8185 40%, #aaaeb1 45%, #d4d7d9 50%, #f2f4f6 100%);
+	background-image: url(../images/harry_potter2.png),linear-gradient(to bottom,  #1e2328 0%, #192127 5%, #192127 10%, #13181d 15%, #13181d 20%, #192127 25%, #2a3237 30%, #4a4e53 35%, #7c8185 40%, #aaaeb1 45%, #d4d7d9 50%, #f2f4f6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF1E2328', endColorstr='#FFF2F4F6',GradientType=0);
+	background-repeat: no-repeat;
+	padding: 0;
+	position: relative;
+}
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.review_wrap {
+	width: 980px;
+	margin: 0 auto;	
+}
+
+[id*='Table_'] img {
+	display: block;	
+	vertical-align: inherit;
+	border: 0;
+	text-decoration: none;
+}
+
+span.h3 { 
+	display: block;
+	margin-bottom: 1em;
+	color: #fff;
+}
+                    
+/* ==========================
+	Tabs
+   ========================== */ 
+
+.page-header { 
+	border-radius: 0 3px 0 0;
+	background-color: #302f2f;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(48, 47, 47)), to(rgb(21, 19, 20)));
+	background-image: -webkit-linear-gradient(top, rgb(48, 47, 47), rgb(21, 19, 20));
+	background-image: -moz-linear-gradient(top, rgb(48, 47, 47), rgb(21, 19, 20));
+	background-image: -o-linear-gradient(top, rgb(48, 47, 47), rgb(21, 19, 20));
+	background-image: -ms-linear-gradient(top, rgb(48, 47, 47), rgb(21, 19, 20));
+	background-image: linear-gradient(top, rgb(48, 47, 47), rgb(21, 19, 20));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#302f2f', EndColorStr='#151314');
+}
+
+.page-header-buttons { float: right; }
+
+.tabs { 
+	display: table;
+	width: 50%;
+	border-radius: 3px;
+}
+	
+.tabs ul { display: table-row; }
+	
+.tabs li { 
+	display: table-cell;
+	position: relative; 
+	width: 50%;
+	text-align: center;
+	background-color: #3779b3;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#3779b3), to(#02447e));
+	background-image: -webkit-linear-gradient(top, #3779b3, #02447e);
+	background-image: -moz-linear-gradient(top, #3779b3, #02447e);
+	background-image: -o-linear-gradient(top, #3779b3, #02447e);
+	background-image: -ms-linear-gradient(top, #3779b3, #02447e);
+	background-image: linear-gradient(top, #3779b3, #02447e);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#3779b3', EndColorStr='#02447e');
+	color: #fff;
+	cursor: pointer;
+    font-variant: small-caps;
+}
+
+	.tabs li a {
+		display: inline-block;
+		position: relative;
+		padding: 10px 0;
+		font-family: Arial,Sans-Serif;
+		font-weight: bold;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.tabs li:first-child {
+		border-radius: 3px 0 0 0;
+	}
+	
+	.tabs li:last-child {
+		border-radius: 0 3px 0 0;
+	}
+	
+	.tabs li.active {
+		background-color: #fff;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(222, 220, 218)), to(rgb(255, 254, 254)));
+		background-image: -webkit-linear-gradient(top, rgb(222, 220, 218), rgb(255, 254, 254));
+		background-image: -moz-linear-gradient(top, rgb(222, 220, 218), rgb(255, 254, 254));
+		background-image: -o-linear-gradient(top, rgb(222, 220, 218), rgb(255, 254, 254));
+		background-image: -ms-linear-gradient(top, rgb(222, 220, 218), rgb(255, 254, 254));
+		background-image: linear-gradient(top, rgb(222, 220, 218), rgb(255, 254, 254));
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#dedcda', EndColorStr='#fffefe');
+		color: #222;
+	}
+	
+		.tabs li.active a {
+			color: #222;
+		}
+
+.packages_services_container {
+	margin-bottom: 2em;
+	border-radius: 0 3px 3px 3px;
+	background: #fff;
+	box-shadow: 0 1px 2px 0 #888;
+}
+
+.services { display: none; }
+
+.packages_services_container .wrap p { padding: 4em 2em; }
+
+/* ==========================
+   Modal
+   ========================== */
+
+#backgroundPopup { 
+	position: fixed;
+	display: none;
+	top: 0px;  
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background: #000000;	
+	zoom: 1;
+	filter: alpha(opacity=70);
+	opacity: .7;
+	z-index: 9999;
+}
+
+#toPopup {
+    display: none;
+    position: absolute;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    border-radius: 3px;
+    top: 210px;
+    left: 50%;
+    width: 940px;
+    margin-top: 0;
+    margin-left: -470px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #333333;
+    z-index: 99999;
+}
+
+div.close {
+	position: absolute;
+	float: right;
+	top: -15px;
+    right: -15px;
+	height: 42px;
+	width: 42px;
+    background: url(../images/close.png) no-repeat;
+    cursor: pointer;
+}
+
+.title_details { 
+	padding: 1em 2em;
+}
+
+	.deal { color: #222; }
+	
+.the_guts { 
+	padding: 2em 2%;
+	border-radius: 0 0 3px 3px;
+	background: #ededed;
+}
+
+[class*='_response'] {
+	width: 60%;
+	margin: 0 auto;
+	padding: 2em 4%;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	background: #e5e5e5;
+	text-align: center;
+}
+
+	[class*='_response'] h5:before {
+		content: '\f058';
+		margin-right: 5px;
+		font-family: 'FontAwesome',sans-serif;
+		font-size: 30px;
+		font-size: 3.0rem;
+		color: #228d4b;
+		vertical-align: middle;
+	}
+
+.next_step {
+	display: table;
+	width: 68%;
+	margin: 0 auto;
+}
+
+	.next_step h2 { 
+		float: left;
+	}
+
+.modal_2,
+.modal_3 { display: none; }
+
+/* ==========================
+   Modal 1
+   ========================== */
+   
+/* ==========================
+   Modal 2
+   ========================== */
+   
+/* ==========================
+   Modal 3
+   ========================== */
+
+.modal_3 div.checkout-steps {
+	width: auto;
+	padding: 10px 20px 0;
+}
+
+.modal_3 div.checkout-steps ol.step-list li.active div.step div.block { padding: 12px; }
+
+.modal_3 header.page-header {
+	background: none;
+}
+
+.modal_3 .packages_services_container {
+	width: 65%;
+	overflow: auto;
+}
+
+.modal_3 .message-header {
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+#modal_tab_1.packages div div {
+	float: left;
+	width: 50%;
+	padding: 4%;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	   		box-sizing: border-box;
+}
+
+#modal_tab_1.packages div div:first-child {
+	border-right: 1px solid #ccc;
+}
+
+.modal_3 span.book { 
+	font-family: 'TWC Round Book',Arial,Sans-Serif;
+	text-align: center;
+}
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+/* Webkit: Chrome/Safari */ 
+
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+  
+   
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+
+
+
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */	
+
+} /* End Tablet Breakpoint */
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+ 
+ 
+ 
+ 
+   
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+   
+   
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+  
+  
+  
+  
+   		
+} /* End SmartPhone Breakpoint */
+
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+    

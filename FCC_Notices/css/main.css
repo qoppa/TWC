@@ -1,0 +1,344 @@
+/* Unchanged */
+/* ==========================================================================
+   CSS code for Careers > Locations > FCC Notices
+   ========================================================================== */
+
+/*
+ 
+ * Base
+ 
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+
+
+
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+	height: 100%;
+	padding-top: 30px;
+	background: #f2f4f6;	
+}
+
+
+
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.box-column {
+	-webkit-box-shadow: 0 4px 3px -3px #888;
+	   -moz-box-shadow: 0 4px 3px -3px #888;
+	        box-shadow: 0 4px 3px -3px #888;
+}
+
+
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+strong {
+	font-weight: bold;
+}
+
+hr {
+	margin-bottom: 20px;
+}
+
+.greyGradientBox {
+	height: 40px;
+	padding: 30px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	   		border-radius: 2px;
+	
+	background: #ececec; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VjZWNlYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkOWQ5ZDkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #ececec 0%, #d9d9d9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ececec), color-stop(100%,#d9d9d9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ececec 0%,#d9d9d9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ececec 0%,#d9d9d9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ececec 0%,#d9d9d9 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ececec 0%,#d9d9d9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#d9d9d9',GradientType=0 ); /* IE6-8 */
+	
+	-webkit-box-shadow: 0 4px 3px -3px #888;
+	   -moz-box-shadow: 0 4px 3px -3px #888;
+	        box-shadow: 0 4px 3px -3px #888;
+}
+
+.horizantalOption {
+	position: relative;
+	float: left;  
+	margin-right: 23px;  
+}
+.horizantalOption:last-child {
+	margin-right: 0;  
+}
+
+.horizantalOption.cityState {
+	width: 160px;
+}
+
+.horizantalOption.yearFCCUnit {
+	width: 120px;
+}
+
+label {
+	width: 100px;
+	font-size: 15px;
+	font-weight: bold;
+}
+ 
+select {
+	width: 160px;
+	margin: 5px;
+	float: left;
+	display: block;
+	font-size: 13px;
+}
+
+/********* Custom Select Boxes *********/
+div.selectBox {
+    position: relative;
+    display: inline-block;
+    padding-top: 10px;
+    cursor: default;
+    text-align: left;
+    line-height: 25px;
+    clear: both;
+    color: #888;
+    font-size: 13px;
+    font-weight: lighter;
+}
+span.selected {
+    width: 120px;
+    text-indent: 7px;
+    border: 1px solid #888;
+    border-right: none;
+    background: #f6f6f6;
+    -webkit-box-shadow: inset 0 0 3px #aaa;
+       -moz-box-shadow: inset 0 0 3px #aaa;
+   		    box-shadow: inset 0 0 3px #aaa;
+    overflow: hidden;
+}
+
+.yearFCCUnit > span.selected {
+	width: 80px;
+}
+
+span.selectArrow {
+    width: 30px;
+    border: 1px solid #888;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background: #5e95bb; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVlOTViYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1MDdhOTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #5e95bb 0%, #507a98 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5e95bb), color-stop(100%,#507a98)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #5e95bb 0%,#507a98 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #5e95bb 0%,#507a98 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #5e95bb 0%,#507a98 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #5e95bb 0%,#507a98 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e95bb', endColorstr='#507a98',GradientType=0 ); /* IE6-8 */
+
+}
+ 
+span.selectArrow,span.selected {
+    position: relative;
+    float: left;
+    height: 25px;
+    z-index: 1;
+}
+
+div.selectOptions {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 151px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    background: #f6f6f6;
+    padding-top: 2px;
+    display: none;
+    z-index: 9999;
+}
+
+.yearFCCUnit > div.selectOptions {
+	width: 111px;
+}
+     
+span.selectOption {
+    display: block;
+    width: 80%;
+    line-height: 20px;
+    padding: 5px 10%;
+}
+ 
+span.selectOption:hover {
+    background: #eaeaea;        
+}  
+
+
+.horizantalOption.yearFCCUnit select {
+	width: 80px;
+}
+
+a[href$=".PDF"], 
+a[href$=".pdf"] {
+	padding: 12.5px;
+	background: url("../images/pdf-icon.png") center center no-repeat;
+}
+
+table {
+	width: 690px;
+	margin-bottom: 80px;
+}
+
+tr.upperListBlue {
+	width: 670px;
+	padding: 10px 10px;
+	background: #5e95bb; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVlOTViYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1MDdhOTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #5e95bb 0%, #507a98 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5e95bb), color-stop(100%,#507a98)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #5e95bb 0%,#507a98 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #5e95bb 0%,#507a98 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #5e95bb 0%,#507a98 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #5e95bb 0%,#507a98 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e95bb', endColorstr='#507a98',GradientType=0 ); /* IE6-8 */
+	color: #fff;
+	text-transform: uppercase;
+}
+
+tr.upperListBlue th {
+	height: 35px;
+	font-weight: bold;
+}
+tr.upperListBlue td {
+	width: 16.5%;
+	height: 35px;
+}
+
+tr.lowerListGrey {
+	height: 35px;
+	background: #eaeaea;
+}
+tr.lowerListGrey td {
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Browser Specific
+   ========================================================================== */
+   
+/* Safari/Chrome/Webkit */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* selectors goes here */
+
+}
+
+/* Firefox */
+/* Ah, Internet Explorer */
+/* ie7 (.ie7) */
+
+.ie7 .box-column {
+	border: 1px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+
+.ie7 .greyGradientBox {
+	border-bottom: 2px solid #ccc;
+}
+
+.ie7 .gradient {
+ 	background-color: #5b8eb2;
+}
+
+.ie7 a[href$=".PDF"], 
+.ie7 a[href$=".pdf"] {
+	padding: 12.5px;
+	background: url("../images/pdf-icon.png") center bottom no-repeat;
+}
+
+/* ie8 (.ie8) */
+
+.ie8 .box-column {
+	border: 1px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+
+.ie8 .greyGradientBox {
+	border-bottom: 2px solid #ccc;
+}
+
+
+.ie8 .gradient {
+   	background-color: #5b8eb2;
+}
+.ie8 .horizantalOption {
+	margin-right: 17px;  
+}  
+
+
+
+  
+/* ie9 (.ie9) */
+
+.ie9 .gradient {
+       filter: none;
+    }

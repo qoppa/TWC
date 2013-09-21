@@ -1,0 +1,229 @@
+/*********
+* BASE * 
+*********/
+a:link,a:visited {
+	color:#fff;
+	text-decoration:none;
+}
+
+.clearfix:after {
+	clear:both;
+	display:block;
+	visibility:hidden;
+	height:0;
+	content:".";
+	line-height:0;
+}
+
+.clearfix {
+	display:inline-block;
+}
+
+html[xmlns] .clearfix {
+	display:block;
+}
+
+* html .clearfix {
+	height:1%;
+}
+
+
+
+
+
+/*********
+* LAYOUT *
+*********/
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+
+
+
+
+/*********
+* MODULE *
+*********/
+body {
+	background:#595959;
+	font:lighter 1em "TWC Round Book",Arial,Sans-Serif;
+}
+
+.main {
+	width:690px;
+	padding:30px;
+	margin:20px auto;
+	background:#fff;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	-webkit-box-shadow:0 0 3px 1px rgba(2,2,2,1);
+	-moz-box-shadow:0 0 3px 1px rgba(2,2,2,1);
+	box-shadow:0 0 3px 1px rgba(2,2,2,1);
+}
+
+header {
+	margin:0 0 4em;
+}
+
+h1 {
+	font:normal 1.625em/2em "TWC Round Book",Arial,Sans-Serif;
+	padding-bottom:15px;
+}
+
+h2 {
+	font:lighter 1.125em/2em "TWC Round Book",Arial,Sans-Serif;
+	color:#4377A8;
+	padding-bottom:10px;
+}
+ul {
+	padding-left: 20px;
+}
+li {
+	font:lighter 1em/2em "TWC Round Book",Arial,Sans-Serif;
+	list-style:disc outside;
+	padding-left:0.5em;
+}
+
+small {
+	display:block;
+	font:lighter 0.75em/1.5em "TWC Round Book",Arial,Sans-Serif;
+	padding-left:0.5em;
+}
+
+em {
+	font-size:1.3em;
+	font-style:italic;
+}
+
+hr {
+	display:block;
+	margin:2em 0;
+	padding:0;
+	height:1px;
+	border:0;
+	border-top:1px solid #ccc;
+}
+
+/********* tables styles *********/
+.table {
+	width: 690px;
+	margin: 20px 0;
+	border: 1px solid #e1e1e1; 
+}
+
+table {
+	width:690px;
+	padding:0;
+	margin:0;
+}
+
+th {
+	color:#222;
+	text-align:left;
+	padding:6px 6px;
+}
+
+thead.primary th.topRow,
+thead.primary th.bottomRow:nth-of-type(even) {
+	border-left:1px solid #C1DAD7;
+}
+
+thead.primary th.topRow:first-child,
+thead.primary th.bottomRow:first-child {
+	border-left:0;
+}
+
+thead.primary th.topRow {
+	font-family: "TWC Round Light",Arial,Sans-Serif; 
+	font-style: italic;
+	color: #fff;
+}
+
+thead.primary th.bottomRow {
+	color:#fff;
+}	
+
+thead.primary th.topRow.country {
+	width: 130px;
+}
+
+thead.primary {
+	color: #fff;
+	background: #7b9eb3; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdiOWViMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0Zjc2OTIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #7b9eb3 0%, #4f7692 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7b9eb3), color-stop(100%,#4f7692)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7b9eb3 0%,#4f7692 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7b9eb3 0%,#4f7692 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7b9eb3 0%,#4f7692 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #7b9eb3 0%,#4f7692 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7b9eb3', endColorstr='#4f7692',GradientType=0 ); /* IE6-8 */
+}
+
+thead.secondary th,
+td {
+	background: none;
+	font-size: 0.65em;
+	border-left:1px solid #e1e1e1;
+	background:#fff;
+	padding:6px 6px 6px 6px;
+	color:#222;
+}
+
+thead.secondary th {
+	border-bottom: 1px solid #e1e1e1;
+}
+
+tbody {
+	height: 500px;
+	overflow: auto;
+}
+    
+td:nth-of-type(2),
+td:nth-of-type(3),
+td:nth-of-type(6),
+td:nth-of-type(7) {
+	background: #e1e1e1;
+}
+
+
+
+
+
+/********* 
+* STATE 
+*********/
+
+
+
+
+
+/********** 
+* THEME 
+*********/
+
+
+
+
+
+/********* 
+* BROWSER SPECIFIC 
+*********/
+/* Safari/Chrome/Webkit */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* selectors goes here */
+
+}
+
+/* Firefox */
+/* Ah, Internet Explorer */
+/* ie7 (.ie7) */
+/* ie8 (.ie8) */
+/* ie9 (.ie9) */

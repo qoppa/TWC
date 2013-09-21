@@ -1,0 +1,293 @@
+.clear {clear:both;} 
+
+/*--------------------------------------------------------------------------------------------
+	FLOATS and TEXT ALIGNMENT
+--------------------------------------------------------------------------------------------*/
+
+.float_right, .right { float:right; }
+
+.float_left, .left { float:left; }
+
+.textCenter { text-align: center; }
+
+.textLeft { text-align: left; }
+
+.textRight { text-align: right; }
+
+/*--------------------------------------------------------------------------------------------
+	FONT SIZES
+--------------------------------------------------------------------------------------------*/
+
+.font06{ font-size:0.6em;}
+
+.font07{ font-size:0.7em;}
+
+.font075{ font-size:0.75em;}
+
+.font08{ font-size:0.8em;}
+
+.font09{ font-size:0.9em;}
+
+.font1{ font-size:1em;}
+
+
+/*--------------------------------------------------------------------------------------------
+	SPACERS and MARGINS
+--------------------------------------------------------------------------------------------*/
+.spacer_all { margin:15px !important; }
+
+.spacer_top { margin-top:15px !important; }
+
+.spacer_right { margin-right:15px !important; }
+
+.spacer_bottom { margin-bottom:15px !important; }
+
+.spacer_left { margin-left:15px !important; }
+
+.margin5 { padding: 5px; }
+
+.margin10 { padding: 10px; }
+
+.margin15 { padding: 15px; }
+
+.margin20 { padding: 20px; }
+
+.margin25 { padding: 25px; }
+
+.margin30 { padding: 30px; }
+
+.marginTp2 { margin-top: 2px; }
+
+.marginTp5 { margin-top: 5px; }
+
+.marginTp10 { margin-top: 10px; }
+
+.marginTp15 { margin-top: 15px; }
+
+.marginTp20 { margin-top: 20px; }
+
+.marginTp25 { margin-top: 25px; }
+
+.marginTp30 { margin-top: 30px; }
+
+.marginTp40 { margin-top: 40px; }
+
+.marginTp50 { margin-top: 50px; }
+
+.marginBtm5 { margin-bottom: 5px; }
+
+.marginBtm10 { margin-bottom: 10px; }
+
+.marginBtm15 { margin-bottom: 15px; }
+
+.marginBtm20 { margin-bottom: 20px; }
+
+.marginBtm25 { margin-bottom: 25px; }
+
+.marginBtm30 { margin-bottom: 30px; }
+
+.marginBtm40 { margin-bottom: 40px; }
+
+.marginBtm50 { margin-bottom: 50px; }
+
+.marginTpBtm5 { margin: 5px 0; }
+
+.marginTpBtm10 { margin: 10px 0; }
+
+.marginTpBtm15 { margin: 15px 0; }
+
+.marginTpBtm20 { margin: 20px 0; }
+
+.marginTpBtm25 { margin: 25px 0; }
+
+.marginTpBtm30 { margin: 30px 0; }
+
+.marginLf5 { margin-left: 5px; }
+
+.marginLf6 { margin-left: 6px; }
+
+.marginLf7 { margin-left: 7px; }
+
+.marginLf8 { margin-left: 8px; }
+
+.marginLf9 { margin-left: 9px; }
+
+.marginLf10 { margin-left: 10px; }
+
+.marginLf15 { margin-left: 15px; }
+
+.marginLf20 { margin-left: 20px; }
+
+.marginLf25 { margin-left: 25px; }
+
+.marginLf30 { margin-left: 30px; }
+
+.marginRt5 { padding-bottom: 5px; }
+
+.marginRt10 { margin-right: 10px; }
+
+.marginRt15 { margin-right: 15px; }
+
+.marginRt20 { margin-right: 20px; }
+
+.marginRt25 { margin-right: 25px; }
+
+.marginRt30 { margin-right: 30px; }
+
+.marginLfRt5 { margin: 5px; }
+
+.marginLfRt10 { margin: 10px; }
+
+.marginLfRt15 { margin: 15px; }
+
+.marginLfRt20 { margin: 20px; }
+
+.marginLfRt25 { margin: 25px; }
+
+.marginLfRt30 { margin: 30px; }
+
+/*--------------------------------------------------------------------------------------------
+	PADDINGS
+--------------------------------------------------------------------------------------------*/
+
+.pad_top { padding-top:15px !important; }
+
+.pad_right { padding-right:15px !important; }
+
+.pad_bottom { padding-bottom:15px !important; }
+
+.pad_left { padding-left:15px !important; }
+
+.pad_top_ten { padding-top:10px !important; }
+
+.padding5 { padding: 5px; }
+
+.padding10 { padding: 10px; }
+
+.padding15 { padding: 15px; }
+
+.padding20 { padding: 20px; }
+
+.padding25 { padding: 25px; }
+
+.padding30 { padding: 30px; }
+
+.paddingTp5 { padding-top: 5px; }
+
+.paddingTp10 { padding-top: 10px; }
+
+.paddingTp15 { padding-top: 15px; }
+
+.paddingTp20 { padding-top: 20px; }
+
+.paddingTp25 { padding-top: 25px; }
+
+.paddingTp30 { padding-top: 30px; }
+
+.paddingBtm5 { padding-bottom: 5px; }
+
+.paddingBtm10 { padding-bottom: 10px; }
+
+.paddingBtm15 { padding-bottom: 15px; }
+
+.paddingBtm20 { padding-bottom: 20px; }
+
+.paddingBtm25 { padding-bottom: 50px; }
+
+.paddingBtm30 { padding-bottom: 30px; }
+
+.paddingBtm60 { padding-bottom: 60px; }
+
+.paddingTpBtm5 { padding: 5px 0; }
+
+.paddingTpBtm10 { padding: 10px 0; }
+
+.paddingTpBtm15 { padding: 15px 0; }
+
+.paddingTpBtm20 { padding: 20px 0; }
+
+.paddingTpBtm25 { padding: 25px 0; }
+
+.paddingTpBtm30 { padding: 30px 0; }
+
+.paddingLf5 { padding-left: 5px; }
+
+.paddingLf10 { padding-left: 10px; }
+
+.paddingLf15 { padding-left: 15px; }
+
+.paddingLf20 { padding-left: 20px; }
+
+.paddingLf25 { padding-left: 25px; }
+
+.paddingLf30 { padding-left: 30px; }
+
+.paddingRt5 { padding-right: 5px; }
+
+.paddingRt10 { padding-right: 10px; }
+
+.paddingRt15 { padding-right: 15px; }
+
+.paddingRt20 { padding-right: 20px; }
+
+.paddingRt25 { padding-right: 25px; }
+
+.paddingRt30 { padding-right: 30px; }
+
+.paddingLfRt5 { padding: 0 5px; }
+
+.paddingLfRt10 { padding: 0 10px; }
+
+.paddingLfRt15 { padding: 0 15px; }
+
+.paddingLfRt20 { padding: 0 20px; }
+
+.paddingLfRt25 { padding: 0 25px; }
+
+.paddingLfRt30 { padding: 0 30px; }
+
+/*--------------------------------------------------------------------------------------------
+	WIDTHS
+--------------------------------------------------------------------------------------------*/
+
+.width_20 { width:20% !important; }
+
+.width_30 { width:30% !important; }
+
+.width_35 { width:35% !important; }
+
+.width_40 { width:40% !important; }
+
+.width_45 { width:45% !important; }
+
+.width_50 { width:50% !important; }
+
+.width_60 { width:60% !important; }
+
+.width_65 { width:65% !important; }
+
+.width_70 { width:70% !important; }
+
+.width_80 { width:80% !important; }
+
+.width_90 { width:90% !important; }
+
+.width_100 { width:100% !important; }
+
+/* Icons and such */
+.printIcon { background url("../images/print.png") no-repeat;}
+
+/* Other stuff */
+.discList { list-style: disc; }
+
+.border { color: #484842; border-bottom: 1px solid #DDDAD3; }
+
+/*--------------------------------------------------------------------------------------------
+	COLORS
+--------------------------------------------------------------------------------------------*/
+
+.fontWhite { color: #fff;}
+
+.lightGrey { background-color:#F4F4F4;}
+
+.dark { background-color:#191919;}

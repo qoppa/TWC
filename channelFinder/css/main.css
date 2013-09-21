@@ -1,0 +1,371 @@
+/* Unchanged */
+/*********
+* BASE * 
+*********/
+
+/*********
+* LAYOUT *
+*********/
+
+/*********
+* MODULE *
+*********/
+
+/********* channel finder *********/
+
+.channelFinder {
+    margin: 50px auto 0;
+    width: 390px;
+    height: 70px;
+    background: url(../images/ChannelLineUp_RND7.jpg) no-repeat top left;
+}
+.expand {
+	display:none;
+	clear: both;
+    margin: 0px auto;
+    padding-bottom: 40px;
+    width: 390px;
+    background: url(../images/ChannelLineUp_RND7.jpg) no-repeat bottom left;
+}
+hgroup.TWCchannelFinder {
+    padding: 10px 15px;
+    width: 170px;
+    float: left;
+    clear: left;
+}
+h1 {
+    clear: left;
+    color: #ffffff;
+    text-shadow: 0 0 1px rgba(51,51,51,0.3);
+    font: normal 18px Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+h2 {
+    float: left;
+    padding-top: 10px;
+    color: #acacac;
+    font: lighter 13px Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/********* search input *********/
+
+.channelFinder_search {
+    position: relative;
+    float: right;
+    margin: 6px 14px;
+    width: 160px;
+    height: 37px;
+    text-align: center;
+}
+
+input[type=text] {
+    padding: 10px;
+    width: 140px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font: normal 11px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #000;
+    -webkit-text-fill-color: black;
+}
+input[type=text] {
+	-webkit-appearance: none;
+}
+
+
+/* fallback placeholder */
+
+.hasPlaceholder {
+   color: #ccc;
+}
+
+/********* the Table *********/
+
+.tableContainer {
+    margin: 0 auto; /* move results down for sprite action */
+    width: 370px;
+    overflow: hidden;
+}
+
+div.tableContainer table {
+    border-spacing: 2px 0px;
+    border-collapse: separate;
+}
+
+.fixedHeader tr { 
+	position: relative;
+	display: block;
+	width: 370px;
+}
+
+.fixedHeader th { 
+	width: 49px; 
+	padding: 1px 7px;
+}
+.fixedHeader th + th { width: 293px; }
+.fixedHeader th + th + th { width: 316px; }
+        
+/* make the TH elements pretty */
+.fixedHeader th.top {
+    background: #28343d;
+    color: #fff;
+    font: bold 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.fixedHeader th.top.new {
+    width: 450px;
+    text-align: left;
+}
+.fixedHeader tr th.top {
+    border-top: 1px solid #acacac;
+    border-right: 1px solid #28343D;
+    border-bottom: 1px solid #141a1e;
+    border-left: 1px solid #acacac;
+    text-align: center;
+}
+.fixedHeader th.bottom {
+    border-top: 1px solid #acacac;
+    border-right: 1px solid #777777;
+    border-bottom: 1px solid #3b3b3b;
+    border-left: 1px solid #acacac;
+    background: #777777;
+    color: #000;
+    font: normal 12px Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.fixedHeader tr th + th.bottom { width: 32px; }
+.fixedHeader tr th + th + th.bottom { width: 32px; }
+.fixedHeader tr th + th + th + th.bottom { width: 183px; }
+
+tr { width: 370px; }
+tr td {
+    font: normal 12px Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.tabborder {
+	margin-left: 2px;
+	margin-left: 0px\9;
+}
+.tableBody {
+	width:370px; 
+	max-height:167px; 
+	overflow:auto;
+	overflow-x: hidden;
+}
+.tableBody {
+	position: relative;
+}
+/* style the TH's */
+th.HD {
+	background: #acacac;
+	width: 48px;
+    text-align: center;
+}
+th.SD {
+	background: #acacac;
+	width: 48px;
+    text-align: center;
+}
+th.CN {
+	text-align: left;
+}
+/* style the TD's */
+td.number {
+	width: 65px;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 1px solid #9d9d9f;
+    background: #5c5c5c;
+}
+td.SD {
+	background: #acacac;
+	width: 48px;
+    text-align: center;
+    border-top: 1px solid #acacac;
+    border-bottom: 1px solid #828282;
+}
+td.HD {
+	background: #acacac;
+	width: 48px;
+    text-align: center;
+    border-top: 1px solid #acacac;
+    border-bottom: 1px solid #828282;
+}
+td.CN { 
+	width: auto; 
+	background: #acacac;
+	padding: 0 7px;
+	border-top: 1px solid #acacac;
+    border-bottom: 1px solid #828282;
+    text-align: left;
+ }
+
+/**
+*button styling
+*/
+button {
+    position: relative;
+    font: normal 12px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-shadow: rgba(255, 254, 255, 0.24) 1px 1px 2px;
+}
+.clear { 
+	margin: 6px 14px;
+	float: left;
+}
+
+
+/********* 
+* STATE 
+*********/
+
+
+/********** 
+* THEME 
+*********/
+
+
+/********* 
+* BROWSER SPECIFIC 
+*********/
+
+/* Safari/Chrome/Webkit */
+
+/* webkit placeholder */
+::-webkit-input-placeholder {
+	color: #bbb;
+}
+/* remove webkit search input decoration and cancel button */
+input[type="text"]::-webkit-text-decoration, 
+input[type="text"]::-webkit-text-cancel-button {
+	display: none;
+}
+/* remove Safari's extra padding */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .input input, .input textarea, .input select { padding: 9px 0px; }
+    .input span {padding: 5px 0 0 3px;}
+}
+
+/* Firefox */
+
+
+input[type="submit"]::-moz-focus-inner{ 
+	border:none;
+}
+/*force webkit scrollbar to stay on screen, instead of fading */
+::-webkit-scrollbar { width: 9px }
+::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, .5) }
+
+/* Ah, Internet Explorer */
+
+/* ie7 */
+
+.ie7 .channelFinder_search {
+    margin-top: 16px;
+}
+.ie7 hgroup.TWCchannelFinder {
+    padding: 10px 13px;
+}
+.ie7 input { /*IE7 styling the input box */
+	border:none; 
+	border:0; 
+	border-color: transparent;  
+	background: transparent;
+	font-size: 11px;
+	line-height: 10px;
+	width: 100p5;
+	margin-bottom: 10px;
+	padding:0;
+}
+.ie7 .expand {
+	padding-bottom: 15px;
+}
+.ie7 .tableBody {
+	margin-top:-3px;
+}
+.ie7 div.tableContainer table { /* hack around non-compliant border-spacing in ie7 */
+    border-collapse: expression('separate', cellSpacing = '1px');
+}
+.ie7 th.HD {
+    width: 54px; 
+}
+.ie7 th.SD {
+    width: 54px; 
+}
+.ie7 td.number {
+    width: 63px;
+}
+.ie7 td.SD {
+    width: 55px; 
+}
+.ie7 td.HD {
+    width: 55px; 
+}
+ie7 .fixedHeader th.bottom {
+    border-right: 1px solid red;
+}
+
+.ie7 .clear { 
+	margin: 6px 11px;
+}
+
+/* ie8 */
+
+.ie8 .channelFinder_search {
+    margin-top: 4px;
+}
+.ie8 hgroup.TWCchannelFinder {
+    padding: 10px 13px;
+}
+.ie8 input {
+	padding-top: 11px;
+}
+.ie8 td.number {
+    width: 63px;
+}
+.ie8 th.HD {
+    width: 54px;
+}
+.ie8 th.SD {
+    width: 54px;
+}
+.ie8 td.HD {
+    width: 55px; 
+}
+.ie8 td.SD {
+    width: 54px; 
+}
+
+.ie8 button {
+	padding-right: 10px;
+	padding-bottom: 3px;
+}
+.ie8 .clear { 
+	margin: 6px 12px;
+}
+
+
+/* ie9 */
+
+.ie9 .channelFinder_search {
+    margin-top: 5px;
+}
+.ie9 .fixedHeader th { 
+	width: 48px;
+}
+.ie9 th.HD {
+    width: 54px; 
+}
+.ie9 th.SD {
+    width: 54px; 
+}
+.ie9 td.number {
+	width: 61px;
+}
+.ie9 td.HD {
+    width: 55px;
+}
+.ie9 td.SD {
+    width: 55px;
+}
+
+.ie9 .clear { 
+	margin: 6px 12px;
+}

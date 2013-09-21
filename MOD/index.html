@@ -1,0 +1,147 @@
+<!-- Unchanged -->
+<!DOCTYPE html>
+    <!--[if lt IE 7 ]>
+    	<html class="ie ie6 no-js" lang="en"><![endif]-->
+	<!--[if IE 7 ]>
+		<html class="ie ie7 no-js" lang="en"><![endif]-->
+	<!--[if IE 8 ]>
+		<html class="ie ie8 no-js" lang="en"><![endif]-->
+	<!--[if IE 9 ]>
+		<html class="ie ie9 no-js" lang="en"><![endif]-->
+	<!--[if gt IE 9]>
+		<!--><html class="no-js" lang="en"><!--<![endif]-->
+		
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    
+	    <title></title>
+	    <meta name="description" content="">
+	    
+	    <meta name="viewport" content="width=device-width">
+	    
+	    <!-- stylesheets -->
+	    <link rel="stylesheet" href="css/clientlib.css">
+	    <link rel="stylesheet" href="css/main.css">
+	    
+	    <!-- scripts -->
+	    <!-- enable HTML5 elements in IE7+8 -->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    	<script src="js/modernizr-2.6.1.min.js"></script>
+	</head>
+	<body>		
+	
+			<!-- BEGIN HEADER -->
+			<header class="header">
+			    <div class="wrap">
+			        <div class="main">
+			            <div class="logo">
+							<a class="logo" href="/en.html" analyticsname="TWC:1:1:logo"></a>
+						</div>
+						<div class="contact">
+							<a class="phone">1-866-369-3678</a>
+						</div>
+			
+			        </div> <!-- .header-content -->
+			    </div> <!-- .wrap -->
+			</header> <!-- .header -->
+			<!-- END HEADER -->
+			
+			<header class="pageTitle">
+				<div class="wrap">
+					<div class="main">OnDemand Movie Rental</div>
+				</div>	
+			</header>
+
+			<div class="featured">
+				<div class="movie">
+					<img src="images/CA.jpg" alt="">
+					<h2>[%movie_title%]</h2>
+				</div>
+				<form>
+					<section class="form">
+					
+						<!-- Initial Entry Form -->
+						<div class="movieRental_1">
+							<div class="TWCIdFormBox">
+								<h2>Enter your TWC ID</h2>
+								<input type="text" placeholder="TWC ID">
+								<input type="text" placeholder="Password">
+									<span class="invalid hidden">We're sorry, you have entered an invalid username or password. Please try again.</span>
+									<span class="maxSubmission hidden">You have tried to sign in the maximum amount of times. Please <a href="3">contact us</a></span>
+								<a href="#" class="left">Create a TWC ID</a>
+								<a href="#" class="right">Forget Password?</a>
+							</div>
+							<div class="formButton">
+								<a class="blue-button toggle" href="#"><span class="arrow">Login</span></a>
+							</div>
+						</div>
+						
+						<!-- Rental Welcome [Name] -->
+						<div class="movieRental_2 hidden">
+							<div class="TWCIdFormBox welcome">
+								<h2>Welcome [%FIRST_NAME%],<br> You are about to watch:</h2>
+								<ul>
+									<li>Movie: <strong>[%movie_title%]</strong></li>
+									<li>Price: <strong>[%movie_price%]</strong></li>
+									<br>
+									<li>*You will have [%rental_time%] hours to watch your movie.</li>
+								</ul>
+							</div>
+							<div class="instructions">
+								<small>This program is available for your TV via your set-top box. You can access it on your list of recorded and available shows. select the movie and press play to enjoy.</small>
+								<input type="checkbox"><label>By Checking this box you acknowledge our <span class="TOC"><a href="#">Terms & Conditions</a></span></label>
+								
+								<!-- TOC agreement alert -->
+								<span class="agreeTOC invisible">You must agree to our terms & conditions to continue.</span>
+							</div>
+							<div class="formButton">
+								<a class="blue-button toggle" href="#"><span class="arrow">Rent [%movie_title%]</span></a>
+							</div>
+						</div>
+						
+						<!-- Movie is Ready to Watch -->
+						<div class="movieRental_3 hidden">
+							<div class="TWCIdFormBox welcome">
+								<h2>[%movie_title%] is ready to watch.</h2>
+								<ul>
+									<li>You have been charged <strong>[%movie_price%]</strong>. Your program will be available to watch until [%rental_expiration%].</li>
+									<br>
+									<li><span class="FAQ"><a href="#">Frequently asked questions</a></span></li>
+								</ul>
+							</div>
+							<div class="instructions">
+								<small>This program is available for your TV via your set-top box. You can access it on your list of recorded and available shows. select the movie and press play to enjoy.</small>
+							</div>	
+							
+							<!-- Final Message -->
+							<h6>Enjoy your movie</h6>
+						</div>
+						
+					</section>
+				</form>
+			</div><!-- end main -->
+			
+			<!-- recommendations list, appears after rental finalized -->
+			<div class="recommendations hidden">
+				<h2>People who Rented [%movie_title%] Also Rented:</h2>
+				<div class="main">
+					<ul class="recommendedMovies">
+						<li><img src="images/Godfather.jpg" alt=""><a class="blue-button toggle" href="#"><span class="arrow">Rent</span></a></li>
+						<li><img src="images/Inception.jpg" alt=""><a class="blue-button toggle" href="#"><span class="arrow">Rent</span></a></li>
+						<li><img src="images/Birds.jpg" alt=""><a class="blue-button toggle" href="#"><span class="arrow">Rent</span></a></li>
+						<li><img src="images/Prometheus.jpg" alt=""><a class="blue-button toggle" href="#"><span class="arrow">Rent</span></a></li>
+						<li><img src="images/2001.jpg" alt=""><a class="blue-button toggle" href="#"><span class="arrow">Rent</span></a></li>
+						<li><img src="images/Karate_Kid.jpg" alt=""><a class="blue-button toggle" href="#"><span class="arrow">Rent</span></a></li>
+					</ul>
+				</div>
+			</div><!-- end recommendations -->
+			
+		<!-- scripts -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.8.0.min.js"><\/script>')</script>
+
+	</body>
+</html>

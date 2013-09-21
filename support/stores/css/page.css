@@ -1,0 +1,233 @@
+/* ==========================================================================
+   CSS code for stores Stores Landing
+   
+   Author: Max Quattromani
+   Version: 1.0 - Updated: 7/28/13
+   ========================================================================== */
+   
+/*
+
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+ 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/* base styles are being handled by base main.css */ 
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* layout styles are being handled by base main.css */
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+img,
+video { 
+	border-radius: 3px; }
+
+.location_listing {
+	overflow: auto;
+	max-width: 300px;
+	padding: 2em;
+	border-radius: 3px;
+	background: #f2f7fb; }
+
+	.location_listing ul { margin: 1em 0; }
+
+		.location_listing li { 
+			display: block;
+			position: relative;
+			margin-bottom: 1em;
+			padding-bottom: 1em;
+			border-bottom: 1px dotted #ccc;
+			vertical-align: top; }
+
+.flag { 
+	top: 0;
+	right: 0; }
+
+span.flag { 
+    position: absolute; }
+
+.read-more { float: right; }
+
+/* ==========================
+   Modal
+   ========================== */
+
+#backgroundPopup { 
+	position: fixed;
+	display: none;
+	top: 0px;  
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background: #000;	
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: .5;
+	z-index: 9999;
+}
+
+#toPopup {
+    display: none;
+    position: absolute;
+	top: 2em;
+	left: 0;
+	right: 0;	
+    height: auto;
+    width: 90%;
+    max-width: 600px;
+	margin: auto;
+    overflow: visible;
+    border-radius: 3px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #333;
+    z-index: 99999; }
+
+	#toPopup > #popup_content { padding: 1em; }
+
+div.close {
+	position: absolute;
+	float: right;
+	top: -15px;
+    right: -15px;
+	height: 42px;
+	width: 42px;
+    background: url(../images/close.png) no-repeat;
+    cursor: pointer; }
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Theme
+   ========================================================================== */	
+
+} /* End Tablet Breakpoint */
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.location_listing b { display: block; }
+
+.location_listing .read-more {
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    padding: 0.7em 1em;
+    border-radius: 3px 3px 3px 3px;
+	background-color: #3779b3;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#3779b3), to(#02447e));
+	background-image: -webkit-linear-gradient(top, #3779b3, #02447e);
+	background-image: -moz-linear-gradient(top, #3779b3, #02447e);
+	background-image: -o-linear-gradient(top, #3779b3, #02447e);
+	background-image: -ms-linear-gradient(top, #3779b3, #02447e);
+	background-image: linear-gradient(top, #3779b3, #02447e);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#3779b3', EndColorStr='#02447e');
+	text-align: center; }
+
+.location_listing .read-more a { 
+    font-family: 'TWC Round Medium',Arial,Sans-Serif; 
+    color: #fff; }
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+   
+   		
+} /* End SmartPhone Breakpoint */ 
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+    

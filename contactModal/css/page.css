@@ -1,0 +1,188 @@
+.form_row {
+	
+}
+
+.col-33, .col-66 {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.col-33 {
+    width: 33.33333%;
+}
+
+.col-66 {
+    width: 66.66666%;
+}
+
+#contactform .form_leftcol div {
+    width: 422px;
+    line-height: 18px;
+}
+#contactform .text div.form_leftcollabel {
+    padding-left: 25px;
+}
+#contactform .form_rightcol div {
+    width: 422px;
+    line-height: 18px;
+    padding-left: 25px;
+}
+/********* form *********/
+#contactform {
+    margin-top: 10px; /* combat clientlib attribute top:-20px; */
+    width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+	background: #f9f9f9;
+}
+#contactform form {
+    position: relative;
+    top: 0;
+}
+#contactform .main-par {
+    padding-top: 30px;
+}
+#contactform .low-par {
+    margin: 0 auto;
+    padding: 20px 10px 0;
+    width: 985px;
+}
+#contactform .text .form_row .form_leftcol .form_leftcollabel label,
+#contactform .form_row .form_leftcol .form_leftcollabel label {
+	font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    color: #444;
+    font-weight: bold;
+}
+
+input {
+	width: 100%;
+    border: 1px solid #ccc;
+    font-size: 0.9em;
+    padding-left: 10px;
+    height: 22px;
+    line-height: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    outline: none;
+}
+input:focus,
+textarea:focus {
+    -webkit-transform: scale(1.001);
+    -moz-transform: scale(1.001);
+    transform: scale(1.001);
+}
+input:not(:focus),
+textarea:not(:focus) { opacity: 0.9 }
+input[type=radio] {
+    vertical-align: bottom;
+    position: relative;
+    bottom: -17px;
+}
+input[type=checkbox]{
+	width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    position: relative;
+    *overflow: hidden;
+}
+
+form#contactform div.text {
+    width: 50%;
+    float: left;
+    height: 54px;
+    margin: 0 0 8px;
+}
+form#contactform div.checkbox {
+    width: 422px;
+    float: left;
+    height: 54px;
+    margin: 0 0 8px;
+}
+#contactform .checkbox .form_row .form_leftcol .form_leftcollabel label,
+#contactform .form_row .form_leftcol .form_leftcollabel label {
+    font-size: 12px;
+    line-height: 24px;
+    color: #444;
+    font-weight: bold;
+}
+#contactform .checkbox div.form_leftcollabel {
+    padding-left: 25px;
+}
+#contactform .form_leftcolmark {
+    display: none;
+}
+#contactform .form_row_description {
+    padding: 5px 0 0 25px;
+}
+form#contactform div.text.section.state,
+form#contactform div.text.section.zip {
+	width: 233px;
+}
+form#contactform div.text.section.state {
+	clear: left;
+}
+.form_rightcol_wrapper input#contactform_state.form_field,
+.form_rightcol_wrapper input#contactform_zip.form_field {
+	width: 45%;
+}
+form#contactform div.text.section.notes {
+	position: relative;
+	float: right;
+	width: 50%;
+	top: -100px;
+}
+textarea#contactform_notes.form_field {
+	width: 432px;
+	border: 1px solid #ccc;
+}
+.blue-button {
+	border: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #feffff; /* Old browsers */
+    background: -moz-linear-gradient(center top , #387AB4 0%, #3173AD 18%, #0D4F89 74%, #01437D 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#387AB4), color-stop(100%,#01437D)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #387AB4 0%,#01437D 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #387AB4 0%,#01437D 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #387AB4 0%,#01437D 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #387AB4 0%,#01437D 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#387AB4', endColorstr='#01437D',GradientType=0 ); /* IE6-9 */
+    background-size: 100% auto;
+    clear: right;
+    color: #FFFFFF;
+    display: block;
+    float: right;
+    font-family: "TWC Round Medium",Arial,Sans-Serif;
+    font-size: 13px;
+    padding: 9px 20px;
+    text-align: center;
+}
+.blue-button { 
+	float: left;
+	margin: 25px;
+}
+.blue-button:hover {
+    background-image: -moz-linear-gradient(center top , #265A83 0%, #25577E 18%, #1E4869 66%, #1B405E 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#265A83), color-stop(100%,#1B405E)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #265A83 0%,#1B405E 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #265A83 0%,#1B405E 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #265A83 0%,#1B405E 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #265A83 0%,#1B405E 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#265A83', endColorstr='#1B405E',GradientType=0 ); /* IE6-9 */
+    background-size: 100% auto;
+    color: #FFFFFF !important;
+}
+.arrow {
+    background: url("../images/arrow-white-right.png") no-repeat scroll 100% center transparent;
+    padding-right: 15px;
+}
+a.blue-button {
+	text-decoration: none;
+}
