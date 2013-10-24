@@ -137,7 +137,7 @@
 				</div>
 			</header>
 			
-			<div class="cap tablet-hidden"> test</div>
+			<div class="cap tablet-hidden">her test</div>
 						
 			<div class="stores_details_map_container">
 				<div class="stores_details_map_info">
