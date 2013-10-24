@@ -1,0 +1,469 @@
+/* ==========================================================================
+    CSS Code for all Chat PopUp
+   
+    Author: Max Quattromani
+    Version: 1.8.9.9 - Updated: 10/14/2013
+   ========================================================================== */
+/* ==========================================================================
+    Layout
+   ========================================================================== */
+/* ==========================================================================
+    Module
+   ========================================================================== */
+/* ==========================
+	Chat UI
+   ========================== */
+.chatUI {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+  z-index: 99999; }
+  .chatUI input[type="checkbox"], .chatUI input[type="radio"] {
+    float: none; }
+  .chatUI a {
+    font-weight: normal; }
+
+/* Please consolidate all of this */
+[class^='chatUI-'] {
+  display: table;
+  width: 100%;
+  padding: 4%; }
+
+.chatUI-.top {
+  background: #fff;
+  border-radius: 2px 2px 0 0; }
+  .chatUI-.top img {
+    float: left;
+    padding-right: 5px; }
+  .chatUI-.top h5 {
+    display: inline;
+    padding: 0; }
+
+#hidewindow {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #387ab4;
+  cursor: pointer; }
+  #hidewindow:after {
+    padding-left: 5px;
+    font-family: 'FontAwesome', sans-serif;
+    content: "\f00d"; }
+
+.chatUI-.middle {
+  background: #3779b3;
+  background: #3779b3;
+  color: #fff;
+  overflow: hidden; }
+
+#ccPreCheck h5 {
+  border-bottom: none;
+  color: #fff;
+  text-align: center; }
+#ccPreCheck form {
+  font-size: 14px;
+  font-sixe: 1.4rem;
+  text-align: center; }
+  #ccPreCheck form input {
+    display: inline-block;
+    height: auto; }
+
+#ccPreSurvey {
+  display: none; }
+
+.telephoneInput {
+  display: none;
+  position: relative; }
+
+.telephone-tip:after {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  top: 13px;
+  left: 90%;
+  content: '\f059';
+  font-size: 20px;
+  font-size: 2rem;
+  font-family: 'FontAwesome', sans-serif;
+  cursor: pointer;
+  color: #444; }
+.telephone-tip p {
+  position: absolute;
+  left: -9999px;
+  text-align: center; }
+.telephone-tip:hover p {
+  width: 160px;
+  left: 40%;
+  top: -60px;
+  padding: 3%;
+  border-radius: 2px;
+  box-shadow: 0 0 2px #444;
+  background-color: #fcfdfd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfdfd), to(#eaf0f4));
+  background-image: -webkit-linear-gradient(top, #fcfdfd, #eaf0f4);
+  background-image: -moz-linear-gradient(top, #fcfdfd, #eaf0f4);
+  background-image: -o-linear-gradient(top, #fcfdfd, #eaf0f4);
+  background-image: -ms-linear-gradient(top, #fcfdfd, #eaf0f4);
+  background-image: linear-gradient(top, #fcfdfd, #eaf0f4);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#fcfdfd', EndColorStr='#eaf0f4'); }
+
+#ccWait, #ChatDisplay, #ccContainer, .chatUI-.conversation {
+  display: none; }
+
+#ccRemoteControl {
+  display: inline-block;
+  padding: .25em 1em;
+  border: 0;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#d7d7d7));
+  background-image: -webkit-linear-gradient(top, white, #d7d7d7);
+  background-image: -moz-linear-gradient(top, white, #d7d7d7);
+  background-image: -o-linear-gradient(top, white, #d7d7d7);
+  background-image: -ms-linear-gradient(top, white, #d7d7d7);
+  background-image: linear-gradient(top, white, #d7d7d7);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#d7d7d7');
+  color: #333; }
+  #ccRemoteControl a {
+    color: #333; }
+
+#ccRCDisable {
+  display: none; }
+
+#ChatDisplay {
+  overflow: auto;
+  height: 200px;
+  background: #fff;
+  padding: 4%; }
+  #ChatDisplay pre {
+    background: #fff;
+    box-shadow: 0px 0px 0px transparent;
+    color: #333;
+    font-family: inherit;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap; }
+
+.chatUI-.middle .language {
+  display: inline-block;
+  width: 100%;
+  text-align: right; }
+  .chatUI-.middle .language a {
+    color: #fff; }
+.chatUI-.middle input, .chatUI-.middle select, .chatUI-.middle textarea {
+  margin-top: 1em !important; }
+.chatUI-.middle input[type=radio] {
+  display: inline;
+  width: auto;
+  margin: 0 5px 1em; }
+
+.ccPreSurveyTextInput {
+  border: none; }
+
+.ccPreSurveyTextAreaInput {
+  height: 70px;
+  border: none; }
+
+#ccStartChatButton {
+  float: left; }
+
+.bottomContainer {
+  position: absolute;
+  width: 280px;
+  top: 250px;
+  padding: 10px;
+  background: white;
+  overflow: auto; }
+
+#ccSpinner {
+  height: 40px;
+  margin: 5% 0; }
+
+#ccWaitMessage {
+  margin-top: 10px;
+  font-family: 'TWC Round Light', Arial, sans-serif;
+  font-size: 20px;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center; }
+  #ccWaitMessage.second {
+    font-size: 14px;
+    font-size: 1.4rem; }
+
+#ccChatOutput {
+  height: 200px;
+  overflow: auto;
+  background: #fff;
+  color: #333; }
+
+#ccChatStatusBar {
+  background: grey;
+  left: 0;
+  padding: .5em;
+  top: 0;
+  vertical-align: middle; }
+  #ccChatStatusBar p {
+    color: #fff; }
+    #ccChatStatusBar p:before {
+      content: '\f111';
+      padding-right: 1em;
+      font-family: 'FontAwesome', sans-serif;
+      color: #86f557; }
+
+#ccChatStatusImg {
+  float: left;
+  margin-left: 1px;
+  margin-top: 1px; }
+
+p[class*='ccMessage'] {
+  padding: .5em 4%;
+  margin-bottom: 0; }
+
+.chatUI-.bottom {
+  position: relative;
+  background: #fff;
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 1px 9px -6px #333;
+  z-index: 9999; }
+  .chatUI-.bottom.active {
+    border-radius: 0; }
+    .chatUI-.bottom.active:after {
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #fff;
+      content: "";
+      left: 45%;
+      position: absolute;
+      top: 100%;
+      z-index: 999; }
+  .chatUI-.bottom .cta.omega {
+    display: none;
+    width: auto; }
+
+.cc_usertype_analyst {
+  padding: .5em 2%;
+  background: #dbe7f1; }
+
+.chatUI-.conversation {
+  background: #fff;
+  overflow: hidden; }
+
+.ccMessagFrom {
+  font-weight: bold; }
+
+.cc_usertype_user .ccMessagFrom {
+  color: #387ab4; }
+
+.chatUI-.top span, .chatUI-.bottom span {
+  display: table-cell;
+  float: right;
+  vertical-align: middle; }
+.chatUI-.top span a {
+  font-weight: 100; }
+.chatUI-.bottom span a {
+  font-weight: 100; }
+.chatUI-.bottom span.transcript {
+  display: none;
+  float: right;
+  padding-top: 10px; }
+
+a#transcript:after {
+  padding-left: 5px;
+  font-family: 'FontAwesome', sans-serif;
+  content: "\f105"; }
+a#transcript.active:after {
+  transform: rotate(-90deg); }
+
+.icon-comments:before {
+  padding-right: 5px;
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: 100;
+  content: "\f086";
+  color: #333;
+  vertical-align: middle; }
+
+.icon-remove:after {
+  padding-left: 5px;
+  font-family: 'FontAwesome', sans-serif;
+  content: "\f00d"; }
+
+.chatUI-.transcript {
+  display: none;
+  background: #dbe7f1; }
+  .chatUI-.transcript p.h5 {
+    line-height: 1; }
+  .chatUI-.transcript input[type="email"] {
+    display: block;
+    width: 96%;
+    margin-bottom: 1.4em; }
+.chatUI- span.show_transcript {
+  display: none; }
+.chatUI- span.hide_transcript {
+  display: block;
+  text-align: right;
+  color: #222; }
+.chatUI-.footnote {
+  display: none;
+  border-top: 1px solid #fff;
+  box-shadow: 0 -1px 0 #e2e2e2;
+  background-color: #e2e2e2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e2e2e2), to(#f7f7f7));
+  background-image: -webkit-linear-gradient(top, #e2e2e2, #f7f7f7);
+  background-image: -moz-linear-gradient(top, #e2e2e2, #f7f7f7);
+  background-image: -o-linear-gradient(top, #e2e2e2, #f7f7f7);
+  background-image: -ms-linear-gradient(top, #e2e2e2, #f7f7f7);
+  background-image: linear-gradient(top, #e2e2e2, #f7f7f7);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#e2e2e2', EndColorStr='#f7f7f7');
+  text-align: center; }
+
+.footnote p {
+  margin-bottom: 0; }
+
+#ccCloseConfirm {
+  display: none;
+  position: absolute;
+  top: 30%;
+  width: 92%;
+  margin: 0 auto;
+  padding: 2em;
+  background: #fff;
+  border-radius: 3px;
+  text-align: center;
+  color: #333;
+  z-index: 999999; }
+  #ccCloseConfirm input {
+    display: inline-block;
+    width: 25%; }
+
+#ccContainer {
+  background: #fff;
+  color: #333; }
+
+#ccPostSurvey {
+  display: none;
+  height: 200px;
+  overflow: auto; }
+  #ccPostSurvey h1 {
+    margin-bottom: .5em;
+    background: #6b9cc7;
+    color: #fff;
+    text-align: center; }
+  #ccPostSurvey span {
+    padding: 4%; }
+    #ccPostSurvey span.ConsonaLegendText {
+      display: block;
+      margin-bottom: 1em;
+      padding: 0; }
+  #ccPostSurvey textarea {
+    border: 1px solid #ccc;
+    width: 96%;
+    max-width: 96%;
+    padding: 2%;
+    margin-bottom: .5em; }
+  #ccPostSurvey label.ConsonaFormRadioLabel {
+    margin-right: 1em; }
+
+#ccSurveyQuestions {
+  padding: 4%; }
+
+div.ConsonaFormField {
+  margin-bottom: 1em; }
+
+.ConsonaFormRadioLine {
+  display: inline; }
+
+.chatUI-.surveyEnd {
+  display: none;
+  background: #fff; }
+
+#ccCancelSurveyButton.btn {
+  float: right; }
+
+#ccCloseConfirm h3 {
+  margin-bottom: 0; }
+
+.darkOverlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  /* fallback */
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999; }
+
+/* ==========================================================================
+    State
+   ========================================================================== */
+/* ==========================================================================
+    Theme
+   ========================================================================== */
+/* ==========================
+    Browser Specific
+   ========================== */
+/* Firefox */
+@-moz-document url-prefix() {}
+/* Webkit: Chrome/Safari */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* Webkit browsers add a 2px margin outside the chrome of form elements */ }
+/* IE:8/9 */
+/* ie (.ie) */
+.twc-ie .chatUI {
+  border: 1px solid #d3d3d3; }
+
+/* ie8 (.ie8) */
+/* ie9 (.ie9) */
+/* ==========================
+    Responsive Design
+   ========================== */
+/* ==========================
+    Tablet
+   ========================== */
+@media (max-width: 68.6875em) {
+  /* ==========================================================================
+      Layout
+     ========================================================================== */
+  /* ==========================================================================
+      Module
+     ========================================================================== */
+  /* ==========================
+  	Chat UI
+     ========================== */
+  .chatUI {
+    width: 100%;
+    margin-left: 0 auto; }
+
+  .telephone-tip:hover p, .telephone-tip:active p {
+    top: -90px; }
+
+  /* ==========================================================================
+      State
+     ========================================================================== */
+  /* ==========================================================================
+      Theme
+     ========================================================================== */ }
+/* ==========================
+    Smartphone
+   ========================== */
+@media (max-width: 31.25em) {
+  /* ==========================================================================
+      Layout
+     ========================================================================== */
+  /* ==========================================================================
+      Module
+     ========================================================================== */
+  /* ==========================================================================
+      State
+     ========================================================================== */
+  /* ==========================================================================
+      Theme
+     ========================================================================== */ }

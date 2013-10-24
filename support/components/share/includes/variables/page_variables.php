@@ -59,8 +59,10 @@
 			
 		$content = true;
 		
+		$share = true;
+		
 		$footer = true;
 		
-			$legalOnly = 'true';
-		
+		$legalOnly = true;
+					
 ?>

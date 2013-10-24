@@ -1,0 +1,172 @@
+/* the ../icons redundant path is needed to proper remapping */
+
+/* teaser is not active */
+.cq-teaser-header-off {
+    background: url('default/icons/48x48/teaser_inactive.png') no-repeat 0 15px;
+}
+
+/* teaser is active */
+.cq-teaser-header-on {
+    background: url('default/icons/48x48/teaser_active.png') no-repeat 0 15px;
+}
+
+.cq-teaser-status-inactive {
+    background-image: url('../../../ui/widgets/themes/default/icons/48x48/excl-yellow.png');
+}
+.cq-teaser-img {
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin-left: 60px;
+    padding-bottom: 20px;
+}
+
+ul.cq-teaser-data {
+    padding-left: 250px;
+}
+
+ul.cq-teaser-data li {
+    width: 405px;
+}
+#cq-segment-validitystatus .cq-segment-validitystatus-unresolved {
+    background-image: url('/libs/cq/ui/widgets/themes/default/icons/48x48/excl-yellow.png');
+}
+
+#cq-segment-validitystatus .cq-segment-validitystatus-invalid {
+    background-image: url('/libs/cq/ui/widgets/themes/default/icons/48x48/excl-red.png');
+}
+
+.cq-segment-header-off {
+    background: url('/libs/cq/ui/widgets/themes/default/icons/48x48/off-slider.png') no-repeat 0 15px;
+}
+
+.cq-segment-header-on {
+    background: url('/libs/cq/ui/widgets/themes/default/icons/48x48/on-slider.png') no-repeat 0 15px;
+}
+.segmenteditor-or {
+    padding:10px;
+    background-color: #607084;
+    color: white;
+    border:1px dotted white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.segmenteditor-and {
+    padding:10px;
+    background-color: white;
+    border: 1px dotted darkgray;
+    color: #607084;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.segmenteditor-container-logic-text {
+    width: 100%;
+    margin-left: -5px;
+    padding-right: 5px;
+}
+
+.segmenteditor-logic-text {
+    font-weight:bold;
+    line-height:30px;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.segmenteditor-container-content {
+    padding-left:5px;
+    line-height:30px;
+    border: 2px solid white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align:center;
+    width:90%;
+    margin-left: 20px;
+}
+.segmenteditor-container-and-header, .segmenteditor-container-or-header {
+    margin-left:-8px;
+    margin-top:-10px;
+    padding-bottom:5px;
+}
+
+.segmenteditor-operator {
+    display: inline;
+}
+
+.trait-resolved {
+    /*border: 1px dotted lightgreen;*/
+    background-color: #CDF56E;
+    color: #607084;
+}
+.trait-unresolved {
+    /*border: 1px dotted red;*/
+    /*background-color: #F5BD43;*/
+    background-color: #D3D3D3;
+    color: #607084;
+}
+
+.trait-invalid {
+    background-color: #FF6347;
+    color: #607084;
+}
+
+.logic-trait-resolved {
+    /*color: green;*/
+    /*color: #CDF56E;*/
+}
+
+.logic-trait-unresolved {
+    /*color: red;*/
+    /*color: #F5BD43;*/
+    /*font-weight: bold;*/
+}
+#CQ .cq-eclickstreamcloud-list {
+    border-color:#FFFFFF rgb(255, 255, 255) rgb(238, 238, 238);
+    border-style:solid;
+    border-width:1px;
+    color:#555555;
+    font-family:tahoma,arial,helvetica,sans-serif;
+    font-size:11px;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:normal;
+    padding:3px 10px;
+    white-space:normal;
+    right:5px !important;
+    top:25px !important;
+    left:auto !important;
+    cursor:default !important;
+}
+#CQ .cq-eclickstreamcloud-list-entry {
+    cursor:pointer !important
+}
+
+/*
+ * Copyright 1997-2010 Day Management AG
+ * Barfuesserplatz 6, 4001 Basel, Switzerland
+ * All Rights Reserved.
+ *
+ * This software is the confidential and proprietary information of
+ * Day Management AG, ("Confidential Information"). You shall not
+ * disclose such Confidential Information and shall use it only in
+ * accordance with the terms of the license agreement you entered into
+ * with Day.
+ */
+
+#CQ .x-edit-insertvariable {
+    background: none !important;
+    padding-left: 0 !important;
+}
+
+.cq-variable {
+
+}
+
+.cq-variable-code {
+    background-color: #dddddd;
+}

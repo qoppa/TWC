@@ -1,0 +1,284 @@
+/* ==========================================================================
+   CSS code for All LOBs
+   
+   Author: Max Quattromani
+   Version: 1.0 - Updated: 8/3/13
+   ========================================================================== */
+   
+/*
+
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+ 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+.twc-box-column li a {
+	font: inherit;
+	line-height: 1.4;
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* layout styles are being handled by base main.css */
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.box-example {
+	background:
+	border: solid 1px #0a1c2b;
+	color: #fff;
+	margin: 0 0 1em 0;
+	padding: 1em 1em;
+	width: 50%;}
+
+.progressionBarArrow-EBF {
+	background-color: #5d92c0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#5d92c0), to(#2c608f));
+	background-image: -webkit-linear-gradient(top, #5d92c0, #2c608f);
+	background-image: -moz-linear-gradient(top, #5d92c0, #2c608f);
+	background-image: -o-linear-gradient(top, #5d92c0, #2c608f);
+	background-image: -ms-linear-gradient(top, #5d92c0, #2c608f);
+	background-image: linear-gradient(top, #5d92c0, #2c608f);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#5d92c0', EndColorStr='#2c608f');}
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */
+
+.twc-ie8 section {
+	border: 1px solid #c2c2c2;
+}
+
+
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.twc-LOBTopics ul li.topic { 
+	padding: 0; 
+	border-bottom: 1px solid #fff; }
+
+.twc-LOBTopics li.active { 
+	width: 100%;
+	padding: 0;
+	background: none; }
+
+.twc-LOBTopics li h5,
+.twc-LOBTopics li.active h5 {
+	width: auto;
+	padding: .7em .5em;
+    background: rgb(238,238,239);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZGRmZTIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(238,238,239,1) 0%, rgba(221,223,226,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,239,1)), color-stop(100%,rgba(221,223,226,1)));
+	background: -webkit-linear-gradient(top,  rgba(238,238,239,1) 0%,rgba(221,223,226,1) 100%);
+	background: -o-linear-gradient(top,  rgba(238,238,239,1) 0%,rgba(221,223,226,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(238,238,239,1) 0%,rgba(221,223,226,1) 100%);
+	background: linear-gradient(to bottom,  rgba(238,238,239,1) 0%,rgba(221,223,226,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', endColorstr='#dddfe2',GradientType=0 );
+	font-size: 20px;
+	font-size: 2.0rem;
+	font-family: 'TWC Round Book',Arial,Sans-Serif;
+	font-weight: 100;
+    color: #333;
+}
+
+.twc-LOBTopics li ul { margin: 0; }
+
+.twc-LOBTopics li.twc-first ul { display: block; }
+
+.twc-LOBTopics ul li.topic ul li { display: block; }
+
+.twc-LOBTopics ul li.expanded ul li a { color: #3376B2; }
+
+.twc-LOBTopics ul li.topic ul li.topic ul { display: none; }
+
+.twc-LOBTopics ul li li { padding: .5em; }
+
+.twc-LOBTopics ul li li.topic { padding: 0; }
+
+.twc-LOBTopics ul li li.topic h5 {
+	background: rgb(238,238,239);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZGRmZTIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(238,238,239,.5) 0%, rgba(221,223,226,.5) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,239,.5)), color-stop(100%,rgba(221,223,226,.5)));
+	background: -webkit-linear-gradient(top,  rgba(238,238,239,.5) 0%,rgba(221,223,226,.5) 100%);
+	background: -o-linear-gradient(top,  rgba(238,238,239,.5) 0%,rgba(221,223,226,.5) 100%);
+	background: -ms-linear-gradient(top,  rgba(238,238,239,.5) 0%,rgba(221,223,226,.5) 100%);
+	background: linear-gradient(to bottom,  rgba(238,238,239,.5) 0%,rgba(221,223,226,.5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', endColorstr='#dddfe2',GradientType=0 ); }
+
+.twc-LOBTopics ul li ul li ul li.topic h5 {
+	background: none; }	
+	
+	.twc-LOBTopics ul li ul li ul li.topic { border-bottom: 1px solid #e1e1e1;}
+	
+	.twc-LOBTopics ul h5:after {
+		float: right;
+		font-family: 'FontAwesome', sans-serif;
+		font-size: 18px;
+		font-size: 1.8rem;
+		font-weight: bold;
+		content:'\f107';
+		color: #B1B2AF;
+		-webkit-transition: all .4s ease-in-out;
+    	   -moz-transition: all .4s ease-in-out;
+    	   	 	transition: all .4s ease-in-out; }
+    
+    .twc-LOBTopics ul li.expanded > h5:after { transform: rotate(180deg); }
+    	   	 			
+		.twc-LOBTopics ul li ul li ul li.topic h5:after { color: #B1B2AF; }
+		
+.twc-LOBTopics {
+	width: 100%;
+	padding: 4%;
+	border-right: none;
+	background: #fff; }
+
+.twc-LOBTopics h3 { color: #333; }
+	
+		.twc-LOBTopics li a,
+		.twc-LOBTopics li.active a {
+			font-size: 13px;
+			font-size: 1.3rem;
+		}
+		
+		.twc-LOBTopics p.expandedLOBContent,
+		.twc-LOBTopics a.contReading {
+			display: none;
+		}
+	
+	.twc-LOBTopics h6 {
+		color: #333;
+	}
+
+.twc-topicLOBs {
+	display: none;
+}
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+
+
+
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */	
+
+} /* End Tablet Breakpoint */
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+ 
+ 
+ 
+ 
+   
+/* ==========================================================================
+   Module
+   ========================================================================== */
+		
+
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+   
+   
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+  
+  
+  
+  
+   		
+} /* End SmartPhone Breakpoint */
+
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+    

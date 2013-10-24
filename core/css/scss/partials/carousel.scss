@@ -1,0 +1,271 @@
+/* ==========================================================================
+    CSS Code for the Carousel module
+   
+    Author: Max Quattromani
+    Version: 1.8.9.9 - Updated: 9/26/2013
+   ========================================================================== */
+
+/* ==========================================================================
+    Layout
+   ========================================================================== */
+
+/* ==========================================================================
+    Module
+   ========================================================================== */
+
+.three-up-carousel {
+  visibility: hidden;
+  color: #333;
+}
+
+.slide {
+  position: relative;
+  width: 310px;
+  height: 175px;
+  img {
+    position: relative;
+    width: 310px;
+    height: 175px;
+  }
+}
+
+.slider-wrapper {
+  position: relative;
+  margin: 0 auto 60px;
+  padding: 0;
+  *zoom: 1;
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  .slider-pager, .slider-controls-auto {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+  }
+  .slider-pager {
+    padding-top: 20px;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    text-align: center;
+    .slider-pager-item {
+      display: inline-block;
+      *zoom: 1;
+      *display: inline;
+    }
+  }
+  .slider-controls-auto .slider-controls-auto-item {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+  }
+  .slider-pager.slider-default-pager a {
+    position: relative;
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    border-radius: 5px;
+    behavior: url(pie/PIE.htc);
+    z-index: 0;
+    &:hover, &.active {
+      background: #000;
+    }
+  }
+  .slider-prev {
+    left: 0;
+    background: url(../images/carousel--controls.png) no-repeat 0 0;
+    &:hover {
+      background: url(../images/carousel--controls__hover.png) no-repeat 0 0;
+    }
+  }
+  .slider-next {
+    right: 0;
+    background: url(../images/carousel--controls.png) no-repeat -28px 0;
+    &:hover {
+      background: url(../images/carousel--controls__hover.png) no-repeat -28px 0;
+    }
+  }
+  .slider-prev:hover {
+    background-position: 0 0;
+  }
+  .slider-next:hover {
+    background-position: -28px 0;
+  }
+  .slider-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -33px;
+    outline: 0;
+    width: 27px;
+    height: 57px;
+    text-indent: -9999px;
+    z-index: 9999;
+    &.disabled {
+      display: none;
+    }
+  }
+  .slider-controls-auto {
+    text-align: center;
+    .slider-start {
+      display: block;
+      text-indent: -9999px;
+      width: 10px;
+      height: 11px;
+      outline: 0;
+      background: url(../img/controls.png) -86px -11px no-repeat;
+      margin: 0 3px;
+      &:hover, &.active {
+        background-position: -86px 0;
+      }
+    }
+    .slider-stop {
+      display: block;
+      text-indent: -9999px;
+      width: 9px;
+      height: 11px;
+      outline: 0;
+      background: url(../img/controls.png) -86px -44px no-repeat;
+      margin: 0 3px;
+      &:hover, &.active {
+        background-position: -86px -33px;
+      }
+    }
+  }
+  .slider-controls.slider-has-controls-auto.slider-has-pager {
+    .slider-pager {
+      text-align: left;
+      width: 80%;
+    }
+    .slider-controls-auto {
+      right: 0;
+      width: 35px;
+    }
+  }
+}
+
+/* Pagination Markers */
+
+/* Direction Controls */
+
+/* Auto Controls */
+
+/* Image CTA */
+
+.image-banner {
+  position: absolute;
+  top: 0;
+  padding: 1em 2em;
+  text-align: left;
+  &.right {
+    position: absolute;
+    width: 60%;
+    right: 0;
+  }
+  &.left {
+    position: absolute;
+    left: 0;
+  }
+  &.seventy-five p {
+    width: 75%;
+  }
+  &.sixty p {
+    width: 60%;
+  }
+  &.fifty-five p {
+    width: 55%;
+  }
+}
+
+/* ==========================================================================
+    State
+   ========================================================================== */
+
+/* ==========================================================================
+    Theme
+   ========================================================================== */
+
+/* ==========================
+    Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {}
+
+
+/* Webkit: Chrome/Safari */
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* Webkit browsers add a 2px margin outside the chrome of form elements */
+}
+
+/* IE:8/9 */
+
+/* ie (.ie) */
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+/* ==========================
+    Responsive Design
+   ========================== */
+
+/* ==========================
+    Tablet
+   ========================== */
+
+@media (max-width: 68.6875em) {
+  /* ==========================================================================
+      Layout
+     ========================================================================== */
+  /* ==========================================================================
+      Module
+     ========================================================================== */
+  .slider-wrapper {
+    max-width: 645px;
+  }
+  /* ==========================================================================
+      State
+     ========================================================================== */
+  /* ==========================================================================
+      Theme
+     ========================================================================== */
+}
+
+/* ==========================
+    Smartphone
+   ========================== */
+
+@media (max-width: 44.125em) {
+  .slider-wrapper {
+    max-width: 310px;
+  }
+  .slide {
+    margin: 0;
+    img {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 31.25em) {
+  /* ==========================================================================
+      Layout
+     ========================================================================== */
+  /* ==========================================================================
+      Module
+     ========================================================================== */
+  /* ==========================================================================
+      State
+     ========================================================================== */
+  /* ==========================================================================
+      Theme
+     ========================================================================== */
+}

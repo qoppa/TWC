@@ -1,0 +1,13 @@
+.cq-clear-for-ie7 {
+    clear:both;
+    font-size: 1px;
+}
+
+.config-successful-message {
+    margin: 10px 10px 10px 0px;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 1px solid #336600;
+    color: #000000;
+    width: 568px;
+}

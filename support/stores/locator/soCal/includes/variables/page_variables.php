@@ -39,7 +39,7 @@
 			
 	// banner.php variables
 		// Banner Title - H1 tag
-		$banner_title = 'Find TWC Stores';
+		$banner_title = 'Locate a TWC Store';
 		
 	// content.php variables
 		// SubHead text
@@ -61,10 +61,22 @@
 		
 		$banner = true;
 		
-		$supportSearch = true;
+		$supportSearch = false;
 			
 		$content = true;
 		
 		$footer = true;
+
+// share button variables
+	
+		$printButton = true;
+		
+		$emailButton = true;
+			
+		$twitterButton = false;
+				
+		$facebookButton = false;
+		
+		$linkedInButton = false;
 
 ?>

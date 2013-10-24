@@ -6,6 +6,7 @@ $(function() {
         $(this).addClass('active');
         var currentTab = $(this).children('a').attr('href');
         $('div[id*="-access"]').hide();
+				
         $(currentTab).show();
         // Swap out banner text
         var $banner = $('h2.banner');

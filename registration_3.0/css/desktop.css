@@ -1,0 +1,1616 @@
+/* ----------------------
+ * desktop global styles
+ -- */
+.page-header h2 {
+  font-size: 30px;
+  font-family: "TWC Round Book"; }
+.page-header.narrow {
+  width: auto; }
+  .page-header.narrow .wrap {
+    padding-right: 150px;
+    width: 703px; }
+  .page-header.narrow a.modal {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    width: 150px;
+    text-align: right; }
+
+.sub-header.alt h3 {
+  padding: 10px 20px; }
+.sub-header.black-header {
+  overflow: hidden; }
+  .sub-header.black-header h2 {
+    float: left; }
+  .sub-header.black-header span {
+    float: right;
+    font-size: 14px;
+    padding-top: 5px; }
+
+.print,
+.print-option {
+  display: block; }
+
+.solid-column,
+.solid-module,
+.module.solid {
+  padding: 20px 20px 15px; }
+
+.solid-column.alt {
+  padding: 20px; }
+
+.module.solid {
+  padding-top: 15px; }
+
+.img {
+  display: block; }
+  .img div {
+    background-repeat: no-repeat;
+    background-position: center center; }
+
+.notice h4 {
+  font-size: 15px;
+  line-height: 17px; }
+
+.special-offer h5 {
+  padding: 10px 0 10px 10px; }
+.special-offer p {
+  padding-left: 10px; }
+
+.desktop-hidden {
+  display: none; }
+
+select, input[type=text], input[type="email"], input[type="tel"] {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border: 1px solid #aaa; }
+
+select {
+  background-color: #f6f6f6;
+  height: 32px; }
+
+.narrow {
+  width: 703px;
+  overflow: hidden; }
+
+.no-sticky {
+  float: left; }
+
+.continue {
+  margin-bottom: -20px; }
+
+.billing-block {
+  overflow: hidden; }
+  .billing-block fieldset {
+    float: left;
+    width: 48.5%;
+    margin-right: 1.5%; }
+    .billing-block fieldset:first-child {
+      clear: left; }
+  .billing-block .right, .billing-block .zip, .billing-block .dob {
+    margin-left: 1.5%;
+    margin-right: 0; }
+  .billing-block select {
+    height: 34px; }
+  .billing-block .first-name {
+    width: 35.5%;
+    margin-right: 3%; }
+  .billing-block .mid-name {
+    width: 10%; }
+  .billing-block .pin {
+    width: 25%;
+    margin-right: 3%; }
+  .billing-block .state {
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    width: 27.5%;
+    min-width: 150px; }
+    .billing-block .state select {
+      width: 100%; }
+  .billing-block .zip, .billing-block .dob {
+    width: 18%;
+    min-width: 75px; }
+    .billing-block .zip input, .billing-block .dob input {
+      width: 100%; }
+
+/* ----------------------
+ *	.header Desktop Breakpoint Styles
+ -- */
+.header.signed-in .wrap {
+  padding-top: 0px; }
+.header .top {
+  display: none; }
+.header .wrap {
+  min-height: 100px; }
+.header .logo {
+  margin: 15px 0; }
+  .header .logo .desktop {
+    display: block;
+    width: 218px;
+    height: 60px; }
+    .header .logo .desktop div {
+      height: 100%;
+      width: 100%; }
+.header .user-options {
+  margin-top: 10px;
+  float: right;
+  width: auto; }
+  .header .user-options .user, .header .user-options .chat {
+    margin-right: 25px; }
+  .header .user-options li {
+    vertical-align: bottom; }
+  .header .user-options .user a {
+    margin-left: 10px; }
+.header .questions {
+  background-color: #2e2e2e;
+  background-image: -moz-linear-gradient(270deg, #404040 0%, #3b3b3b 19%, #222222 81%, #1d1d1d 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #404040), color-stop(19%, #3b3b3b), color-stop(81%, #222222), color-stop(100%, #1d1d1d));
+  background-image: -webkit-linear-gradient(270deg, #404040 0%, #3b3b3b 19%, #222222 81%, #1d1d1d 100%);
+  background-image: -o-linear-gradient(270deg, #404040 0%, #3b3b3b 19%, #222222 81%, #1d1d1d 100%);
+  background-image: -ms-linear-gradient(270deg, #404040 0%, #3b3b3b 19%, #222222 81%, #1d1d1d 100%);
+  background-image: linear-gradient(to bottom, #404040 0%, #3b3b3b 19%, #222222 81%, #1d1d1d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF404040', endColorstr='#FF1D1D1D',GradientType=0);
+  border-top-left-radius: 3px;
+  -moz-border-top-left-radius: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-top-right-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  position: absolute !important;
+  min-width: 210px;
+  border-bottom: 1px solid #1d1d1d;
+  bottom: 0;
+  right: 0; }
+  .header .questions .question-header {
+    padding: 5px 35px 5px 10px;
+    height: 36px;
+    background: url("../images/arrows/arrow-white-down-bold.png") no-repeat 95% center; }
+    .header .questions .question-header span {
+      background: url("../images/icons/icon-questions.png") no-repeat left center;
+      padding-left: 30px;
+      color: #fff; }
+  .header .questions ul {
+    width: 315px;
+    right: 0;
+    top: 37px; }
+  .header .questions.active .question-header {
+    background-image: url("../images/arrows/arrow-white-up-bold.png"); }
+.header .cart {
+  position: absolute;
+  bottom: 6px;
+  right: 230px;
+  padding-left: 0; }
+  .header .cart span {
+    color: #999; }
+  .header .cart a {
+    cursor: default; }
+.header .cart-wrap {
+  display: inline; }
+.header .user,
+.header .chat {
+  position: relative;
+  top: -8px; }
+.header .phone {
+  background-position: left 5px; }
+  .header .phone a span {
+    margin-bottom: -5px; }
+.header .box {
+  border: 1px solid #2f2f2f;
+  padding: 5px 9px;
+  background-color: #212121;
+  background-image: -moz-linear-gradient(270deg, #292929 0%, #1a1a1a 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #292929), color-stop(100%, #1a1a1a));
+  background-image: -webkit-linear-gradient(270deg, #292929 0%, #1a1a1a 100%);
+  background-image: -o-linear-gradient(270deg, #292929 0%, #1a1a1a 100%);
+  background-image: -ms-linear-gradient(270deg, #292929 0%, #1a1a1a 100%);
+  background-image: linear-gradient(to bottom, #292929 0%, #1a1a1a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF292929', endColorstr='#FF1A1A1A',GradientType=0); }
+
+/* TWC_END_SASS_FILE  partials/header/header.desktop.css */
+/* ----------------------
+ *	Container Desktop Breakpoint Styles (.container)
+ -- */
+/* TWC_END_SASS_FILE  partials/container/container.desktop.css */
+/* ----------------------
+ *	Checkout Steps desktop Styles (.checkout-steps)
+ -- */
+.checkout-steps {
+  margin: 0 auto;
+  width: 980px;
+  padding: 10px 0 17px; }
+  .checkout-steps .step-list {
+    margin-top: 10px; }
+  .checkout-steps.no-steps {
+    min-height: auto; }
+  .checkout-steps.show-sub-steps .active .number {
+    margin-bottom: -9px;
+    margin-top: 14px; }
+  .checkout-steps h1 {
+    font-size: 36px;
+    padding: 30px 0 22px 0; }
+  .checkout-steps li {
+    border-top: 1px solid #5d6469;
+    padding: 1px 0px 0 0;
+    width: 25%; }
+  .checkout-steps .sub-steps {
+    margin-left: 40px;
+    width: 235px;
+    position: absolute;
+    bottom: 0;
+    left: 15px; }
+    .checkout-steps .sub-steps ul {
+      width: 212px;
+      height: 30px; }
+    .checkout-steps .sub-steps li {
+      line-height: 1; }
+  .checkout-steps .active {
+    width: 30%;
+    padding-right: 45px; }
+    .checkout-steps .active .block {
+      height: 54px;
+      padding: 12px 0 12px 25px;
+      position: absolute;
+      top: -4px; }
+    .checkout-steps .active .end-arrow {
+      width: 38px;
+      height: 38px;
+      right: -20px;
+      top: 4px; }
+  .checkout-steps .step {
+    height: 50px; }
+  .checkout-steps .block {
+    padding: 10px 0;
+    height: 50px;
+    line-height: 30px; }
+  .checkout-steps .number {
+    font-size: 25px;
+    background-color: #babdbf;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px; }
+
+/* TWC_END_SASS_FILE  partials/checkout-steps/checkout-steps.desktop.css */
+/* ----------------------
+ *	Checkout Footer Desktop Breakpoint Styles
+ -- */
+.footer {
+  background-size: auto; }
+  .footer .phone {
+    display: none; }
+
+/* TWC_END_SASS_FILE  partials/footer/footer.desktop.css */
+/* ----------------------
+ * Generic Module desktop Breakpoint Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/module/module.desktop.css */
+/* ----------------------
+ * collapsible Desktop Styles
+ -- */
+.page-collapsible {
+  padding: 1px 0 0 0; }
+  .page-collapsible header li {
+    height: 45px; }
+  .page-collapsible .content-wrap {
+    padding: 20px; }
+  .page-collapsible.highlighted header {
+    padding-right: 0; }
+    .page-collapsible.highlighted header .blue-button {
+      margin-left: 15px;
+      padding: 7px 5px; }
+    .page-collapsible.highlighted header .price {
+      font-size: 27px; }
+      .page-collapsible.highlighted header .price sup {
+        top: -9px; }
+        .page-collapsible.highlighted header .price sup.sign {
+          font-size: 18px;
+          top: -6px; }
+    .page-collapsible.highlighted header .price, .page-collapsible.highlighted header .status {
+      width: 130px;
+      padding-left: 10px;
+      background-color: #f0f5f9;
+      background-image: -moz-linear-gradient(270deg, white 0%, #e1ebf3 100%);
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #e1ebf3));
+      background-image: -webkit-linear-gradient(270deg, white 0%, #e1ebf3 100%);
+      background-image: -o-linear-gradient(270deg, white 0%, #e1ebf3 100%);
+      background-image: -ms-linear-gradient(270deg, white 0%, #e1ebf3 100%);
+      background-image: linear-gradient(to bottom, white 0%, #e1ebf3 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFE1EBF3',GradientType=0); }
+    .page-collapsible.highlighted header li:last-child {
+      background-color: #f0f5f9;
+      background-image: -moz-linear-gradient(270deg, white 0%, #e1ebf3 100%);
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #e1ebf3));
+      background-image: -webkit-linear-gradient(270deg, white 0%, #e1ebf3 100%);
+      background-image: -o-linear-gradient(270deg, white 0%, #e1ebf3 100%);
+      background-image: -ms-linear-gradient(270deg, white 0%, #e1ebf3 100%);
+      background-image: linear-gradient(to bottom, white 0%, #e1ebf3 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFE1EBF3',GradientType=0);
+      width: 100px;
+      padding-right: 10px;
+      border-top-right-radius: 3px;
+      -moz-border-top-right-radius: 3px;
+      -webkit-border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      -moz-border-bottom-right-radius: 3px;
+      -webkit-border-bottom-right-radius: 3px; }
+  .page-collapsible.highlighted.active header .price, .page-collapsible.highlighted.active header .status {
+    background-color: #f0f5f9;
+    background-image: -moz-linear-gradient(270deg, #e1ebf3 0%, white 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e1ebf3), color-stop(100%, white));
+    background-image: -webkit-linear-gradient(270deg, #e1ebf3 0%, white 100%);
+    background-image: -o-linear-gradient(270deg, #e1ebf3 0%, white 100%);
+    background-image: -ms-linear-gradient(270deg, #e1ebf3 0%, white 100%);
+    background-image: linear-gradient(to bottom, #e1ebf3 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFE1EBF3', endColorstr='#FFFFFFFF',GradientType=0); }
+  .page-collapsible.highlighted.active header li:last-child {
+    background-color: #f0f5f9;
+    background-image: -moz-linear-gradient(270deg, #e1ebf3 0%, white 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e1ebf3), color-stop(100%, white));
+    background-image: -webkit-linear-gradient(270deg, #e1ebf3 0%, white 100%);
+    background-image: -o-linear-gradient(270deg, #e1ebf3 0%, white 100%);
+    background-image: -ms-linear-gradient(270deg, #e1ebf3 0%, white 100%);
+    background-image: linear-gradient(to bottom, #e1ebf3 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFE1EBF3', endColorstr='#FFFFFFFF',GradientType=0); }
+  .page-collapsible.no-collapse li:first-child {
+    width: auto; }
+
+/* TWC_END_SASS_FILE  partials/collapsible/collapsible.desktop.css */
+/* ----------------------
+ * Tooltip Desktop Styles
+ -- */
+.tooltip-popup .close {
+  display: none; }
+
+/* TWC_END_SASS_FILE  partials/tooltip/tooltip.desktop.css */
+/* ----------------------
+ * Modal Desktop Breakpoint Styles
+ -- */
+.modal-window {
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+  border-top: 1px solid #999; }
+
+.modal-loading {
+  padding: 5px 20px; }
+
+.modal-loading-close,
+.modal-loading {
+  line-height: normal; }
+
+.modal-window,
+.modal-title-wrapper {
+  border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0; }
+
+.modal-title-wrapper {
+  position: relative;
+  height: 100px;
+  /* .modal-content-wrapper top */ }
+
+.modal-title {
+  padding: 26px 30px 20px 30px;
+  font-size: 2em; }
+
+.modal-content-wrapper {
+  background: #fff;
+  position: absolute;
+  top: 100px; }
+
+/* TWC_END_SASS_FILE  partials/modal/modal.desktop.css */
+/* =============================================================
+            required for floating cart functionality
+   ============================================================= */
+.cart-boundary-wrapper {
+  /* '.cart-fixed-bottom .cart-module-wrapper' right/bottom must match this padding value (which is set via .solid-module, or is 0) */
+  position: relative;
+  /* required for Javascript breakpoint detection and positioning.  Do not declare outside of desktop breakpiont */
+  /* This container must clear. remove if using clearfix */
+  overflow: hidden;
+  zoom: 1; }
+
+.cart-boundary-left {
+  /* This width is set via the "narrow" class to ensure it doesn't overlap cart-boundary-right */
+  /* This container must clear for height calculations. remove if using clearfix */
+  overflow: hidden;
+  zoom: 1; }
+
+.cart-boundary-right,
+.cart-module-wrapper,
+.cart-module .new-services-cart-module {
+  width: 215px;
+  /* set width here. To ensure this doesn't overlap cart-boundary-left */ }
+
+.cart-boundary-right {
+  float: right;
+  /* This container must clear for height calculations. remove if using clearfix */
+  overflow: auto;
+  zoom: 1; }
+
+.cart-module-wrapper {
+  float: right; }
+
+.cart-module .new-services-cart-module {
+  margin-bottom: 0;
+  /* required for JS calculation */ }
+
+.cart-float-top .new-services-cart-module {
+  position: fixed;
+  top: 0; }
+
+.cart-fixed-bottom .new-services-cart-module {
+  position: absolute;
+  bottom: 0;
+  /* set padding here. equal to cart-boundary-wrapper padding */
+  right: 0;
+  /* set padding here. equal to cart-boundary-wrapper padding */
+  top: auto;
+  /* must overrride .cart-float-top */ }
+
+/* Added by Allison */
+.solid-column.cart-fixed-bottom .new-services-cart-module {
+  bottom: 15px;
+  /* set padding here. equal to cart-boundary-wrapper padding */
+  right: 20px;
+  /* set padding here. equal to cart-boundary-wrapper padding */ }
+
+.ie9 .solid-column.cart-float-top {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
+.ie9 .solid-column.cart-fixed-bottom {
+  border-bottom-left-radius: 3px;
+  -moz-border-bottom-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -moz-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px; }
+
+.empty-services-cart-module {
+  display: none; }
+
+/* =============================================================
+            for testing only
+   ============================================================= */
+/* .cart-boundary-wrapper {
+	outline: 2px solid red;
+}
+.cart-boundary-left,
+.cart-boundary-right {
+	outline: 2px dashed blue;
+}
+.new-services-cart-module {
+	outline: 2px solid lime;
+}
+.cart-module-wrapper {
+	outline: 2px solid orange;
+} */
+/* TWC_END_SASS_FILE  partials/cart-module/cart-module.desktop.css */
+/* ----------------------
+ *	Checkout plans desktop Styles (.checkout-plans)
+ -- */
+.checkout-plans .plans header {
+  padding-right: 10px; }
+  .checkout-plans .plans header .toggle {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto; }
+  .checkout-plans .plans header h3 {
+    padding-left: 10px;
+    line-height: 16px; }
+  .checkout-plans .plans header li:last-child {
+    width: 90px;
+    padding-left: 10px;
+    white-space: nowrap; }
+  .checkout-plans .plans header .price {
+    width: 170px; }
+  .checkout-plans .plans header img {
+    margin-top: -10px; }
+  .checkout-plans .plans header .wide {
+    width: 205px; }
+  .checkout-plans .plans header .modal {
+    display: block;
+    font-size: 11px;
+    border: 1px solid #ccc;
+    background-color: #dfdfdf;
+    background-image: -moz-linear-gradient(270deg, white 0%, silver 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, silver));
+    background-image: -webkit-linear-gradient(270deg, white 0%, silver 100%);
+    background-image: -o-linear-gradient(270deg, white 0%, silver 100%);
+    background-image: -ms-linear-gradient(270deg, white 0%, silver 100%);
+    background-image: linear-gradient(to bottom, white 0%, silver 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFC0C0C0',GradientType=0);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 7px 5px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold; }
+.checkout-plans .plans section .img {
+  width: 158px;
+  height: 135px;
+  margin-bottom: 5px; }
+  .checkout-plans .plans section .img div {
+    background-repeat: no-repeat;
+    background-position: top center; }
+.checkout-plans .plans section .body {
+  margin-bottom: 20px; }
+.checkout-plans .plans .content-wrap {
+  padding-bottom: 0; }
+
+/* TWC_END_SASS_FILE  partials/checkout-plans/checkout-plans.desktop.css */
+/* ----------------------
+ *	Checkout packages desktop Styles (.checkout-promos)
+ -- */
+.checkout-promos .view-all {
+  float: right;
+  margin-top: -14px; }
+.checkout-promos .two-col {
+  overflow: hidden;
+  width: 100%; }
+.checkout-promos .col {
+  width: 49%;
+  float: left; }
+  .checkout-promos .col:last-child {
+    float: right; }
+
+/* TWC_END_SASS_FILE  partials/checkout-promos/checkout-promos.desktop.css */
+/* ----------------------
+ * installation-options Desktop Styles
+ -- */
+.installation-options {
+  padding: 20px; }
+  .installation-options h3 {
+    font-size: 24px;
+    margin: 10px 0 5px; }
+    .installation-options h3.icon {
+      background-repeat: no-repeat;
+      background-position: left center;
+      line-height: 45px;
+      padding-left: 55px;
+      margin: 0 0 20px; }
+  .installation-options h4 {
+    font-size: 14px; }
+  .installation-options h5 {
+    font-size: 18px; }
+  .installation-options select {
+    margin-left: 20px; }
+  .installation-options .installation {
+    margin: 0px 10px 0px 0px; }
+  .installation-options img {
+    float: right;
+    margin-top: -22px;
+    margin-right: 10px;
+    margin-bottom: -24px; }
+  .installation-options .stores {
+    padding: 10px 0px 10px 30px;
+    margin-left: -30px;
+    margin-bottom: 10px; }
+  .installation-options .col {
+    padding-left: 50px;
+    float: left; }
+    .installation-options .col:first-child {
+      padding-left: 0; }
+  .installation-options .three-col .col {
+    width: 33.3%; }
+  .installation-options .two-col .col {
+    width: 50%; }
+  .installation-options .more {
+    margin-top: 20px;
+    clear: left; }
+  .installation-options .date {
+    padding: 20px;
+    overflow: hidden; }
+    .installation-options .date fieldset {
+      width: 50%;
+      float: left;
+      margin-bottom: 10px; }
+    .installation-options .date select {
+      margin-left: 10px; }
+
+/* TWC_END_SASS_FILE  partials/installation-options/installation-options.desktop.css */
+/* ----------------------
+ * internet-customize-accordion Desktop Styles
+ -- */
+.internet-customize-accordion > section {
+  padding: 20px; }
+.internet-customize-accordion h3.sub {
+  padding: 10px 20px; }
+.internet-customize-accordion h4.sub {
+  border-top: 1px solid #ccc;
+  padding: 20px 0 10px;
+  font-size: 18px;
+  font-family: "TWC Round Medium", Arial, Sans-Serif;
+  color: #000; }
+.internet-customize-accordion .instructions {
+  overflow: hidden; }
+  .internet-customize-accordion .instructions .rtf {
+    width: 70%; }
+  .internet-customize-accordion .instructions a {
+    float: right;
+    width: 30%;
+    text-align: right;
+    line-height: 21px;
+    margin-top: -21px; }
+.internet-customize-accordion .modem-options .img {
+  width: 155px;
+  height: 120px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  margin-bottom: 20px; }
+.internet-customize-accordion .connections {
+  position: relative;
+  overflow: hidden; }
+  .internet-customize-accordion .connections h4, .internet-customize-accordion .connections p, .internet-customize-accordion .connections .radios {
+    margin-right: 187px; }
+  .internet-customize-accordion .connections .img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 187px;
+    height: 135px; }
+    .internet-customize-accordion .connections .img div {
+      border-top-right-radius: 3px;
+      -moz-border-top-right-radius: 3px;
+      -webkit-border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      -moz-border-bottom-right-radius: 3px;
+      -webkit-border-bottom-right-radius: 3px; }
+
+/* TWC_END_SASS_FILE  partials/internet-customize-accordion/internet-customize-accordion.desktop.css */
+/* ----------------------
+ * tv-customize-accordion Desktop Styles
+ -- */
+.tv-customize-accordion {
+  overflow-x: auto; }
+  .tv-customize-accordion header h3 {
+    font-size: 22px; }
+  .tv-customize-accordion .tv-equipment .body {
+    min-width: 200px; }
+    .tv-customize-accordion .tv-equipment .body .rtf {
+      width: auto;
+      overflow: visible;
+      display: block;
+      min-width: 0; }
+  .tv-customize-accordion .tv-equipment h4 {
+    padding-right: 170px; }
+  .tv-customize-accordion .price-wrap {
+    float: right;
+    margin-top: -18px;
+    margin-left: 20px; }
+  .tv-customize-accordion .box {
+    float: left; }
+  .tv-customize-accordion .detail-view h4 {
+    padding-right: 0; }
+  .tv-customize-accordion .detail-view .price-wrap {
+    margin-top: 0; }
+  .tv-customize-accordion .detail-view select {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin-left: 4%;
+    min-width: 140px; }
+  .tv-customize-accordion .detail-view .rtf {
+    overflow: hidden;
+    display: inline-block;
+    width: 85%; }
+  .tv-customize-accordion .wholehouse {
+    margin: 20px 0;
+    background: #e4e9ee;
+    border: 1px solid #e2e4e5;
+    border-top-color: #fdfdfd;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #e4e8ed;
+    background-image: -moz-linear-gradient(270deg, #e6eaef 0%, #dae0e7 50%, #eef0f3 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e6eaef), color-stop(50%, #dae0e7), color-stop(100%, #eef0f3));
+    background-image: -webkit-linear-gradient(270deg, #e6eaef 0%, #dae0e7 50%, #eef0f3 100%);
+    background-image: -o-linear-gradient(270deg, #e6eaef 0%, #dae0e7 50%, #eef0f3 100%);
+    background-image: -ms-linear-gradient(270deg, #e6eaef 0%, #dae0e7 50%, #eef0f3 100%);
+    background-image: linear-gradient(to bottom, #e6eaef 0%, #dae0e7 50%, #eef0f3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFE6EAEF', endColorstr='#FFEEF0F3',GradientType=0);
+    padding: 20px 0 20px 20px;
+    position: relative;
+    overflow: hidden; }
+    .tv-customize-accordion .wholehouse h4 {
+      font-family: "TWC Round Medium", Arial, Sans-Serif;
+      color: #000;
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      margin-right: 197px; }
+    .tv-customize-accordion .wholehouse input {
+      float: left;
+      margin-right: 15px; }
+    .tv-customize-accordion .wholehouse .body {
+      margin-right: 197px; }
+      .tv-customize-accordion .wholehouse .body, .tv-customize-accordion .wholehouse .body a {
+        font-weight: bold; }
+      .tv-customize-accordion .wholehouse .body div {
+        overflow: hidden; }
+    .tv-customize-accordion .wholehouse .wait {
+      margin-top: 10px;
+      border-top: 1px solid #b1c2cf;
+      font-weight: normal;
+      font-size: 13px; }
+      .tv-customize-accordion .wholehouse .wait h3 {
+        border-top: 1px solid #fff;
+        padding-top: 10px;
+        background: url("../images/icons/icon-chat-yellow.png") no-repeat left 5px;
+        padding-left: 40px;
+        min-height: 36px;
+        font-family: "TWC Round Medium";
+        font-size: 18px;
+        color: #1b5d97; }
+    .tv-customize-accordion .wholehouse .img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 0;
+      width: 187px;
+      height: 150px; }
+      .tv-customize-accordion .wholehouse .img div {
+        border-top-right-radius: 3px;
+        -moz-border-top-right-radius: 3px;
+        -webkit-border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        -moz-border-bottom-right-radius: 3px;
+        -webkit-border-bottom-right-radius: 3px; }
+  .tv-customize-accordion .special-offer {
+    margin: 0 0 20px 20px;
+    width: 250px;
+    overflow: hidden;
+    float: right; }
+    .tv-customize-accordion .special-offer .img {
+      float: right;
+      margin-right: 0; }
+  .tv-customize-accordion .tab-nav {
+    border-top-left-radius: 3px;
+    -moz-border-top-left-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-top-right-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    background-color: #698db0;
+    background-image: -moz-linear-gradient(270deg, #6f8fb2 0%, #7a9ab8 32%, #7a9cb8 50%, #517ba5 52%, #5880a8 70%, #6f8fb2 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6f8fb2), color-stop(32%, #7a9ab8), color-stop(50%, #7a9cb8), color-stop(52%, #517ba5), color-stop(70%, #5880a8), color-stop(100%, #6f8fb2));
+    background-image: -webkit-linear-gradient(270deg, #6f8fb2 0%, #7a9ab8 32%, #7a9cb8 50%, #517ba5 52%, #5880a8 70%, #6f8fb2 100%);
+    background-image: -o-linear-gradient(270deg, #6f8fb2 0%, #7a9ab8 32%, #7a9cb8 50%, #517ba5 52%, #5880a8 70%, #6f8fb2 100%);
+    background-image: -ms-linear-gradient(270deg, #6f8fb2 0%, #7a9ab8 32%, #7a9cb8 50%, #517ba5 52%, #5880a8 70%, #6f8fb2 100%);
+    background-image: linear-gradient(to bottom, #6f8fb2 0%, #7a9ab8 32%, #7a9cb8 50%, #517ba5 52%, #5880a8 70%, #6f8fb2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF6F8FB2', endColorstr='#FF6F8FB2',GradientType=0);
+    display: table;
+    width: 100%; }
+    .tv-customize-accordion .tab-nav li {
+      display: table-cell;
+      border-left: 1px solid #426487;
+      border-right: 1px solid #a8bdd1; }
+      .tv-customize-accordion .tab-nav li:first-child {
+        border-top-left-radius: 3px;
+        -moz-border-top-left-radius: 3px;
+        -webkit-border-top-left-radius: 3px;
+        border-left: 0; }
+      .tv-customize-accordion .tab-nav li:last-child {
+        border-top-right-radius: 3px;
+        -moz-border-top-right-radius: 3px;
+        -webkit-border-top-right-radius: 3px;
+        border-right: 0; }
+      .tv-customize-accordion .tab-nav li.active {
+        background: #dcdcdc;
+        border: 0; }
+        .tv-customize-accordion .tab-nav li.active a {
+          color: #185488;
+          font-size: 16px;
+          font-weight: bold;
+          border-top: 1px solid #fff;
+          background-color: #e6e6e6;
+          background-image: -moz-linear-gradient(270deg, gainsboro 0%, #f0f0f0 100%);
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, gainsboro), color-stop(100%, #f0f0f0));
+          background-image: -webkit-linear-gradient(270deg, gainsboro 0%, #f0f0f0 100%);
+          background-image: -o-linear-gradient(270deg, gainsboro 0%, #f0f0f0 100%);
+          background-image: -ms-linear-gradient(270deg, gainsboro 0%, #f0f0f0 100%);
+          background-image: linear-gradient(to bottom, gainsboro 0%, #f0f0f0 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFDCDCDC', endColorstr='#FFF0F0F0',GradientType=0); }
+        .tv-customize-accordion .tab-nav li.active + li {
+          border-left: 0; }
+        .tv-customize-accordion .tab-nav li.active:first-child a {
+          border-top-left-radius: 3px;
+          -moz-border-top-left-radius: 3px;
+          -webkit-border-top-left-radius: 3px; }
+        .tv-customize-accordion .tab-nav li.active:last-child a {
+          border-top-right-radius: 3px;
+          -moz-border-top-right-radius: 3px;
+          -webkit-border-top-right-radius: 3px; }
+    .tv-customize-accordion .tab-nav a {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 15px 10px;
+      font-size: 14px;
+      color: #fff;
+      width: 100%;
+      text-align: center; }
+  .tv-customize-accordion .tabs {
+    -webkit-box-shadow: 0px 2px 6px 1px #c7c7c7;
+    -moz-box-shadow: 0px 2px 6px 1px #c7c7c7;
+    box-shadow: 0px 2px 6px 1px #c7c7c7; }
+    .tv-customize-accordion .tabs .collapsible {
+      margin-top: 0; }
+    .tv-customize-accordion .tabs header {
+      display: none; }
+    .tv-customize-accordion .tabs section {
+      background-color: #f4f4f4;
+      background-image: -moz-linear-gradient(270deg, #f0f0f0 0%, #f9f9f9 50%, #f3f3f3 100%);
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f0f0), color-stop(50%, #f9f9f9), color-stop(100%, #f3f3f3));
+      background-image: -webkit-linear-gradient(270deg, #f0f0f0 0%, #f9f9f9 50%, #f3f3f3 100%);
+      background-image: -o-linear-gradient(270deg, #f0f0f0 0%, #f9f9f9 50%, #f3f3f3 100%);
+      background-image: -ms-linear-gradient(270deg, #f0f0f0 0%, #f9f9f9 50%, #f3f3f3 100%);
+      background-image: linear-gradient(to bottom, #f0f0f0 0%, #f9f9f9 50%, #f3f3f3 100%);
+      border: 0; }
+    .tv-customize-accordion .tabs hr {
+      margin-left: -20px;
+      margin-right: -20px; }
+  .tv-customize-accordion .picks {
+    clear: both; }
+    .tv-customize-accordion .picks ul {
+      font-size: 0;
+      line-height: 0;
+      white-space: nowrap; }
+      .tv-customize-accordion .picks ul li {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 21px; }
+        .tv-customize-accordion .picks ul li:last-child {
+          margin-right: 0; }
+    .tv-customize-accordion .picks .image {
+      width: 300px;
+      min-height: 200px;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      background-position: center center;
+      padding: 20px; }
+      .tv-customize-accordion .picks .image, .tv-customize-accordion .picks .image .price {
+        color: #000; }
+      .tv-customize-accordion .picks .image.white, .tv-customize-accordion .picks .image.white .price {
+        color: #fff; }
+    .tv-customize-accordion .picks p {
+      font-size: 13px;
+      line-height: 18px; }
+    .tv-customize-accordion .picks img {
+      max-height: 30px; }
+      .tv-customize-accordion .picks img.right {
+        max-width: 80px;
+        max-height: none; }
+    .tv-customize-accordion .picks .pick-wrapper {
+      margin-right: 75px;
+      white-space: normal; }
+    .tv-customize-accordion .picks .blue-button {
+      display: inline-block;
+      margin: 10px 0 20px; }
+    .tv-customize-accordion .picks h5 {
+      font-family: "TWC Round Medium";
+      font-size: 24px; }
+  .tv-customize-accordion .carousel ul {
+    width: 100%; }
+  .tv-customize-accordion .more {
+    text-align: right;
+    margin-top: 5px; }
+  .tv-customize-accordion .carousel + .more {
+    margin-top: -13px; }
+  .tv-customize-accordion .icon-offer {
+    width: 160px;
+    float: right;
+    border-left: 1px solid #e5e5e5;
+    margin-left: 10px; }
+    .tv-customize-accordion .icon-offer p {
+      font-family: "TWC Round Book";
+      font-size: 12px;
+      line-height: 14px; }
+    .tv-customize-accordion .icon-offer strong {
+      font-weight: normal;
+      font-family: "TWC Round Medium"; }
+    .tv-customize-accordion .icon-offer .icon-offer-wrap {
+      border-left: 1px solid #f9f9f9;
+      padding-left: 21.5px; }
+    .tv-customize-accordion .icon-offer .img {
+      width: 32px;
+      height: 32px;
+      display: inline-block;
+      vertical-align: top;
+      float: none;
+      margin: 10px 5px 0 0; }
+  .tv-customize-accordion table .details {
+    margin-left: 140px;
+    margin-right: 215px; }
+    .tv-customize-accordion table .details td:first-child {
+      padding-left: 60px; }
+    .tv-customize-accordion table .details h5 {
+      display: none; }
+  .tv-customize-accordion table .detail-row-toggle {
+    padding: 0 26.5px 0 0; }
+  .tv-customize-accordion table .price {
+    min-width: 160px; }
+    .tv-customize-accordion table .price div {
+      position: relative;
+      padding-left: 21.5px; }
+    .tv-customize-accordion table .price img {
+      width: 43px;
+      position: absolute;
+      left: -21.5px;
+      top: 50%;
+      margin-top: -21.5px; }
+    .tv-customize-accordion table .price span {
+      text-align: left; }
+  .tv-customize-accordion .premiums .details li {
+    width: 18.5%; }
+  .tv-customize-accordion .sports {
+    margin-top: -10px; }
+  .tv-customize-accordion .sports-pass .title-content a {
+    display: block; }
+  .tv-customize-accordion .sports-pass .details .title-content {
+    display: none; }
+  .tv-customize-accordion .more-channels {
+    bottom: -20px; }
+    .tv-customize-accordion .more-channels div {
+      -webkit-box-shadow: 0px -5px 15px -6px #999999;
+      -moz-box-shadow: 0px -5px 15px -6px #999999;
+      box-shadow: 0px -5px 15px -6px #999999; }
+  .tv-customize-accordion .deal-tracker {
+    width: 100%; }
+    .tv-customize-accordion .deal-tracker ol, .tv-customize-accordion .deal-tracker .next, .tv-customize-accordion .deal-tracker .prev {
+      display: none; }
+    .tv-customize-accordion .deal-tracker li {
+      width: 20%;
+      padding: 0 5px;
+      border-right: 1px dotted #6389ad;
+      float: left; }
+      .tv-customize-accordion .deal-tracker li:first-child {
+        border-left: 1px dotted #6389ad; }
+    .tv-customize-accordion .deal-tracker .tracker-wrap {
+      padding: 10px; }
+  .tv-customize-accordion .international-col {
+    margin-left: 75px; }
+  .tv-customize-accordion .international-offer {
+    width: 240px;
+    margin: 0 -20px 20px 10px; }
+    .tv-customize-accordion .international-offer > p {
+      text-transform: uppercase;
+      font-size: 9px; }
+    .tv-customize-accordion .international-offer .offer-wrap {
+      border-top-left-radius: 3px;
+      -moz-border-top-left-radius: 3px;
+      -webkit-border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      -moz-border-bottom-left-radius: 3px;
+      -webkit-border-bottom-left-radius: 3px;
+      border: 1px solid #f0f0f0;
+      border-right: 0;
+      background: #fcfcfc;
+      min-height: 112px;
+      padding: 10px 0 10px 10px;
+      overflow: hidden; }
+    .tv-customize-accordion .international-offer h5 {
+      font-family: "TWC Round Medium";
+      color: #3376b2;
+      font-size: 16px;
+      margin-bottom: 10px; }
+    .tv-customize-accordion .international-offer .img {
+      float: right;
+      width: 82px;
+      height: 112px;
+      background-repeat: no-repeat;
+      background-position: right center;
+      margin: -15px 0 0 15px; }
+    .tv-customize-accordion .international-offer .arrow {
+      display: inline-block;
+      padding-right: 15px;
+      background: url("../images/arrows/arrow-blue-right.png") no-repeat center right; }
+  .tv-customize-accordion .international-dropdown {
+    width: 270px; }
+
+/* TWC_END_SASS_FILE  partials/tv-customize-accordion/tv-customize-accordion.desktop.css */
+/* ----------------------
+ * Order Details Desktop Styles
+ -- */
+.order-details .three-col {
+  width: 80%; }
+  .order-details .three-col .col {
+    width: 25%;
+    margin-right: 8%; }
+.order-details .two-col {
+  width: 80%; }
+  .order-details .two-col .col {
+    width: 40%;
+    margin-right: 10%; }
+.order-details .col {
+  display: inline-block;
+  vertical-align: top; }
+  .order-details .col h5 {
+    margin-top: 0; }
+  .order-details .col:last-child {
+    margin-right: 0; }
+.order-details h5 + .col {
+  margin-top: 0; }
+
+/* TWC_END_SASS_FILE  partials/order-details/order-details.desktop.css */
+/* ----------------------
+ * Promo Code Desktop Styles
+ -- */
+.promo-code .promo-code-wrapper {
+  width: 50%; }
+.promo-code fieldset {
+  width: 76%; }
+.promo-code .coupon-code {
+  width: 100%; }
+.promo-code .blue-button {
+  width: 20%;
+  margin-left: 2%; }
+.promo-code .notice {
+  width: 45%;
+  float: right; }
+  .promo-code .notice.active {
+    margin: 23px 0 0 20px; }
+
+/* TWC_END_SASS_FILE  partials/promo-code/promo-code.desktop.css */
+/* ----------------------
+ * Services Details Desktop Styles
+ -- */
+.services-details h4 {
+  font-size: 18px; }
+.services-details .monthly-charges .img {
+  position: relative; }
+  .services-details .monthly-charges .img div {
+    position: absolute;
+    top: -40px;
+    left: -81px;
+    min-height: 58px;
+    min-width: 58px; }
+.services-details .gift {
+  overflow: hidden; }
+  .services-details .gift p {
+    font-size: 16px; }
+  .services-details .gift .img {
+    display: block;
+    position: absolute;
+    left: 0; }
+.services-details .one-time-charges td:first-child,
+.services-details .gift p,
+.services-details .services-table tfoot td:first-child {
+  padding-left: 90px; }
+.services-details .services-table th {
+  padding-left: 90px; }
+
+.services-table th {
+  padding: 15px 5px; }
+.services-table td:last-child {
+  padding-left: 20px;
+  width: 25%; }
+.services-table tbody td:first-child {
+  padding-left: 110px; }
+.services-table tfoot td {
+  font-size: 15px; }
+.services-table .package td {
+  padding: 10px; }
+  .services-table .package td:first-child {
+    padding-left: 15px; }
+  .services-table .package td:last-child {
+    padding-left: 20px; }
+
+/* TWC_END_SASS_FILE  partials/services-details/services-details.desktop.css */
+/* ----------------------
+ * Button Nav Module Desktop Breakpoint Styles
+ -- */
+.button-nav {
+  display: table; }
+  .button-nav a {
+    display: table-cell;
+    vertical-align: middle; }
+  .button-nav .blue-button {
+    width: 200px; }
+    .button-nav .blue-button:first-child {
+      display: block;
+      float: right; }
+  .button-nav .arrow {
+    text-align: left; }
+
+/* TWC_END_SASS_FILE  partials/button-nav/button-nav.desktop.css */
+/* ----------------------
+ *Card Promo Module Desktop Styles
+ -- */
+.card-promo {
+  padding: 20px 130px 20px 20px; }
+  .card-promo .img {
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 412px;
+    overflow: hidden;
+    margin-bottom: -1px; }
+    .card-promo .img div {
+      height: 177px;
+      width: 412px; }
+  .card-promo .card-promo-wrapper {
+    position: relative; }
+
+.content-wrap .card-promo {
+  margin: 0 -20px;
+  top: -20px; }
+  .content-wrap .card-promo .img {
+    margin: 0; }
+
+/* TWC_END_SASS_FILE  partials/card-promo/card-promo.desktop.css */
+/* ----------------------
+ * payment-form Desktop Styles
+ -- */
+.payment-form .credit-card-block, .payment-form .col {
+  float: left;
+  width: 48.5%;
+  margin-right: 1.5%; }
+.payment-form .col:first-child {
+  clear: left; }
+.payment-form .flex-img {
+  float: right;
+  margin-left: 1.5%;
+  margin-bottom: 15px; }
+.payment-form .flex-image {
+  max-width: 48.5%; }
+.payment-form .rtf {
+  width: 100%;
+  float: none;
+  margin-right: 0;
+  clear: left; }
+.payment-form .credit-card-block fieldset,
+.payment-form .col fieldset {
+  width: 100%;
+  margin: 0;
+  float: none; }
+.payment-form fieldset.left {
+  clear: left; }
+.payment-form section {
+  overflow: hidden; }
+.payment-form .debit-card-block {
+  padding-top: 10px; }
+.payment-form .payment-fields {
+  zoom: 1; }
+  .payment-form .payment-fields:before, .payment-form .payment-fields:after {
+    display: table;
+    content: "";
+    zoom: 1; }
+  .payment-form .payment-fields:after {
+    clear: both; }
+
+/* TWC_END_SASS_FILE  partials/payment-form/payment-form.desktop.css */
+/* ----------------------
+ * billing-terms-conditions Desktop Styles
+ -- */
+.billing-terms-conditions section {
+  overflow: hidden; }
+
+/* TWC_END_SASS_FILE  partials/billing-terms-conditions/billing-terms-conditions.desktop.css */
+/* ----------------------
+ * Compare Table Desktop Breakpoint Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/compare-table/compare-table.desktop.css */
+/* ----------------------
+ *	Explore Packages Desktop Breakpoint Styles
+ -- */
+.explore-packages .packages-error {
+  font-size: 24px; }
+.explore-packages .filter-heading {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  padding: 0 50px 0 0; }
+  .explore-packages .filter-heading .end-arrow {
+    display: block;
+    height: 40px;
+    position: absolute;
+    right: 31px;
+    top: 7px;
+    width: 40px;
+    background-color: #374a5b;
+    background-image: -moz-linear-gradient(270deg, #4b5c6b 0%, #23384b 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4b5c6b), color-stop(100%, #23384b));
+    background-image: -webkit-linear-gradient(270deg, #4b5c6b 0%, #23384b 100%);
+    background-image: -o-linear-gradient(270deg, #4b5c6b 0%, #23384b 100%);
+    background-image: -ms-linear-gradient(270deg, #4b5c6b 0%, #23384b 100%);
+    background-image: linear-gradient(to bottom, #4b5c6b 0%, #23384b 100%);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-box-shadow: 0px 2px 2px -1px black;
+    -moz-box-shadow: 0px 2px 2px -1px black;
+    box-shadow: 0px 2px 2px -1px black;
+    border-bottom-right-radius: 2px;
+    -moz-border-bottom-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px; }
+  .explore-packages .filter-heading .block {
+    height: 54px;
+    padding-top: 20px; }
+.explore-packages .package-header {
+  text-align: left; }
+.explore-packages .packages-list {
+  display: inline-block;
+  text-align: center; }
+  .explore-packages .packages-list > li {
+    margin-left: 2%;
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 32%; }
+    .explore-packages .packages-list > li:first-child {
+      margin-left: 0; }
+.explore-packages .filter-options {
+  margin-left: 50px;
+  margin-top: 13px; }
+.explore-packages .package ul,
+.explore-packages .more-details ul {
+  text-align: left; }
+.explore-packages .package a.arrow,
+.explore-packages .more-details a.arrow {
+  max-width: 155px; }
+.explore-packages .whats-included {
+  clear: both;
+  overflow: hidden; }
+  .explore-packages .whats-included h3 {
+    font-size: 22px;
+    margin-top: 0; }
+  .explore-packages .whats-included .blue-button {
+    float: right; }
+  .explore-packages .whats-included .img {
+    float: left;
+    margin-right: 15px;
+    width: auto; }
+.explore-packages .one-col,
+.explore-packages .two-cols,
+.explore-packages .three-cols {
+  overflow: hidden; }
+.explore-packages .three-cols .col {
+  float: left;
+  width: 33%; }
+.explore-packages .two-cols .col {
+  float: left;
+  width: 49%; }
+.explore-packages .one-col {
+  font-size: 115%;
+  width: 60%;
+  margin: 0 auto; }
+.explore-packages .col {
+  border-left: 1px dotted #ccc;
+  padding: 5px 30px;
+  margin-bottom: 35px; }
+  .explore-packages .col:first-child {
+    border: 0;
+    padding-left: 0; }
+  .explore-packages .col.last {
+    padding-right: 0; }
+
+/* TWC_END_SASS_FILE  partials/explore-packages/explore-packages.desktop.css */
+/* ----------------------
+ *	Package Details Desktop Breakpoint Styles
+ -- */
+.package-details .price {
+  font-size: 43px; }
+  .package-details .price sup {
+    font-size: 18px;
+    top: -17px; }
+    .package-details .price sup.sign {
+      font-size: 27px;
+      top: -9px; }
+  .package-details .price em {
+    text-align: center; }
+  .package-details .price em.start ~ span, .package-details .price span {
+    margin-left: 5px;
+    display: inline-block;
+    text-align: left;
+    width: 50px; }
+.package-details .blue-button,
+.package-details .back-button {
+  position: absolute;
+  bottom: 20px;
+  margin: 0; }
+.package-details .back-button {
+  left: 25px; }
+.package-details .blue-button {
+  font-size: 18px;
+  right: 25px; }
+.package-details .feature-img {
+  float: left; }
+.package-details .details-block {
+  width: 75%; }
+  .package-details .details-block ul, .package-details .details-block h5 {
+    display: inline; }
+  .package-details .details-block li, .package-details .details-block li:first-child {
+    display: inline-block; }
+  .package-details .details-block li:first-child {
+    border-left: 1px solid #ccc;
+    padding: 0 5px 0 8px;
+    margin-left: 5px; }
+  .package-details .details-block:last-child {
+    border-bottom: 0;
+    margin-bottom: 0; }
+.package-details .services-details {
+  display: inline-block;
+  width: 85%; }
+.package-details .module {
+  position: relative; }
+.package-details .img {
+  display: block;
+  float: left;
+  width: 50px;
+  margin-right: 15px;
+  text-align: center; }
+  .package-details .img div {
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto; }
+.package-details .body {
+  float: right;
+  width: 75%; }
+.package-details .rtf {
+  width: 85%; }
+
+/* TWC_END_SASS_FILE  partials/package-details/package-details.desktop.css */
+/* ----------------------
+ * Phone Customize Accordion Desktop Styles
+ -- */
+.phone-customize-accordion .select-or-transfer-option fieldset {
+  padding-left: 30px; }
+.phone-customize-accordion .general-form {
+  overflow: hidden; }
+  .phone-customize-accordion .general-form .col {
+    float: right;
+    width: 45%; }
+  .phone-customize-accordion .general-form .error-module + .col, .phone-customize-accordion .general-form .col:first-child {
+    float: left; }
+.phone-customize-accordion .transfer-number {
+  padding: 0 30px; }
+.phone-customize-accordion .icon-header {
+  white-space: normal; }
+.phone-customize-accordion .installation-details fieldset {
+  margin: 0 5% 15px 5%;
+  width: 40%;
+  float: left; }
+.phone-customize-accordion .customer-authorization .rtf {
+  font-weight: normal; }
+.phone-customize-accordion .account-information {
+  display: inline-block;
+  width: 380px; }
+.phone-customize-accordion .print-information {
+  border-left: 1px solid #ccc;
+  float: right;
+  padding-left: 20px;
+  width: 250px;
+  margin-bottom: 20px; }
+  .phone-customize-accordion .print-information .print {
+    display: inline;
+    float: none;
+    font-weight: bold; }
+.phone-customize-accordion .authorization-details {
+  clear: both; }
+.phone-customize-accordion .digital-signature {
+  font-weight: normal; }
+  .phone-customize-accordion .digital-signature fieldset {
+    display: inline-block; }
+    .phone-customize-accordion .digital-signature fieldset.date {
+      width: 15%; }
+      .phone-customize-accordion .digital-signature fieldset.date label {
+        display: block; }
+    .phone-customize-accordion .digital-signature fieldset.full-name {
+      width: 30%; }
+    .phone-customize-accordion .digital-signature fieldset.birthdate {
+      width: 40%; }
+
+/* TWC_END_SASS_FILE  partials/phone-customize-accordion/phone-customize-accordion.desktop.css */
+/* ----------------------
+ * your-services Desktop Styles
+ -- */
+.your-services h2 {
+  font-size: 24px;
+  padding-right: 20px; }
+.your-services h3 {
+  margin: 20px 0; }
+  .your-services h3:first-child {
+    margin-top: 0; }
+.your-services h4 {
+  font-size: 18px;
+  margin-bottom: 15px; }
+.your-services .instructions {
+  display: table;
+  width: 100%; }
+  .your-services .instructions h2, .your-services .instructions .list-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    border-top: 1px solid #fff;
+    padding: 20px 15px; }
+  .your-services .instructions h2 {
+    border-left: 1px solid #fff;
+    width: 43%;
+    padding-right: 0; }
+  .your-services .instructions .list-wrap {
+    border-right: 1px solid #fff; }
+  .your-services .instructions .border-wrap {
+    border-left: 1px solid #cfd3d8; }
+  .your-services .instructions ul {
+    border-left: 1px solid #fff;
+    padding-left: 20px; }
+.your-services .solid-module {
+  background: #fff;
+  border-color: #cfd3d8;
+  display: table;
+  padding: 0; }
+  .your-services .solid-module:before, .your-services .solid-module:after {
+    display: none; }
+.your-services .col {
+  display: table-cell;
+  vertical-align: top;
+  width: 40%;
+  padding: 20px;
+  -webkit-box-shadow: 0px 6px 6px -2px #dddddd inset;
+  -moz-box-shadow: 0px 6px 6px -2px #dddddd inset;
+  box-shadow: 0px 6px 6px -2px #dddddd inset; }
+  .your-services .col:first-child {
+    border-right: 1px solid #cfd3d8;
+    width: 60%;
+    padding-right: 30px; }
+  .your-services .col .services {
+    display: table;
+    table-layout: fixed;
+    width: 100%; }
+    .your-services .col .services > li {
+      display: table-row;
+      width: 100%; }
+  .your-services .col .img, .your-services .col .body, .your-services .col .cta-buttons {
+    display: table-cell;
+    vertical-align: top;
+    padding-bottom: 40px; }
+  .your-services .col .img {
+    width: 100px; }
+  .your-services .col .modal, .your-services .col .view-toggle {
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block; }
+  .your-services .col .modal {
+    margin-top: 10px; }
+  .your-services .col .cta-buttons {
+    width: 125px;
+    padding-left: 50px;
+    padding-right: 10px; }
+    .your-services .col .cta-buttons label {
+      display: inline-block;
+      float: right; }
+  .your-services .col .price, .your-services .col .price em {
+    text-align: center; }
+  .your-services .col .price em, .your-services .col .price span {
+    display: block; }
+  .your-services .col .price em {
+    font-size: 12px;
+    font-family: "TWC Round Book";
+    margin-bottom: 5px; }
+  .your-services .col .price span {
+    margin: 0 auto 5px; }
+  .your-services .col .current {
+    border-bottom: 1px solid #cfd3d8; }
+    .your-services .col .current .cta-buttons {
+      width: 250px;
+      padding-left: 20px;
+      padding-right: 0; }
+      .your-services .col .current .cta-buttons ul {
+        border: 1px solid #cfd3d8;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px; }
+      .your-services .col .current .cta-buttons li {
+        border-top: 1px solid #cfd3d8;
+        padding: 10px;
+        overflow: hidden; }
+        .your-services .col .current .cta-buttons li:first-child {
+          border-top: 0; }
+      .your-services .col .current .cta-buttons span {
+        padding-top: 3.4px;
+        width: 120px;
+        display: inline-block; }
+        .your-services .col .current .cta-buttons span.highest {
+          padding-top: 0;
+          width: auto; }
+      .your-services .col .current .cta-buttons label {
+        margin-left: 5px; }
+.your-services .package {
+  border-left: 1px solid #fff;
+  position: relative;
+  background-color: #fcfcfc;
+  background-image: -moz-linear-gradient(0deg, #f9f9f9 0%, white 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #f9f9f9), color-stop(100%, white));
+  background-image: -webkit-linear-gradient(0deg, #f9f9f9 0%, white 100%);
+  background-image: -o-linear-gradient(0deg, #f9f9f9 0%, white 100%);
+  background-image: -ms-linear-gradient(0deg, #f9f9f9 0%, white 100%);
+  background-image: linear-gradient(to right, #f9f9f9 0%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF9F9F9', endColorstr='#FFFFFFFF',GradientType=1);
+  border-bottom-right-radius: 3px;
+  -moz-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px; }
+  .your-services .package h5 {
+    font-size: 25px; }
+  .your-services .package .body {
+    display: block;
+    padding-bottom: 20px; }
+  .your-services .package img {
+    margin-top: 30px; }
+.your-services .button-nav {
+  padding-right: 10px; }
+
+/* TWC_END_SASS_FILE  partials/your-services/your-services.desktop.css */
+/* ----------------------
+ * calendar Desktop Styles
+ -- */
+.calendar-overlay-bkg {
+  background: none; }
+
+.calendar {
+  width: 214px;
+  float: left;
+  position: absolute;
+  margin: 30px 0 0 2px;
+  left: auto;
+  top: auto; }
+
+.calendar-nav {
+  line-height: 26px;
+  height: 40px; }
+
+.calendar-month {
+  font-size: 16px; }
+
+.calendar-button-month {
+  height: 30px;
+  width: 30px;
+  line-height: 26px; }
+
+.calendar-month-dates .day {
+  font-size: 12px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px; }
+
+.calendar-month-dates .day-today {
+  width: 30px;
+  height: 30px; }
+
+/* TWC_END_SASS_FILE  partials/calendar/calendar.desktop.css */
+/* ----------------------
+ * sidebar-promo Desktop Styles
+ -- */
+.sidebar-promo {
+  width: 215px;
+  clear: right;
+  float: right;
+  padding: 20px 7px 10px; }
+  .sidebar-promo h1, .sidebar-promo p {
+    padding: 0 5px; }
+  .sidebar-promo h1 {
+    font-size: 20px;
+    text-align: left; }
+  .sidebar-promo p {
+    font-size: 14px; }
+  .sidebar-promo .price {
+    margin: 20px -7px 15px;
+    border-bottom: 1px solid #b0bfcd;
+    padding: 10px; }
+  .sidebar-promo .blue-button {
+    display: inline-block; }
+
+/* TWC_END_SASS_FILE  partials/sidebar-promo/sidebar-promo.desktop.css */

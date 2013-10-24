@@ -1,0 +1,186 @@
+/* ----------------------
+ * IE9 global styles
+ -- */
+.ie9 .blue-button, .ie9 .black-button {
+  filter: none; }
+.ie9 input[type=checkbox], .ie9 input[type=radio] {
+  height: auto;
+  width: auto;
+  vertical-align: top;
+  padding: 2.5px 0; }
+
+/* ----------------------
+ *	.header IE9 Specific Styles
+ -- */
+.ie9 .header .questions, .ie9 .header .cart, .ie9 .header .chat, .ie9 .header .box {
+  filter: none; }
+.ie9 .header .questions.active, .ie9 .header .cart.active {
+  filter: none; }
+
+@media only screen and (min-width: 501px) and (max-width: 1099px) {
+  .ie9 .header .logo {
+    max-width: 20%; }
+    .ie9 .header .logo div {
+      max-width: 100%; }
+  .ie9 .header .chat {
+    background-image: none; } }
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  .ie9 .header .cart.active {
+    height: 51px; } }
+/* TWC_END_SASS_FILE  partials/header/header.ie9.css */
+/* ----------------------
+ *	Container IE9 Styles (.ie9 .container)
+ -- */
+/* TWC_END_SASS_FILE  partials/container/container.ie9.css */
+/* ----------------------
+ *	Checkout Steps ie9 Styles (.checkout-steps)
+ -- */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  .ie9 .checkout-steps .step-list {
+    padding-bottom: 5px; } }
+/* TWC_END_SASS_FILE  partials/checkout-steps/checkout-steps.ie9.css */
+/* ----------------------
+ *	Checkout Footer IE9 Specific Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/footer/footer.ie9.css */
+/* ----------------------
+ * Generic Module ie9 Breakpoint Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/module/module.ie9.css */
+/* ----------------------
+ * collapsible IE9 Styles
+ -- */
+.ie9 .collapsible.complete .toggle {
+  filter: none; }
+
+/* TWC_END_SASS_FILE  partials/collapsible/collapsible.ie9.css */
+/* ----------------------
+ * Tooltip IE9 Styles
+ -- */
+.ie9 .tooltip-popup .tooltip-wrap {
+  background: #e0e7eb; }
+.ie9 .tooltip-popup.bottom .tooltip-wrap:after {
+  border-top-color: #e0e7eb; }
+
+/* TWC_END_SASS_FILE  partials/tooltip/tooltip.ie9.css */
+/* ----------------------
+ * Modal IE8 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/modal/modal.ie9.css */
+/* ----------------------
+ * cart-module IE9 Styles
+ -- */
+.ie9 .cart-module header .toggle {
+  filter: none; }
+
+/* TWC_END_SASS_FILE  partials/cart-module/cart-module.ie9.css */
+/* ----------------------
+ *	Checkout Steps ie9 Styles (.checkout-plans)
+ -- */
+/* TWC_END_SASS_FILE  partials/checkout-plans/checkout-plans.ie9.css */
+/* ----------------------
+ *	Checkout Steps ie9 Styles (.checkout-promos)
+ -- */
+.ie9 .checkout-promos .col {
+  filter: none; }
+
+/* TWC_END_SASS_FILE  partials/checkout-promos/checkout-promos.ie9.css */
+/* ----------------------
+ *	Checkout Steps ie9 Styles (.checkout-steps)
+ -- */
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  .ie9 .checkout-steps .step-list {
+    padding-bottom: 5px; } }
+/* TWC_END_SASS_FILE  partials/checkout-steps/checkout-steps.ie9.css */
+/* ----------------------
+ * installation-options IE9 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/installation-options/installation-options.ie9.css */
+/* ----------------------
+ * MODULE-NAME IE9 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/internet-customize-accordion/internet-customize-accordion.ie9.css */
+/* ----------------------
+ * tv-cusomize-accordion IE9 Styles
+ -- */
+.ie9 .tv-customize-accordion .tab-nav {
+  filter: none; }
+.ie9 .tv-customize-accordion .tabs section {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF0F0F0', endColorstr='#FFFFFFFF',GradientType=0); }
+.ie9 .tv-customize-accordion table.sports .radio sup {
+  font-size: 16px; }
+.ie9 .tv-customize-accordion tr.active .toggle {
+  filter: none; }
+.ie9 .tv-customize-accordion .number-indicator {
+  background-color: #aaa;
+  padding: 0 1px 2px 1px; }
+
+/* TWC_END_SASS_FILE  partials/tv-customize-accordion/tv-customize-accordion.ie9.css */
+/* ----------------------
+ * Order Details Module IE9 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/order-details/order-details.ie9.css */
+/* ----------------------
+ * Promo Code IE9 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/promo-code/promo-code.ie9.css */
+/* ----------------------
+ * Services Details IE9 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/services-details/services-details.ie9.css */
+/* ----------------------
+ * Button Nav IE9 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/button-nav/button-nav.ie9.css */
+/* ----------------------
+ * Card Promo Module IE9 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/card-promo/card-promo.ie9.css */
+/* ----------------------
+ * payment-form IE9 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/payment-form/payment-form.ie9.css */
+/* ----------------------
+ * billing-terms-conditions IE9 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/billing-terms-conditions/billing-terms-conditions.ie9.css */
+/* ----------------------
+ * Compare Table IE9 Breakpoint Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/compare-table/compare-table.ie9.css */
+/* ----------------------
+ *	Explore Packages IE9 Styles
+ -- */
+.ie9 .explore-packages .filter-heading,
+.ie9 .explore-packages .block {
+  filter: none; }
+
+/* TWC_END_SASS_FILE  partials/explore-packages/explore-packages.ie9.css */
+/* ----------------------
+ *	Package Details IE9 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/package-details/package-details.ie9.css */
+/* ----------------------
+ * Phone Customize Accordion IE9 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/phone-customize-accordion/phone-customize-accordion.ie9.css */
+/* ----------------------
+ * your-services IE9 Styles
+ -- */
+.ie9 .your-services .package {
+  filter: none; }
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  .ie9 .your-services .cta-buttons,
+  .ie9 .your-services .current .cta-buttons li {
+    filter: none;
+    background: none; } }
+/* TWC_END_SASS_FILE  partials/your-services/your-services.ie9.css */
+/* ----------------------
+ * calendar IE9 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/calendar/calendar.ie9.css */
+/* ----------------------
+ * sidebar-promo IE9 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/sidebar-promo/sidebar-promo.ie9.css */

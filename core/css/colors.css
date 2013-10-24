@@ -1,0 +1,203 @@
+/* ==========================================================================
+    CSS Code for all Global Colors
+   
+    Author: Max Quattromani
+    Version: 1.8.9.9 - Updated: 9/26/2013
+   ========================================================================== */
+/* ==========================================================================
+    Layout
+   ========================================================================== */
+/* ==========================================================================
+    Module
+   ========================================================================== */
+.twc-backgroundGradient-1 {
+  background-color: #3779b3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3779b3), to(#02447e));
+  background-image: -webkit-linear-gradient(top, #3779b3, #02447e);
+  background-image: -moz-linear-gradient(top, #3779b3, #02447e);
+  background-image: -o-linear-gradient(top, #3779b3, #02447e);
+  background-image: -ms-linear-gradient(top, #3779b3, #02447e);
+  background-image: linear-gradient(top, #3779b3, #02447e);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#3779b3', EndColorStr='#02447e'); }
+
+.twc-backgroundGradient-2 {
+  background-color: #333534;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#333534), to(#1a1b1f));
+  background-image: -webkit-linear-gradient(top, #333534, #1a1b1f);
+  background-image: -moz-linear-gradient(top, #333534, #1a1b1f);
+  background-image: -o-linear-gradient(top, #333534, #1a1b1f);
+  background-image: -ms-linear-gradient(top, #333534, #1a1b1f);
+  background-image: linear-gradient(top, #333534, #1a1b1f);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#333534', EndColorStr='#1a1b1f'); }
+
+.twc-backgroundGradient-3 {
+  background-color: #4c4d51;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4c4d51), to(#1a1b1f));
+  background-image: -webkit-linear-gradient(top, #4c4d51, #1a1b1f);
+  background-image: -moz-linear-gradient(top, #4c4d51, #1a1b1f);
+  background-image: -o-linear-gradient(top, #4c4d51, #1a1b1f);
+  background-image: -ms-linear-gradient(top, #4c4d51, #1a1b1f);
+  background-image: linear-gradient(top, #4c4d51, #1a1b1f);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#4c4d51', EndColorStr='#1a1b1f'); }
+
+.twc-backgroundGradient-4 {
+  background-color: #eeeeef;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeef), to(#dddfe2));
+  background-image: -webkit-linear-gradient(top, #eeeeef, #dddfe2);
+  background-image: -moz-linear-gradient(top, #eeeeef, #dddfe2);
+  background-image: -o-linear-gradient(top, #eeeeef, #dddfe2);
+  background-image: -ms-linear-gradient(top, #eeeeef, #dddfe2);
+  background-image: linear-gradient(top, #eeeeef, #dddfe2);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#eeeeef', EndColorStr='#dddfe2'); }
+
+.twc-backgroundGradient-5, .twc-content {
+  background: #e9eaee;
+  background: -moz-linear-gradient(top, #e9eaee 0%, #f2f4f6 20%, #f2f4f6 80%, #fdfdfd 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e9eaee), color-stop(20%, #f2f4f6), color-stop(80%, #f2f4f6), color-stop(100%, #fdfdfd));
+  background: -webkit-linear-gradient(top, #e9eaee 0%, #f2f4f6 20%, #f2f4f6 80%, #fdfdfd 100%);
+  background: -o-linear-gradient(top, #e9eaee 0%, #f2f4f6 20%, #f2f4f6 80%, #fdfdfd 100%);
+  background: -ms-linear-gradient(top, #e9eaee 0%, #f2f4f6 20%, #f2f4f6 80%, #fdfdfd 100%);
+  background: linear-gradient(to bottom, #e9eaee 0%, #f2f4f6 20%, #f2f4f6 80%, #fdfdfd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9eaee', endColorstr='#fdfdfd',GradientType=0 ); }
+
+.twc-backgroundGradient-6 {
+  background: #d3d3d4;
+  background: -moz-linear-gradient(top, #d3d3d4 0%, #e7e7e8 3%, white 16%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d3d3d4), color-stop(3%, #e7e7e8), color-stop(16%, white), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, #d3d3d4 0%, #e7e7e8 3%, white 16%, white 100%);
+  background: -o-linear-gradient(top, #d3d3d4 0%, #e7e7e8 3%, white 16%, white 100%);
+  background: -ms-linear-gradient(top, #d3d3d4 0%, #e7e7e8 3%, white 16%, white 100%);
+  background: linear-gradient(to bottom, #d3d3d4 0%, #e7e7e8 3%, white 16%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d3d3d4', endColorstr='#ffffff',GradientType=0 ); }
+
+.twc-backgroundGradient-7 {
+  background-color: #f8fafc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8fafc), to(#dddfe2));
+  background-image: -webkit-linear-gradient(top, #f8fafc, #dddfe2);
+  background-image: -moz-linear-gradient(top, #f8fafc, #dddfe2);
+  background-image: -o-linear-gradient(top, #f8fafc, #dddfe2);
+  background-image: -ms-linear-gradient(top, #f8fafc, #dddfe2);
+  background-image: linear-gradient(top, #f8fafc, #dddfe2);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f8fafc', EndColorStr='#dddfe2'); }
+
+.twc-mainBackground-EBF {
+  background-color: #2b2d32;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2b2d32), to(#f7f7f7));
+  background-image: -webkit-linear-gradient(top, #2b2d32, #f7f7f7);
+  background-image: -moz-linear-gradient(top, #2b2d32, #f7f7f7);
+  background-image: -o-linear-gradient(top, #2b2d32, #f7f7f7);
+  background-image: -ms-linear-gradient(top, #2b2d32, #f7f7f7);
+  background-image: linear-gradient(top, #2b2d32, #f7f7f7);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#2b2d32', EndColorStr='#f7f7f7'); }
+
+.twc-mainStageBackground-EBF {
+  background: #eee;
+  border: 1px solid #dce1e5;
+  border-bottom: 1px solid #b5b8bb; }
+
+.twc-mainNavBackground-EBF {
+  background-color: #404040;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#404040), to(black));
+  background-image: -webkit-linear-gradient(top, #404040, black);
+  background-image: -moz-linear-gradient(top, #404040, black);
+  background-image: -o-linear-gradient(top, #404040, black);
+  background-image: -ms-linear-gradient(top, #404040, black);
+  background-image: linear-gradient(top, #404040, black);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#404040', EndColorStr='#000'); }
+
+.twc-cartHeader-EBF {
+  background-color: #f8fafc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f8fafc), to(#e0ebf5));
+  background-image: -webkit-linear-gradient(top, #f8fafc, #e0ebf5);
+  background-image: -moz-linear-gradient(top, #f8fafc, #e0ebf5);
+  background-image: -o-linear-gradient(top, #f8fafc, #e0ebf5);
+  background-image: -ms-linear-gradient(top, #f8fafc, #e0ebf5);
+  background-image: linear-gradient(top, #f8fafc, #e0ebf5);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f8fafc', EndColorStr='#e0ebf5'); }
+
+.twc-progressionBarArrow-EBF {
+  background-color: #5d92c0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5d92c0), to(#2c608f));
+  background-image: -webkit-linear-gradient(top, #5d92c0, #2c608f);
+  background-image: -moz-linear-gradient(top, #5d92c0, #2c608f);
+  background-image: -o-linear-gradient(top, #5d92c0, #2c608f);
+  background-image: -ms-linear-gradient(top, #5d92c0, #2c608f);
+  background-image: linear-gradient(top, #5d92c0, #2c608f);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#5d92c0', EndColorStr='#2c608f'); }
+
+.twc-selectProductBar-EBF {
+  background-color: #f6f6f6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e5e5e6));
+  background-image: -webkit-linear-gradient(top, #f6f6f6, #e5e5e6);
+  background-image: -moz-linear-gradient(top, #f6f6f6, #e5e5e6);
+  background-image: -o-linear-gradient(top, #f6f6f6, #e5e5e6);
+  background-image: -ms-linear-gradient(top, #f6f6f6, #e5e5e6);
+  background-image: linear-gradient(top, #f6f6f6, #e5e5e6);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f6f6f6', EndColorStr='#e5e5e6'); }
+
+.twc-productBox-EBF {
+  background-color: #2b2d32;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2b2d32), to(#f7f8f7));
+  background-image: -webkit-linear-gradient(top, #2b2d32, #f7f8f7);
+  background-image: -moz-linear-gradient(top, #2b2d32, #f7f8f7);
+  background-image: -o-linear-gradient(top, #2b2d32, #f7f8f7);
+  background-image: -ms-linear-gradient(top, #2b2d32, #f7f8f7);
+  background-image: linear-gradient(top, #2b2d32, #f7f8f7);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#2b2d32', EndColorStr='#f7f8f7'); }
+
+/* ==========================================================================
+    State
+   ========================================================================== */
+/* ==========================================================================
+    Theme
+   ========================================================================== */
+/* ==========================
+    Browser Specific
+   ========================== */
+/* Firefox */
+@-moz-document url-prefix() {}
+/* Webkit: Chrome/Safari */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* Webkit browsers add a 2px margin outside the chrome of form elements */ }
+/* IE:8/9 */
+/* ie (.ie) */
+/* ie8 (.ie8) */
+/* ie9 (.ie9) */
+.twc-ie9 [class*='gradient'] {
+  filter: none; }
+
+/* ==========================
+    Responsive Design
+   ========================== */
+/* ==========================
+    Tablet
+   ========================== */
+@media (max-width: 68.6875em) {
+  /* ==========================================================================
+      Layout
+     ========================================================================== */
+  /* ==========================================================================
+      Module
+     ========================================================================== */
+  /* ==========================================================================
+      State
+     ========================================================================== */
+  /* ==========================================================================
+      Theme
+     ========================================================================== */ }
+/* ==========================
+    Smartphone
+   ========================== */
+@media (max-width: 31.25em) {
+  /* ==========================================================================
+      Layout
+     ========================================================================== */
+  /* ==========================================================================
+      Module
+     ========================================================================== */
+  /* ==========================================================================
+      State
+     ========================================================================== */
+  /* ==========================================================================
+      Theme
+     ========================================================================== */ }

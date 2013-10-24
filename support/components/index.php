@@ -201,6 +201,14 @@
         				</a>       				
     				</div>
 				</div>
+				
+				<div class="formrow">
+				    <div class="form-item split">
+          				<a class="btn blue mobile-full" href="tables" target="_blank">
+        					Tables<span class="twc-icon-after icon-angle-right"></span>
+        				</a>       				
+    				</div>
+				</div>
 
 				<div class="formrow">
 				    <div class="form-item split">
@@ -214,14 +222,6 @@
 				    <div class="form-item split">
         				<a class="btn blue mobile-full" href="video" target="_blank">
     					    Video<span class="twc-icon-after icon-angle-right"></span>
-                        </a> 
-    				</div>
-				</div>
-	
-                <div class="formrow">
-				    <div class="form-item split">
-        				<a class="btn blue mobile-full" href="spinner" target="_blank">
-    					    Spinner<span class="twc-icon-after icon-angle-right"></span>
                         </a> 
     				</div>
 				</div>

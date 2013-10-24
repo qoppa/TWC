@@ -1,0 +1,361 @@
+/* ==========================================================================
+    CSS Code for all Footer elements
+   
+    Author: Max Quattromani
+    Version: 1.8.9.9 - Updated: 9/26/2013
+   ========================================================================== */
+/* ==========================================================================
+    Layout
+   ========================================================================== */
+/* ==========================================================================
+    Module
+   ========================================================================== */
+.twc-footer {
+  padding: 20px 0 40px;
+  background: #d3d3d4;
+  background: -moz-linear-gradient(top, #d3d3d4 0%, #e7e7e8 3%, white 16%, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d3d3d4), color-stop(3%, #e7e7e8), color-stop(16%, white), color-stop(100%, white));
+  background: -webkit-linear-gradient(top, #d3d3d4 0%, #e7e7e8 3%, white 16%, white 100%);
+  background: -o-linear-gradient(top, #d3d3d4 0%, #e7e7e8 3%, white 16%, white 100%);
+  background: -ms-linear-gradient(top, #d3d3d4 0%, #e7e7e8 3%, white 16%, white 100%);
+  background: linear-gradient(to bottom, #d3d3d4 0%, #e7e7e8 3%, white 16%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d3d3d4', endColorstr='#ffffff',GradientType=0 );
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-size: 12px;
+  font-size: 1.2rem; }
+  .twc-footer [class*='twc-col3_333333-c'] {
+    width: 30%;
+    margin-left: 5%;
+    margin-bottom: 2em; }
+  .twc-footer a {
+    color: #666; }
+    .twc-footer a:hover {
+      color: #3376b2;
+      text-decoration: underline; }
+  .twc-footer h3.label {
+    display: block;
+    /* offset earlier table-cell declaration */
+    color: #000;
+    font: 18px 'TWC Round Book',Arial,Sans-Serif;
+    font: 1.8rem;
+    margin: 0 0 1em;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01); }
+  .twc-footer .twc-block-links {
+    display: none;
+    float: left;
+    margin: 0;
+    width: 100%; }
+  .twc-footer ul {
+    margin-bottom: 0; }
+  .twc-footer .labelList li {
+    line-height: 2; }
+  .twc-footer .twc-block-links li {
+    float: left;
+    margin: 0 0 1px;
+    padding: 0;
+    width: 16.66666%; }
+    .twc-footer .twc-block-links li:first-child a {
+      border-left: 0; }
+    .twc-footer .twc-block-links li:last-child a {
+      border-right: 0; }
+    .twc-footer .twc-block-links li a {
+      border-left: 1px solid #D4D4D4;
+      color: #333;
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0 0 1px;
+      padding: 1em 0;
+      text-align: center;
+      white-space: nowrap; }
+  .twc-footer .twc-footer-links ul {
+    max-width: 980px; }
+  .twc-footer .twc-footer-links li {
+    display: inline-block;
+    padding: 0 0 0 8px;
+    margin: 0 .5em .5em 0;
+    line-height: 1; }
+
+.twc-footer-links ul li {
+  border-left: 1px solid #3c3e41; }
+  .twc-footer-links ul li:first-child {
+    border-left: 0; }
+
+.twc-footer .twc-footer-links li.twc-last {
+  background: 0; }
+.twc-footer .twc-footer-links li:first-child {
+  padding: 0;
+  background: 0; }
+.twc-footer .twc-footer-links a {
+  color: #333;
+  font-weight: 700; }
+  .twc-footer .twc-footer-links a:hover {
+    color: #387ab4; }
+.twc-footer p {
+  width: 100%;
+  color: #4c4d51;
+  font-family: Arial,sans-serif; }
+
+footer input {
+  margin-bottom: 1em;
+  padding: 0.35em 0.5em;
+  border: 1px solid #E6E6E7;
+  border-radius: 2px 2px 2px 2px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1) inset; }
+footer [class*='social-'] {
+  padding: 2px 0 2px 2em;
+  display: block; }
+
+/* Social Networking Icons */
+.social-facebook {
+  background: url(../images/social-facebook.png) 0 0 no-repeat; }
+  .social-facebook:hover {
+    background-image: url(../images/social-facebook-hover.png); }
+
+.social-twitter {
+  background: transparent url(../images/social-twitter.png) 0 0 no-repeat; }
+  .social-twitter:hover {
+    background-image: url(../images/social-twitter-hover.png); }
+
+.social-untangled {
+  background: transparent url(../images/social-untangled.png) 0 0 no-repeat; }
+  .social-untangled:hover {
+    background-image: url(../images/social-untangled-hover.png); }
+
+.social-youtube {
+  background: transparent url(../images/social-youtube.png) 0 0 no-repeat; }
+  .social-youtube:hover {
+    background-image: url(../images/social-youtube-hover.png); }
+
+.social-forums {
+  background: transparent url(../images/icon-social-forum.png) 0 0 no-repeat; }
+  .social-forums:hover {
+    background-image: url(../images/icon-social-forum-hover.png); }
+
+/* ==========================================================================
+    State
+   ========================================================================== */
+/* ==========================================================================
+    Theme
+   ========================================================================== */
+/* ==========================
+    Browser Specific
+   ========================== */
+/* Firefox */
+@-moz-document url-prefix() {}
+/* Webkit: Chrome/Safari */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* Webkit browsers add a 2px margin outside the chrome of form elements */
+  .twc-footer h3.label {
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.01); } }
+/* IE:8/9 */
+.twc-ie .twc-footer {
+  zoom: 1; }
+  .twc-ie .twc-footer:before, .twc-ie .twc-footer:after {
+    zoom: 1; }
+
+/* ie (.ie) */
+/* ie8 (.ie8) */
+.twc-ie8 .twc-footer .twc-footer-links ul {
+  max-width: 960px; }
+
+/* ie9 (.ie9) */
+/* ==========================
+    Responsive Design
+   ========================== */
+/* ==========================
+    Tablet
+   ========================== */
+@media (max-width: 68.6875em) {
+  /* ==========================================================================
+      Layout
+     ========================================================================== */
+  /* ==========================================================================
+      Module
+     ========================================================================== */
+  /* ==========================
+  	New Footer
+     ========================== */
+  .twc-footer {
+    padding-top: 0; }
+    .twc-footer [class*='twc-col3_333333-c'] {
+      width: 31.6666667%;
+      margin-left: 2.5%; }
+    .twc-footer .twc-block-links li {
+      width: 33.333%;
+      border-bottom: 1px solid #fff; }
+
+  .twc-row div.twc-footer-menu-bottom-row div.parsys_column:first-child {
+    margin-left: 0; }
+
+  .twc-footer .twc-block-links {
+    display: block; }
+
+  .twc-other-sites {
+    display: block;
+    background: #f2f4f6; }
+    .twc-other-sites ul {
+      margin: 5px 0;
+      text-align: center; }
+    .twc-other-sites li {
+      display: inline; }
+      .twc-other-sites li a {
+        padding: 0 1%;
+        border-right: 1px solid #666; }
+      .twc-other-sites li.twc-last a {
+        border-right: none; }
+
+  .twc-mobile-social-links {
+    display: none; }
+
+  .twc-footer .twc-footer-links {
+    display: inline-block;
+    margin: 35px 0 5px;
+    text-align: center; }
+  .twc-footer .twc-legal-links li {
+    text-align: center; }
+  .twc-footer .twc-footer-links {
+    margin: 0; }
+
+  footer .twc-content {
+    padding: 0; }
+  footer .twc-box-column {
+    margin-top: 0;
+    margin-bottom: 20px; }
+
+  /* ==========================================================================
+      State
+     ========================================================================== */
+  /* ==========================================================================
+      Theme
+     ========================================================================== */ }
+/* ==========================
+    Smartphone
+   ========================== */
+@media (max-width: 31.25em) {
+  /* ==========================================================================
+      Layout
+     ========================================================================== */
+  /* ==========================================================================
+      Module
+     ========================================================================== */
+  .twc-footer {
+    padding: 0; }
+
+  .twc-container.footer-menu {
+    width: 100%;
+    padding: 0; }
+
+  .twc-footer [class*='twc-col3_333333-c'] {
+    width: 33.3333337%;
+    margin-left: 0;
+    margin-bottom: 0; }
+  .twc-footer h3.label {
+    margin: 0;
+    padding: 15px;
+    border-right: 1px solid #d4d4d4;
+    background-color: #eeeeef;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeef), to(#dddfe2));
+    background-image: -webkit-linear-gradient(top, #eeeeef, #dddfe2);
+    background-image: -moz-linear-gradient(top, #eeeeef, #dddfe2);
+    background-image: -o-linear-gradient(top, #eeeeef, #dddfe2);
+    background-image: -ms-linear-gradient(top, #eeeeef, #dddfe2);
+    background-image: linear-gradient(top, #eeeeef, #dddfe2);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#eeeeef', EndColorStr='#dddfe2');
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center; }
+  .twc-footer [class*='twc-col3_333333-c']:nth-of-type(3n) h3.label {
+    border-right: none; }
+  .twc-footer h3.label + ul {
+    display: none;
+    position: relative;
+    width: 300%; }
+  .twc-footer h3.label.current {
+    background-color: #d0d5db;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d0d5db), to(#bbc2cb));
+    background-image: -webkit-linear-gradient(top, #d0d5db, #bbc2cb);
+    background-image: -moz-linear-gradient(top, #d0d5db, #bbc2cb);
+    background-image: -o-linear-gradient(top, #d0d5db, #bbc2cb);
+    background-image: -ms-linear-gradient(top, #d0d5db, #bbc2cb);
+    background-image: linear-gradient(top, #d0d5db, #bbc2cb);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#d0d5db', EndColorStr='#bbc2cb'); }
+    .twc-footer h3.label.current + ul li {
+      background-color: #d0d5db;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#d0d5db), to(#bbc2cb));
+      background-image: -webkit-linear-gradient(top, #d0d5db, #bbc2cb);
+      background-image: -moz-linear-gradient(top, #d0d5db, #bbc2cb);
+      background-image: -o-linear-gradient(top, #d0d5db, #bbc2cb);
+      background-image: -ms-linear-gradient(top, #d0d5db, #bbc2cb);
+      background-image: linear-gradient(top, #d0d5db, #bbc2cb);
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#d0d5db', EndColorStr='#bbc2cb'); }
+      .twc-footer h3.label.current + ul li:active {
+        background-color: #a6b5c3;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#a6b5c3), to(#8698aa));
+        background-image: -webkit-linear-gradient(top, #a6b5c3, #8698aa);
+        background-image: -moz-linear-gradient(top, #a6b5c3, #8698aa);
+        background-image: -o-linear-gradient(top, #a6b5c3, #8698aa);
+        background-image: -ms-linear-gradient(top, #a6b5c3, #8698aa);
+        background-image: linear-gradient(top, #a6b5c3, #8698aa);
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#a6b5c3', EndColorStr='#8698aa'); }
+      .twc-footer h3.label.current + ul li a {
+        color: #333; }
+        .twc-footer h3.label.current + ul li a:active {
+          color: #333; }
+  .twc-footer h3.label + ul li {
+    padding: 12px 3%;
+    border-top: 1px solid #dfe7ee;
+    background-color: #eeeeef;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeef), to(#dddfe2));
+    background-image: -webkit-linear-gradient(top, #eeeeef, #dddfe2);
+    background-image: -moz-linear-gradient(top, #eeeeef, #dddfe2);
+    background-image: -o-linear-gradient(top, #eeeeef, #dddfe2);
+    background-image: -ms-linear-gradient(top, #eeeeef, #dddfe2);
+    background-image: linear-gradient(top, #eeeeef, #dddfe2);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#eeeeef', EndColorStr='#dddfe2');
+    font-size: 14px;
+    font-size: 1.4rem;
+    text-align: left; }
+
+  .twc-footer-menu.mobile li:hover a, .twc-footer-menu.mobile li:active a {
+    color: #333;
+    text-decoration: none; }
+
+  .twc-footer .parsys_column a {
+    color: #666666;
+    font-weight: 700; }
+  .twc-footer h3.label + ul.mobile {
+    display: block; }
+
+  [class*='twc-col3_333333-c']:nth-of-type(2) h3.label + ul {
+    left: -100%; }
+  [class*='twc-col3_333333-c']:nth-of-type(3n) h3.label + ul {
+    left: -200%; }
+
+  .twc-footer .twc-footer-links {
+    margin-top: 0;
+    padding: 2em; }
+
+  .twc-footer-copyright-msg {
+    display: block; }
+
+  .twc-footer-menu li a {
+    display: inline-block;
+    width: 100%; }
+
+  .twc-footer h3.label + ul li a:after {
+    float: right;
+    font-family: 'FontAwesome', sans-serif;
+    content: '\f105';
+    color: inherit; }
+
+  /* ==========================================================================
+      State
+     ========================================================================== */
+  /* ==========================================================================
+      Theme
+     ========================================================================== */ }

@@ -1,0 +1,1123 @@
+/* ==========================================================================
+   CSS Code for all layout elements
+
+   Author: Max Quattromani
+   Version: 1.8.9.9 - Updated: 9/26/2013
+   ========================================================================== */
+
+/*
+
+ * Layout
+
+ * Column Control
+
+ */
+
+/* ==========================================================================
+    Layout
+   ========================================================================== */
+
+.twc-full { width: 100%; }
+
+.twc-container {
+    display: block;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 2em 0;
+    overflow: visible; }
+
+.twc-content { overflow: auto; }
+
+/* ==========================
+    Column Control
+   ========================== */
+
+.columnControl { clear: both; }
+
+.parsys_column {
+    float: left;
+    width: 100%;
+    margin-left: 2.5%;
+    border: 0;
+    -webkit-background-clip: padding-box !important;
+    -moz-background-clip: padding-box !important;
+    background-clip: padding-box !important; }
+
+.columnControl > .parsys_column,
+.columnControl .parsys_column .parsys0 {
+    margin-top: 0;
+    margin-left: 0; }
+
+.columnClear { clear: both; }
+
+.marginless { margin-left: 0; }
+
+/* ==========================
+    100
+   ========================== */
+
+[class*='twc-col1_100-c'] { width: 100%; }
+
+/* ==========================
+    2 Column Layouts
+   ========================== */
+
+/* ==========================
+    50/50
+   ========================== */
+
+[class*='twc-col2_5050-c'] { width: 48.75%; }
+
+[class*='twc-col2_5050-c'].marginless { width: 50%; }
+
+/* ==========================
+    55/45 * 45/55
+   ========================== */
+
+[class*='twc-col2_5545-c'] { width: 43.75%; }
+
+[class*='twc-col2_5545-c0'] { width: 53.75%; }
+
+[class*='twc-col2_4555-c'] { width: 53.75%; }
+
+[class*='twc-col2_4555-c0'] { width: 43.75% }
+
+/* ==========================
+    60/40 * 40/60
+   ========================== */
+
+[class*='twc-col2_6040-c'] { width: 38.75%; }
+
+[class*='twc-col2_6040-c'].marginless { width: 40%; }
+
+[class*='twc-col2_6040-c0'] { width: 58.75%; }
+
+[class*='twc-col2_6040-c0'].marginless { width: 60%; }
+
+[class*='twc-col2_4060-c'] { width: 58.75%; }
+
+[class*='twc-col2_4060-c0'] { width: 38.75%; }
+
+/* ==========================
+    The Golden Ratio
+   ========================== */
+
+[class*='twc-col2_6238-c'] { width: 36.75%; }
+
+[class*='twc-col2_6238-c'].marginless { width: 38%; }
+
+[class*='twc-col2_6238-c0'] { width: 60.75%; }
+
+[class*='twc-col2_6238-c0'].marginless { width: 62%; }
+
+[class*='twc-col2_3862-c'] { width: 60.75%; }
+
+[class*='twc-col2_3862-c0'] { width: 36.75%; }
+
+/* ==========================
+    67/33 * 33/67
+   ========================== */
+
+[class*='twc-col2_6733-c'] { width: 31.75%; }
+
+[class*='twc-col2_6733-c0'] { width: 65.75%; }
+
+[class*='twc-col2_3367-c'] { width: 65.75%; }
+
+[class*='twc-col2_3367-c0'] { width: 31.75%; }
+
+/* ==========================
+    70/30 * 30/70
+   ========================== */
+
+[class*='twc-col2_7030-c'] { width: 28.75%; }
+
+[class*='twc-col2_7030-c0'] { width: 68.75%; }
+
+[class*='twc-col2_3070-c'] { width: 68.75%; }
+
+[class*='twc-col2_3070-c0'] { width: 28.75%; }
+
+/* ==========================
+    75/25 * 25/75
+   ========================== */
+
+[class*='twc-col2_7525-c'] { width: 23.75%; }
+
+[class*='twc-col2_7525-c'].marginless { width: 25%; }
+
+[class*='twc-col2_7525-c0'] { width: 73.75%; }
+
+[class*='twc-col2_7525-c0'].marginless { width: 75%; }
+
+[class*='twc-col2_2575-c'] { width: 73.75%; }
+
+[class*='twc-col2_2575-c0'] { width: 23.75%; }
+
+/* ==========================
+    76/24 * 24/76
+   ========================== */
+
+[class*='twc-col2_7624-c'] { width: 22.75%; }
+
+[class*='twc-col2_7624-c0'] { width: 74.75%; }
+
+[class*='twc-col2_2476-c'] { width: 74.75%; }
+
+[class*='twc-col2_2476-c0'] { width: 22.75%; }
+
+/* ==========================
+    82/18
+   ========================== */
+
+[class*='twc-col2_8218-c'] {
+    width: 18%;
+    margin: 0; }
+
+[class*='twc-col2_8218-c1'] { padding-left: 1em; }
+
+[class*='twc-col2_8218-c0'] { width: 82%; }
+
+/* ==========================
+    3 Column Layouts
+   ========================== */
+
+/* ==========================
+    14/72/14
+   ========================== */
+[class*='twc-col3_157015-c'] {
+    width: 13%;
+    margin-left: 0; }
+
+[class*='twc-col3_157015-c1'] { width: 69%; }
+
+[class*='twc-col3_157015-c1'] > .parsys { padding: 0 2%; }
+
+/* ==========================
+    17/56/17
+   ========================== */
+
+[class*='twc-col3_175617-c'] {
+    width: 21.9%;
+    margin: 0;
+    padding: 0 2%; }
+
+[class*='twc-col3_175617-c1'] { width: 56.2%; }
+
+[class*='twc-col3_175617-c1'] > .parsys { padding: 0 2%; }
+
+/* ==========================
+    33/33/33
+   ========================== */
+
+[class*='twc-col3_333333-c'] { width: 31.6666667%; }
+
+/* ==========================
+    50/25/25
+   ========================== */
+
+[class*='twc-col3_502525-c'] { width: 23.125%; }
+
+[class*='twc-col3_502525-c0'] { width: 48.75%; }
+
+/* ==========================
+    25/25/50
+   ========================== */
+
+[class*='twc-col3_252550-c'] { width: 23.125%; }
+
+[class*='twc-col3_252550-c2'] { width: 48.75%; }
+
+/* ==========================
+    4 Columns
+   ========================== */
+
+/* ==========================
+    25/25/25/25
+   ========================== */
+
+[class*='twc-col4_25252525-c'] { width: 23.125%; }
+
+.twc-submenu [class*='twc-col4_25252525-c'] {
+    width: 25%;
+    margin: 0;
+    padding: 0 2%; }
+
+.twc-submenu [class*='twc-col'] {
+    border: solid transparent;
+    border-width: 0 0 0 1px;
+    border-image: url("youtube-search/images/tall-divider-gray.png") 2 2 stretch stretch; }
+
+.twc-submenu [class*='twc-col']:first-child { border-image: none; }
+
+/* ==========================
+    5 Columns
+   ========================== */
+
+[class*='twc-col5_2020202020-c'] { width: 18%; }
+
+/* ==========================
+    6 Columns
+   ========================== */
+
+[class*='twc-col6_151515151515-c'] { width: 14.583333%; }
+
+/* ==========================
+    7 Columns
+   ========================== */
+
+[class*='twc-col7_12121212121212-c'] { width: 12.142857142857%; }
+
+/* ==========================
+    Multi Column
+   ========================== */
+
+[class*='two_column_'] {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -ms-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    -ms-column-gap: 20px;
+    column-gap: 20px; }
+
+[class*='three_column_'] {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -ms-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    -ms-column-gap: 20px;
+    column-gap: 20px; }
+
+/* ==========================
+	Main Content
+   ========================== */
+
+.subHead {
+    display: block;
+    margin: .5em 0; }
+
+p.subHead a {
+    font-size: 13px;
+    font-size: 1.3rem; }
+
+p.subHead a:before,
+a.subHead:before {
+    font-family: 'FontAwesome', sans-serif;
+    content: "\f104";
+    padding-right: 5px; }
+
+.page-header { border-radius: 3px 3px 0 0; }
+
+.twc-box-column {
+    padding: 1.5em;
+    margin-bottom: 2em;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 #888;
+    overflow: hidden; }
+
+.page-header + .twc-box-column { border-radius: 0 0 3px 3px; }
+
+.twc-borderBottom h3 { margin-bottom: .5em; }
+
+.twc-borderBottom {
+    padding-bottom: .5em;
+    border-bottom: 1px solid #CDCFD1; }
+
+/* ==========================
+	Aside / Sidebar Section
+   ========================== */
+
+.twc-share-module {	display: inline-block; }
+
+.twc-block { display: inline; }
+
+.twc-block ul.twc-share,
+.twc-block a {
+    display: inline-block;
+    float: left;
+    padding: .5em 1em;
+    background: #4f799f;
+    border-radius: 3px;
+    color: #f2f4f6; }
+
+.twc-share-module li,
+.twc-share-module .twc-print {
+    float: right;
+    padding: .5em 2em;
+    color: #d4dadf;
+    font-size: 13px;
+    text-transform: uppercase; }
+
+ul.twc-share li { border-bottom: 0; }
+
+.twc-print {
+    margin: 0;
+    padding: 0 7px; }
+
+.twc-print:hover { background: #265a83; }
+
+.twc-block .twc-share { float: right; }
+
+.twc-block .twc-share li {
+    float: left;
+    height: 18px;
+    padding: 0 7px;
+    border-right: 1px solid #ababab; }
+
+.twc-block .twc-share li:first-child { border-right: none; }
+
+.twc-block .twc-share a {
+    display: block;
+    float: left;
+    text-indent: -9999em;
+    padding: 0;
+    margin: 0;
+    opacity: .7; }
+
+.twc-block .twc-share a:hover { opacity: 1; }
+
+.twc-share li:last-child { border-right: 0; }
+
+.twc-arrow {
+    background:url(youtube-search/images/arrow-white-right.png) no-repeat scroll 100% center transparent;
+    padding-right:15px; }
+
+.viewAll {
+    display: inline-block;
+    margin: 1em 0;
+    font-weight: 500;
+    color: #333; }
+
+.viewAll:after {
+    padding-left: 5px;
+    font-family: 'FontAwesome', sans-serif;
+    font-size: inherit;
+    font-weight: inherit;
+    content:'\f105'; }
+
+/* ==========================================================================
+    Module
+   ========================================================================== */
+
+/* ==========================================================================
+    State
+   ========================================================================== */
+
+/* ==========================================================================
+    Theme
+   ========================================================================== */
+
+/* ==========================
+    Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+
+/* IE:8/9 */
+
+/* ie (.ie) */
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+    Responsive Design
+   ========================== */
+
+/* ==========================
+    Tablet
+   ========================== */
+
+@media (max-width: 68.6875em) {
+
+    /* ==========================================================================
+        Layout
+       ========================================================================== */
+
+    .twc-container { padding: 1em 4%; }
+
+    /* ==========================
+        2 and 3 Columns
+       ========================== */
+
+    [class*='twc-col2'] {
+        width: 100%;
+        margin-left: 0; }
+
+    [class*='twc-col2_7525-c'].marginless { width: 100%; }
+
+    [class*='twc-col2_6040-c'].marginless { width: 100%; }
+
+    /* ==========================
+        17/56/17
+       ========================== */
+    [class*='twc-col3'] {
+        width: 100%;
+        margin-left: 0; }
+
+    /* ==========================
+        50/25/25
+       ========================== */
+
+    [class*='twc-col3_502525-c'] { width: 48.75%; }
+
+    [class*='twc-col3_502525-c0'] { width: 100%; }
+
+    [class*='twc-col3_502525-c2'] { margin-left: 2.5%; }
+
+    /* ==========================
+        25/25/50
+       ========================== */
+
+    [class*='twc-col3_252550-c'] { width: 48.75%; }
+
+    [class*='twc-col3_252550-c1'] {
+        margin-top: 0;
+        margin-left: 2.5%; }
+
+    [class*='twc-col3_252550-c2'] {
+        margin-left: 0;
+        width: 100%; }
+
+    /* ==========================
+        33/33/33
+       ========================== */
+    [class*='twc-col3_333333-c'] {
+        width: 100%;
+        margin-left: 0; }
+
+    /* ==========================
+        4 Columns
+       ========================== */
+
+    [class*='twc-col4_25252525-c'] { width: 48.75%; }
+
+    [class*='twc-col4_25252525-c']:nth-of-type(2n+1) { margin-left: 0; }
+
+    [class*='twc-col4_25252525-c1'] { margin-top: 0; }
+
+    /* ==========================
+        5 Columns
+       ========================== */
+
+    [class*='twc-col5_5-c'] { width: 48.75%; }
+
+    [class*='twc-col5_5-c']:nth-of-type(2n+1) { margin-left: 0; }
+
+    [class*='twc-col5_5-c1'] { margin-top: 0; }
+
+    /* ==========================
+        6 Columns
+       ========================== */
+
+    [class*='twc-col6_151515151515-c'] { width: 31.666667%; }
+
+    [class*='twc-col6_151515151515-c']:nth-of-type(4) { margin-left: 0; }
+
+    [class*='twc-col6_151515151515-c1'],
+    [class*='twc-col6_151515151515-c2'] {
+        margin-top: 0;
+        margin-bottom: 2em; }
+
+    /* ==========================
+        7 Columns
+       ========================== */
+
+    [class*='twc-col7_7-c'] { width: 31.666667%; }
+
+    [class*='twc-col7_7-c6'] {
+        clear: both;
+        width: 100%;
+        margin-left: 0; }
+
+    [class*='twc-col7_7-c6'] input {
+        display: block;
+        max-width: 250px;
+        -webkit-appearance: none; }
+
+    [class*='twc-col7_7-c']:nth-of-type(4) { margin-left: 0; }
+
+    [class*='twc-col7_7-c1'],
+    [class*='twc-col7_7-c2'] { margin-top: 0; }
+
+
+    /* ==========================================================================
+        Module
+       ========================================================================== */
+
+    /* ==========================================================================
+        State
+       ========================================================================== */
+
+    /* ==========================================================================
+        Theme
+       ========================================================================== */
+
+}
+
+/* ==========================
+    Smartphone
+   ========================== */
+
+@media (max-width: 31.25em) {
+
+    [class*='_column_'] {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1; }
+
+    /* ==========================================================================
+        Layout
+       ========================================================================== */
+
+    [class*="twc-col"] {
+        width: 100%;
+        margin-left: 0; }
+
+    /* ==========================
+        2 Columns
+       ========================== */
+
+    [class*='twc-col2'] { width: 100%; }
+
+    /* ==========================
+        4 Columns
+       ========================== */
+
+    [class*='twc-col4']:nth-of-type(2) { margin-top: 10px; }
+
+    /* ==========================
+        5 Columns
+       ========================== */
+
+    [class*='twc-col5']:nth-of-type(2) { margin-top: 10px; }
+
+    /* ==========================
+        6 Columns
+       ========================== */
+
+    [class*='twc-col6_151515151515-c']:nth-of-type(1n+2) { margin-top: 10px; }
+
+    [class*='twc-col6_151515151515-c']:nth-of-type(4) { margin-left: 0; }
+
+    footer [class*='twc-col6_151515151515-c'] {
+        position: relative;
+        width: 33.334%;
+        margin: 0;
+        text-align: center; }
+
+    footer [class*='twc-col6_151515151515-c']:nth-of-type(1n+2) { margin-top: 0; }
+
+    /* ==========================
+        7 Columns
+       ========================== */
+
+    [class*='twc-col7_7-c']:nth-of-type(1n+2) { margin-top: 10px; }
+
+    [class*='twc-col7_7-c']:nth-of-type(4) { margin-left: 0; }
+
+    footer [class*='twc-col7_7-c'] {
+        width: 33.334%;
+        margin: 0;
+        text-align: center; }
+
+    footer [class*='twc-col7_7-c']:nth-of-type(1n+2) { margin-top: 0; }
+
+    [class*='twc-col7_7-c']:nth-of-type(7n) {
+        width: 100%;
+        padding: 2%; }
+
+    [class*='twc-col7_7-c'] input {
+        display: inline;
+        max-width: 60%; }
+
+    /* ==========================================================================
+        Module
+       ========================================================================== */
+
+    /* ==========================================================================
+        State
+       ========================================================================== */
+
+    /* ==========================================================================
+        Theme
+       ========================================================================== */
+
+}
+
+/* ==========================================================================
+   CSS code for
+
+   Author: Max Quattromani
+   Version: 1.0 - Updated: 8/14/13
+   ========================================================================== */
+
+/*
+
+ * Layout
+
+ * Module
+
+ * State
+
+ * Theme
+
+ * Browser Specific
+        * Safari/Chrome/Webkit
+        * Firefox
+        * Internet Explorer
+
+ */
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* layout styles are being handled by base main.css */
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+.page-header .horizontal ul li { display: inline-block; }
+
+li.refineSearch ul.vertical li {
+    display: block;
+    text-align: left; }
+
+.page-header {
+    padding: 0 1.5em;
+    background: #333534;
+    background: url(youtube-search/css/data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMzMzUzNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYTFiMWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #333534 0%, #1a1b1f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333534), color-stop(100%,#1a1b1f));
+    background: -webkit-linear-gradient(top,  #333534 0%,#1a1b1f 100%);
+    background: -o-linear-gradient(top,  #333534 0%,#1a1b1f 100%);
+    background: -ms-linear-gradient(top,  #333534 0%,#1a1b1f 100%);
+    background: linear-gradient(to bottom,  #333534 0%,#1a1b1f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333534', endColorstr='#1a1b1f',GradientType=0 );
+    color: #fff; }
+
+.page-header .twc-module { width: 300px; }
+
+.page-header .twc-module button:before {
+    content: "";
+    font-family: 'FontAwesome',sans-serif; }
+
+.page-header .horizontal ul { margin-bottom: 0; }
+
+.page-header .horizontal ul li { padding: .5em 1em; }
+
+li.refineSearch {
+    position: relative;
+    padding: .5em 1em;
+    border-radius: 3px;
+    background: #4F799F;
+    color: #fff;
+    text-align: center; }
+
+.page-header div.horizontal ul li ul {
+    display: none;
+    padding: 0.5em; }
+
+/*
+    li.refineSearch:hover {
+        border-left: 2px solid #fff;
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #dcdcdc;
+        background: #dcdcdc;
+        color: #333; }
+*/
+
+.page-header .horizontal ul li.twc-last ul.vertical li input {
+    display: none;
+
+}
+
+.page-header .horizontal ul li.twc-last ul.vertical li label {
+    display: block;
+    width: 100%;
+    padding: 0.5em 1em; }
+
+input[type=checkbox]:checked + label {
+    background: #3376B2;
+    color: #fff;
+    margin-left : 0em;
+}
+
+input[type=checkbox]:checked + label:after {
+    content: 'X';
+    float: right; }
+
+.page-header .horizontal li.twc-last ul.vertical li.twc-last {
+    border-left: none;
+    border-top: none;
+    border-right: none; }
+
+.page-header .horizontal li.twc-last ul.vertical li.twc-last:hover { box-shadow: none; }
+
+.page-header .horizontal ul li:hover ul {
+    display: block;
+    position: absolute;
+    width: 163%;
+    left: 0;
+    top: 30px;
+    outline: 2px solid #fff;
+    background: #dcdcdc;
+    color: #333;
+    z-index: 9999; }
+
+.filter-section {
+    padding: .75em 1.5em;
+    background: #e4e7ea; }
+
+.filter-section .horizontal ul { margin-bottom: 0; }
+
+.filter-section select {
+    width: 200px;
+    margin-right: 3em; }
+
+.mobile-view { display: none; }
+
+[class*='youtube-video-'] figure { margin-bottom: 0; }
+
+[class*='youtube-video-'] {
+    margin-bottom: 1em;
+    padding: .5em;
+    overflow: auto; }
+
+[class*='youtube-video-']:hover { background: #e4e7ea; }
+
+[class*='youtube-video-'] a {
+    display: block;
+    margin-bottom: 1em; }
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+
+/* IE: 6/7/8/9 */
+
+/* ie (.ie) */
+
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+    Responsive Design
+   ========================== */
+
+/* Tablet */
+
+@media (max-width: 68.6875em) {
+
+    /* ==========================================================================
+       Layout
+       ========================================================================== */
+
+    /* ==========================================================================
+       Module
+       ========================================================================== */
+
+    /* ==========================================================================
+       State
+       ========================================================================== */
+
+    /* ==========================================================================
+       Theme
+       ========================================================================== */
+
+} /* End Tablet Breakpoint */
+
+/* SmartPhone */
+
+@media (max-width: 31.25em) {
+
+    /* ==========================================================================
+       Layout
+       ========================================================================== */
+
+    [class*="twc-col4"]:nth-of-type(2) { margin-top: 0; }
+
+    /* ==========================================================================
+       Module
+       ========================================================================== */
+
+    .mainVideo { display: none; }
+
+    .page-header { padding: 0; }
+
+    .page-header .horizontal ul li {
+        width: 100%;
+        padding: 1em; }
+
+    .page-header .twc-module { width: 100%; }
+
+    .horizontal ul { display: block; }
+
+    .desktop-hidden {
+        display: block;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #ccc;
+        text-align: center; }
+
+    .filter-section { background: #353535; }
+
+    .filter-section select { margin: 0; }
+
+    li.refineSearch {
+        background: #4F799F;
+        padding: .5em;
+        border: none;
+        border-radius: 0; }
+
+    li.refineSearch ul.vertical li { text-align: left; }
+
+    .refineSearch .submit { float: right; }
+
+    .page-header .horizontal ul li:hover ul {
+        display: none;
+        top: 42px;
+        width: 100%;
+        outline: none;
+        border: 1px solid #ccc;
+        text-align: center; }
+
+    .page-header .horizontal ul li ul li { border-bottom: 1px dotted #ccc; }
+
+    .page-header .horizontal ul li ul li.twc-last { border-bottom: none; }
+
+    .sortBy { color: #fff; }
+
+    [class*='youtube-video-'] {
+        margin-bottom: 0;
+        padding: 1em .5em; }
+
+    [class*='youtube-video-'] > div { float: left; }
+
+    [class*='youtube-video-']:hover { background: none; }
+
+    .video-container { width: 48%; }
+
+    .video-container a { margin-bottom: 0; }
+
+    .video-container a figure img { margin-bottom: 0; }
+
+    .video-info {
+        width: 48%;
+        margin-left: 4%; }
+
+    /* ==========================================================================
+       State
+       ========================================================================== */
+
+    .page-header .horizontal ul li ul.is-active { display: block; }
+
+    /* ==========================================================================
+       Theme
+       ========================================================================== */
+
+} /* End SmartPhone Breakpoint */
+
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+
+.pagination {
+            font-size: 80%;
+}
+.twc-none { display: none; }
+
+.pagination a {
+    text-decoration: none;
+	border: solid 1px #AAE;
+	color: #15B;
+	font-size : 13px;
+}
+
+.pagination a, .pagination span {
+    display: block;
+    float: left;
+    padding: 0.3em 0.5em;
+    margin-right: 5px;
+	margin-bottom: 5px;
+	font-size : 13px;
+}
+
+.pagination .current {
+    background: #26B;
+    color: #fff;
+	border: solid 1px #AAE;
+	font-size : 13px;
+}
+
+
+/* ==========================================================================
+    CSS Code for all Videos
+
+    Author: Max Quattromani
+    Version: 1.8.9.9 - Updated: 9/26/2013
+   ========================================================================== */
+
+/* ==========================================================================
+    Layout
+   ========================================================================== */
+
+/* ==========================================================================
+    Module
+   ========================================================================== */
+
+.video-container {
+    margin-bottom: 1em;
+    background-color: rgb(38,38,38);
+    background: -moz-linear-gradient(left,  rgba(38,38,38,1) 0%, rgba(107,109,109,1) 28%, rgba(107,109,109,1) 72%, rgba(38,38,38,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(38,38,38,1)), color-stop(28%,rgba(107,109,109,1)), color-stop(72%,rgba(107,109,109,1)), color-stop(100%,rgba(38,38,38,1)));
+    background: -webkit-linear-gradient(left,  rgba(38,38,38,1) 0%,rgba(107,109,109,1) 28%,rgba(107,109,109,1) 72%,rgba(38,38,38,1) 100%);
+    background: -o-linear-gradient(left,  rgba(38,38,38,1) 0%,rgba(107,109,109,1) 28%,rgba(107,109,109,1) 72%,rgba(38,38,38,1) 100%);
+    background: -ms-linear-gradient(left,  rgba(38,38,38,1) 0%,rgba(107,109,109,1) 28%,rgba(107,109,109,1) 72%,rgba(38,38,38,1) 100%);
+    background: linear-gradient(to right,  rgba(38,38,38,1) 0%,rgba(107,109,109,1) 28%,rgba(107,109,109,1) 72%,rgba(38,38,38,1) 100%);
+    behavior: url(youtube-search/css/pie/PIE.htc);
+    text-align: center; }
+
+/* ==========================================================================
+    State
+   ========================================================================== */
+
+/* ==========================================================================
+    Theme
+   ========================================================================== */
+
+/* ==========================
+    Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+
+/* IE:8/9 */
+
+/* ie (.ie) */
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+/* ==========================
+    Responsive Design
+   ========================== */
+
+/* ==========================
+    Tablet
+   ========================== */
+
+@media (max-width: 68.6875em) {
+
+    /* ==========================================================================
+        Base
+       ========================================================================== */
+
+    video { height: 21.25%; }
+
+    /* ==========================================================================
+        Layout
+       ========================================================================== */
+
+    /* ==========================================================================
+        Module
+       ========================================================================== */
+
+    /* ==========================================================================
+        State
+       ========================================================================== */
+
+    /* ==========================================================================
+        Theme
+       ========================================================================== */
+
+}
+
+/* ==========================
+    Smartphone
+   ========================== */
+
+@media (max-width: 31.25em) {
+
+    video { height: auto; }
+
+    /* ==========================================================================
+        Layout
+       ========================================================================== */
+
+    /* ==========================================================================
+        Module
+       ========================================================================== */
+
+    /* ==========================================================================
+        State
+       ========================================================================== */
+
+    /* ==========================================================================
+        Theme
+       ========================================================================== */
+
+}
+

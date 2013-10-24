@@ -47,19 +47,18 @@ video {
 .location_listing {
 	overflow: auto;
 	max-width: 300px;
-	padding: 2em;
 	border-radius: 3px;
 	background: #f2f7fb; }
 
-	.location_listing ul { margin: 1em 0; }
+ul#paymentcenterresults > li { padding: 1em; }
 
-		.location_listing li { 
+	/*	.location_listing li { 
 			display: block;
 			position: relative;
 			margin-bottom: 1em;
 			padding-bottom: 1em;
 			border-bottom: 1px dotted #ccc;
-			vertical-align: top; }
+			vertical-align: top; }*/
 
 .flag { 
 	top: 0;
@@ -69,52 +68,6 @@ span.flag {
     position: absolute; }
 
 .read-more { float: right; }
-
-/* ==========================
-   Modal
-   ========================== */
-
-#backgroundPopup { 
-	position: fixed;
-	display: none;
-	top: 0px;  
-	left: 0px;
-	height: 100%;
-	width: 100%;
-	background: #000;	
-	zoom: 1;
-	filter: alpha(opacity=50);
-	opacity: .5;
-	z-index: 9999;
-}
-
-#toPopup {
-    display: none;
-    position: absolute;
-	top: 2em;
-	left: 0;
-	right: 0;	
-    height: auto;
-    width: 90%;
-    max-width: 600px;
-	margin: auto;
-    overflow: visible;
-    border-radius: 3px;
-    background: none repeat scroll 0 0 #FFFFFF;
-    color: #333;
-    z-index: 99999; }
-
-	#toPopup > #popup_content { padding: 1em; }
-
-div.close {
-	position: absolute;
-	float: right;
-	top: -15px;
-    right: -15px;
-	height: 42px;
-	width: 42px;
-    background: url(../images/close.png) no-repeat;
-    cursor: pointer; }
 
 /* ==========================================================================
    State

@@ -94,6 +94,8 @@ li.heading ul.content {
 
 /* ie8 (.ie8) */
 
+.no-csscolumns .AtoZ_container { display: none; }
+
 .no-csscolumns .AtoZ_container ul li.heading { padding: 0 1em; }
 
 /* ie9 (.ie9) */
@@ -184,7 +186,7 @@ li.heading h5 {
 }
 
 	li.heading h5:after {
-	    content: "";
+	    content: "";
 	    float: right;
 	    font-family: 'FontAwesome',sans-serif;
 	}

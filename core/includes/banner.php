@@ -25,10 +25,19 @@
 		            	if ($breadcrumb_B !='') { 
 		            		echo "<li><a href=''>$breadcrumb_B</a></li>";
 		            	}
-		
-		            	if ($banner_title !='') { 
+						
+						if ($breadcrumb_C !='') { 
 		            		echo "<li><a href=''>$breadcrumb_C</a></li>";
-		            	}					
+		            	}
+						
+						if ($breadcrumb_D !='') { 
+		            		echo "<li><a href=''>$breadcrumb_D</a></li>";
+		            	}
+						
+						if ($breadcrumb_E !='') { 
+		            		echo "<li><a href=''>$breadcrumb_E</a></li>";
+		            	}
+						
 		            }
 		        ?>
 		            </ul>
@@ -38,6 +47,7 @@
             </div>
 
             <h1><?=$banner_title?></h1>
+            <span><?=$banner_text?></span>
         </div>
     </header>
 	<!-- .Banner Component -->

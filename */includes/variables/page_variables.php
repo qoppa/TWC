@@ -41,11 +41,14 @@
 		// Banner Title
 		$banner_title = '<center>Welcome to Time Warner Cable Support. Need Help?</center>';
 		
+		// Banner Text - span
+		$banner_text = '';
+		
 		// content.php variables
 		// SubHead text
 		$subHead = '<h3 class="twc-subHead">Get Help With</h3>';
 
-// Setup the page
+	// Setup the page
 				
 		$tophat = true;
 		
@@ -66,6 +69,18 @@
 		$content = true;
 		
 		$footer = true;
+
+	// share button variables
+	
+		$printButton = true;
+		
+		$emailButton = true;
+			
+		$twitterButton = false;
+				
+		$facebookButton = false;
+		
+		$linkedInButton = false;
 		
 // Simple Nav options
 

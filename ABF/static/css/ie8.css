@@ -1,0 +1,389 @@
+/* ----------------------
+ * IE8 global styles
+ -- */
+.ie8 input[type=checkbox], .ie8 input[type=radio] {
+  height: auto;
+  width: auto;
+  vertical-align: top;
+  padding: 2.5px 0; }
+.ie8 .billing-block.last {
+  margin-bottom: 0; }
+
+/* ----------------------
+ *	.header IE8 Specific Styles
+ -- */
+.ie8 .header .questions {
+  z-index: auto; }
+
+/* TWC_END_SASS_FILE  partials/header/header.ie8.css */
+/* ----------------------
+ *	Container IE8 Specific Styles (.container)
+ -- */
+/* TWC_END_SASS_FILE  partials/container/container.ie8.css */
+/* ----------------------
+ *	Checkout Steps Base Styles (.checkout-steps)
+ -- */
+.ie8 .checkout-steps .step-list {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B3000000' endColorstr='#B3000000',GradientType=0); }
+.ie8 .checkout-steps li {
+  width: 100% -33%/3; }
+.ie8 .checkout-steps.show-sub-steps .active .step .end-arrow {
+  right: -15px; }
+.ie8 .checkout-steps .active {
+  width: 33%; }
+  .ie8 .checkout-steps .active .step .end-arrow {
+    top: -3px;
+    right: -11px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476)"; }
+  .ie8 .checkout-steps .active .step .number {
+    background-position: 0 top;
+    background-color: transparent; }
+  .ie8 .checkout-steps .active.last {
+    padding-right: 0; }
+    .ie8 .checkout-steps .active.last .end-arrow {
+      display: none; }
+.ie8 .checkout-steps .complete .number {
+  background-color: transparent;
+  background-position: -63px center; }
+.ie8 .checkout-steps .number {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: -32px top;
+  background-image: url("../images/icons/circles-checkout.png");
+  width: 32px;
+  height: 32px;
+  line-height: 32px; }
+
+/* TWC_END_SASS_FILE  partials/checkout-steps/checkout-steps.ie8.css */
+/* ----------------------
+ *	Checkout Footer IE8 Specific Styles
+ -- */
+.ie8 .footer li.last {
+  border: 0; }
+
+/* TWC_END_SASS_FILE  partials/footer/footer.ie8.css */
+/* ----------------------
+ * Generic Module ie8 Breakpoint Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/module/module.ie8.css */
+/* ----------------------
+ * collapsible IE8 Styles
+ -- */
+.ie8 .collapsible.complete .toggle {
+  filter: none; }
+
+.ie8 .page-collapsible.highlighted header li.last {
+  background-color: #f0f5f9;
+  background-image: -moz-linear-gradient(270deg, white 0%, #e1ebf3 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #e1ebf3));
+  background-image: -webkit-linear-gradient(270deg, white 0%, #e1ebf3 100%);
+  background-image: -o-linear-gradient(270deg, white 0%, #e1ebf3 100%);
+  background-image: -ms-linear-gradient(270deg, white 0%, #e1ebf3 100%);
+  background-image: linear-gradient(to bottom, white 0%, #e1ebf3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFE1EBF3',GradientType=0);
+  width: 100px;
+  padding-right: 10px;
+  border-top-right-radius: 3px;
+  -moz-border-top-right-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -moz-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px; }
+.ie8 .page-collapsible.highlighted header li.current {
+  width: 230px; }
+.ie8 .page-collapsible.highlighted.active header li.last {
+  background-color: #f0f5f9;
+  background-image: -moz-linear-gradient(270deg, #e1ebf3 0%, white 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e1ebf3), color-stop(100%, white));
+  background-image: -webkit-linear-gradient(270deg, #e1ebf3 0%, white 100%);
+  background-image: -o-linear-gradient(270deg, #e1ebf3 0%, white 100%);
+  background-image: -ms-linear-gradient(270deg, #e1ebf3 0%, white 100%);
+  background-image: linear-gradient(to bottom, #e1ebf3 0%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFE1EBF3', endColorstr='#FFFFFFFF',GradientType=0); }
+
+/* TWC_END_SASS_FILE  partials/collapsible/collapsible.ie8.css */
+/* ----------------------
+ * Tooltip IE8 Styles
+ -- */
+.ie8 .tooltip-popup.top .tooltip-wrap, .ie8 .tooltip-popup.bottom .tooltip-wrap {
+  background: #e0e7eb; }
+.ie8 .tooltip-popup.top .tooltip-content:before,
+.ie8 .tooltip-popup.top .tooltip-wrap:before,
+.ie8 .tooltip-popup.top .tooltip-wrap:after, .ie8 .tooltip-popup.bottom .tooltip-content:before,
+.ie8 .tooltip-popup.bottom .tooltip-wrap:before,
+.ie8 .tooltip-popup.bottom .tooltip-wrap:after {
+  border-left-color: transparent;
+  border-right-color: transparent; }
+.ie8 .tooltip-popup.top .tooltip-wrap:after {
+  border-bottom-color: #e0e7eb; }
+.ie8 .tooltip-popup.bottom .tooltip-wrap:after {
+  border-top-color: #e0e7eb; }
+.ie8 .tooltip-popup.left .tooltip-content:before,
+.ie8 .tooltip-popup.left .tooltip-wrap:before,
+.ie8 .tooltip-popup.left .tooltip-wrap:after, .ie8 .tooltip-popup.right .tooltip-content:before,
+.ie8 .tooltip-popup.right .tooltip-wrap:before,
+.ie8 .tooltip-popup.right .tooltip-wrap:after {
+  border-top-color: transparent;
+  border-bottom-color: transparent; }
+
+/* TWC_END_SASS_FILE  partials/tooltip/tooltip.ie8.css */
+/* ----------------------
+ * Modal IE8 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/modal/modal.ie8.css */
+/* ----------------------
+ * cart IE8 Styles
+ -- */
+.ie8 .cart-module header .toggle {
+  filter: none; }
+.ie8 .cart-module .collapsible.last {
+  border-bottom: 0; }
+.ie8 .cart-module td.last {
+  text-align: right;
+  font-weight: bold;
+  width: 80px; }
+.ie8 .cart-module .gift td.last {
+  text-align: left;
+  padding-right: 0; }
+.ie8 .cart-module .total td.last, .ie8 .cart-module .bundle td.last {
+  padding-right: 10px; }
+.ie8 .cart-module .total td.last {
+  font-size: 12px; }
+.ie8 .cart-module .total td.price.last {
+  font-size: 23px; }
+
+/* TWC_END_SASS_FILE  partials/cart-module/cart-module.ie8.css */
+/* ----------------------
+ *	Checkout plans Base Styles (.checkout-plans)
+ -- */
+.ie8 .checkout-plans .plans header li.last {
+  width: 90px;
+  padding-left: 10px; }
+
+/* TWC_END_SASS_FILE  partials/checkout-plans/checkout-plans.ie8.css */
+/* ----------------------
+ *	Checkout packages Base Styles (.checkout-promos)
+ -- */
+.ie8 .checkout-promos .col.last {
+  float: right; }
+  .ie8 .checkout-promos .col.last:first-child {
+    float: left; }
+
+/* TWC_END_SASS_FILE  partials/checkout-promos/checkout-promos.ie8.css */
+/* ----------------------
+ *	Checkout Steps Base Styles (.checkout-steps)
+ -- */
+.ie8 .checkout-steps .step-list {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B3000000' endColorstr='#B3000000',GradientType=0); }
+.ie8 .checkout-steps li {
+  width: 100% -33%/3; }
+.ie8 .checkout-steps.show-sub-steps .active .step .end-arrow {
+  right: -15px; }
+.ie8 .checkout-steps .active {
+  width: 33%; }
+  .ie8 .checkout-steps .active .step .end-arrow {
+    top: -3px;
+    right: -11px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476)"; }
+  .ie8 .checkout-steps .active .step .number {
+    background-position: 0 top;
+    background-color: transparent; }
+  .ie8 .checkout-steps .active.last {
+    padding-right: 0; }
+    .ie8 .checkout-steps .active.last .end-arrow {
+      display: none; }
+.ie8 .checkout-steps .complete .number {
+  background-color: transparent;
+  background-position: -63px center; }
+.ie8 .checkout-steps .number {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: -32px top;
+  background-image: url("../images/icons/circles-checkout.png");
+  width: 32px;
+  height: 32px;
+  line-height: 32px; }
+
+/* TWC_END_SASS_FILE  partials/checkout-steps/checkout-steps.ie8.css */
+/* ----------------------
+ * installation-options IE8 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/installation-options/installation-options.ie8.css */
+/* ----------------------
+ * MODULE-NAME IE8 Styles
+ -- */
+.ie8 .internet-customize-accordion .modem-options header > .last {
+  padding-right: 10px;
+  border-top-right-radius: 3px;
+  -moz-border-top-right-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -moz-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  background-color: #f0f5f9;
+  background-image: -moz-linear-gradient(270deg, white 0%, #e1ebf3 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #e1ebf3));
+  background-image: -webkit-linear-gradient(270deg, white 0%, #e1ebf3 100%);
+  background-image: -o-linear-gradient(270deg, white 0%, #e1ebf3 100%);
+  background-image: -ms-linear-gradient(270deg, white 0%, #e1ebf3 100%);
+  background-image: linear-gradient(to bottom, white 0%, #e1ebf3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFE1EBF3',GradientType=0);
+  width: 105px; }
+.ie8 .internet-customize-accordion .modem-options .rtf li.last {
+  background: none;
+  filter: none;
+  padding-right: 0;
+  width: 100%; }
+
+/* TWC_END_SASS_FILE  partials/internet-customize-accordion/internet-customize-accordion.ie8.css */
+/* ----------------------
+ * tv-cusomize-accordion IE8 Styles
+ -- */
+.ie8 .tv-customize-accordion .wholehouse .wait h3 {
+  min-height: 31px; }
+.ie8 .tv-customize-accordion .number-indicator {
+  padding: 0; }
+  .ie8 .tv-customize-accordion .number-indicator span {
+    background: url("../images/icons/circle.png") no-repeat center center;
+    border: 0;
+    height: 37px;
+    width: 34px;
+    line-height: 35px; }
+.ie8 .tv-customize-accordion .tab-nav li.last {
+  border-right: 0; }
+.ie8 .tv-customize-accordion .tabs {
+  border: 1px solid #c7c7c7; }
+  .ie8 .tv-customize-accordion .tabs section {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF0F0F0', endColorstr='#FFFFFFFF',GradientType=0); }
+.ie8 .tv-customize-accordion .picks {
+  clear: both; }
+  .ie8 .tv-customize-accordion .picks ul {
+    overflow: hidden; }
+    .ie8 .tv-customize-accordion .picks ul li {
+      margin-right: 20px; }
+      .ie8 .tv-customize-accordion .picks ul li.last {
+        margin-right: 0; }
+  .ie8 .tv-customize-accordion .picks .image {
+    min-height: 160px; }
+.ie8 .tv-customize-accordion tr.active .toggle {
+  filter: none; }
+.ie8 .tv-customize-accordion tr.alt td, .ie8 .tv-customize-accordion tr.alt + tr td {
+  background: #fdfdfd; }
+.ie8 .tv-customize-accordion td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 0;
+  border-bottom: 0; }
+  .ie8 .tv-customize-accordion td:first-child input.checked + img {
+    display: inline-block; }
+  .ie8 .tv-customize-accordion td.last {
+    padding-right: 10px;
+    border-right: 0; }
+.ie8 .tv-customize-accordion .sports .radio sup {
+  font-size: 16px; }
+.ie8 .tv-customize-accordion .sports-pass li.last {
+  border-bottom: 0; }
+.ie8 .tv-customize-accordion .more-channels div {
+  border: 1px solid #d7d7d7;
+  border-bottom: 0; }
+.ie8 .tv-customize-accordion .deal-tracker .tracker-wrap {
+  margin-top: 2px;
+  margin-bottom: 2px; }
+.ie8 .tv-customize-accordion .deal-tracker .active .tracker-wrap {
+  border: 2px solid #d4e1eb;
+  margin: 0; }
+.ie8 .tv-customize-accordion .international-dropdown {
+  min-height: 12px; }
+.ie8 .tv-customize-accordion .quantity {
+  padding-left: 0;
+  padding-right: 0; }
+
+/* TWC_END_SASS_FILE  partials/tv-customize-accordion/tv-customize-accordion.ie8.css */
+/* ----------------------
+ * Order Details Module IE8 Styles
+ -- */
+.ie8 .order-details .col.last {
+  margin-right: 0; }
+
+/* TWC_END_SASS_FILE  partials/order-details/order-details.ie8.css */
+/* ----------------------
+ * Promo Code IE8 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/promo-code/promo-code.ie8.css */
+/* ----------------------
+ * Services Details IE8 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/services-details/services-details.ie8.css */
+/* ----------------------
+ * Button Nav IE8 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/button-nav/button-nav.ie8.css */
+/* ----------------------
+ * Card Promo Module IE8 Styles
+ -- */
+.ie8 .card-promo:after,
+.ie8 .card-promo:before {
+  border-left-color: transparent;
+  border-right-color: transparent; }
+.ie8 .card-promo:after {
+  border-top-color: #85aed6; }
+.ie8 .card-promo {
+  filter: none;
+  background-color: #85aed6;
+  min-height: auto; }
+
+/* TWC_END_SASS_FILE  partials/card-promo/card-promo.ie8.css */
+/* ----------------------
+ * payment-form  IE8 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/payment-form/payment-form.ie8.css */
+/* ----------------------
+ * billing-terms-conditions  IE8 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/billing-terms-conditions/billing-terms-conditions.ie8.css */
+/* ----------------------
+ * Compare Table IE8 Breakpoint Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/compare-table/compare-table.ie8.css */
+/* ----------------------
+ *	Explore Packages IE8 Specific Styles
+ -- */
+.ie8 .explore-packages .block,
+.ie8 .explore-packages .filter-heading {
+  filter: none; }
+.ie8 .explore-packages .end-arrow {
+  top: -2px;
+  right: 41px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476)"; }
+.ie8 .whats-included-wrap {
+  background-image: url("../images/top-shadow-879x11.png");
+  background-position: center 14px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 25px;
+  margin-top: 0; }
+
+/* TWC_END_SASS_FILE  partials/explore-packages/explore-packages.ie8.css */
+/* ----------------------
+ *	Package Details IE8 Specific Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/package-details/package-details.ie8.css */
+/* ----------------------
+ * Phone Customize Accordion IE8 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/phone-customize-accordion/phone-customize-accordion.ie8.css */
+/* ----------------------
+ * your-services IE8 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/your-services/your-services.ie8.css */
+/* ----------------------
+ * calendar IE8 Styles
+ -- */
+/* TWC_END_SASS_FILE  partials/calendar/calendar.ie8.css */
+/* ----------------------
+ * sidebar-promo IE8 Styles
+ -- */
+.ie8 .sidebar-promo .circle {
+  background: transparent url("../images/icons/circle-white.png") no-repeat center center; }
+
+/* TWC_END_SASS_FILE  partials/sidebar-promo/sidebar-promo.ie8.css */

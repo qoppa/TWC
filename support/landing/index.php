@@ -49,11 +49,13 @@
 		                </div>
 		            </li>
 		
+<!--
 		            <li>
 		                <div class="smartLinkWithImage">
 		                    <a href="/content/PaymentCenters/LA" analyticsname="dsfd:1:6:label6"><img src="/content/dam/geometrixx/icons/box_software.png"> label6</a>
 		                </div>
 		            </li>
+-->
 		        </ul>
 		    </div> 
 		</div>                  

@@ -1,0 +1,46 @@
+/** Search */
+.cq-searchpromote-search {
+	text-align: center;
+}
+.cq-searchpromote-search #q {
+	width: 225px;
+}
+
+/** Results */
+.cq-searchpromote-results {
+	
+}
+
+/** Pagination */
+.cq-searchpromote-pagination {
+	text-align: center;
+}
+
+/** Breadcrumbs */
+.cq-searchpromote-breadcrumbs {
+	
+}
+
+/** Checkboxlist Facet */
+.cq-searchpromote-facet-checkboxlist {
+    height:200px; 
+    overflow:auto
+}
+.cq-searchpromote-facet-checkboxlist ul {
+    list-style-type: none;
+}
+
+/** Datepicker Facet */
+.cq-searchpromote-facet-datepicker {}
+
+/** Dropdown Facet */
+.cq-searchpromote-facet-dropdown {}
+
+/** Linklist Facet */
+.cq-searchpromote-facet-linklist {}
+.cq-searchpromote-facet-linklist ul {
+    list-style-type: none;
+}
+
+/** Slider Facet */
+.cq-searchpromote-facet-slider {}

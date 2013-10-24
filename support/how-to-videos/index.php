@@ -28,64 +28,66 @@
 				
 					<div class="horizontal">
 						<ul>
-							<li class="mobile-hidden"><span>Search by keyword:</span></li>
+							<li class="tablet-hidden"><span>Search by keyword:</span></li>
 							<li>
 								<div class="twc-module">
 									<form action="searchPage">
 										<fieldset class="twc-search">
 											<div class="twc-search-input-wrap">
 												<input id="" type="search" name="" placeholder="Placeholder Text">
-												<div class="btn blue search-btn">
-                                                    <button type="submit"></button>
-                                                </div>
+												<div class="cta omega search-btn">
+												    <a href="#" analyticsname="GO">
+												        <span>GO</span>
+												    </a>
+												</div>
 											</div>
 										</fieldset>
 									</form>
 								</div>
 							</li>
-							<li class="mobile-hidden">
-								<span class="showing">
-								Showing <b>1 - 10</b> of <b>25</b> results for "<b>Internet</b>"
-								</span>	
-							</li>
-							<li class="refineSearch"><b>Refine Search<span class="twc-icon-after icon-angle-down"></b>
-								<ul class="vertical">
-									<li><b>Search by</b></li>
-									<li>
-									    <input id="account" type="checkbox" checked>
-                                        <label for="account">Account &amp; Billing</label>
-                                    </li>
-									<li>
-									    <input id="tv" type="checkbox" checked>
-                                        <label for="tv">TV</label>
-                                    </li>
-									<li>
-									    <input id="internet" type="checkbox" checked>
-                                        <label for="internet">Internet</label>
-                                    </li>
-									<li>
-									    <input id="phone" type="checkbox" checked>
-                                        <label for="phone">Phone</label>
-                                    </li>
-									<li>
-									    <input id="mobile" type="checkbox" checked>
-                                        <label for="mobile">Mobile</label>
-                                    </li>
-									<li>
-									    <input id="IH" type="checkbox" checked>
-                                        <label for="IH">IntelligentHome</label>
-                                    </li>
-									<li>
-										<div class="submit">
-											<a id="submit" class="btn blue" href="">
-												Submit
-												<span class="twc-icon-after icon-angle-right"></span>
-											</a>
-											<a class="btn twc-right" href="">Cancel</a>
-										</div>
-									</li>
-								</ul>
-							</li>
+
+					            <li class="refineSearch active right">
+					                <div id="submit" class="cta omega twc-icon-after icon-angle-down">
+						                <a href="#">
+						                    <span>Refine Search</span>
+						                </a>
+						            </div>
+					                <ul class="vertical">
+					                    <div class="refineHead">
+					                        <span class="btn left"><b>Search By</b></span>
+					                        <a class="btn right closeSearch" href="#">Close</a>
+					                    </div>
+
+					                    <div class="clear searchCategories">
+					                        <li class="twc-first clear">
+					                            <input checked="checked" type="checkbox">
+					                            <span class="categories">Account & Billing</span>
+					                        </li>
+					                    
+					                        <li>
+					                            <input checked="checked" type="checkbox">
+					                            <span class="categories">TV</span>
+					                        </li>
+					                    
+					                        <li>
+					                            <input checked="checked" type="checkbox">
+					                            <span class="categories">Internet</span>
+					                        </li>
+					                    
+					                        <li class="twc-last">
+					                            <input checked="checked" type="checkbox">
+					                            <span class="categories">Phone</span>
+					                        </li>
+					                    </div>
+
+					                    <a id="submit" class="btn blue left">
+					                        Submit <span class="twc-icon-after icon-angle-right"></span>
+					                    </a>
+					                    <a class="btn right clearCheckboxes" href="#">Clear All</a>
+
+					                </ul>
+					            </li>
+
 						</ul>
 					</div>
 					
@@ -104,7 +106,7 @@
 									<option value="">Oldest to Newest</option>
 								</select>
 							</li>
-							<li class="mobile-hidden">
+							<li class="tablet-hidden">
 								<span><b>View per Page:</b></span>
 								<select name="" id="">
 									<option value="10">10</option>
@@ -120,403 +122,171 @@
 				
 				<div class="twc-box-column">
 					
-					<div class="desktop-hidden">
-						<span class="showing">
-						Showing <b>1 - 10</b> of <b>25</b> results for "<b>Internet</b>"
-						</span>	
-					</div>
+                    <span class="showing">
+                    Showing <b>1 - 10</b> of <b>25</b> results for "<b>Internet</b>"
+                    </span>	
 					
 					<div class="100 section columnControl">
 						<div class="parsys_column twc-col1_100">
 							<div class="parsys parsys0 twc-col1_100-c0 parsys_column">
 								<div class="parbase section">
 																		
-									<div class="25-25-25-25 section columnControl">
-										<div class="parsys_column twc-col4_25252525">
-											<div class="parsys parsys0 twc-col4_25252525-c0 parsys_column">
-												<div class="parbase section">
-													
-													<div class="youtube-video-1">
-														<div class="video-container">
-															<a href="http://www.youtube.com/user/TimeWarnerCable">
-																<figure>
-																	<img alt="" src="http://placehold.it/500x300&text=+">
-																</figure>
-															</a>
-														</div>
-														<div class="video-info">
-															<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-															<span>1:13</span>
-														</div>
-													</div>
-													
-												</div>
-												<div class="new section"></div>
-											</div>
-											<div class="parsys parsys1 twc-col4_25252525-c1 parsys_column">
-												<div class="parbase section">
-													
-													<div class="youtube-video-2">
-														<div class="video-container">
-															<a href="http://www.youtube.com/user/TimeWarnerCable">
-																<figure>
-																	<img alt="" src="http://placehold.it/500x300&text=+">
-																</figure>
-															</a>
-														</div>
-														<div class="video-info">
-															<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-															<span>1:13</span>
-														</div>
-													</div>
-													
-												</div>
-												<div class="new section"></div>
-											</div>
-											<div class="parsys parsys2 twc-col4_25252525-c2 parsys_column">
-												<div class="parbase section">
-													
-													<div class="youtube-video-3">
-														<div class="video-container">
-															<a href="http://www.youtube.com/user/TimeWarnerCable">
-																<figure>
-																	<img alt="" src="http://placehold.it/500x300&text=+">
-																</figure>
-															</a>
-														</div>
-														<div class="video-info">
-															<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-															<span>1:13</span>
-														</div>
-													</div>
-													
-												</div>
-												<div class="new section"></div>
-											</div>
-											<div class="parsys parsys3 twc-col4_25252525-c3 parsys_column">
-												<div class="parbase section">
-													
-													<div class="youtube-video-4">
-														<div class="video-container">
-															<a href="http://www.youtube.com/user/TimeWarnerCable">
-																<figure>
-																	<img alt="" src="http://placehold.it/500x300&text=+">
-																</figure>
-															</a>
-														</div>
-														<div class="video-info">
-															<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-															<span>1:13</span>
-														</div>
-													</div>
-													
-												</div>
-												<div class="new section"></div>
-											</div>
-										</div>
-										<div class="columnClear"></div>
-									</div>
 									
-									<div class="25-25-25-25 section columnControl">
-										<div class="parsys_column twc-col4_25252525">
-											<div class="parsys parsys0 twc-col4_25252525-c0 parsys_column">
-												<div class="parbase section">
-													
-													<div class="youtube-video-1">
-														<div class="video-container">
-															<a href="http://www.youtube.com/user/TimeWarnerCable">
-																<figure>
-																	<img alt="" src="http://placehold.it/500x300&text=+">
-																</figure>
-															</a>
-														</div>
-														<div class="video-info">
-															<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-															<span>1:13</span>
-														</div>
-													</div>
-													
-												</div>
-												<div class="new section"></div>
-											</div>
-											<div class="parsys parsys1 twc-col4_25252525-c1 parsys_column">
-												<div class="parbase section">
-													
-													<div class="youtube-video-2">
-														<div class="video-container">
-															<a href="http://www.youtube.com/user/TimeWarnerCable">
-																<figure>
-																	<img alt="" src="http://placehold.it/500x300&text=+">
-																</figure>
-															</a>
-														</div>
-														<div class="video-info">
-															<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-															<span>1:13</span>
-														</div>
-													</div>
-													
-												</div>
-												<div class="new section"></div>
-											</div>
-											<div class="parsys parsys2 twc-col4_25252525-c2 parsys_column">
-												<div class="parbase section">
-													
-													<div class="youtube-video-3">
-														<div class="video-container">
-															<a href="http://www.youtube.com/user/TimeWarnerCable">
-																<figure>
-																	<img alt="" src="http://placehold.it/500x300&text=+">
-																</figure>
-															</a>
-														</div>
-														<div class="video-info">
-															<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-															<span>1:13</span>
-														</div>
-													</div>
-													
-												</div>
-												<div class="new section"></div>
-											</div>
-											<div class="parsys parsys3 twc-col4_25252525-c3 parsys_column">
-												<div class="parbase section">
-													
-													<div class="youtube-video-4">
-														<div class="video-container">
-															<a href="http://www.youtube.com/user/TimeWarnerCable">
-																<figure>
-																	<img alt="" src="http://placehold.it/500x300&text=+">
-																</figure>
-															</a>
-														</div>
-														<div class="video-info">
-															<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-															<span>1:13</span>
-														</div>
-													</div>
-													
-												</div>
-												<div class="new section"></div>
-											</div>
-										</div>
-										<div class="columnClear"></div>
-									</div>
-									
-									<div class="25-25-25-25 section columnControl">
-										<div class="parsys_column twc-col4_25252525">
-											<div class="parsys parsys0 twc-col4_25252525-c0 parsys_column">
-												<div class="parbase section">
-													
-													<div class="youtube-video-1">
-														<div class="video-container">
-															<a href="http://www.youtube.com/user/TimeWarnerCable">
-																<figure>
-																	<img alt="" src="http://placehold.it/500x300&text=+">
-																</figure>
-															</a>
-														</div>
-														<div class="video-info">
-															<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-															<span>1:13</span>
-														</div>
-													</div>
-													
-												</div>
-												<div class="new section"></div>
-											</div>
-											<div class="parsys parsys1 twc-col4_25252525-c1 parsys_column">
-												<div class="parbase section">
-													
-													<div class="youtube-video-2">
-														<div class="video-container">
-															<a href="http://www.youtube.com/user/TimeWarnerCable">
-																<figure>
-																	<img alt="" src="http://placehold.it/500x300&text=+">
-																</figure>
-															</a>
-														</div>
-														<div class="video-info">
-															<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-															<span>1:13</span>
-														</div>
-													</div>
-													
-												</div>
-												<div class="new section"></div>
-											</div>
-											<div class="parsys parsys2 twc-col4_25252525-c2 parsys_column">
-												<div class="parbase section">
-													
-													<div class="youtube-video-3">
-														<div class="video-container">
-															<a href="http://www.youtube.com/user/TimeWarnerCable">
-																<figure>
-																	<img alt="" src="http://placehold.it/500x300&text=+">
-																</figure>
-															</a>
-														</div>
-														<div class="video-info">
-															<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-															<span>1:13</span>
-														</div>
-													</div>
-													
-												</div>
-												<div class="new section"></div>
-											</div>
-											<div class="parsys parsys3 twc-col4_25252525-c3 parsys_column">
-												<div class="parbase section">
-													
-													<div class="youtube-video-4">
-														<div class="video-container">
-															<a href="http://www.youtube.com/user/TimeWarnerCable">
-																<figure>
-																	<img alt="" src="http://placehold.it/500x300&text=+">
-																</figure>
-															</a>
-														</div>
-														<div class="video-info">
-															<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-															<span>1:13</span>
-														</div>
-													</div>
-													
-												</div>
-												<div class="new section"></div>
-											</div>
-										</div>
-										<div class="columnClear"></div>
-									</div>
-																		
-									<div class="25-25-25-25 section columnControl">
-										<div class="parsys_column twc-col4_25252525">
-											<div class="parsys parsys0 twc-col4_25252525-c0 parsys_column">
-												<div class="parbase section">
-													
-													<div class="youtube-video-1">
-														<div class="video-container">
-															<a href="http://www.youtube.com/user/TimeWarnerCable">
-																<figure>
-																	<img alt="" src="http://placehold.it/500x300&text=+">
-																</figure>
-															</a>
-														</div>
-														<div class="video-info">
-															<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-															<span>1:13</span>
-														</div>
-													</div>
-													
-												</div>
-												<div class="new section"></div>
-											</div>
-											<div class="parsys parsys1 twc-col4_25252525-c1 parsys_column">
-												<div class="parbase section">
-													
-													<div class="youtube-video-2">
-														<div class="video-container">
-															<a href="http://www.youtube.com/user/TimeWarnerCable">
-																<figure>
-																	<img alt="" src="http://placehold.it/500x300&text=+">
-																</figure>
-															</a>
-														</div>
-														<div class="video-info">
-															<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-															<span>1:13</span>
-														</div>
-													</div>
-													
-												</div>
-												<div class="new section"></div>
-											</div>
-											<div class="parsys parsys2 twc-col4_25252525-c2 parsys_column">
-												<div class="parbase section">
-													
-													<div class="youtube-video-3">
-														<div class="video-container">
-															<a href="http://www.youtube.com/user/TimeWarnerCable">
-																<figure>
-																	<img alt="" src="http://placehold.it/500x300&text=+">
-																</figure>
-															</a>
-														</div>
-														<div class="video-info">
-															<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-															<span>1:13</span>
-														</div>
-													</div>
-													
-												</div>
-												<div class="new section"></div>
-											</div>
-											<div class="parsys parsys3 twc-col4_25252525-c3 parsys_column">
-												<div class="parbase section">
-													
-													<div class="youtube-video-4">
-														<div class="video-container">
-															<a href="http://www.youtube.com/user/TimeWarnerCable">
-																<figure>
-																	<img alt="" src="http://placehold.it/500x300&text=+">
-																</figure>
-															</a>
-														</div>
-														<div class="video-info">
-															<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit</a>
-															<span>1:13</span>
-														</div>
-													</div>
-													
-												</div>
-												<div class="new section"></div>
-											</div>
-										</div>
-										<div class="columnClear"></div>
-									</div>
+    <div id="searchResult">
+        <div class="parsys parsys0 youtube-video-gallery parsys_column">
+            <div class="youtube-video-1 backImage">
+                <div class="video-container">
+                    <a href="javascript:ytLoadVideo('mzIqDuW43eU')"></a>
+
+                    <figure><img src="Support%20How%20to%20Videos%20Responsive_files/hqdefault_005.jpg" height="123px" width="205px"></figure>
+                </div>
+
+                <div id="videoInfo">
+                    <a href="javascript:ytLoadVideo('mzIqDuW43eU')">Avoid Time Warner Cable's Modem Lease Fee!..</a><span>6:38</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="parsys parsys1 youtube-video-gallery parsys_column">
+            <div class="youtube-video-1 backImage">
+                <div class="video-container">
+                    <a href="javascript:ytLoadVideo('nVTAR1o5wcg')"></a>
+
+                    <figure><img src="Support%20How%20to%20Videos%20Responsive_files/hqdefault_007.jpg" height="123px" width="205px"></figure>
+                </div>
+
+                <div id="videoInfo">
+                    <a href="javascript:ytLoadVideo('nVTAR1o5wcg')">TWC - Local Forecast/Weather Update, Tornado ..</a><span>3:47</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="parsys parsys2 youtube-video-gallery parsys_column">
+            <div class="youtube-video-1 backImage">
+                <div class="video-container">
+                    <a href="javascript:ytLoadVideo('hd4pw6bdQNE')"></a>
+
+                    <figure><img src="Support%20How%20to%20Videos%20Responsive_files/hqdefault_010.jpg" height="123px" width="205px"></figure>
+                </div>
+
+                <div id="videoInfo">
+                    <a href="javascript:ytLoadVideo('hd4pw6bdQNE')">Moore OK Tornado As It Happened TWC Part 1..</a><span>10:21</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="parsys parsys3 youtube-video-gallery parsys_column">
+            <div class="youtube-video-1 backImage">
+                <div class="video-container">
+                    <a href="javascript:ytLoadVideo('1caq7evCTSw')"></a>
+
+                    <figure><img src="Support%20How%20to%20Videos%20Responsive_files/hqdefault_004.jpg" height="123px" width="205px"></figure>
+                </div>
+
+                <div id="videoInfo">
+                    <a href="javascript:ytLoadVideo('1caq7evCTSw')">CAUGHT ON CAMERA - Video inside TWC Tornado H..</a><span>1:08</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="parsys parsys0 youtube-video-gallery parsys_column">
+            <div class="youtube-video-1 backImage">
+                <div class="video-container">
+                    <a href="javascript:ytLoadVideo('xkPeZmFu2WI')"></a>
+
+                    <figure><img src="Support%20How%20to%20Videos%20Responsive_files/hqdefault_003.jpg" height="123px" width="205px"></figure>
+                </div>
+
+                <div id="videoInfo">
+                    <a href="javascript:ytLoadVideo('xkPeZmFu2WI')">Graffiti: TWC, Saint-Petersburg 2011..</a><span>2:04</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="parsys parsys1 youtube-video-gallery parsys_column">
+            <div class="youtube-video-1 backImage">
+                <div class="video-container">
+                    <a href="javascript:ytLoadVideo('_FlgYS8SnO8')"></a>
+
+                    <figure><img src="Support%20How%20to%20Videos%20Responsive_files/hqdefault_006.jpg" height="123px" width="205px"></figure>
+                </div>
+
+                <div id="videoInfo">
+                    <a href="javascript:ytLoadVideo('_FlgYS8SnO8')">TWC - Cada Fan Cuenta - Argentina:60..</a><span>1:02</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="parsys parsys2 youtube-video-gallery parsys_column">
+            <div class="youtube-video-1 backImage">
+                <div class="video-container">
+                    <a href="javascript:ytLoadVideo('PwEOZEICnjU')"></a>
+
+                    <figure><img src="Support%20How%20to%20Videos%20Responsive_files/hqdefault_008.jpg" height="123px" width="205px"></figure>
+                </div>
+
+                <div id="videoInfo">
+                    <a href="javascript:ytLoadVideo('PwEOZEICnjU')">How-To Video - TWC TV - Time Warner Cable..</a><span>2:12</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="parsys parsys3 youtube-video-gallery parsys_column">
+            <div class="youtube-video-1 backImage">
+                <div class="video-container">
+                    <a href="javascript:ytLoadVideo('hDszT9N_Z48')"></a>
+
+                    <figure><img src="Support%20How%20to%20Videos%20Responsive_files/hqdefault_009.jpg" height="123px" width="205px"></figure>
+                </div>
+
+                <div id="videoInfo">
+                    <a href="javascript:ytLoadVideo('hDszT9N_Z48')">TWC El Reno/OKC Tornado Coverage, 5/31/2013 (..</a><span>15:01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="parsys parsys0 youtube-video-gallery parsys_column">
+            <div class="youtube-video-1 backImage">
+                <div class="video-container">
+                    <a href="javascript:ytLoadVideo('-McqJvljeaU')"></a>
+
+                    <figure><img src="Support%20How%20to%20Videos%20Responsive_files/hqdefault.jpg" height="123px" width="205px"></figure>
+                </div>
+
+                <div id="videoInfo">
+                    <a href="javascript:ytLoadVideo('-McqJvljeaU')">Hurricane Andrew Coverage - TWC - August 1992..</a><span>24:18</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="parsys parsys1 youtube-video-gallery parsys_column">
+            <div class="youtube-video-1 backImage">
+                <div class="video-container">
+                    <a href="javascript:ytLoadVideo('rLgzdnfQej4')"></a>
+
+                    <figure><img src="Support%20How%20to%20Videos%20Responsive_files/hqdefault_002.jpg" height="123px" width="205px"></figure>
+                </div>
+
+                <div id="videoInfo">
+                    <a href="javascript:ytLoadVideo('rLgzdnfQej4')">The Walking Dead TWC Super Bowl Commercial..</a><span>0:31</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 									
 									<hr>
 									
 									<!-- Pagination -->
-									<div class="pagination twc-right">
-                        				<ol>
-                        					<li>
-                        					    <div class="btn blue disabled page_first">
-                            					    <button type="button"><span class="icon-double-angle-left"></span></button>
-                        					    </div>
-                        					</li>
-                        					<li>
-                        					    <div class="btn blue page_prev disabled">
-                            					    <button type="button"><span class="twc-icon-before icon-angle-left"></span><span class="text">Previous</span></button>
-                                                </div>
-                        					</li>
-                        					<li>
-                            					<div class="btn blue number disabled">
-                                					<button type="button">1</button>
-                            					</div>
-                        					</li>
-                        					<li>
-                        					    <div class="btn blue number">
-                            					    <button type="button">2</button>
-                        					    </div>
-                        					</li>
-                        					<li>
-                        						<div class="btn blue number">
-                            					    <button type="button">3</button>
-                        					    </div>
-                        					</li>
-                        					<li>
-                        					    <div class="btn blue page_next">
-                            					    <button type="button"><span class="text">Next</span><span class="twc-icon-after icon-angle-right"></span></button>
-                        					    </div>
-                        					</li>
-                        					<li>
-                        					<div class="btn blue page_last">
-                            					<button type="button"><span class="icon-double-angle-right"></span></button>
-                        					</div>
-                        					</li>
-                        				</ol>
-                        	        </div>
+									<div id="Pagination" class="pagination right">
+                            			<span class="current prev"><span>Previous</span></span>
+                            			<span class="current"><span>1</span></span>
+                            			<a href="#"><span>2</span></a>
+                            			<a href="#"><span>3</span></a>
+                            			<a href="#"><span>4</span></a>
+                            			<a class="next" href="#"><span>Next</span></a>
+                        			</div>
 									<!-- .Pagination -->
 									
 								</div>

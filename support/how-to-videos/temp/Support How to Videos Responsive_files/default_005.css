@@ -1,0 +1,575 @@
+/*
+ * Copyright 1997-2010 Day Management AG
+ * Barfuesserplatz 6, 4001 Basel, Switzerland
+ * All Rights Reserved.
+ *
+ * This software is the confidential and proprietary information of
+ * Day Management AG, ("Confidential Information"). You shall not
+ * disclose such Confidential Information and shall use it only in
+ * accordance with the terms of the license agreement you entered into
+ * with Day.
+ */
+
+
+/******************************************************************************/
+/* header and user info */
+/******************************************************************************/
+
+#CQ #cq-header.cq-security-header {
+    background:url('default/resources/titlebar_bg.png');
+}
+
+/******************************************************************************/
+/* nav */
+/******************************************************************************/
+
+
+#CQ .cq-security-nav .x-panel-body {
+    padding:25px 1px;
+}
+
+#CQ .cq-security-nav .cq-security-nav-line {
+    height:1px;
+    line-height:0;
+    font-size:0;
+    background-color:#DEDEDE;
+    margin:2px 1px;
+}
+
+.ext-ie8 #CQ .cq-security-nav .cq-security-nav-line {
+    margin:2px 1px 1px 1px;
+}
+
+#CQ .cq-security-nav .cq-tbtn {
+    display:block;
+    padding:3px 6px 4px 14px;
+    margin-bottom:1px;
+}
+
+#CQ .cq-security-nav .cq-tbtn .x-btn-text {
+    text-decoration:none;
+    color:#000000;
+}
+
+#CQ .cq-security-nav .x-btn-over {
+    background-color:#EFEFEF;
+}
+
+#CQ .cq-security-nav .x-btn-pressed {
+
+    background-color:#D0D0D0;
+}
+
+#CQ .cq-security-nav .x-btn-pressed .x-btn-text {
+    font-weight:bold;
+    color:#666666;
+}
+
+
+/******************************************************************************/
+/* dashboard */
+/******************************************************************************/
+
+#CQ .cq-security-dashboard .xtb-text {
+    /*font-size:13px;*/
+}
+
+#CQ .cq-security-dashboard-dataview TABLE {
+    width:100%;
+}
+
+#CQ .cq-security-dashboard-dataview TD {
+    font-family:tahoma,arial,helvetica,sans-serif;;
+    font-size:12px;
+    padding:1px 6px 1px 6px;
+}
+
+#CQ .cq-security-dashboard-dataview TD.cq-security-dashboard-right {
+    text-align:right;
+}
+
+/* tool tip */
+
+#CQ .cq-security-qtip-table {
+    white-space: normal;
+    border-spacing: 3px;
+}
+
+#CQ .cq-security-qtip-table th {
+    font-weight: bold;
+}
+
+#CQ .cq-security-qtip-table td {
+    padding-right:5px;
+    overflow:hidden;
+}
+
+#CQ .cq-security-qtip-separator {
+    color: #aacae6;
+}
+
+#CQ .cq-security-qtip-table .status {
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+}
+
+#CQ .cq-security-qtip-table .allowed-permission {
+    background-image: url(../../../ui/widgets/themes/default/ext/dd/drop-yes.gif);
+    background-position: -1px -1px;
+    width: 16px;
+    height: 16px;
+}
+
+#CQ .cq-security-qtip-table .not-allowed-permission {
+    background-image: url(../../../reporting/widgets/themes/default/resources/delete.png);
+    background-position: -1px -1px;
+    width: 16px;
+    height: 16px;
+}
+
+/*
+ * Copyright 1997-2010 Day Management AG
+ * Barfuesserplatz 6, 4001 Basel, Switzerland
+ * All Rights Reserved.
+ *
+ * This software is the confidential and proprietary information of
+ * Day Management AG, ("Confidential Information"). You shall not
+ * disclose such Confidential Information and shall use it only in
+ * accordance with the terms of the license agreement you entered into
+ * with Day.
+ */
+
+#CQ .cq-security-grid-link {
+    font-family:tahoma,arial,helvetica,sans-serif;;
+    color:#15428B;
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+/* grid: hidden header titles (still available in "hideable menu", e.g. picture column) */
+#CQ .cq-security-grid .x-grid3-hd-inner .hidden {
+    visibility:hidden;
+}
+
+#CQ .cq-security-grid .x-grid3-col-picture {
+    height:48px;
+    text-align:center;
+}
+
+#CQ .cq-security-grid .x-grid3-col-picture DIV {
+    width:100%;
+    height:48px;
+    background:center center no-repeat url(default/widgets/SecurityGridPanel/user.png);
+}
+
+/* published */
+#CQ .cq-security-grid .status {
+    height: 16px;
+    padding-left: 18px;
+    background-repeat: no-repeat;
+    background-position: 0 -1px;
+}
+#CQ .cq-security-grid .double {
+    padding-left: 32px;
+}
+
+#CQ .cq-security-grid .status-none {
+    background-image: url(../../../ui/widgets/themes/default/widgets/wcm/SiteAdmin/status-none.gif);
+}
+#CQ .cq-security-grid .status-activated {
+    background-image: url(../../../ui/widgets/themes/default/widgets/wcm/SiteAdmin/status-activated.gif);
+}
+#CQ .cq-security-grid .status-pending-activation {
+    background-image: url(../../../ui/widgets/themes/default/widgets/wcm/SiteAdmin/status-pending-activation.gif);
+}
+#CQ .cq-security-grid .status-deactivated {
+    background-image: url(../../../ui/widgets/themes/default/widgets/wcm/SiteAdmin/status-deactivated.gif);
+}
+#CQ .cq-security-grid .status-pending-deactivation {
+    background-image: url(../../../ui/widgets/themes/default/widgets/wcm/SiteAdmin/status-pending-deactivation.gif);
+}
+
+/*
+ * Copyright 1997-2010 Day Management AG
+ * Barfuesserplatz 6, 4001 Basel, Switzerland
+ * All Rights Reserved.
+ *
+ * This software is the confidential and proprietary information of
+ * Day Management AG, ("Confidential Information"). You shall not
+ * disclose such Confidential Information and shall use it only in
+ * accordance with the terms of the license agreement you entered into
+ * with Day.
+ */
+
+#CQ .cq-security-authorizables-qv .x-table-layout {
+    width:250px;
+}
+#CQ .cq-security-authorizables-qv .x-table-layout TD {
+    vertical-align:top;
+}
+
+#CQ .cq-security-authorizables-qv .cq-static A {
+    cursor:pointer;
+    text-decoration:underline;
+    color:#15428B;
+}
+#CQ .cq-security-authorizables-qv .cq-static A:active {
+    color:#8394D0;
+}
+#CQ .cq-security-authorizables-qv .cq-static A:visited {
+    color:#936C88;
+}
+
+/******************************************************************************/
+/* quick view */
+/******************************************************************************/
+
+#CQ .cq-security-quickview-title {
+    color:#111111;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:11px;
+    margin-top:20px;
+}
+
+#CQ .cq-security-quickview-picture {
+    margin-bottom:4px;
+    height:96px;
+}
+
+#CQ .cq-security-quickview-topline,
+#CQ .cq-security-quickview-2cols {
+    font-size:11px;
+    border-top:1px solid #dedede;
+    margin-top:5px;
+    padding-top:1px;
+}
+#CQ .cq-security-quickview-2cols {
+    margin-top:25px;
+}
+
+#CQ .cq-security-quickview-indented {
+    font-size:11px;
+    padding:3px 0 3px 18px;
+}
+
+#CQ DIV.cq-security-quickview-memberships {
+    margin-top:4px;
+}
+
+#CQ SPAN.cq-security-quickview-membership {
+    margin-top:2px;
+    margin-left:4px;
+    float:left;
+    height:16px;
+    display:block;
+}
+
+#CQ .cq-security-quickview-remove {
+    margin-top:2px;
+    clear:both;
+    float:left;
+    display:block;
+    height:16px;
+    width:16px;
+    background-image:url(../../../ui/widgets/themes/default/icons/16x16/remove.png);
+    cursor:pointer;
+}
+/*
+ * Copyright 1997-2010 Day Management AG
+ * Barfuesserplatz 6, 4001 Basel, Switzerland
+ * All Rights Reserved.
+ *
+ * This software is the confidential and proprietary information of
+ * Day Management AG, ("Confidential Information"). You shall not
+ * disclose such Confidential Information and shall use it only in
+ * accordance with the terms of the license agreement you entered into
+ * with Day.
+ */
+
+#CQ .cq-importcsv-hints TD {
+    vertical-align:top;
+}
+
+#CQ .cq-importcsv-hints-padding {
+    padding-left:45px;
+}
+/*
+ * Copyright 1997-2011 Day Management AG
+ * Barfuesserplatz 6, 4001 Basel, Switzerland
+ * All Rights Reserved.
+ *
+ * This software is the confidential and proprietary information of
+ * Day Management AG, ("Confidential Information"). You shall not
+ * disclose such Confidential Information and shall use it only in
+ * accordance with the terms of the license agreement you entered into
+ * with Day.
+ */
+
+/* checkboxes */
+
+#CQ .cq-security-rights .x-grid3-check-col {
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 14px;
+    width: 100%;
+}
+
+#CQ .cq-security-rights .x-grid3-cell-selected {
+    background: none !important;
+}
+
+/* */
+
+#CQ .cq-security-rights .x-grid3-checked-inherited-norestriction {
+    background-image: url("default/widgets/RightsPanel/btn-checked-inherited-norestriction.png");
+}
+
+#CQ .cq-security-rights .x-grid3-checked-overriden-norestriction {
+    background-image: url("default/widgets/RightsPanel/btn-checked-overriden-norestriction.png");
+}
+
+#CQ .cq-security-rights .x-grid3-unchecked-inherited-norestriction {
+    background-image: url("default/widgets/RightsPanel/btn-unchecked-inherited-norestriction.png");
+}
+
+#CQ .cq-security-rights .x-grid3-unchecked-overriden-norestriction {
+    background-image: url("default/widgets/RightsPanel/btn-unchecked-overriden-norestriction.png");
+}
+
+#CQ .cq-security-rights .x-grid3-checked-inherited-restriction {
+    background-image: url("default/widgets/RightsPanel/btn-checked-inherited-restriction.png");
+}
+
+#CQ .cq-security-rights .x-grid3-checked-overriden-restriction {
+    background-image: url("default/widgets/RightsPanel/btn-checked-overriden-restriction.png");
+}
+
+#CQ .cq-security-rights .x-grid3-unchecked-inherited-restriction {
+    background-image: url("default/widgets/RightsPanel/btn-unchecked-inherited-restriction.png");
+}
+
+#CQ .cq-security-rights .x-grid3-unchecked-overriden-restriction {
+    background-image: url("default/widgets/RightsPanel/btn-unchecked-overriden-restriction.png");
+}
+
+
+/*
+ * Copyright 1997-2011 Day Management AG
+ * Barfuesserplatz 6, 4001 Basel, Switzerland
+ * All Rights Reserved.
+ *
+ * This software is the confidential and proprietary information of
+ * Day Management AG, ("Confidential Information"). You shall not
+ * disclose such Confidential Information and shall use it only in
+ * accordance with the terms of the license agreement you entered into
+ * with Day.
+ */
+
+/* checkboxes */
+
+#CQ .cq-security-permissionsdetail .x-grid3-check-col {
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 14px;
+    width: 100%;
+}
+
+#CQ .cq-security-permissionsdetail .x-grid3-cell-selected {
+    background: none !important;
+}
+
+/* */
+
+#CQ .cq-security-permissionsdetail .x-grid3-check-in-nores {
+    background-image: url(default/widgets/PermissionsDetailPanel/check-in-nores.png);
+}
+
+#CQ .cq-security-permissionsdetail .x-grid3-nocheck-in-nores {
+    background-image: url(default/widgets/PermissionsDetailPanel/nocheck-in-nores.png);
+}
+
+#CQ .cq-security-permissionsdetail .x-grid3-check-ov-nores {
+    background-image: url(default/widgets/PermissionsDetailPanel/check-ov-nores.png);
+}
+
+#CQ .cq-security-permissionsdetail .x-grid3-nocheck-ov-nores {
+    background-image: url(default/widgets/PermissionsDetailPanel/nocheck-ov-nores.png);
+}
+
+#CQ .cq-security-permissionsdetail .x-grid3-check-in-res {
+    background-image: url(default/widgets/PermissionsDetailPanel/check-in-res.png);
+}
+
+#CQ .cq-security-permissionsdetail .x-grid3-check-ov-res {
+    background-image: url(default/widgets/PermissionsDetailPanel/check-ov-res.png);
+}
+
+#CQ .cq-security-permissionsdetail .x-grid3-nocheck-in-res {
+    background-image: url(default/widgets/PermissionsDetailPanel/nocheck-in-res.png);
+}
+
+#CQ .cq-security-permissionsdetail .x-grid3-nocheck-ov-res {
+    background-image: url(default/widgets/PermissionsDetailPanel/nocheck-ov-res.png);
+}
+/*
+ * Copyright 1997-2008 Day Management AG
+ * Barfuesserplatz 6, 4001 Basel, Switzerland
+ * All Rights Reserved.
+ *
+ * This software is the confidential and proprietary information of
+ * Day Management AG, ("Confidential Information"). You shall not
+ * disclose such Confidential Information and shall use it only in
+ * accordance with the terms of the license agreement you entered into
+ * with Day.
+ */
+
+
+/* header and user info */
+
+
+#CQ #cq-useradmin-wrapper #cq-header {
+    height:36px;
+    background:url('default/resources/titlebar_bg.png');
+}
+
+#CQ #cq-useradmin-wrapper #cq-header .cq-homelink a {
+    width:210px;
+}
+
+#CQ #cq-useradmin-wrapper #cq-switcher {
+    padding-left:409px;
+}
+
+#CQ #cq-useradmin-wrapper #userinfo {
+    color:#ffffff; 
+    background-color:transparent; 
+    top:6px;
+    position:relative; 
+    padding-right:6px;
+    font:12px tahoma,arial,verdana,sans-serif;
+}
+
+
+#CQ #cq-useradmin-wrapper #userinfo div {
+    background-color:transparent;
+    text-align:right; 
+}
+
+
+/* grid */
+#CQ #cq-useradmin-wrapper #editor .userIcon {
+    height:16px;
+    background:url('../../../ui/widgets/themes/default/icons/16x16/user.png');
+    background-repeat:no-repeat;
+}
+
+
+#CQ #cq-useradmin-wrapper #editor .groupIcon {
+    height:16px;
+    background:url('../../../ui/widgets/themes/default/icons/16x16/group.png');
+    background-repeat:no-repeat;
+}
+
+
+#CQ #cq-useradmin-wrapper #user-selection .userIcon {
+    height:21px;
+    background:url('../../../ui/widgets/themes/default/icons/16x16/user.png');
+    background-repeat:no-repeat;
+    background-position:3px 3px;
+    padding:3px 0 3px 22px
+}
+
+
+#CQ #cq-useradmin-wrapper #user-selection .groupIcon {
+    height:21px;
+    background:url('../../../ui/widgets/themes/default/icons/16x16/group.png');
+    background-repeat:no-repeat;
+    background-position:3px 3px;
+    padding:3px 0 3px 22px
+}
+
+#CQ #cq-useradmin-wrapper .status {
+    height: 16px;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: 8px -2px;
+}
+#CQ #cq-useradmin-wrapper .status-modified {
+    background-image: url(../../../ui/widgets/themes/default/icons/16x16/bulb-blue.gif);
+}
+#CQ #cq-useradmin-wrapper .status-activated {
+    background-image: url(../../../ui/widgets/themes/default/icons/16x16/bulb-green.gif);
+}
+
+#CQ #cq-useradmin-wrapper .status-deactivated {
+    background-image: url(../../../ui/widgets/themes/default/icons/16x16/bulb-red.gif);
+}
+
+#CQ #cq-useradmin-wrapper .status-localmodified {
+    color: #cccccc;
+    background-image: url(../../../ui/widgets/themes/default/icons/16x16/bulb-grey.gif);
+}
+
+#CQ #cq-useradmin-wrapper .status-pending {
+    background-image: url(../../../ui/widgets/themes/default/icons/16x16/bulb-orange.gif);
+}
+
+#CQ .cq-useradmin-grid a, #CQ .cq-useradmin-grid a:hover, #CQ .cq-useradmin-grid a:visited, #CQ .cq-useradmin-grid a:active {
+    color: #000000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+/*
+ * Copyright 1997-2009 Day Management AG
+ * Barfuesserplatz 6, 4001 Basel, Switzerland
+ * All Rights Reserved.
+ *
+ * This software is the confidential and proprietary information of
+ * Day Management AG, ("Confidential Information"). You shall not
+ * disclose such Confidential Information and shall use it only in
+ * accordance with the terms of the license agreement you entered into
+ * with Day.
+ */
+
+
+#CQ .cq-auth-list {
+    border-color:#FFFFFF rgb(255, 255, 255) rgb(238, 238, 238);
+    border-style:solid;
+    border-width:1px;
+    color:#555555;
+    font-family:tahoma,arial,helvetica,sans-serif;
+    font-size:11px;
+    font-size-adjust:none;
+    font-stretch:normal;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    line-height:normal;
+    padding:2px 0px 2px 5px;
+    white-space:normal;
+    right:5px !important;
+    top:25px !important;
+    left:auto !important;
+    cursor:default !important;
+}
+#CQ .cq-auth-list-entry {
+    cursor:pointer !important;
+    padding:0px 27px
+}
+
+#CQ .cq-user-icon {
+    height:16px;
+    background:url('../../../ui/widgets/themes/default/icons/16x16/user.png');
+    background-repeat:no-repeat;
+}
+
+#CQ .cq-group-icon {
+    height:16px;
+    background:url('../../../ui/widgets/themes/default/icons/16x16/group.png');
+    background-repeat:no-repeat;
+}
+
+

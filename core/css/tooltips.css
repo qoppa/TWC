@@ -1,0 +1,183 @@
+/* ==========================================================================
+   CSS code for Tooltips
+   
+   Author: Qoppa
+   Version: 1.0 - Updated: 10/17/2013
+   ========================================================================== */
+/*
+
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+/* ==========================================================================
+   Module
+   ========================================================================== */
+/* ==========================
+    Default Tooltip
+   ========================== */
+.tooltip {
+  position: absolute;
+  color: #3376b2;
+  text-decoration: none; }
+  .tooltip a {
+    position: relative; }
+  .tooltip span.tooltip-text {
+    position: absolute;
+    left: 50%;
+    width: 150px;
+    margin-left: -75px;
+    padding: .5em 1em;
+    border: 3px solid #fff;
+    border-radius: 2px;
+    background-color: #e0e7eb;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e0e7eb), to(white));
+    background-image: -webkit-linear-gradient(top, #e0e7eb, white);
+    background-image: -moz-linear-gradient(top, #e0e7eb, white);
+    background-image: -o-linear-gradient(top, #e0e7eb, white);
+    background-image: -ms-linear-gradient(top, #e0e7eb, white);
+    background-image: linear-gradient(top, #e0e7eb, white);
+    color: #333;
+    text-align: center;
+    opacity: 0;
+    box-shadow: 0 0 3px 0 #333;
+    -webkit-transition: opacity .2s ease;
+    -moz-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    z-index: 999999; }
+  .tooltip:hover span.tooltip-text {
+    opacity: 1; }
+  .tooltip span.tooltip-text:hover {
+    opacity: 0;
+    cursor: default; }
+  .tooltip.above span.tooltip-text {
+    bottom: 2em; }
+    .tooltip.above span.tooltip-text:before {
+      position: absolute;
+      bottom: -11px;
+      left: 43%;
+      width: 0;
+      height: 0;
+      content: " ";
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #fff;
+      z-index: 5; }
+    .tooltip.above span.tooltip-text:after {
+      position: absolute;
+      display: block;
+      left: 43%;
+      bottom: -13px;
+      width: 0;
+      height: 0;
+      content: " ";
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #999; }
+  .tooltip.below span.tooltip-text {
+    top: 2em; }
+    .tooltip.below span.tooltip-text:before {
+      position: absolute;
+      top: -11px;
+      left: 43%;
+      width: 0;
+      height: 0;
+      content: " ";
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #fff;
+      z-index: 5; }
+    .tooltip.below span.tooltip-text:after {
+      position: absolute;
+      display: block;
+      left: 43%;
+      top: -13px;
+      width: 0;
+      height: 0;
+      content: " ";
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #999; }
+
+/* ==========================
+    Above
+   ========================== */
+/* ==========================
+    Below
+   ========================== */
+/* ==========================================================================
+   State
+   ========================================================================== */
+/* ==========================
+   Browser Specific
+   ========================== */
+/* Firefox */
+@-moz-document url-prefix() {}
+/* Webkit: Chrome/Safari */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* Webkit browsers add a 2px margin outside the chrome of form elements */ }
+/* IE: 6/7/8/9 */
+/* ie (.ie) */
+/* ie6 (.ie6) */
+/* prevent BG image flicker upon hover */
+/* ie7 (.ie7) */
+/* ie8 (.ie8) */
+.twc-ie8 .tooltip span.tooltip-text {
+  background-image: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+.twc-ie8 .tooltip:hover span.tooltip-text {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
+
+/* ie9 (.ie9) */
+/* ==========================
+	Responsive Design
+   ========================== */
+/* Tablet */
+@media (max-width: 68.6875em) {
+  /* ==========================================================================
+     Layout
+     ========================================================================== */
+  /* ==========================================================================
+     Module
+     ========================================================================== */
+  /* ==========================================================================
+     State
+     ========================================================================== */
+  /* ==========================================================================
+     Theme
+     ========================================================================== */ }
+/* End Tablet Breakpoint */
+/* SmartPhone */
+@media (max-width: 31.25em) {
+  /* ==========================================================================
+     Layout
+     ========================================================================== */
+  /* ==========================================================================
+     Module
+     ========================================================================== */
+  /* ==========================================================================
+     State
+     ========================================================================== */
+  /* ==========================================================================
+     Theme
+     ========================================================================== */ }
+/* End SmartPhone Breakpoint */
+/* ==========================================================================
+   Theme
+   ========================================================================== */

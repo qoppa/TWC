@@ -67,5 +67,5 @@
 		$content = true;
 		
 		$footer = true;
-
+		
 ?>

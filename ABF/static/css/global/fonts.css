@@ -1,0 +1,23 @@
+/* ----------------------
+ * Custom Font Styles 
+ -- */
+@font-face {
+  font-family: "TWC Round Book";
+  src: url("../fonts/TWCRound/TWC-Round-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/TWCRound/TWC-Round-Book.woff") format("woff"), url("../fonts/TWCRound/TWC-Round-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "TWC Round Light";
+  src: url("../fonts/TWCRound/TWC-Round-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/TWCRound/TWC-Round-Light.woff") format("woff"), url("../fonts/TWCRound/TWC-Round-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "TWC Round Medium";
+  src: url("../fonts/TWCRound/TWC-Round-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/TWCRound/TWC-Round-Medium.woff") format("woff"), url("../fonts/TWCRound/TWC-Round-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/* END Custom Font Styles (_fonts.scss) */
+/* TWC_END_SASS_FILE  global/fonts.css */

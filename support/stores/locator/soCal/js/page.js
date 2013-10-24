@@ -10,19 +10,6 @@ $(function() {
 		$(currentTab).show();
 		return false;
 	});
-
-    // Clear Exchange Equipment checkbox if checked on pageload
-    $('#exchange-equipment').removeAttr('checked');
-    
-    // Reveal Pickup Exchange when 'Exchange Equipment' is checked
-    $('#icon-exchange').click(function() {
-        if( $(this).is(':checked')) {
-            $('.pickup-exchange').slideDown();
-        } else {
-            $('.pickup-exchange').slideUp();
-        }
-    }); 
-    
     
     // Mute Legend Icon based on Filter Selections
     $("input").change(function() {

@@ -67,6 +67,7 @@ label { display: block; }
 	
 		.filter-section input[type='checkbox'] { 
 			float: left;
+			margin-top: .5em;
 			margin-right: .5em;
 			margin-left: 0; }
 
@@ -82,10 +83,9 @@ input[type=checkbox] {
 
 .stores-find-me {
 	float: left;
-	padding: 2em; }
+	padding: 1em; }
 
-.locate-stores .twc-col2_3367-c1 {
-	border-left: 3px solid #fff; }
+.locate-stores .twc-col2_3367-c1 { border-left: 3px solid #fff; }
 
 .locate-stores .parsys_column,
 .pickup-exchange .parsys_column,
@@ -105,7 +105,6 @@ legend {
 	width: 100%;
 	padding: 2%;
 	background: #4f799e;
-	font-weight: bold;
 	color: #fff; }
 
 .mobile-filters-options { display: none; }
@@ -114,8 +113,7 @@ legend {
 	padding: 0 .5em; 
 	border-right: 1px dotted #ccc; }
 
-	.locate-stores-filters [class*='twc-col3_255025-c']:last-child {
-		border-right: 0; }
+	.locate-stores-filters [class*='twc-col3_255025-c']:last-child { border-right: 0; }
 
 .locate-stores-filters label { 
 	line-height: 2;
@@ -133,22 +131,12 @@ legend {
 
 .locate-stores-filters .filter-section input { width: auto; }
 
-.locate-stores-filters .btn { 
-	margin: .25em 1em; }
+.locate-stores-filters .btn { margin: .25em 1em; }
 
 .location_listing {
     height: 310px;
 	overflow: auto;
 	border-radius: 3px; }
-
-	.location_listing ul {  }
-
-		.location_listing li { 
-			display: block;
-			position: relative;
-			padding: 1em;
-			border-bottom: 1px dotted #ccc;
-			vertical-align: top; }
 
             .location_listing li:nth-of-type(even) {
                 background: #f2f7fb; } 
@@ -194,12 +182,10 @@ header .h2 {
 	background: #fff;
 	box-shadow: 0 1px 2px 0 #888; }
 
-
-
 .stores_banner {
 	float: right;
 	width: 33%;
-	padding: 2em ; }
+	padding: 2em; }
 
 	.stores_banner h6 { color: #222; }
 
@@ -285,7 +271,7 @@ header .h2 {
 address { font-style: normal; }
 
 .stores_map_address > div {
-	margin: 10px 0 40px;; }
+	margin: 10px 0 40px; }
 
 .stores_location_details {
 	float: left;
@@ -324,6 +310,8 @@ address { font-style: normal; }
 
 .stores_locations_details_legend .legend_icons li { line-height: 2; }
 
+.legend_icons li span { margin-right: .5em; }
+
 	.stores_locations_details_legend .legend_note { background: #d4d4d4; }
 	
 .stores_locations_details_results ul {
@@ -338,7 +326,7 @@ ol li { list-style: none; }
     	margin-bottom: 0.5em; }
 
 		.stores_locations_details_results ol > li:nth-of-type(even) {
-    		background: #f2f7fb;	 }
+    		background: #f2f7fb; }
 
 .stores_locations_details_results ol { padding-left: 0; }
 
@@ -350,7 +338,11 @@ span.flag {
 
 .map-stores .btn.flag { padding: .375em 1em; }
 
-.map-stores div.flag { padding: 1em 2em; }
+.map-stores div.flag { padding: 1em; }
+
+.cap { 
+	padding: 1em;
+	background: #4F799E; }
 
 /* ==========================================================================
    State
@@ -419,14 +411,11 @@ span.flag {
    Legend
    ========================== */
 
-[class*='twc-col2_5050-c'] { width: 48.75% }
+.legend_icons [class*='twc-col2_5050-c'] { width: 48.75% }
 
 .stores_locations_details_legend {
 	width: 100%;
-	margin: 1em 0;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	   		box-sizing: border-box; }
+	margin: 1em 0; }
 
 .locate-stores-filters legend {
 	text-align: center; }
@@ -588,8 +577,7 @@ span.flag {
 			font-family: 'FontAwesome',sans-serif; }
 		
 			.stores_legend.rotate_chevron h4:after {
-				content: '\f107';
-			}
+				content: '\f107'; }
 		
 	.stores_legend_banner ul { 
 		width: 96%;
@@ -671,9 +659,6 @@ span.flag {
 	        background: -o-linear-gradient(top,  #eeeeef 0%,#dddfe2 100%);
 	        background: -ms-linear-gradient(top,  #eeeeef 0%,#dddfe2 100%);
 	        background: linear-gradient(to bottom,  #eeeeef 0%,#dddfe2 100%);
-	        -webkit-box-sizing: border-box;
-	           -moz-box-sizing: border-box;
-			   		box-sizing: border-box;
 	        font-family: arial, sans-serif;
 	        font-size: 14px;
 	        font-size: 1.4rem;
@@ -691,8 +676,7 @@ span.flag {
 	  			font-weight: 100;
 	  			color: #222; }
   	
-			  	.stores_resources li a.read-more:after {
-			  		display: none; }
+			  	.stores_resources li a.read-more:after { display: none; }
   
 .stores_places { display: none; }
   
@@ -744,8 +728,7 @@ span.flag {
 
 .pickup-exchange li { display: block; }
 
-  .stores-find-me .stores-search-input-wrap input#stores-search { 
-  	 width: 65%; }
+  .stores-find-me .stores-search-input-wrap input#stores-search { width: 65%; }
 	
 .stores_banner { display: none; }
 

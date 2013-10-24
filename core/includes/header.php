@@ -13,6 +13,11 @@
 	// Load TopHat
 	if ($tophat) {
 		include_once($_SERVER['DOCUMENT_ROOT']. '/TWC/core/includes/tophat.php');
+	}
+	
+	// Load TopHat Redesign
+	if ($tophat_redesign) {
+		include_once($_SERVER['DOCUMENT_ROOT']. '/TWC/core/includes/tophat_redesign.php');
 	} 
 	
 	// Load Logo-only Header
@@ -29,6 +34,11 @@
 	if ($subnav == true) {
 		include_once($_SERVER['DOCUMENT_ROOT']. '/TWC/core/includes/subnav.php');
 	}
+	
+	// Load Sticky Bar if present
+	if ($sticky == true) {
+		include_once($_SERVER['DOCUMENT_ROOT']. '/TWC/core/includes/sticky.php');
+	} 
 	
 	// Load SubNav if present
 	if ($simpleNav == true) {
@@ -49,17 +59,27 @@
 	if ($supportSearch == true) {
 		include_once($_SERVER['DOCUMENT_ROOT']. '/TWC/core/includes/supportSearch.php');
 	}
-	
-	// Conditionally Load Carousel if required
-	if ($carousel == true) {
-		include_once($_SERVER['DOCUMENT_ROOT']. '/TWC/core/includes/carousel.php');
-	} 
 
 	// Load Content opening tags
 	if ($content == true) {
 		include_once($_SERVER['DOCUMENT_ROOT']. '/TWC/core/includes/content.php');
 	}
 	
+	// Conditionally Load Image Content Panel if required
+	if ($panel == true) {
+		include_once($_SERVER['DOCUMENT_ROOT']. '/TWC/core/includes/panel.php');
+	} 
+
+	// Conditionally Load Carousel if required
+	if ($carousel == true) {
+		include_once($_SERVER['DOCUMENT_ROOT']. '/TWC/core/includes/carousel.php');
+	} 
+	
+	// Conditionally Load Share Component if required
+	if ($share == true) {
+		include_once($_SERVER['DOCUMENT_ROOT']. '/TWC/core/includes/share.php');
+	} 
+
     // Conditionally Load Slider if required
 	if ($slider == true) {
 		include_once($_SERVER['DOCUMENT_ROOT']. '/TWC/core/includes/slider.php');

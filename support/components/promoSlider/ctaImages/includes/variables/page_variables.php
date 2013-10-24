@@ -43,7 +43,7 @@
 				
 		$tophat = false;
 		
-		$logoHeader = false;
+		$logoHeader = true;
 		
 		$nav = false;
 		
@@ -57,10 +57,12 @@
 		
 		$supportSearch = false;
 			
-		$content = false;
+		$content = true;
 		
 		$slider = false;
 		
-		$footer = false;
+		$footer = true;
+		
+		    $legalOnly = true;
 		
 ?>

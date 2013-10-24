@@ -15,8 +15,8 @@ $(function() {
 			} else {
 				$('div.faq-survey-no').show();
 				$(this).addClass('twc-left');
-				$('button#faq-survey-feedback:first').hide();
-				$('button#faq-survey-feedback-response').show();
+				$('#faq-survey-feedback:first').hide();
+				$('#faq-survey-feedback-response').show();
 			}
 			return false;
 	});

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet href="Res_EmailAddressChangeVerification_v10.xsl" type="text/xsl"?>
+<KANARoot>
+	<EventRequest Id="" CompanyName="default" CampaignName="Res_EmailAddressVerification">
+		<Customer KeyField="alt_customer_id" alt_customer_id="-1" EmailAddress="matthew.schultz@twcable.com">
+		</Customer>
+		<Event CampaignName="Res_Email Address Verification">
+			<ExternalXML>
+				<CustomerInfo>
+					<CustomerEmailAddress>matthew.schultz@twcable.com</CustomerEmailAddress>
+				</CustomerInfo>
+				<subAccountInfo>
+					<registerBy>01/24/2013</registerBy>
+					<emailUpdateUrl>http://www.google.com</emailUpdateUrl>
+				</subAccountInfo>
+			</ExternalXML>
+		</Event>
+	</EventRequest>
+</KANARoot>

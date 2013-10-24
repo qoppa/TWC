@@ -1,0 +1,90 @@
+/* ----------------------
+ * Generic Button Base Styles 
+ -- */
+/* 
+ * Blue Button
+ */
+.blue-button {
+  display: block;
+  font-family: "TWC Round Medium", Arial, Sans-Serif;
+  font-size: 13px;
+  padding: 9px 13px;
+  text-align: center;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #1d5f99;
+  background-image: -moz-linear-gradient(270deg, #387ab4 0%, #3173ad 18%, #0d4f89 74%, #01437d 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #387ab4), color-stop(18%, #3173ad), color-stop(74%, #0d4f89), color-stop(100%, #01437d));
+  background-image: -webkit-linear-gradient(270deg, #387ab4 0%, #3173ad 18%, #0d4f89 74%, #01437d 100%);
+  background-image: -o-linear-gradient(270deg, #387ab4 0%, #3173ad 18%, #0d4f89 74%, #01437d 100%);
+  background-image: -ms-linear-gradient(270deg, #387ab4 0%, #3173ad 18%, #0d4f89 74%, #01437d 100%);
+  background-image: linear-gradient(to bottom, #387ab4 0%, #3173ad 18%, #0d4f89 74%, #01437d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF387AB4', endColorstr='#FF01437D',GradientType=0);
+  color: #FFF; }
+  .blue-button:hover {
+    background-color: #214e72;
+    background-image: -moz-linear-gradient(270deg, #265a83 0%, #25577e 18%, #1e4869 66%, #1b405e 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #265a83), color-stop(18%, #25577e), color-stop(66%, #1e4869), color-stop(100%, #1b405e));
+    background-image: -webkit-linear-gradient(270deg, #265a83 0%, #25577e 18%, #1e4869 66%, #1b405e 100%);
+    background-image: -o-linear-gradient(270deg, #265a83 0%, #25577e 18%, #1e4869 66%, #1b405e 100%);
+    background-image: -ms-linear-gradient(270deg, #265a83 0%, #25577e 18%, #1e4869 66%, #1b405e 100%);
+    background-image: linear-gradient(to bottom, #265a83 0%, #25577e 18%, #1e4869 66%, #1b405e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF265A83', endColorstr='#FF1B405E',GradientType=0);
+    color: #FFF !important; }
+  .blue-button .arrow {
+    background: url("../images/arrows/arrow-white-right-small.png") no-repeat center right;
+    padding-right: 15px; }
+  .blue-button.checked {
+    background-color: #19a919;
+    background-image: -moz-linear-gradient(270deg, #33cc33 0%, #008700 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #33cc33), color-stop(100%, #008700));
+    background-image: -webkit-linear-gradient(270deg, #33cc33 0%, #008700 100%);
+    background-image: -o-linear-gradient(270deg, #33cc33 0%, #008700 100%);
+    background-image: -ms-linear-gradient(270deg, #33cc33 0%, #008700 100%);
+    background-image: linear-gradient(to bottom, #33cc33 0%, #008700 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF33CC33', endColorstr='#FF008700',GradientType=0); }
+  .blue-button.disabled {
+    background-color: #b3c8e0;
+    background-image: -moz-linear-gradient(270deg, #bed4e7 0%, #b4cde2 18%, #adc4dd 74%, #adbdda 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bed4e7), color-stop(18%, #b4cde2), color-stop(74%, #adc4dd), color-stop(100%, #adbdda));
+    background-image: -webkit-linear-gradient(270deg, #bed4e7 0%, #b4cde2 18%, #adc4dd 74%, #adbdda 100%);
+    background-image: -o-linear-gradient(270deg, #bed4e7 0%, #b4cde2 18%, #adc4dd 74%, #adbdda 100%);
+    background-image: -ms-linear-gradient(270deg, #bed4e7 0%, #b4cde2 18%, #adc4dd 74%, #adbdda 100%);
+    background-image: linear-gradient(to bottom, #bed4e7 0%, #b4cde2 18%, #adc4dd 74%, #adbdda 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFBED4E7', endColorstr='#FFADBDDA',GradientType=0);
+    cursor: default; }
+  .blue-button input {
+    margin-left: 5px;
+    display: inline-block; }
+
+label.blue-button {
+  line-height: 18px;
+  padding: 7px 5px; }
+
+.print-button span {
+  background: url("../images/icons/icon-print-white.png") left center no-repeat;
+  padding-left: 30px; }
+
+.back-button {
+  background: url("../images/arrows/arrow-blue-left.png") left center no-repeat;
+  font-weight: bold;
+  padding-left: 14px; }
+
+.alt-button {
+  background-color: #f7fbff;
+  background-image: -moz-linear-gradient(270deg, white 0%, #fafcff 18%, #f4f9ff 74%, #f1f8ff 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(18%, #fafcff), color-stop(74%, #f4f9ff), color-stop(100%, #f1f8ff));
+  background-image: -webkit-linear-gradient(270deg, white 0%, #fafcff 18%, #f4f9ff 74%, #f1f8ff 100%);
+  background-image: -o-linear-gradient(270deg, white 0%, #fafcff 18%, #f4f9ff 74%, #f1f8ff 100%);
+  background-image: -ms-linear-gradient(270deg, white 0%, #fafcff 18%, #f4f9ff 74%, #f1f8ff 100%);
+  background-image: linear-gradient(to bottom, white 0%, #fafcff 18%, #f4f9ff 74%, #f1f8ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF1F8FF',GradientType=0);
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border: 1px solid #d2d6d7;
+  color: #3275aa; }
+
+/* END Button Styles (_buttons.scss) */
+/* TWC_END_SASS_FILE  global/buttons.css */

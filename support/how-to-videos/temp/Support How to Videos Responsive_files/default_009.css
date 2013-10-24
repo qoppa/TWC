@@ -1,0 +1,332 @@
+/*
+ * Copyright 1997-2008 Day Management AG
+ * Barfuesserplatz 6, 4001 Basel, Switzerland
+ * All Rights Reserved.
+ *
+ * This software is the confidential and proprietary information of
+ * Day Management AG, ("Confidential Information"). You shall not
+ * disclose such Confidential Information and shall use it only in
+ * accordance with the terms of the license agreement you entered into
+ * with Day.
+ */
+
+
+#CQ .x-tagging-menu, #CQ .x-tagging-menu ul {
+	padding:0 !important;
+}
+
+
+#CQ .tagging-node-selected span {
+	font-weight: 800 !important;
+}
+
+/* trigger button */
+#CQ .arrow-trigger {
+    width:17px;
+    height:21px;
+    border:0;
+    background:transparent url(default/images/form/trigger.gif) no-repeat 0 0;
+    cursor:pointer;
+    border-bottom: 1px solid #B5B8C8;
+    top:0;
+}
+
+#CQ .trigger-focus {
+    background-position:-51px 0;
+}
+
+/* tag labels */
+
+#CQ .taglabel {
+    clear: none  !important;
+    display: inline !important;
+    
+    width: auto  !important;
+    padding: 2px 1px 1px 2px !important;
+    float: left  !important;
+}
+
+/* tag label inner table structure */
+
+#CQ .taglabel table {
+    border-collapse: collapse;
+    background: #dedede;
+    border: solid 1px #d0d0d0;
+}
+
+#CQ .taglabel td {
+	margin: 0;
+    padding: 2px 4px;
+}
+
+/* inner cell with taglabel text contents */
+
+#CQ .taglabel-body {
+    margin-bottom:0px;
+    margin-top:0px;
+}
+
+#CQ .taglabel .parentpath {
+    font-size: 7pt;
+    display: block;
+    white-space: nowrap;
+    color: #666;
+}
+
+#CQ .taglabel .tagname {
+    font-size: 8pt;
+    display: block;
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* tag label tooltip */
+
+#CQ .x-tip-body .taglabel-localizations td {
+    color: #444444;
+    font: 11px tahoma,arial,helvetica,sans-serif;
+}
+
+#CQ .x-tip-body td.taglabel-label {
+    font-style: italic;
+}
+
+#CQ .x-tip-body p {
+    margin-top: 11px;
+    color: #444444;
+    font: 11px tahoma,arial,helvetica,sans-serif;
+}
+
+#CQ .x-tip-body p.top {
+    margin-top: 0px;
+}
+
+#CQ .x-tip-body p.taglabel-note {
+    font-style: italic;
+}
+
+/* disabled and read only */
+#CQ .x-form-disabled .taglabel .tagname {
+    color:#666;
+}
+
+#CQ .taglabel .no-parentpath {
+    font-size: 9pt;
+}
+
+/* added (but existing) tags */
+#CQ .addedtag .tagname {
+    font-style: italic;
+    /*color: green !important;*/
+}
+
+/* new tags */
+#CQ .newtag table {
+    background: #DDD !important;
+}
+#CQ .newtag .tagname {
+    font-style: italic;
+    /*color: blue !important;*/
+}
+
+/* new tag that cannot be created */
+#CQ .deniedtag .parentpath {
+    color: red !important;
+}
+#CQ .deniedtag .tagname {
+    font-style: italic;
+    color: red !important;
+}
+
+/* partial tags */
+#CQ .partialtag table {
+    background: #ffffff !important;
+}
+
+
+/* tag label tool buttons */
+
+#CQ .taglabel td.taglabel-tool-cell {
+    width: 15px;
+    height: 38px;
+    padding: 3px 2px 2px 0;
+}
+#CQ .taglabel-tool {
+    cursor:pointer;
+    background:transparent url(default/images/label/tool-sprites.gif) no-repeat;
+    width:15px;
+    height:15px;
+    float:right;
+
+    visibility: hidden;
+    margin-bottom:1px;
+    margin-left:0;
+    margin-right:1px;
+    margin-top:0px;
+    font-size: 8pt; /*ie does not set the proper height if font-size is too big*/
+}
+
+#CQ div.taglabel_hover .taglabel-tool {
+    visibility: visible;
+    height:15px !important;
+}
+
+/* remove button (X) */
+#CQ .taglabel-tool-remove {
+    background-position: 0 0px;
+}
+
+/* add button (+) */
+#CQ .taglabel-tool-add {
+	display: none;
+	background-position: 0 -240px;
+}
+
+#CQ .partialtag .taglabel-tool-add {
+	display: block;
+}
+
+/* input field / combo */
+
+#CQ .floating {
+    float:left;
+}
+
+#CQ .invisible-input {
+    border: 0;
+    background: white;
+}
+
+#CQ .dummy-input .invisible-input {
+    padding-top: 10px;
+}
+
+#CQ .dummy-input {
+    background:#FFFFFF url(default/images/form/text-bg.gif) repeat-x scroll 0 0;
+    border:1px solid #B5B8C8;
+    padding:1px;
+    padding-top:3px;
+    float: left;
+}
+
+#CQ .dummy-input-focus {
+    border:1px solid #777777 !important;
+}
+
+/* menu fix */
+
+/* x-menu has a z-index of 15000 (see standard menu.css) */
+#CQ .x-above-menu {
+	z-index: 20000 !important;
+}
+/*
+ * Copyright 1997-2008 Day Management AG
+ * Barfuesserplatz 6, 4001 Basel, Switzerland
+ * All Rights Reserved.
+ *
+ * This software is the confidential and proprietary information of
+ * Day Management AG, ("Confidential Information"). You shall not
+ * disclose such Confidential Information and shall use it only in
+ * accordance with the terms of the license agreement you entered into
+ * with Day.
+ */
+
+/* header and user info */
+
+#CQ #cq-tagadmin-wrapper #cq-header {
+    height:36px;
+    background:url(default/images/titlebar_bg.png);
+}
+
+#CQ #cq-tagadmin-wrapper #cq-header .cq-homelink a {
+    width:210px;
+}
+
+#CQ #cq-tagadmin-wrapper #userinfo {
+    color:#ffffff;
+    background-color:transparent;
+    top:6px;
+    position:relative;
+    padding-right:6px;
+    font:12px tahoma,arial,verdana,sans-serif;
+}
+
+#CQ #cq-tagadmin-wrapper #userinfo div {
+    background-color:transparent;
+    text-align:right;
+}
+
+/* actions and menus */
+
+#CQ .x-tree-node-leaf.namespace .x-tree-node-icon,
+#CQ .x-tree-node-collapsed.namespace .x-tree-node-icon {
+    background-image: url(../../../ui/widgets/themes/default/ext/tree/folder.gif) !important;
+}
+
+#CQ .x-tree-node-expanded.namespace .x-tree-node-icon {
+    background-image: url(../../../ui/widgets/themes/default/ext/tree/folder-open.gif) !important;
+}
+
+#CQ .tag .x-tree-node-icon {
+    background-image: url(default/images/icons/16x16/tag.png) !important;
+}
+
+#CQ #cq-tagadmin-wrapper .status {
+    height: 16px;
+    padding-left: 18px;
+    background-repeat: no-repeat;
+    background-position: 0 -1px;
+}
+
+#CQ #cq-tagadmin-wrapper .double {
+    padding-left: 32px;
+}
+
+/* modified */
+#CQ #cq-tagadmin-wrapper .status-modified {
+    background-image: url(../../../ui/widgets/themes/default/icons/16x16/bulb-blue.gif);
+}
+#CQ #cq-tagadmin-wrapper .status-localmodified {
+    color: #cccccc;
+    background-image: url(../../../ui/widgets/themes/default/icons/16x16/bulb-grey.gif);
+}
+
+/* published */
+#CQ #cq-tagadmin-wrapper .status-none {
+    background-image: url(../../../ui/widgets/themes/default/widgets/wcm/SiteAdmin/status-none.gif);
+}
+#CQ #cq-tagadmin-wrapper .status-activated {
+    background-image: url(../../../ui/widgets/themes/default/widgets/wcm/SiteAdmin/status-activated.gif);
+}
+#CQ #cq-tagadmin-wrapper .status-pending-activation {
+    background-image: url(../../../ui/widgets/themes/default/widgets/wcm/SiteAdmin/status-pending-activation.gif);
+}
+#CQ #cq-tagadmin-wrapper .status-deactivated {
+    background-image: url(../../../ui/widgets/themes/default/widgets/wcm/SiteAdmin/status-deactivated.gif);
+}
+#CQ #cq-tagadmin-wrapper .status-pending-deactivation {
+    background-image: url(../../../ui/widgets/themes/default/widgets/wcm/SiteAdmin/status-pending-deactivation.gif);
+}
+
+/*
+ * Copyright 1997-2008 Day Management AG
+ * Barfuesserplatz 6, 4001 Basel, Switzerland
+ * All Rights Reserved.
+ *
+ * This software is the confidential and proprietary information of
+ * Day Management AG, ("Confidential Information"). You shall not
+ * disclose such Confidential Information and shall use it only in
+ * accordance with the terms of the license agreement you entered into
+ * with Day.
+ */
+
+.cq-tagcloud-placeholder {
+    width: 74px;
+    height: 74px;
+    border: 2px dashed #cccccc;
+    background: url(default/images/wcm/placeholder_tagcloud_64.png) no-repeat scroll 50% 50%
+ }
+
+.cq-tagcloud-placeholder-off {
+}
+ 

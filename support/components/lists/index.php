@@ -39,20 +39,54 @@
 				<hr>
 			
 				<h5>A Bulleted Unordered List</h5>
+				<div class="vertical bulleted">
+                    <ul>
+                        <li>This is a list item in an unordered list</li>
+                        <li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. </li>
+                        <li>
+                            Lists can be nested inside of each other
+                            <ul>
+                                <li>This is a nested list item</li>
+                                <li>This is another nested list item in an unordered list</li>
+                            </ul>
+                        </li>
+                        <li>This is the last list item</li>
+                    </ul>
+				</div>
+<pre>
+<code>
+&lt;ul class="bulleted"&gt;
+    &lt;li&gt;This is a list item in an unordered list&lt;/li&gt;
+    &lt;li&gt;An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. &lt;/li&gt;
+    &lt;li&gt;
+	Lists can be nested inside of each other
+	    &lt;ul&gt;
+	        &lt;li&gt;This is a nested list item&gt;/li&gt;
+	        &lt;li&gt;This is another nested list item in an unordered list&lt;/li&gt;
+	    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;This is the last list item&lt;/li&gt;
+&lt;/ul&gt;
+</code>
+</pre>
 				
-				<ul class="bulleted">
-					<li>This is a list item in an unordered list</li>
-					<li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. </li>
-					<li>
-						Lists can be nested inside of each other
-						<ul>
-							<li>This is a nested list item</li>
-							<li>This is another nested list item in an unordered list</li>
-						</ul>
-					</li>
-					<li>This is the last list item</li>
-				</ul>
-
+				<hr>
+                
+                <h5>A Basic Vertical Unordered List</h5>
+				<div class="vertical bulleted lined">
+                    <ul>
+                        <li>This is a list item in an unordered list</li>
+                        <li>An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. </li>
+                        <li>
+                            Lists can be nested inside of each other
+                            <ul>
+                                <li>This is a nested list item</li>
+                                <li>This is another nested list item in an unordered list</li>
+                            </ul>
+                        </li>
+                        <li>This is the last list item</li>
+                    </ul>
+				</div>
 <pre>
 <code>
 &lt;ul class="bulleted"&gt;

@@ -1,0 +1,391 @@
+/* ==========================================================================
+    CSS Code for Typography
+   
+    Author: Max Quattromani
+    Version: 1.9.0.0  - Updated: 10/22/2013
+   ========================================================================== */
+html {
+  height: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 10px;
+  /* set absolutely to handle zoomed/user-defined font size state */
+  color: #333;
+  -webkit-font-smoothing: antialiased; }
+
+body, button, input, select, textarea {
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: normal; }
+
+/* ==========================================================================
+    Base: Font-Face
+   ========================================================================== */
+@font-face {
+  font-family: 'TWC Round Book';
+  src: url("fonts/TWCRound/TWC-Round-Book.eot");
+  src: url("fonts/TWCRound/TWC-Round-Book.eot?#iefix") format("embedded-opentype"), url("fonts/TWCRound/TWC-Round-Book.svg#svgTWCBook") format("svg"), url("fonts/TWCRound/TWC-Round-Book.woff") format("woff"), url("fonts/TWCRound/TWC-Round-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TWC Round Light';
+  src: url("fonts/TWCRound/TWC-Round-Light.eot");
+  src: url("fonts/TWCRound/TWC-Round-Light.eot?#iefix") format("embedded-opentype"), url("fonts/TWCRound/TWC-Round-Light.svg#svgTWCLight") format("svg"), url("fonts/TWCRound/TWC-Round-Light.woff") format("woff"), url("fonts/TWCRound/TWC-Round-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TWC Round Medium';
+  src: url("fonts/TWCRound/TWC-Round-Medium.eot");
+  src: url("fonts/TWCRound/TWC-Round-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/TWCRound/TWC-Round-Medium.svg#svgTWCMedium") format("svg"), url("fonts/TWCRound/TWC-Round-Medium.woff") format("woff"), url("fonts/TWCRound/TWC-Round-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("fonts/icons/fontawesome-webfont.eot");
+  src: url("fonts/icons/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/icons/fontawesome-webfont.svg#svgFontAwesome") format("svg"), url("fonts/icons/fontawesome-webfont.woff") format("woff"), url("fonts/icons/fontawesome-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/* ==========================================================================
+    Layout
+   ========================================================================== */
+/* ==========================================================================
+    Module
+   ========================================================================== */
+/* ==========================
+	Body Text
+   ========================== */
+.large-body-text {
+  font-size: 17px;
+  /* old browser fallback */
+  font-size: 1.7rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.4;
+  color: #333; }
+
+.banner-text {
+  background: #333;
+  padding: 10px;
+  font-size: 15px;
+  /* old browser fallback */
+  font-size: 1.5rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100;
+  line-height: 1.4;
+  color: #cfcfcf; }
+
+.body-text {
+  font-size: 13px;
+  /* old browser fallback */
+  font-size: 1.3rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.4;
+  color: #333; }
+
+.slider-text {
+  font-size: 13px;
+  /* old browser fallback */
+  font-size: 1.3rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 15px;
+  color: #333; }
+
+.small-body-text {
+  font-size: 12px;
+  /* old browser fallback */
+  font-size: 1.2rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 15px;
+  color: #333; }
+
+.disclaimer-text {
+  font-size: 11px;
+  /* old browser fallback */
+  font-size: 1.1rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 13px;
+  color: #333; }
+
+/* ==========================
+	Links
+   ========================== */
+a {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  vertical-align: baseline;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  color: #3376b2;
+  text-decoration: none;
+  cursor: pointer; }
+  a img {
+    border: 0 none;
+    text-decoration: none; }
+  a:hover {
+    color: #1b405d; }
+
+.read-more a {
+  font-weight: 100; }
+  .read-more a:after {
+    padding-left: .25em;
+    font-family: 'FontAwesome', sans-serif;
+    font-size: inherit;
+    font-weight: inherit;
+    content: '\f105'; }
+
+/* ==========================
+	Headings
+   ========================== */
+h1, .h1 {
+  margin-bottom: .3em;
+  font-size: 36px;
+  font-size: 3.6rem;
+  font-family: 'TWC Round Light',Arial,Sans-Serif;
+  font-weight: 100; }
+
+h2, .h2 {
+  margin-bottom: .3em;
+  font-size: 30px;
+  font-size: 3rem;
+  font-family: 'TWC Round Book',Arial,Sans-Serif;
+  font-weight: 100; }
+
+h3, .h3 {
+  font-size: 24px;
+  font-size: 2.2rem;
+  font-family: 'TWC Round Light',Arial,Sans-Serif;
+  font-weight: 100; }
+
+h4, .h4 {
+  font-size: 22px;
+  font-size: 2.2rem;
+  font-family: 'TWC Round Book',Arial,Sans-Serif;
+  font-weight: 100; }
+
+h5, .h5 {
+  font-size: 20px;
+  font-size: 2.0rem;
+  font-family: 'TWC Round Book',Arial,Sans-Serif;
+  font-weight: 100;
+  color: inherit; }
+
+h6, .h6 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: 'TWC Round Light',Arial,Sans-Serif;
+  font-weight: 100; }
+
+[class*='twc-icon'] {
+  font-family: 'FontAwesome', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: inherit; }
+
+[class*='icon-'].blue-icon {
+  color: #3376b2; }
+[class*='icon-'].green-icon {
+  color: #558654; }
+[class*='icon-'].red-icon {
+  color: #f00; }
+
+small {
+  font-size: 11px;
+  font-size: 1.1rem; }
+
+p, h1, h2, h3, h4, h5, h6, ul, ol, dl, blockquote, small {
+  clear: inherit;
+  margin-bottom: .5em;
+  vertical-align: middle; }
+
+p, .p {
+  display: block;
+  margin-bottom: 1em;
+  font-family: Arial, Helvetica, sans-serif; }
+
+p.btn {
+  margin-bottom: 0; }
+
+.b {
+  font-weight: bold; }
+
+blockquote {
+  border-left: 3px solid #666;
+  color: #666;
+  font-style: italic;
+  padding-left: 1.2em; }
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+abbr {
+  border-bottom: 1px dotted gray;
+  cursor: help; }
+
+address {
+  font-style: normal; }
+
+sub {
+  vertical-align: text-top; }
+
+sup {
+  vertical-align: text-top;
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================
+	Pricing
+   ========================== */
+.deal {
+  float: none;
+  font-family: 'TWC Round Book',Arial,Sans-Serif;
+  color: inherit; }
+  .deal h4 {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: .25em;
+    background: inherit;
+    font-family: 'TWC Round Medium',Arial,Sans-Serif;
+    font-size: 33px;
+    font-size: 3.3rem;
+    color: inherit;
+    vertical-align: baseline; }
+  .deal a {
+    display: block;
+    font-family: 'TWC Round Book',Arial,Sans-Serif; }
+  .deal h4 sup.dollar {
+    font-size: 20px;
+    font-size: 2rem;
+    vertical-align: text-top; }
+  .deal h4 sup.cents {
+    font-size: 16px;
+    font-size: 1.6rem;
+    vertical-align: text-top; }
+
+.term {
+  display: inline-block;
+  font-size: 11px;
+  font-size: 1.1rem;
+  text-align: left;
+  line-height: 1;
+  vertical-align: super; }
+
+/* ==========================
+	Pre
+   ========================== */
+pre {
+  margin: 1em 0;
+  background-color: #333;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25) inset;
+  color: #FFFFFF;
+  overflow: auto;
+  padding: 12px;
+  white-space: pre;
+  word-wrap: normal;
+  font-family: Inconsolata,Monaco,Consolas,"Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace; }
+
+code, kbd, samp {
+  font-family: Inconsolata,Monaco,Consolas,"Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace; }
+
+code, kbd, samp {
+  color: #859900; }
+
+pre code, pre kbd, pre samp {
+  color: #fff; }
+pre.error {
+  background: pink; }
+  pre.error code {
+    color: #f00; }
+
+.error, .is-error {
+  color: #f00; }
+
+pre.correct {
+  background: green; }
+
+.valid, .is-valid, pre.correct code {
+  color: #0f0; }
+
+.code-comment {
+  opacity: 0.5; }
+
+.book {
+  font-family: 'TWC Round Book', Arial, sans-serif; }
+
+.light {
+  font-family: 'TWC Round Light', Arial, sans-serif; }
+
+.medium {
+  font-family: 'TWC Round Medium', Arial, sans-serif; }
+
+.arial {
+  font-family: 'Arial', sans-serif;
+  font-weight: 100; }
+
+.arialItalic {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100;
+  font-style: italic; }
+
+.arialBold, .introtext {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 700; }
+
+/* ==========================================================================
+    State
+   ========================================================================== */
+/* ==========================================================================
+    Theme
+   ========================================================================== */
+/* ==========================
+    Browser Specific
+   ========================== */
+/* Firefox */
+@-moz-document url-prefix() {}
+/* Webkit: Chrome/Safari */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* Webkit browsers add a 2px margin outside the chrome of form elements */ }
+/* IE:8/9 */
+/* ie (.ie) */
+/* ie8 (.ie8) */
+/* ie9 (.ie9) */
+/* ==========================
+    Responsive Design
+   ========================== */
+/* ==========================
+    Tablet
+   ========================== */
+@media (max-width: 68.6875em) {
+  /* ==========================================================================
+      Layout
+     ========================================================================== */
+  /* ==========================================================================
+      Module
+     ========================================================================== */
+  /* ==========================================================================
+      State
+     ========================================================================== */
+  /* ==========================================================================
+      Theme
+     ========================================================================== */ }
+/* ==========================
+    Smartphone
+   ========================== */
+@media (max-width: 31.25em) {
+  /* ==========================================================================
+      Layout
+     ========================================================================== */
+  /* ==========================================================================
+      Module
+     ========================================================================== */
+  /* ==========================================================================
+      State
+     ========================================================================== */
+  /* ==========================================================================
+      Theme
+     ========================================================================== */ }
