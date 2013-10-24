@@ -1,4 +1,4 @@
-// Page Specific JS Functions
+// Page Specific JS Functions, repo
 $(function(){
  //Init three up carousel
 	$('.three-up-carousel').css({'visibility':'visible'});
