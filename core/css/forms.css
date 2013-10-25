@@ -50,7 +50,7 @@ input.twc-text:focus {
 .formrow {
   display: block;
   margin: .5em 0;
-  overflow: visible; }
+  overflow: auto; }
 
 .form-item {
   display: inline-block;
@@ -60,19 +60,9 @@ input.twc-text:focus {
   .form-item.split {
     width: auto; }
 
-.form_field_text {
-  border: 1px solid #CCCCCC;
-  height: 18px;
-  outline: 0 none; }
-
 .support-center form {
   position: relative;
   top: 0; }
-
-.form_leftcollabel label {
-  font: bold 14px/20px "TWC Round Book", arial,helvetica,clean,sans-serif; }
-.form_leftcollabel p {
-  margin: 0; }
 
 .text {
   margin-bottom: 1em; }
@@ -92,18 +82,6 @@ input.twc-text:focus {
     width: auto;
     margin-right: 40px;
     display: inline-block; }
-
-.form_leftcollabel label {
-  font: bold 12px/20px "TWC Round Book", arial,helvetica,clean,sans-serif; }
-
-.form_rightcol input {
-  margin: 5px 5px 1px 1px; }
-
-.radio .form_rightcol {
-  width: auto; }
-
-.form_rightcol {
-  font-size: 14px; }
 
 .section.end {
   clear: left; }

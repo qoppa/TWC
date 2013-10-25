@@ -2622,11 +2622,6 @@ input.twc-text:focus {
   .form-item.split {
     width: auto; }
 
-.form_field_text {
-  border: 1px solid #CCCCCC;
-  height: 18px;
-  outline: 0 none; }
-
 .support-center form {
   position: relative;
   top: 0; }

@@ -47,7 +47,7 @@
 							</li>
 
 					            <li class="refineSearch active right">
-					                <div id="submit" class="cta omega twc-icon-after icon-angle-down">
+					                <div id="submit" class="cta omega twc-icon-after icon-angle-down mobile-full">
 						                <a href="#">
 						                    <span>Refine Search</span>
 						                </a>

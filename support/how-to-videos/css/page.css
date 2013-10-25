@@ -75,6 +75,8 @@ li.refineSearch ul.vertical li {
 	padding: .5em 0;
 	vertical-align: middle; }
 
+.page-header .horizontal ul li .searchCategories li { padding: 1em; }
+
 	li.refineSearch {
 		position: relative; 
 		border-radius: 3px;
@@ -319,10 +321,6 @@ li.refineSearch {
     padding: .5em;
     border: none;
     border-radius: 0; }
-
-	li.refineSearch .cta { background: none; }
-	
-		li.refineSearch .cta:hover { background: none; }
 
     li.refineSearch ul.vertical li { text-align: left; }
 

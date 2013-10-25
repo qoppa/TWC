@@ -34,8 +34,7 @@ header + twc-box-column {
     color: #fff;
     text-align: center;
     vertical-align: middle;
-    cursor: pointer;
-    font-variant: small-caps; }
+    cursor: pointer; }
     .tabs li a {
       display: inline-block;
       position: relative;
