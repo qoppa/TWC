@@ -1,0 +1,458 @@
+/* ==========================================================================
+   CSS code for EBF Gateway
+   
+   Author: Max Quattromani
+   Version: 1.0 - Updated: 8/11/13
+   ========================================================================== */
+   
+/*
+
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+ 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* layout styles are being handled by base main.css */
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+/* ==========================
+	Gateway - Shared
+   ========================== */ 
+
+/* -- Remove -- */   
+body#gateway .twc-content {
+	background: #333;
+	background-image: none;
+	filter: none; }
+/* -- Remove -- */
+ 
+#gateway .gateway-container {
+	max-width: 720px; 
+	width: 73.5%;
+	margin: 0 auto 2em; }
+
+#gateway .twc-content h1 { 
+	margin: 1em 0;
+	color: #fff;
+	text-shadow: 0 0 3px rgba(0,0,0,.3); }
+
+#gateway .gateway {
+	position: relative;
+	border-radius: 0 0 3px 3px;
+	background: #fff;
+	background: rgba(255,255,255,.95);
+	color: #333; }
+
+	#gateway .gateway:before {
+	    position: absolute;
+	    bottom: 0;
+	    left: 2%;
+	    width: 100%;
+	    margin: 0 auto;
+	    content: '';
+	    background: rgba(0,0,0,1);
+	    box-shadow: 0 0 15px 5px #222;
+	    z-index: -999999; }
+
+	#gateway .gateway:after {
+	    position: absolute;
+	    left: -2%;
+	    bottom: 0;
+	    width: 100%;
+	    margin: 0 auto;
+	    content: '';
+	    box-shadow: 0 0 15px 5px #222;
+	    z-index: -999999; }
+
+#gateway .gateway-headline { 
+	padding: 1.5em 5%;
+	border-bottom: 1px solid #e1e1e1; }
+
+	#gateway .gateway-headline h5 { color: #3376b2; }
+
+#gateway .gateway-form .formitem { width: 100%; }
+
+.formitem > p { margin: .5em 0 0; }
+
+.formitem > span {
+    display: block;
+    margin: 0 0 .5em; }
+
+#gateway .gateway-form .formitem.left {
+  	float: left;
+  	width: 48%; }
+
+#gateway .gateway-form .formitem.right {
+	float: right;
+  	width: 48%; }
+
+#gateway .gateway-form .formitem select {
+	width: 100%;
+	background-color: #ffffff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(226, 226, 226)));
+	background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(226, 226, 226));
+	background-image: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(226, 226, 226));
+	background-image: -o-linear-gradient(top, rgb(255, 255, 255), rgb(226, 226, 226));
+	background-image: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(226, 226, 226));
+	background-image: linear-gradient(top, rgb(255, 255, 255), rgb(226, 226, 226));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#e2e2e2'); }
+
+#gateway .gateway-form input[type='text'],
+#gateway .gateway-form input[type='password'],
+#gateway .gateway-form select { 
+	width: 100%; }
+
+#gateway .gateway-form input:not(:invalid),
+#gateway .gateway-form select { 
+	border: 1px solid #e1e1e1; }
+
+#gateway .gateway-form input[type='radio'] { 
+	display: inline-block;
+	float: none;
+	border: 0;
+	margin-right: .5em; }
+
+	.formrow {
+		overflow: auto;
+		margin-bottom: 2em; }
+
+#gateway hr {
+	background: rgba(88, 88, 88, 1);
+	background-image: none; 
+	border-top: 1px solid rgb(0,0,0);
+	border-bottom: 1px solid rgb(53, 52, 53); }
+
+/* ==========================
+	Tabs
+   ========================== */ 
+
+#gateway .tabs { 
+	display: table;
+	width: 100%;
+	border-radius: 3px; }
+	
+#gateway .tabs ul { display: table-row; }
+	
+#gateway .tabs li { 
+	display: table-cell;
+	position: relative; 
+	width: 50%;
+	border-top: 1px solid #999;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(57, 128, 180, .8)), to(rgba(41, 95, 155, .8)));
+	background-image: -webkit-linear-gradient(top, rgba(57, 128, 180, .8), rgba(41, 95, 155, .8));
+	background-image: -moz-linear-gradient(top, rgba(57, 128, 180, .8), rgba(41, 95, 155, .8));
+	background-image: -o-linear-gradient(top, rgba(57, 128, 180, .8), rgba(41, 95, 155, .8));
+	background-image: -ms-linear-gradient(top, rgba(57, 128, 180, .8), rgba(41, 95, 155, .8));
+	background-image: linear-gradient(top, rgba(57, 128, 180, .8), rgba(41, 95, 155, .8));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#3980b4', EndColorStr='#295f9b');
+	vertical-align: middle;
+	cursor: pointer;
+	text-align: center;
+    font-variant: small-caps; }
+
+	#gateway .tabs li a {
+		display: inline-block;
+		position: relative;
+		padding: 1em;
+		font-family: 'TWC Round Book',Arial,Sans-Serif;
+		font-weight: normal;
+		text-decoration: none;
+		color: #fff; }
+
+	#gateway .tabs li:first-child { border-radius: 3px 0 0 0; }
+	
+	#gateway .tabs li:last-child { border-radius: 0 3px 0 0; }
+	
+	#gateway .tabs li.active {
+		background: rgba(255,255,255,.95);
+		background-image: none; }
+		
+		#gateway .tabs li.active a {
+			color: #333; }
+
+/* ==========================
+	Error Module
+   ========================== */
+
+.error-module {
+	width: 90%;
+	margin: 1.5em auto 0;
+    padding: .5em;
+    border: 3px solid #d10010;
+    border-radius: 3px;
+    background: rgb(211,211,212);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2QzZDNkNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMlIiBzdG9wLWNvbG9yPSIjZTdlN2U4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTYlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(top,  rgba(211,211,212,1) 0%, rgba(231,231,232,1) 3%, rgba(255,255,255,1) 16%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(211,211,212,1)), color-stop(3%,rgba(231,231,232,1)), color-stop(16%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top,  rgba(211,211,212,1) 0%,rgba(231,231,232,1) 3%,rgba(255,255,255,1) 16%,rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top,  rgba(211,211,212,1) 0%,rgba(231,231,232,1) 3%,rgba(255,255,255,1) 16%,rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(211,211,212,1) 0%,rgba(231,231,232,1) 3%,rgba(255,255,255,1) 16%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom,  rgba(211,211,212,1) 0%,rgba(231,231,232,1) 3%,rgba(255,255,255,1) 16%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3d3d4', endColorstr='#ffffff',GradientType=0 );
+    box-shadow: 0 0 5px 0 #888;
+    font-size: 14px;
+    font-weight: bold; }
+
+	.error-module .error-wrap {
+	    background: url("/../static/images/icons/icon-error.png") no-repeat scroll left center transparent;
+	    min-height: 29px;
+	    padding: 15px 15px 15px 41px; }
+
+.gateway-processing {
+	padding: 10em 5%;
+	text-align: center; }
+
+	.gateway-processing h5 { color: #3376b2; }
+	
+	.gateway-processing img {
+		width: 50px;
+		margin: 2em auto; }
+
+/* ==========================
+	New Customer
+   ========================== */ 
+		
+.input-section { padding: 2em 20%; }
+
+.input-section span.info { 
+	display: block;
+	margin-bottom: 1em; }
+
+.input-section span.info:before {
+	float: left;
+	content: url(/../static/images/icons/icon-notice.png);
+	width: 50px;
+	margin-left: -50px;
+	padding-bottom: 1em; }
+
+	.input-section span.p { 
+		display: block;
+		min-height: 50px;
+		margin-bottom: 1em; }
+
+.gateway-submit {
+	padding: 2em 5%;
+	border-top: 1px solid #e1e1e1;
+	border-radius: 0 0 3px 3px;
+	background: #eeeeef;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZGRmZTIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #eeeeef 0%, #dddfe2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeef), color-stop(100%,#dddfe2));
+	background: -webkit-linear-gradient(top,  #eeeeef 0%,#dddfe2 100%);
+	background: -o-linear-gradient(top,  #eeeeef 0%,#dddfe2 100%);
+	background: -ms-linear-gradient(top,  #eeeeef 0%,#dddfe2 100%);
+	background: linear-gradient(to bottom,  #eeeeef 0%,#dddfe2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', endColorstr='#dddfe2',GradientType=0 ); }
+
+.gateway-submit .formrow { margin: 0; }
+
+/* ==========================
+	Current Customer
+   ========================== */
+
+.input-skip-container [class*="twc-col2_5050-c"] { width: 50%; }
+
+.input-skip-container .parsys_column { margin-left: 0; }
+		
+#gateway #buyflow-current .input-section {
+	padding: 2em 10%;
+	border-right: 1px solid #e1e1e1; }
+
+#gateway #buyflow-current .skip-section { 
+	min-height: 340px;
+	padding: 2em 10%;
+	border-radius: 0 0 3px 0;
+	background: #eeeeef;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZGRmZTIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #eeeeef 0%, #dddfe2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeef), color-stop(100%,#dddfe2));
+	background: -webkit-linear-gradient(top,  #eeeeef 0%,#dddfe2 100%);
+	background: -o-linear-gradient(top,  #eeeeef 0%,#dddfe2 100%);
+	background: -ms-linear-gradient(top,  #eeeeef 0%,#dddfe2 100%);
+	background: linear-gradient(to bottom,  #eeeeef 0%,#dddfe2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeef', endColorstr='#dddfe2',GradientType=0 ); }
+
+#gateway label.h5 { line-height: 2; }
+
+#gateway .twc-blue-button.active { width: 90%; }
+		
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+
+.twc-ie #gateway .tabs li { 
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#05000000,endColorstr=#05000000); }
+
+.twc-ie #gateway .gateway {
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#05000000,endColorstr=#05000000); 
+    zoom: 1; }
+	
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+#gateway #buyflow-current .input-section {
+	overflow: hidden;
+	padding: 1.5em 5%; }
+
+.input-section span.p:before { margin: 0; }
+
+#gateway .gateway-container { 
+	width: 94%;
+	margin: 3% auto; }
+
+#gateway .twc-content { background-position: 20% center; }
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+	.formrow { margin-bottom: 1em; }
+
+/* ==========================
+	New Customer
+   ========================== */
+
+#gateway #buyflow-new .input-section { padding: 1em 5%; }
+ 
+.gateway-submit { padding: 1em 5%; } 
+
+/* ==========================
+	Current Customer
+   ========================== */
+
+   
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */	
+
+} /* End Tablet Breakpoint */
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */ 
+   
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+#gateway .gateway-form .formrow { width: 100%; }
+
+#gateway .gateway-form .formitem.left,
+#gateway .gateway-form .formitem.right {
+	display: inline-block;
+	float: none;
+	width: 100%;
+	margin-bottom: 1em; }
+
+	#gateway .gateway-form .formitem.right {
+		margin-bottom: 0;
+	}
+
+.formitem > a + span { text-align: center; }
+
+/* ==========================
+	New Customer
+   ========================== */
+
+#gateway .gateway-headline { padding: 1em 5%; }
+  
+#gateway #new .gateway-form .input-section { padding: 1em 5%; }
+
+/* ==========================
+	Current Customer
+   ========================== */
+
+.input-skip-container [class*="twc-col2_5050-c"] { width: 100%; }
+
+#gateway #buyflow-current .input-skip-container { background: none; }
+
+#gateway #buyflow-current .skip-section { 
+	min-height: 0;
+	border-radius: 0 0 3px 3px;
+	padding: 1em 5%;
+	border-top: 1px solid #e1e1e1; }
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+   		
+} /* End SmartPhone Breakpoint */
+  
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+    
