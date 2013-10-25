@@ -2,14 +2,6 @@
 
 $(function() {
 	$('.tabs li:last').addClass('active');
-	$('.tabs li').click(function() {
-		$('.tabs ul li').removeClass('active');
-		$(this).addClass('active');
-		var currentTab = $(this).children('a').attr('href');
-		$('div[id*="stores_map_"]').hide();
-		$(currentTab).show();
-		return false;
-	});
     
     // Mute Legend Icon based on Filter Selections
     $("input").change(function() {
@@ -22,7 +14,7 @@ $(function() {
         }
     });
 
-if (document.documentElement.clientWidth <= 1099) {	
+if (document.documentElement.clientWidth <= 1099) {
 	// Legend SlideUp
 	$('.locate-stores-filters legend').click(function() {
 		$('.filter-section').slideToggle('slow', function() {

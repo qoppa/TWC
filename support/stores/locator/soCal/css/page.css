@@ -40,8 +40,6 @@
    Module
    ========================================================================== */
 
-small { line-height: 2; }
-
 .locate-stores {
 	overflow: auto;
 	margin-bottom: 2em;
@@ -60,6 +58,10 @@ small { line-height: 2; }
 fieldset { border: 0; }
 
 label { display: block; }
+
+.form-inputs { padding: 1em; }
+
+.form-submit { padding: .5em 1em; }
 
 .filter-section ul { margin-bottom: 2em; }
 
@@ -103,14 +105,14 @@ input[type=checkbox] {
 
 legend {
 	width: 100%;
-	padding: 2%;
+	padding: 1em;
 	background: #4f799e;
 	color: #fff; }
 
 .mobile-filters-options { display: none; }
 
 .locate-stores-filters [class*='twc-col3_255025-c'] {
-	padding: 0 .5em; 
+	padding: 0 1em; 
 	border-right: 1px dotted #ccc; }
 
 	.locate-stores-filters [class*='twc-col3_255025-c']:last-child { border-right: 0; }
