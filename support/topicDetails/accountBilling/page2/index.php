@@ -14,10 +14,10 @@
                                 <div class="parsys parsys0 twc-col1_1-c0 parsys_column">
                                     <div class="parbase section">
                                     	<span class="p">Time Warner Cable has designed its bill with you in mind. The sample bill provided is designed to explain the information contained within your monthly billing statement.</span>
-                                        <div class="cta blue twc-icon-after icon-angle-right mobile-full">
+                                        <div class="cta omega twc-icon-after icon-angle-right mobile-full">
                                             <a href="http://www.maxquattromani.com/TWC/support/topicDetails/accountBilling/page1"><span>Page 1</span></a>
                                         </div>
-                                        <div class="cta blue twc-icon-after icon-angle-right mobile-full disabled">
+                                        <div class="cta omega twc-icon-after icon-angle-right mobile-full disabled">
                                             <a href="http://www.maxquattromani.com/TWC/support/topicDetails/accountBilling/page2"><span>Page 2</span></a>
                                         </div>
                                     </div>

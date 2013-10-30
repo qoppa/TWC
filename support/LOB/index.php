@@ -28,7 +28,7 @@
                                                                         <span class="arialBold">Pay-Per-View Limit</span>
                                                                         <p>A pay-per-view limit is the dollar amount of pay-per-view programming that you are allowed to order on your account. A pay-per-view limit is assigned to your account based on your individual credit results.</p>
                                                                         
-                                                                        <div class="cta blue twc-icon-after icon-angle-right">
+                                                                        <div class="cta omega twc-icon-after icon-angle-right">
                                                                         	<a href=""><span>View More</span></a>
                                                                         </div>
                 	            									</div>
@@ -42,7 +42,7 @@
                                                                             <li><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum expedita aliquam rerum saepe dolor!</a></li>
                                                                         </ul>
                                                                         
-                                                                        <div class="cta blue twc-icon-after icon-angle-right">
+                                                                        <div class="cta omega twc-icon-after icon-angle-right">
                                                                         	<a href=""><span>View all TV FAQs</span></a>
                                                                         </div>
                                                                     </div>
@@ -109,7 +109,7 @@
                                                                         <span class="arialBold">Pay-Per-View Limit</span>
                                                                         <p>A pay-per-view limit is the dollar amount of pay-per-view programming that you are allowed to order on your account. A pay-per-view limit is assigned to your account based on your individual credit results.</p>
                                                                         
-                                                                        <div class="cta blue twc-icon-after icon-angle-right">
+                                                                        <div class="cta omega twc-icon-after icon-angle-right">
                                                                         	<a href=""><span>View More</span></a>
                                                                         </div>
                 	            									</div>
@@ -123,7 +123,7 @@
                                                                             <li><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum expedita aliquam rerum saepe dolor!</a></li>
                                                                         </ul>
                                                                         
-                                                                        <div class="cta blue twc-icon-after icon-angle-right">
+                                                                        <div class="cta omega twc-icon-after icon-angle-right">
                                                                         	<a href=""><span>View all TV FAQs</span></a>
                                                                         </div>
                                                                     </div>
@@ -190,7 +190,7 @@
                                                                         <span class="arialBold">Pay-Per-View Limit</span>
                                                                         <p>A pay-per-view limit is the dollar amount of pay-per-view programming that you are allowed to order on your account. A pay-per-view limit is assigned to your account based on your individual credit results.</p>
                                                                         
-                                                                        <div class="cta blue twc-icon-after icon-angle-right">
+                                                                        <div class="cta omega twc-icon-after icon-angle-right">
                                                                         	<a href=""><span>View More</span></a>
                                                                         </div>
                 	            									</div>
@@ -204,7 +204,7 @@
                                                                             <li><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum expedita aliquam rerum saepe dolor!</a></li>
                                                                         </ul>
                                                                         
-                                                                        <div class="cta blue twc-icon-after icon-angle-right">
+                                                                        <div class="cta omega twc-icon-after icon-angle-right">
                                                                         	<a href=""><span>View all TV FAQs</span></a>
                                                                         </div>
                                                                     </div>
@@ -278,7 +278,7 @@
                                                                         <span class="arialBold">Pay-Per-View Limit</span>
                                                                         <p>A pay-per-view limit is the dollar amount of pay-per-view programming that you are allowed to order on your account. A pay-per-view limit is assigned to your account based on your individual credit results.</p>
                                                                         
-                                                                        <div class="cta blue twc-icon-after icon-angle-right">
+                                                                        <div class="cta omega twc-icon-after icon-angle-right">
                                                                         	<a href=""><span>View More</span></a>
                                                                         </div>
                 	            									</div>
@@ -292,7 +292,7 @@
                                                                             <li><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum expedita aliquam rerum saepe dolor!</a></li>
                                                                         </ul>
                                                                         
-                                                                        <div class="cta blue twc-icon-after icon-angle-right">
+                                                                        <div class="cta omega twc-icon-after icon-angle-right">
                                                                         	<a href=""><span>View all TV FAQs</span></a>
                                                                         </div>
                                                                     </div>
@@ -369,7 +369,7 @@
                                                         <span class="arialBold">Pay-Per-View Limit</span>
                                                         <p>A pay-per-view limit is the dollar amount of pay-per-view programming that you are allowed to order on your account. A pay-per-view limit is assigned to your account based on your individual credit results.</p>
                                                         
-                                                        <div class="cta blue twc-icon-after icon-angle-right">
+                                                        <div class="cta omega twc-icon-after icon-angle-right">
                                                         	<a href=""><span>View More</span></a>
                                                         </div>
 	            									</div>
@@ -383,7 +383,7 @@
                                                             <li><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum expedita aliquam rerum saepe dolor!</a></li>
                                                         </ul>
                                                         
-                                                        <div class="cta blue twc-icon-after icon-angle-right">
+                                                        <div class="cta omega twc-icon-after icon-angle-right">
                                                         	<a href=""><span>View all TV FAQs</span></a>
                                                         </div>
                                                     </div>

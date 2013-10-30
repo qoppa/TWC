@@ -173,7 +173,7 @@
 			
 			<div class="twc-login-module twc-contact">
                 <span class="headline">Log in with your TWC ID</span>
-                	<div class="cta blue twc-icon-after icon-angle-down">
+                	<div class="cta omega twc-icon-after icon-angle-down">
     					<a href="#" analyticsname="test">
         					<span>Sign In</span>
     					</a>

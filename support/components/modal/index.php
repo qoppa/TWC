@@ -1,12 +1,12 @@
 <?php include($_SERVER['DOCUMENT_ROOT']. '/TWC/core/includes/header.php'); ?>
 
-                <div id="1" class="cta blue twc-icon-after icon-angle-right modal">
+                <div id="1" class="cta omega twc-icon-after icon-angle-right modal">
     				<a href="#" analyticsname="test">
         				<span>Modal 1</span>
     				</a>
 				</div>
                 
-                <div id="2" class="cta blue twc-icon-after icon-angle-right modal">
+                <div id="2" class="cta omega twc-icon-after icon-angle-right modal">
     				<a href="#" analyticsname="test">
         				<span>Modal 2</span>
     				</a>

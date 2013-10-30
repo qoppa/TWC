@@ -18,12 +18,12 @@
                             <div class="image-banner">
                                 <h3>Synergy V</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, in, inventore reprehenderit debitis sequi excepturi.</p>
-                                <div class="cta blue twc-icon-after icon-angle-right">
+                                <div class="cta omega twc-icon-after icon-angle-right">
                                     <a href="#" analyticsname="test">
                                         <span>Download Remote Manual</span>
                                     </a>
                                 </div>
-                                <div class="cta blue twc-icon-after icon-angle-right">
+                                <div class="cta omega twc-icon-after icon-angle-right">
                                     <a href="../commonKeys" analyticsname="test">
                                         <span>Common Remote Keys</span>
                                     </a>

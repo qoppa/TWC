@@ -11,7 +11,7 @@
     			</div>
 <pre>
 	<code>
-&lt;div class="cta blue twc-icon-after icon-angle-right"&gt;
+&lt;div class="cta omega twc-icon-after icon-angle-right"&gt;
     &lt;a href="#" analyticsname="test"&gt;
         &lt;span&gt;after button test&lt;/span&gt;
     &lt;/a&gt;
@@ -29,7 +29,7 @@
     			</div>
 <pre>
 	<code>
-&lt;div class="cta blue twc-icon-before icon-angle-left"&gt;
+&lt;div class="cta omega twc-icon-before icon-angle-left"&gt;
     &lt;a href="#" analyticsname="test"&gt;
         &lt;span&gt;before button test&lt;/span&gt;
     &lt;/a&gt;
@@ -48,7 +48,7 @@
     			</div>
 <pre>
 	<code>
-&lt;div class="cta blue icon-angle-left"&gt;
+&lt;div class="cta omega icon-angle-left"&gt;
     &lt;a href="#" analyticsname="test"&gt;
         &lt;span&gt;&lt;/span&gt;
     &lt;/a&gt;

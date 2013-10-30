@@ -215,7 +215,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF33CC33', endColorstr='#FF008700',GradientType=0);
 }
 
-.btn.blue {
+.btn.blue, .btn.omega, .cta.blue, .cta.omega {
   &[disabled] {
     background-color: #bcbcbc;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#bcbcbc), to(#838383));

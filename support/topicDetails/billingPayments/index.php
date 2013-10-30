@@ -18,7 +18,7 @@
                                         <span class="p">Time Warner Cable has designed its bill with you in mind. The sample bill provided is designed to explain the information contained within your monthly billing statement.</span>
                                         
                                         <div class="buttonPadding">
-                                            <div class="cta blue twc-icon-after icon-angle-right mobile-full">
+                                            <div class="cta omega twc-icon-after icon-angle-right mobile-full">
                                                 <a href="../accountBilling/page1"><span>View a Sample Bill</span></a>
                                             </div>
                                        	</div>

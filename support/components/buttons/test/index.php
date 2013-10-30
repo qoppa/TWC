@@ -1,6 +1,6 @@
 <?php include($_SERVER['DOCUMENT_ROOT']. '/TWC/core/includes/header.php'); ?>
 
-			<div class="cta blue twc-icon-after icon-angle-right">
+			<div class="cta omega twc-icon-after icon-angle-right">
 				<a href="#" analyticsname="test">
 					<span>after button test</span>
 				</a>
@@ -8,7 +8,7 @@
 			
 			<br><br>
 			
-			<div class="cta blue twc-icon-before icon-angle-left">
+			<div class="cta omega twc-icon-before icon-angle-left">
 				<a href="#" analyticsname="test">
 					<span>before button test</span>
 				</a>

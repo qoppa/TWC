@@ -3,7 +3,7 @@
             <div class="formrow">
                 <div class="form-item">
                     
-                    <div class="cta blue twc-icon-after icon-angle-right">
+                    <div class="cta omega twc-icon-after icon-angle-right">
                         <a href="Channel-Lineups-1" analyticsname="test">
                             <span>Channel Lineup 1</span>
                         </a>
@@ -15,7 +15,7 @@
             <div class="formrow">
                 <div class="form-item">
                     
-                    <div class="cta blue twc-icon-after icon-angle-right">
+                    <div class="cta omega twc-icon-after icon-angle-right">
                         <a href="Channel-Lineups-2" analyticsname="test">
                             <span>Channel Lineup 2</span>
                         </a>
@@ -27,7 +27,7 @@
             <div class="formrow">
                 <div class="form-item">
                     
-                    <div class="cta blue twc-icon-after icon-angle-right">
+                    <div class="cta omega twc-icon-after icon-angle-right">
                         <a href="Channel-Lineups-3" analyticsname="test">
                             <span>Channel Lineup 3</span>
                         </a>

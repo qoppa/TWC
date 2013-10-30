@@ -73,7 +73,7 @@
                                                       <input type ="radio" name ="YesNo" id ="no" value ="No" />
                                                       <label for ="no">No</label>
                                                       <div class="twc-right">
-                                                          <div id="faq-survey-feedback" class="cta blue twc-icon-after icon-angle-right">
+                                                          <div id="faq-survey-feedback" class="cta omega twc-icon-after icon-angle-right">
                                                               <a href="#" analyticsname="test">
                                                                   <span>Send Feedback</span>
                                                               </a>
@@ -100,7 +100,7 @@
                                                     </div>
                                                     
                                                 </div>
-                                                <div id="faq-survey-feedback-response" class="cta blue twc-icon-after icon-angle-right">
+                                                <div id="faq-survey-feedback-response" class="cta omega twc-icon-after icon-angle-right">
                                                     <a href="#" analyticsname="test">
                                                         <span>Send Feedback</span>
                                                     </a>
@@ -123,7 +123,7 @@
                                         <b>Thank you for your feedback</b>
                                         <p>Your feedback has been submitted to our Customer Service and Technical Support teams. Please feel free to enter a Live Chat with a Customer Service Representative to find the information you're looking for.</p>
     
-                                        <div id="faq-survey-feedback-live-chat" class="cta blue twc-icon-before icon-comments-alt mobile-full">
+                                        <div id="faq-survey-feedback-live-chat" class="cta omega twc-icon-before icon-comments-alt mobile-full">
                                             <a analyticsname="test" href="#">
                                                 <span>Need Help? Let's Chat</span>
                                             </a>
