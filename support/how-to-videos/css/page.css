@@ -25,7 +25,6 @@
 /* ==========================================================================
    Base
    ========================================================================== */
- 
 .categories { margin-left: .5em;}
 /* ==========================================================================
    Layout
@@ -128,13 +127,14 @@ li.refineSearch ul.vertical li {
 	margin-bottom: 0.5em;}
 
 .filter-section {
+  overflow: auto;
 	padding: .75em 1.5em;
 	background: #e4e7ea; }
 
 	.filter-section .horizontal ul { margin-bottom: 0; }
 
 .filter-section select { 
-	width: 200px;
+	max-width: 175px;
 	margin-right: 3em; }
 
 .mobile-view { display: none; }
@@ -320,7 +320,8 @@ li.refineSearch ul.vertical li {
 li.refineSearch { 
     padding: .5em;
     border: none;
-    border-radius: 0; }
+    border-radius: 0; 
+    background: #e4e7ea; }
 
     li.refineSearch ul.vertical li { text-align: left; }
 

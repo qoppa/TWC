@@ -98,17 +98,17 @@
 					<div class="horizontal">
 						<ul>
 							<li class="sortBy">
-								<span><b>Sort by:</b></span>
-								<select name="" id="">
+								<label for="select1"><b>Sort by:</b></label>
+								<select name="" id="select1">
 									<option value="">Latest Updates</option>
 									<option value="">Most Viewed</option>
 									<option value="">Newest to Oldest</option>
 									<option value="">Oldest to Newest</option>
 								</select>
 							</li>
-							<li class="tablet-hidden">
-								<span><b>View per Page:</b></span>
-								<select name="" id="">
+							<li class="mobile-hidden">
+								<label for="select2"><b>View per Page:</b></label>
+								<select name="" id="select2">
 									<option value="10">10</option>
 									<option value="25">25</option>
 									<option value="50">50</option>
