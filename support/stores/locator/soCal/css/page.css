@@ -71,6 +71,12 @@ label { display: inline-block; }
 
 .form-submit { padding: .5em 1em; }
 
+.refineList { 
+  overflow: auto;
+  background: #4f799e; }
+
+.refineList a { color: #fff; }
+
 .filter-section ul { margin-bottom: 2em; }
 
 	.filter-section li { line-height: 1.5; }
@@ -82,7 +88,7 @@ label { display: inline-block; }
 			margin-left: 0; }
 
 input[type=checkbox] + label { 
-    margin-left: 2em;
+    margin-left: 1em;
     font-weight: 100;
     text-transform: capitalize; }
 
@@ -91,13 +97,14 @@ input[type=checkbox] {
 	padding: 0;
 	border: 0; }
 
+.after-filters { padding: .5em 1em; }
+
 .stores-find-me {
 	float: left;
 	padding: 1em; }
 
 .locate-stores .twc-col2_3367-c1 { border-left: 3px solid #fff; }
 
-.locate-stores .parsys_column,
 .pickup-exchange .parsys_column,
 .map-stores .parsys_column { 
 	margin-left: 0;
@@ -106,7 +113,6 @@ input[type=checkbox] {
 #paymentcenterresults .parsys_column .twc-col2_5050-c1 { margin-left: 2.5%; }
 
 .locate-stores-filters .twc-col3_255025 { 
-	background: #fff; 
 	padding: .5em 0; }
 
 .pickup-exchange { display: none; }
@@ -120,7 +126,7 @@ legend {
 .mobile-filters-options { display: none; }
 
 .locate-stores-filters [class*='twc-col3_255025-c'] {
-	padding: 0 1em; 
+	padding: 1em; 
 	border-right: 1px dotted #ccc; }
 
 	.locate-stores-filters [class*='twc-col3_255025-c']:last-child { border-right: 0; }
@@ -143,7 +149,6 @@ legend {
 .locate-stores-filters .btn { margin: .25em 1em; }
 
 .locate-stores-filters .twc-col100_1-c0 { 
-	background-color: #fff;
 	padding: .25em 0 0 1em;}
 
 .location_listing {
@@ -740,10 +745,6 @@ span.flag {
 		width: 100%;
 		border-right: 0; }
 
-.locate-stores-filters .twc-col100_1-c0 { 
-	background-color: #fff;
-	padding: .5em 0 .5em 1em;}
-
 /* ==========================
    Search Section
    ========================== */
@@ -799,6 +800,10 @@ span.flag {
 .locate-stores-filters [class*='twc-col3_255025-c']:nth-of-type(even) {
 	background: #f5f9fc;
 	border-bottom: 1px dotted #ccc; }
+
+.locate-stores-filters [class*="twc-col3_255025-c"]:last-child {
+    margin-bottom: 1em;
+}
 
 /* ==========================================================================
    State

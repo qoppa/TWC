@@ -14,12 +14,12 @@
    ========================================================================== */
 
 ol {
-  margin: 0 0 .5em 1.5em;
+  margin: 0 0 0 1.5em;
   padding: 0;
 }
 
 ul {
-  margin: 0 0 .5em 0;
+  margin: 0;
   padding: 0;
   ul {
     margin-bottom: 0;
@@ -34,7 +34,7 @@ ol ol {
 
 .bulleted {
   ~ ul {
-    margin-bottom: 1em;
+    margin-bottom: 0;
   }
   li {
     list-style: outside disc;
