@@ -40,10 +40,10 @@
 .AtoZ_container {
   	-webkit-column-count: 4;
   	   -moz-column-count: 4;
-  		    column-count: 4;
+  		      column-count: 4;
   	-webkit-column-gap: 2.5%;
        -moz-column-gap: 2.5%;
-	   		column-gap: 2.5%;
+	   		    column-gap: 2.5%;
 }
 
 .AtoZ_container ul li.heading {
@@ -94,7 +94,7 @@ li.heading ul.content {
 
 /* ie8 (.ie8) */
 
-.no-csscolumns .AtoZ_container { display: none; }
+.no-csscolumns .AtoZ_container { visibility: hidden; }
 
 .no-csscolumns .AtoZ_container ul li.heading { padding: 0 1em; }
 
@@ -146,8 +146,7 @@ li.heading ul.content {
 .twc-box-column {
     padding: 0;
 }
- 
- 
+
    
 /* ==========================================================================
    Module
@@ -156,7 +155,7 @@ li.heading ul.content {
 .AtoZ_container {
   	-webkit-column-count: 1;
   	   -moz-column-count: 1;
-  		    column-count: 1;
+  		      column-count: 1;
 }
 
 	.AtoZ_container ul {

@@ -55,9 +55,17 @@
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#e0ebf5', EndColorStr='#f8fafc');
 	box-shadow: 0 1px 2px 0 #888; }
 
+.gray { 
+	background-color: #D4D5D6;
+	width: 100%;}
+
+.cta.gray { border-radius: 0px;}
+
 fieldset { border: 0; }
 
-label { display: block; }
+label { display: inline-block; }
+
+.form-filters {display: none;}
 
 .form-inputs { padding: 1em; }
 
@@ -118,7 +126,6 @@ legend {
 	.locate-stores-filters [class*='twc-col3_255025-c']:last-child { border-right: 0; }
 
 .locate-stores-filters label { 
-	line-height: 2;
 	text-transform: uppercase;
 	font-weight: 900; }
 
@@ -134,6 +141,10 @@ legend {
 .locate-stores-filters .filter-section input { width: auto; }
 
 .locate-stores-filters .btn { margin: .25em 1em; }
+
+.locate-stores-filters .twc-col100_1-c0 { 
+	background-color: #fff;
+	padding: .25em 0 0 1em;}
 
 .location_listing {
     height: 310px;
@@ -240,7 +251,8 @@ header .h2 {
 
 	.stores_details_map_info_distance select { 
 	    width: auto;
-	    border: 1px solid #ccc; }
+	    border: 1px solid #ccc;
+	    margin-bottom: .5em; }
 
 .stores_details_map { margin-bottom: 0; }
 
@@ -309,8 +321,6 @@ address { font-style: normal; }
 
 	.stores_locations_details_legend > div {
 		padding: .5em; }
-
-.stores_locations_details_legend .legend_icons li { line-height: 2; }
 
 .legend_icons li span { margin-right: .5em; }
 
@@ -450,6 +460,8 @@ span.flag {
 
 	.mobile-filters-options button { display: block; }
 
+.filter-section ul { margin-bottom: 0em; }
+
 .stores-find-me { 
 	width: 100%;
 	padding: 1em;
@@ -480,6 +492,8 @@ span.flag {
 .pickup-exchange .find-location input {
     width: 45%;
     margin-top: 1em; }
+
+
 
 /* ==========================
    Map Section
@@ -533,6 +547,7 @@ span.flag {
 		.tabs li.active a {
 			color: #222; }
 
+/*
 .stores_list_tab:before {
 	content: "\f0c9"; 
 	padding-right: 8px;
@@ -542,6 +557,7 @@ span.flag {
 	content: "\f0ac"; 
 	padding-right: 8px;
 	font-family: 'FontAwesome', sans-serif; }
+*/
 
 .stores_location_details { 
 	display: none;
@@ -724,9 +740,14 @@ span.flag {
 		width: 100%;
 		border-right: 0; }
 
+.locate-stores-filters .twc-col100_1-c0 { 
+	background-color: #fff;
+	padding: .5em 0 .5em 1em;}
+
 /* ==========================
    Search Section
    ========================== */
+.cta.gray.mobile-full {margin-bottom: 0em;}
 
 .pickup-exchange li { display: block; }
 
@@ -746,6 +767,8 @@ span.flag {
 .pickup-exchange .find-location input { 
 	width: 100%;
 	margin-bottom: 1em;  }
+
+.filter-section ul { margin-bottom: 0em; }
 
 /* ==========================
    Map Section
