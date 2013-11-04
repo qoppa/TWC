@@ -1,5 +1,5 @@
 // Page Specific JS Functions
-$(function() {
+$(function(){
  //Init three up carousel
 	$('.three-up-carousel').css({'visibility':'visible'});
 	//Removes the random CQ "new * section" element which throws off slide index
