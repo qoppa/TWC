@@ -80,10 +80,16 @@
 					                        </li>
 					                    </div>
 
-					                    <a id="submit" class="btn blue left">
-					                        Submit <span class="twc-icon-after icon-angle-right"></span>
-					                    </a>
-					                    <a class="btn right clearCheckboxes" href="#">Clear All</a>
+                                        <div class="cta omega twc-icon-after icon-angle-right left">
+                                            <a href="#" analyticsname="test">
+                                                <span>Submit</span>
+                                            </a>
+                                        </div>
+                                        <div class="cta right clearCheckboxes">
+                                            <a href="#" analyticsname="test">
+                                                <span>Clear All</span>
+                                            </a>
+                                        </div>
 
 					                </ul>
 					            </li>

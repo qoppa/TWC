@@ -46,7 +46,6 @@ video {
 
 .location_listing {
 	overflow: auto;
-	max-width: 300px;
 	border-radius: 3px;
 	background: #f2f7fb; }
 

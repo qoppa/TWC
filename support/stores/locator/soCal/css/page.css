@@ -73,7 +73,8 @@ label { display: inline-block; }
 
 .refineList { 
   overflow: auto;
-  background: #4f799e; }
+  background: #4f799e;
+  cursor: pointer; }
 
 .refineList a { color: #fff; }
 
@@ -152,10 +153,10 @@ legend {
 	padding: .25em 0 0 1em;}
 
 .location_listing {
-    height: 310px;
 	overflow: auto;
+	height: 360px;
 	border-radius: 3px; }
-
+    
             .location_listing li:nth-of-type(even) {
                 background: #f2f7fb; } 
 

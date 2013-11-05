@@ -158,7 +158,7 @@
   background-image: linear-gradient(to bottom, #33cc33 0%, #008700 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF33CC33', endColorstr='#FF008700',GradientType=0); }
 
-.btn.blue[led], .btn.omega[disabled], .cta.blue[disabled], .cta.omega[disabled] {
+.btn.blue[disabled], .btn.omega[disabled], .cta.blue[disabled], .cta.omega[disabled] {
   background-color: #bcbcbc;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#bcbcbc), to(#838383));
   background-image: -webkit-linear-gradient(top, #bcbcbc, #838383);
@@ -301,12 +301,10 @@
      ========================================================================== */
   .btn.mobile-full {
     display: block;
-    margin-bottom: 1em;
     text-align: center; }
 
   .cta.mobile-full {
     display: block;
-    margin-bottom: 1em;
     text-align: center; }
 
   /* ==========================================================================

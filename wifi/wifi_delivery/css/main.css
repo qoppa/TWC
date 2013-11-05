@@ -2818,6 +2818,9 @@ footer input {
 /* scale images in IE7 more attractively */
 .twc-ie img {-ms-interpolation-mode: bicubic;}
 
+.twc-ie input[type="radio"] {
+  border: 0px !important;
+}
 
 .twc-ie .twc-customerLocation ul li ul { right: 0; }
 
