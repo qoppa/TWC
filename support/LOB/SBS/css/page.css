@@ -28,8 +28,27 @@
 
 	.share > div[class*="share-"] { display: inline;}
 
+  .refineHelp { position: relative;}
+
+  .helpOptions {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: -60px;
+    background-color: #E1e1e1;
+    padding: 1em;
+    border-radius: 3px 0px 3px 3px;
+    box-shadow: 0 1px 2px 0 #888; }
+
+  .sbs-content .refineHelp .helpOptions li { 
+    border-bottom: 1px solid #CCC;
+    padding: .5em 0;}
+
+  .sbs-content .refineHelp { 
+    padding: 0;}
+
 	.sbs-content  li { 
-		border-bottom: 1px solid #E1E1E1;
+		border-bottom: 1px solid #CCC;
 		padding: 2em 0;}
 	
 	.sbs-content li.twc-last { border-bottom: none; }

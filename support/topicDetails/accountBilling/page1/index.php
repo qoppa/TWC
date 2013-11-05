@@ -173,8 +173,43 @@
                             <span class="p">
                                 <b>View All Features of Your Bill</b></span>
                             
-                            <div class="cta blue twc-icon-after icon-angle-right mobile-full">
+                            <div id="email" class="btn share omega twc-icon-after icon-angle-right mobile-full">
                                 <a href=""><span>Email Yourself a Sample Bill</span></a>
+                            </div>
+                            <div class="email-module">
+                                <div class="close"></div>
+                                <b>Enter Your Email Address</b>
+                                <form>
+                                    <div class="formrow">
+                                        <div class="form-item">
+                                            <label for="email">Your Email Address:</label>
+                                            <input id="email_addr" type="email" autocomplete="email" name="email">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="formrow">
+                                        <div class="form-item">
+                                            <label for="send">Send To:</label>
+                                            <input id="to_email_addr" type="text" name="to_email">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="formrow">
+                                        <div class="form-item">
+                                            <label for="text">Add Note:</label>
+                                            <textarea>
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="formrow">
+                                        <div class="form-item">
+                                                <div class="btn blue">
+                                                    <button type="submit">Send</button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                             
                       	</div>

@@ -82,13 +82,56 @@
                                                                         </div>
                                                                         <div class="parsys parsys1 twc-col2_7525-c1 parsys_column">
                                                                             <div class="parbase section">
-                                                                                
-                                                                                <div class="cta blue twc-icon-after icon-angle-down right mobile-full">
-                                                                                    <a href="#" analyticsname="test">
-                                                                                        <span>Need More Help?</span>
-                                                                                    </a>
-                                                                                </div>
-                                                                                
+                                                                                <li class="refineHelp active right">
+                                                                                    <div id="submit" class="cta omega right twc-icon-after icon-angle-down">
+                                                                                        <a href="#">
+                                                                                            <span>Need More Help?</span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <ul class="vertical helpOptions">
+                                                                                        <div class="refineHead">
+                                                                                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut hendrerit dui.</span>
+                                                                                        </div>
+
+                                                                                        <div class="clear">
+                                                                                            <li class="twc-first clear">
+                                                                                                <a href="#">
+                                                                                                    <span class="categories">Nullam volutpat tellus</span>
+                                                                                                </a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a href="#">
+                                                                                                    <span class="categories">Nullam volutpat tellus</span>
+                                                                                                </a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a>
+                                                                                                    <span class="categories">Nullam volutpat tellus</span>
+                                                                                                </a>
+                                                                                            </li>
+
+                                                                                            <li>
+                                                                                                <a href="#">
+                                                                                                    <span class="categories">Nullam volutpat tellus</span>
+                                                                                                </a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li>
+                                                                                                <a>
+                                                                                                    <span class="categories">Nullam volutpat tellus</span>
+                                                                                                </a>
+                                                                                            </li>
+                                                                                        
+                                                                                            <li class="twc-last">
+                                                                                                <a href="#">
+                                                                                                    <span class="categories">Nullam volutpat tellus</span>
+                                                                                                </a>
+                                                                                            </li>
+                                                                                        </div>
+                                                                                    </ul>
+                                                                                </li>                                                                                
                                                                             </div>
                                                                             <div class="new section"></div>
                                                                         </div>
