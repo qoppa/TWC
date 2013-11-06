@@ -1,8 +1,8 @@
 // Place page specific jQuery here
 
 $(function() {
-	$('.tab-content').last().show();
-	$('.tabs li:last').addClass('active');
+	$('.tab-content').first().show();
+	$('.tabs li:first').addClass('active');
     
     // Mute Legend Icon based on Filter Selections
     $("input").change(function() {

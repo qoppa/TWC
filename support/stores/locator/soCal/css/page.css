@@ -116,6 +116,8 @@ input[type=checkbox] {
 .locate-stores-filters .twc-col3_255025 { 
 	padding: .5em 0; }
 
+.locate-stores .form-inputs .twc-col3_252550-c0 { margin-bottom: 1em; }
+
 .pickup-exchange { display: none; }
 
 legend {
@@ -362,6 +364,12 @@ span.flag {
 	padding: 1em;
 	background: #4F799E; }
 
+/* ==========================
+    Tabs
+   ========================== */
+
+.tab-content { display: inline-block; }
+
 /* ==========================================================================
    State
    ========================================================================== */
@@ -407,7 +415,6 @@ span.flag {
 /* ==========================================================================
    Layout
    ========================================================================== */
-
 
 /* ==========================================================================
    Module
@@ -566,7 +573,6 @@ span.flag {
 */
 
 .stores_location_details { 
-	display: none;
 	height: auto;
 	overflow: auto;  }
 
