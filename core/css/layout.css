@@ -642,13 +642,14 @@ ul.twc-share li {
   /* ==========================================================================
       Module
      ========================================================================== */
-  .mobile-push {
-    float: right;
-    margin-left: 0; }
 
-  .mobile-pull {
-    float: left;
-    margin-left: 0; }
+.mobile-push {
+  float: right;
+  margin-left: 0; }
+
+.mobile-pull {
+  float: left;
+  margin-left: 0; }
 
   /* ==========================================================================
       State

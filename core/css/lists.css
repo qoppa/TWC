@@ -4,132 +4,163 @@
     Author: Max Quattromani
     Version: 1.8.9.9 - Updated: 9/26/2013
    ========================================================================== */
+
 /* ==========================================================================
     Layout
    ========================================================================== */
+
 /* ==========================================================================
     Module
    ========================================================================== */
-ol {
-  margin: 0 0 0 1.5em;
-  padding: 0; }
+
+ol { 
+    margin: 0 0 .5em 1.5em;
+    padding: 0; }
 
 ul {
-  margin: 0;
-  padding: 0; }
-  ul ul {
-    margin-bottom: 0; }
+	margin: 0 0 .5em 0;
+	padding: 0; }
 
-ol ol {
-  margin-bottom: 0; }
-
+ul ul,
+ol ol { margin-bottom: 0; }
+    
 /* Bulleted List Items */
-.bulleted ~ ul {
-  margin-bottom: 0; }
-.bulleted li {
-  list-style: outside disc;
-  margin-left: 1em;
-  border-bottom: none; }
+.bulleted ~ ul { margin-bottom: 1em; }
 
-.not-bulleted {
-  list-style-type: none !important; }
+    .bulleted li,
+	.bulleted li {
+		list-style: outside disc;
+		margin-left: 1em;
+		border-bottom: none; }
+
+.not-bulleted { list-style-type: none !important; }
 
 /* Horizontal List Items */
-.horizontal li {
-  display: inline; }
-.horizontal.slashes li {
-  padding: 0; }
-  .horizontal.slashes li:after {
-    content: '/';
-    padding: 0 .5em; }
-  .horizontal.slashes li.twc-last:after {
-    content: ''; }
-.horizontal.pipes li {
-  padding: 0; }
-  .horizontal.pipes li:after {
-    content: '|';
-    padding: 0 .25em 0 .5em; }
-  .horizontal.pipes li.twc-last:after {
-    content: ''; }
+.horizontal li { display: inline; }
 
-/* Horizantal List with Slashes */
-/* Horizontal List with Slashes */
+    /* Horizantal List with Slashes */
+	.horizontal.slashes li { padding: 0; }
+		
+		.horizontal.slashes li:after {
+			content: '/';
+			padding: 0 .5em; }
+			
+            .horizontal.slashes li.twc-last:after { content: ''; }
+
+    /* Horizontal List with Slashes */
+	.horizontal.pipes li { padding: 0; }
+		
+		.horizontal.pipes li:after {
+			content: '|';
+			padding: 0 .25em 0 .5em; }
+			
+            .horizontal.pipes li.twc-last:after { content: ''; }
+
 /* Vertical List Items */
-.vertical > ul > li {
-  padding: .5em 0; }
-.vertical.lined > ul > li {
-  border-bottom: 1px dotted #E1E1E1; }
-  .vertical.lined > ul > li.twc-last {
-    border-bottom: none; }
-.vertical.alt > ul > li:nth-child(even) {
-  background: #f6f6f6; }
+.vertical > ul > li { padding: .5em 0; }
+
+	.vertical.lined > ul > li { border-bottom: 1px dotted #E1E1E1; }
+		
+		.vertical.lined > ul > li.twc-last { border-bottom: none; }
+
+.vertical.alt > ul > li:nth-child(even) { background: #f6f6f6; }
 
 /* SmartLinks */
-.horizontal li > div.smartLink {
-  display: inline; }
+.horizontal li > div.smartLink { display: inline; }
 
 /* Ordered List */
 ol li {
-  list-style: decimal;
-  list-style-position: outside; }
-
+	list-style: decimal;
+	list-style-position: outside; }
+ 
 /* Definition List */
-dt {
-  font-weight: bold; }
+dt { font-weight: bold; }
 
-dd {
-  margin-left: 1em; }
+dd { margin-left: 1em; }
 
 /* ==========================================================================
     State
    ========================================================================== */
+
 /* ==========================================================================
     Theme
    ========================================================================== */
+   
 /* ==========================
     Browser Specific
    ========================== */
+
 /* Firefox */
-@-moz-document url-prefix() {}
-/* Webkit: Chrome/Safari */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* Webkit browsers add a 2px margin outside the chrome of form elements */ }
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+
 /* IE:8/9 */
-/* ie (.ie) */
+   
+/* ie (.ie) */   
+
 /* ie8 (.ie8) */
+
 /* ie9 (.ie9) */
+
+
 /* ==========================
     Responsive Design
-   ========================== */
+   ========================== */ 
+
 /* ==========================
     Tablet
-   ========================== */
+   ========================== */ 
+
 @media (max-width: 68.6875em) {
-  /* ==========================================================================
-      Layout
-     ========================================================================== */
-  /* ==========================================================================
-      Module
-     ========================================================================== */
-  /* ==========================================================================
-      State
-     ========================================================================== */
-  /* ==========================================================================
-      Theme
-     ========================================================================== */ }
+ 
+/* ==========================================================================
+    Layout
+   ========================================================================== */
+
+/* ==========================================================================
+    Module
+   ========================================================================== */
+
+/* ==========================================================================
+    State
+   ========================================================================== */
+   
+/* ==========================================================================
+    Theme
+   ========================================================================== */
+
+} 
+   
 /* ==========================
     Smartphone
-   ========================== */
+   ========================== */ 
+
 @media (max-width: 31.25em) {
-  /* ==========================================================================
-      Layout
-     ========================================================================== */
-  /* ==========================================================================
-      Module
-     ========================================================================== */
-  /* ==========================================================================
-      State
-     ========================================================================== */
-  /* ==========================================================================
-      Theme
-     ========================================================================== */ }
+
+/* ==========================================================================
+    Layout
+   ========================================================================== */
+   
+/* ==========================================================================
+    Module
+   ========================================================================== */
+
+/* ==========================================================================
+    State
+   ========================================================================== */
+   
+/* ==========================================================================
+    Theme
+   ========================================================================== */
+  
+} 
+    

@@ -1950,10 +1950,12 @@ dd {
      ========================================================================== */
   .btn.mobile-full {
     display: block;
+    margin-bottom: 1em;
     text-align: center; }
 
   .cta.mobile-full {
     display: block;
+    margin-bottom: 1em;
     text-align: center; }
 
   /* ==========================================================================

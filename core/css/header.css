@@ -4,283 +4,325 @@
     Author: Max Quattromani
     Version: 1.8.9.9 - Updated: 9/26/2013
    ========================================================================== */
+
 /* ==========================================================================
     Layout
    ========================================================================== */
+
 /* ==========================================================================
     Module
    ========================================================================== */
-.twc-top {
-  background: #000;
-  border-bottom: 1px solid #4d4f53; }
-  .twc-top .twc-container {
-    overflow: inherit;
-    padding: 5px 0 0; }
+   
+.twc-top { 
+	background: #000; 
+	border-bottom: 1px solid #4d4f53; }
+
+.twc-top .twc-container { 
+	overflow: inherit;
+	padding: 5px 0 0; }
 
 /* ==========================
 	Top-Nav Menu
    ========================== */
-ul.twc-top-nav {
-  margin-bottom: 0; }
 
-.twc-top-nav li {
-  display: inline-block; }
-.twc-top-nav .smartLink {
-  padding: .5em; }
-  .twc-top-nav .smartLink a {
-    font-weight: inherit;
-    color: #6b6b6b; }
-.twc-top-nav li.twc-active .smartLink {
-  position: relative;
-  background: #2d2e2e;
-  border-radius: 5px 5px 0 0;
-  border-top: 1px solid #4d4f53;
-  border-right: 1px solid #4d4f53;
-  border-left: 1px solid #4d4f53;
-  box-shadow: 0 1px 0 0 #2d2e2e;
-  z-index: 7999; }
-  .twc-top-nav li.twc-active .smartLink a {
-    color: #fff; }
-.twc-top-nav li a:hover {
-  color: #fff; }
+ul.twc-top-nav { margin-bottom: 0; }
 
-/* ==========================
-	Top-Nav Drop Down
-   ========================== */
-.twc-drop-nav.persist a {
-  color: #fff; }
+.twc-top-nav li { display: inline-block; }
 
-.twc-top-nav ul li ul {
-  display: none;
-  position: absolute;
-  width: 150px;
-  padding: 5px;
-  background: #677986;
-  border-radius: 3px 0 3px 3px;
-  visibility: hidden;
-  z-index: 9999; }
-  .twc-top-nav ul li ul li {
-    display: block;
-    color: #fff; }
-.twc-top-nav ul li.persist ul {
-  display: block;
-  position: absolute;
-  right: 0;
-  opacity: 1;
-  visibility: visible;
-  z-index: 99999; }
+.twc-top-nav .smartLink { padding: .5em; }
+
+    .twc-top-nav .smartLink a { 
+    	font-weight: inherit;
+    	color: #6b6b6b; }
+    
+        .twc-top-nav li.twc-active .smartLink {
+        	position: relative;
+        	background: #2d2e2e;
+        	border-radius: 5px 5px 0 0;
+        	border-top: 1px solid #4d4f53; 
+        	border-right: 1px solid #4d4f53;
+        	border-left: 1px solid #4d4f53;
+        	box-shadow: 0 1px 0 0 #2d2e2e;
+        	z-index: 7999; }
+        
+            .twc-top-nav li.twc-active .smartLink a { color: #fff; }
+
+	/* ==========================
+		Top-Nav Drop Down
+	   ========================== */
+			
+	.twc-top-nav li a:hover,
+	.twc-drop-nav.persist a { 
+		color: #fff; }
+	   
+	.twc-top-nav ul li ul {
+		display: none;
+		position: absolute;
+		width: 150px;
+		padding: 5px;
+		background: #677986; 
+		border-radius: 3px 0 3px 3px;
+		visibility: hidden;
+		z-index: 9999; }
+		
+	.twc-top-nav ul li ul li { 
+		display: block; 
+		color: #fff; }
+	
+	.twc-top-nav ul li.persist ul {
+		display: block;
+		position: absolute;
+		right: 0;
+		opacity: 1;
+		visibility: visible;
+		z-index: 99999; }
 
 /* ==========================
 	Top Search
    ========================== */
-header > .twc-container {
-  overflow: auto; }
 
-.twc-user-input {
-  padding-right: 20px; }
-
-.twc-header-search {
-  float: left;
-  width: 590px;
-  margin-top: 20px; }
-
-.twc-search-input-wrap {
-  margin: 0 auto; }
-
-.twc-header-search .twc-search-input-wrap input {
-  float: left;
-  width: 80%;
-  background: #fff;
-  border: 0 none;
-  border-radius: 3px 0 0 3px;
-  overflow: hidden; }
-.twc-header-search .twc-search-input-wrap button.btn {
-  height: 30px;
-  padding-left: 10%;
-  border-radius: 0 3px 3px 0;
-  background: #fff;
-  color: #3376B2; }
-.twc-header-search .twc-search-btn {
-  float: none;
-  background: #fff;
-  filter: 0;
-  border: none;
-  border-radius: 0 3px 3px 0;
-  color: #3376b2; }
-  .twc-header-search .twc-search-btn:hover {
-    background: #fff;
-    color: #3376b2; }
-  .twc-header-search .twc-search-btn icon-search {
-    float: right; }
-
+header > .twc-container { overflow: auto; }
+	
+	.twc-user-input { padding-right: 20px; }
+	
+	.twc-header-search {
+		float: left;
+		width: 590px;
+		margin-top: 20px; }
+	
+	.twc-search-input-wrap { margin: 0 auto; }
+	
+	.twc-header-search .twc-search-input-wrap input {
+	    float: left;
+	    width: 80%;
+	    background: #fff;
+	    border: 0 none;
+		border-radius: 3px 0 0 3px;
+	    overflow: hidden; }
+	
+	.twc-header-search .twc-search-input-wrap button.btn {
+		height: 30px;
+	    padding-left: 10%;
+		border-radius: 0 3px 3px 0;
+		background: #fff;
+		color: #3376B2; }
+		
 /* Specific Buttons */
-.btn.search-btn, .btn.geoloc-btn {
-  width: 20%; }
 
-.cta.search-btn, .cta.geoloc-btn {
-  width: 20%; }
+.twc-header-search .twc-search-btn {
+	float: none;
+	background: #fff;
+	filter: 0;
+	border: none;
+	border-radius: 0 3px 3px 0;
+	color: #3376b2; }
+	
+	    .twc-header-search .twc-search-btn:hover {
+	        background: #fff;
+	        color: #3376b2; }
+	
+		.twc-header-search .twc-search-btn icon-search { float: right; }
 
-.twc-search-input-wrap input#search-support {
-  width: 76%; }
+			.btn.search-btn,
+			.btn.geoloc-btn,
+			.cta.search-btn,
+			.cta.geoloc-btn { width: 20%; }
+	
+	.twc-search-input-wrap input#search-support { width: 76%; }
+	
+	.twc-logo {
+		float: left;
+		width: 20%; }
+	
+		.twc-logo img { height: auto; }
+	
+	.twc-icon-twitter:before { 
+		content: "\f099"; 
+		color: #f7f7f7; }
+	
+	.twc-icon-facebook:before { 
+		content: "\f09a";
+		color: #f7f7f7; }
+	
+	.twc-header-icons {
+		background-color: #000;
+		background-image: -webkit-gradient(linear,left top,left bottom,from(#2f3032),to(#191a1c));
+		background-image: -webkit-linear-gradient(top,#2f3032,#191a1c);
+		background-image: -moz-linear-gradient(top,#2f3032,#191a1c);
+		background-image: -o-linear-gradient(top,#2f3032,#191a1c);
+		background-image: -ms-linear-gradient(top,#2f3032,#191a1c);
+		background-image: linear-gradient(top,#2f3032,#191a1c);
+		filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#2f3032',EndColorStr='#191a1c');
+		padding: 10px 20px 5px;
+		border-radius: 3px;
+		border: 2px solid #3a3b3d;
+		font-size: 9px;
+		font-size: .9rem;
+		text-align: center; }
+	
+		.header-icons div.twc-image-link { display: inline; }
 
-.twc-logo {
-  float: left;
-  width: 20%; }
-  .twc-logo img {
-    height: auto; }
+		.header-icons.list > ul { height: 25px; }
 
-.twc-icon-twitter:before {
-  content: "\f099";
-  color: #f7f7f7; }
+	.twc-header-search button:before { 
+		content: '\f002'; 
+		font-family: 'FontAwesome', sans-serif;
+		color: #3376b2;
+		line-height: 1; }
+		    	
+	.btn.icon-search { 
+		font-family: 'FontAwesome', sans-serif; }
+	
+	.twc-contact { float: right; }
 
-.twc-icon-facebook:before {
-  content: "\f09a";
-  color: #f7f7f7; }
+	.twc-contact li {
+		display: inline;
+		padding: 0 1px; }
+	
+	.twc-contact a {
+		font-size: 12px;
+		font-size: 1.2rem;
+		font-family: 'TWC Round Light',Arial,Sans-Serif; }
+	
+	#logoHeader .twc-contact { margin-bottom: 20px; }
+	
+		#logoHeader .twc-contact li {
+			display: inline;
+			padding: 0 5px 0 8px;
+			border-left: 1px solid #fff; }
+		
+			#logoHeader .twc-contact li:first-child { border-left: 0; }
+		
+		#logoHeader .twc-contact a {
+			font-size: 14px;
+			font-size: 1.4rem;
+			font-family: 'TWC Round Light',Arial,Sans-Serif;
+			color: #fff; }
+		
+		#logoHeader.twc-header span { 
+			color: #fff; 
+			margin-top: 5px; }
+		
+		#logoHeader.twc-header button { float: right; }
+	
+	.twc-email {
+		float: left;
+		padding-right: 15px;
+		border-right: 1px solid #9d9d9e; }
 
-.twc-header-icons {
-  background-color: #000;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2f3032), to(#191a1c));
-  background-image: -webkit-linear-gradient(top, #2f3032, #191a1c);
-  background-image: -moz-linear-gradient(top, #2f3032, #191a1c);
-  background-image: -o-linear-gradient(top, #2f3032, #191a1c);
-  background-image: -ms-linear-gradient(top, #2f3032, #191a1c);
-  background-image: linear-gradient(top, #2f3032, #191a1c);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#2f3032',EndColorStr='#191a1c');
-  padding: 10px 20px 5px;
-  border-radius: 3px;
-  border: 2px solid #3a3b3d;
-  font-size: 9px;
-  font-size: .9rem;
-  text-align: center; }
+	.twc-follow { 
+		margin-top: 3px;
+		color: #9d9d9e; }
+	
+	.twc-container.twc-mega-menu { 
+		display: table;
+		width: 980px;
+		padding: 0; }
+		
+/* ==========================================================================
+    State
+   ========================================================================== */
+ 
+/* ==========================================================================
+    Theme
+   ========================================================================== */ 
+   
+/* ==========================
+    Browser Specific
+   ========================== */
 
-.header-icons div.twc-image-link {
-  display: inline; }
-.header-icons.list > ul {
-  height: 25px; }
+/* Firefox */
 
-.twc-header-search button:before {
-  content: '\f002';
-  font-family: 'FontAwesome', sans-serif;
-  color: #3376b2;
-  line-height: 1; }
+@-moz-document url-prefix() {
 
-.btn.icon-search {
-  font-family: 'FontAwesome', sans-serif; }
+}
 
-.twc-contact {
-  float: right; }
-  .twc-contact li {
-    display: inline;
-    padding: 0 1px; }
-  .twc-contact a {
-    font-size: 12px;
-    font-size: 1.2rem;
-    font-family: 'TWC Round Light',Arial,Sans-Serif; }
+/* Webkit: Chrome/Safari */ 
 
-#logoHeader .twc-contact {
-  margin-bottom: 20px; }
-  #logoHeader .twc-contact li {
-    display: inline;
-    padding: 0 5px 0 8px;
-    border-left: 1px solid #fff; }
-    #logoHeader .twc-contact li:first-child {
-      border-left: 0; }
-  #logoHeader .twc-contact a {
-    font-size: 14px;
-    font-size: 1.4rem;
-    font-family: 'TWC Round Light',Arial,Sans-Serif;
-    color: #fff; }
-#logoHeader.twc-header span {
-  color: #fff;
-  margin-top: 5px; }
-#logoHeader.twc-header button {
-  float: right; }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+ .twc-header-search .twc-search-input-wrap input { height: 35px; }
 
-.twc-email {
-  float: left;
-  padding-right: 15px;
-  border-right: 1px solid #9d9d9e; }
+    .twc-header-search .twc-search-btn { height: 35px; }
+	
+	.twc-top-nav ul li ul { right: 0; }
 
-.twc-follow {
-  margin-top: 3px;
-  color: #9d9d9e; }
+}
 
-.twc-container.twc-mega-menu {
-  display: table;
-  width: 980px;
-  padding: 0; }
+/* ==========================
+	IE: 8/9
+   ========================== */
+   
+/* ie (.ie) */   
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+    Responsive Design
+   ========================== */ 
+
+/* ==========================
+    Tablet
+   ========================== */ 
+
+@media (max-width: 68.6875em) {
+	
+	header .twc-top { display: none; }
+	
+	header .twc-header-search { display: none; }
+	
+	.twc-header-icons { display: none; }
+	
+	header .twc-share-module { display: none; }
+ 
+/* ==========================================================================
+    Layout
+   ========================================================================== */
+
+/* ==========================================================================
+    Module
+   ========================================================================== */
+  
+/* ==========================================================================
+    State
+   ========================================================================== */
+   
+/* ==========================================================================
+    Theme
+   ========================================================================== */
+
+} 
+   
+/* ==========================
+    Smartphone
+   ========================== */ 
+
+@media (max-width: 31.25em) {
+
+    .twc-header .twc-container { padding: 10px 4%; }
+
+	.twc-logo { width: 21%; }
+	
+	.twc-logo img { width: 230%; }
+
+/* ==========================================================================
+    Layout
+   ========================================================================== */
+   
+/* ==========================================================================
+    Module
+   ========================================================================== */
 
 /* ==========================================================================
     State
    ========================================================================== */
+
 /* ==========================================================================
     Theme
    ========================================================================== */
-/* ==========================
-    Browser Specific
-   ========================== */
-/* Firefox */
-@-moz-document url-prefix() {}
-/* Webkit: Chrome/Safari */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* Webkit browsers add a 2px margin outside the chrome of form elements */
-  .twc-header-search .twc-search-input-wrap input, .twc-header-search .twc-search-btn {
-    height: 35px; }
-
-  .twc-top-nav ul li ul {
-    right: 0; } }
-/* ==========================
-	IE: 8/9
-   ========================== */
-/* ie (.ie) */
-/* ie8 (.ie8) */
-/* ie9 (.ie9) */
-/* ==========================
-    Responsive Design
-   ========================== */
-/* ==========================
-    Tablet
-   ========================== */
-@media (max-width: 68.6875em) {
-  header .twc-top, header .twc-header-search {
-    display: none; }
-
-  .twc-header-icons, header .twc-share-module {
-    display: none; }
-
-  /* ==========================================================================
-      Layout
-     ========================================================================== */
-  /* ==========================================================================
-      Module
-     ========================================================================== */
-  /* ==========================================================================
-      State
-     ========================================================================== */
-  /* ==========================================================================
-      Theme
-     ========================================================================== */ }
-/* ==========================
-    Smartphone
-   ========================== */
-@media (max-width: 31.25em) {
-  .twc-header .twc-container {
-    padding: 10px 4%; }
-
-  .twc-logo {
-    width: 21%; }
-    .twc-logo img {
-      width: 230%; }
-
-  /* ==========================================================================
-      Layout
-     ========================================================================== */
-  /* ==========================================================================
-      Module
-     ========================================================================== */
-  /* ==========================================================================
-      State
-     ========================================================================== */
-  /* ==========================================================================
-      Theme
-     ========================================================================== */ }
+   
+} 
+     

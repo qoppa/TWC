@@ -4,119 +4,156 @@
     Author: Max Quattromani
     Version: 1.8.9.9 - Updated: 9/26/2013
    ========================================================================== */
+
 /* ==========================================================================
    Layout
    ========================================================================== */
+
 /* ==========================================================================
     Module
    ========================================================================== */
+
 table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0; }
-  table.alt_row {
-    border-spacing: 0;
-    border-collapse: collapse; }
-    table.alt_row th {
-      height: 30px;
-      background: #333;
-      color: #fff; }
-    table.alt_row tr {
-      background: #fff; }
-      table.alt_row tr:nth-of-type(even) {
-        background: #f7f8fc; }
-  table td {
-    padding: 5px 2%;
-    vertical-align: top; }
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0; }
+
+table.alt_row { 
+  	border-spacing: 0;
+  	border-collapse: collapse; }
+
+table.alt_row th {
+	height: 30px;
+	background: #333;
+	color: #fff; }
+
+table.alt_row tr { background: #fff; }
+
+table.alt_row tr:nth-of-type(even) { background: #f7f8fc; }
+
+	table td {
+		padding: 5px 2%;
+		vertical-align: top; }
 
 /* ==========================================================================
     State
    ========================================================================== */
+
 /* ==========================================================================
     Theme
    ========================================================================== */
+   
 /* ==========================
     Browser Specific
    ========================== */
+
 /* Firefox */
-@-moz-document url-prefix() {}
-/* Webkit: Chrome/Safari */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* Webkit browsers add a 2px margin outside the chrome of form elements */ }
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+
 /* IE:8/9 */
-/* ie (.ie) */
+   
+/* ie (.ie) */   
+
 /* ie8 (.ie8) */
+
 /* ie9 (.ie9) */
+
 /* ==========================
     Responsive Design
-   ========================== */
+   ========================== */ 
+
 /* ==========================
     Tablet
-   ========================== */
+   ========================== */ 
+
 @media (max-width: 68.6875em) {
-  /* ==========================================================================
-      Layout
-     ========================================================================== */
-  /* ==========================================================================
-      Module
-     ========================================================================== */
-  /* ==========================================================================
-      State
-     ========================================================================== */
-  /* ==========================================================================
-      Theme
-     ========================================================================== */ }
+ 
+/* ==========================================================================
+    Layout
+   ========================================================================== */
+
+/* ==========================================================================
+    Module
+   ========================================================================== */
+   
+/* ==========================================================================
+    State
+   ========================================================================== */
+ 
+/* ==========================================================================
+    Theme
+   ========================================================================== */
+
+} 
+   
 /* ==========================
     Smartphone
-   ========================== */
+   ========================== */ 
+
 @media (max-width: 31.25em) {
-  /* ==========================================================================
-      Layout
-     ========================================================================== */
-  /* ==========================================================================
-      Module
-     ========================================================================== */
-  table, thead, tbody, th, td, tr {
-    display: block;
-    text-align: left; }
 
-  thead tr {
-    left: -9999px;
-    position: absolute;
-    top: -9999px; }
-
-  tr {
-    border: 1px solid #CCCCCC; }
-
-  table td {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    border-color: -moz-use-text-color -moz-use-text-color #EEEEEE;
-    border-image: none;
-    border-style: none none solid;
-    border-width: medium medium 1px;
-    padding: .5em .5em .5em 50%;
-    position: relative;
-    min-height: 30px; }
+/* ==========================================================================
+    Layout
+   ========================================================================== */
+  
+/* ==========================================================================
+    Module
+   ========================================================================== */
+	
+    table, thead, tbody, th, td, tr { 
+    	display: block;
+    	text-align: left; }
+    
+    thead tr {
+        left: -9999px;
+        position: absolute;
+        top: -9999px; }
+            
+    tr { border: 1px solid #CCCCCC; }
+            
+    table td {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        border-color: -moz-use-text-color -moz-use-text-color #EEEEEE;
+        border-image: none;
+        border-style: none none solid;
+        border-width: medium medium 1px;
+        padding: .5em .5em .5em 50%;
+        position: relative;
+        min-height: 30px; }
+            
     table td:before {
-      left: 6px;
-      padding-right: 10px;
-      position: absolute;
-      top: 6px;
-      white-space: nowrap;
-      width: 45%;
-      font-weight: bold; }
+        left: 6px;
+        padding-right: 10px;
+        position: absolute;
+        top: 6px;
+        white-space: nowrap;
+        width: 45%;
+    	font-weight:bold; }
+            
+    td:nth-of-type(1) { background: #e1e1e1; }
+            		
+    td:before { content: attr(data-content) ''; }
 
-  td:nth-of-type(1) {
-    background: #e1e1e1; }
-  td:before {
-    content: attr(data-content) ""; }
-
-  /* ==========================================================================
-      State
-     ========================================================================== */
-  /* ==========================================================================
-      Theme
-     ========================================================================== */ }
+/* ==========================================================================
+    State
+   ========================================================================== */
+ 
+/* ==========================================================================
+    Theme
+   ========================================================================== */
+   
+}   
+   

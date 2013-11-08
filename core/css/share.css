@@ -4,113 +4,147 @@
     Author: Max Quattromani
     Version: 1.8.9.9 - Updated: 9/26/2013
    ========================================================================== */
+
 /* ==========================================================================
     Layout
    ========================================================================== */
+
 /* ==========================================================================
     Module
    ========================================================================== */
-.btn.blue.share, .cta.blue.share {
-  background: #4F799F;
-  margin-bottom: 1em; }
+      
+.btn.blue.share,
+.cta.blue.share {
+	background: #4F799F;
+	margin-bottom: 1em; }
 
-.btn.blue.share:hover, .btn.blue.share.hover {
-  background: #265A83; }
-
-.cta.blue.share:hover, .cta.blue.share.hover {
-  background: #265A83; }
+.btn.blue.share:hover,
+.btn.blue.share.hover,
+.cta.blue.share:hover,
+.cta.blue.share.hover { background: #265A83; }
 
 .email-module {
-  display: none;
-  position: absolute;
-  overflow: visible;
-  width: 100%;
-  max-width: 265px;
-  padding: 1em;
-  border-radius: 3px;
-  border: 1px solid #fff;
-  background-color: #e0ebf5;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e0ebf5), to(#f8fafc));
-  background-image: -webkit-linear-gradient(top, #e0ebf5, #f8fafc);
-  background-image: -moz-linear-gradient(top, #e0ebf5, #f8fafc);
-  background-image: -o-linear-gradient(top, #e0ebf5, #f8fafc);
-  background-image: -ms-linear-gradient(top, #e0ebf5, #f8fafc);
-  background-image: linear-gradient(top, #e0ebf5, #f8fafc);
-  box-shadow: 0 1px 2px 0 #888;
-  z-index: 99999; }
-  .email-module:before {
-    position: absolute;
-    content: "";
-    left: 48%;
-    bottom: 100%;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid #e1ebf5; }
+	display: none;
+	position: absolute;
+	overflow: visible;
+	width: 100%;
+	max-width: 265px;
+	padding: 1em;
+	border-radius: 3px;
+	border: 1px solid #fff;
+	background-color: #e0ebf5;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(224, 235, 245)), to(rgb(248, 250, 252)));
+	background-image: -webkit-linear-gradient(top, rgb(224, 235, 245), rgb(248, 250, 252));
+	background-image: -moz-linear-gradient(top, rgb(224, 235, 245), rgb(248, 250, 252));
+	background-image: -o-linear-gradient(top, rgb(224, 235, 245), rgb(248, 250, 252));
+	background-image: -ms-linear-gradient(top, rgb(224, 235, 245), rgb(248, 250, 252));
+	background-image: linear-gradient(top, rgb(224, 235, 245), rgb(248, 250, 252));
+	box-shadow: 0 1px 2px 0 #888;
+	z-index: 99999; }
 
-[class*='social-media'] {
-  padding: 2px  2px 2em; }
+	.email-module:before {
+		position: absolute;
+		content: "";
+		left: 48%;
+		bottom: 100%;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent; 
+		border-bottom: 8px solid #e1ebf5; }
+
+[class*='social-media'] { padding: 2px  2px 2em; }
 
 /* ==========================================================================
     State
    ========================================================================== */
+   
 /* ==========================================================================
     Theme
    ========================================================================== */
+   
 /* ==========================
     Browser Specific
    ========================== */
+
 /* Firefox */
-@-moz-document url-prefix() {}
-/* Webkit: Chrome/Safari */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* Webkit browsers add a 2px margin outside the chrome of form elements */ }
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+
 /* IE:8/9 */
-/* ie (.ie) */
+   
+/* ie (.ie) */   
+
 /* ie8 (.ie8) */
+
 /* ie9 (.ie9) */
+
+
 /* ==========================
     Responsive Design
-   ========================== */
+   ========================== */ 
+
 /* ==========================
     Tablet
-   ========================== */
-@media (max-width: 68.6875em) {
-  /* ==========================================================================
-      Layout
-     ========================================================================== */
-  /* ==========================================================================
-      Module
-     ========================================================================== */
-  /* ==========================
-      Share
-     ========================== */
-  .share > div[class*='share-'] {
-    display: inline; }
+   ========================== */ 
 
-  /* ==========================================================================
-      State
-     ========================================================================== */
-  /* ==========================================================================
-      Theme
-     ========================================================================== */ }
+@media (max-width: 68.6875em) {
+ 
+/* ==========================================================================
+    Layout
+   ========================================================================== */
+
+/* ==========================================================================
+    Module
+   ========================================================================== */
+/* ==========================
+    Share
+   ========================== */	
+
+.share > div[class*='share-'] { display: inline; }
+   
+/* ==========================================================================
+    State
+   ========================================================================== */
+
+/* ==========================================================================
+    Theme
+   ========================================================================== */
+
+} 
+   
 /* ==========================
     Smartphone
-   ========================== */
-@media (max-width: 31.25em) {
-  /* ==========================================================================
-      Layout
-     ========================================================================== */
-  /* ==========================================================================
-      Module
-     ========================================================================== */
-  .share .twc-icon-after[class*="icon-"]:before, .share .twc-icon-before[class*="icon-"]:before {
-    margin: 0; }
-  .share span.text {
-    display: none; }
+   ========================== */ 
 
-  /* ==========================================================================
-      State
-     ========================================================================== */
-  /* ==========================================================================
-      Theme
-     ========================================================================== */ }
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+    Layout
+   ========================================================================== */
+
+/* ==========================================================================
+    Module
+   ========================================================================== */
+    
+    .share .twc-icon-after[class*="icon-"]:before, 
+    .share .twc-icon-before[class*="icon-"]:before { margin: 0; }
+    
+    .share span.text { display: none; }
+
+/* ==========================================================================
+    State
+   ========================================================================== */  
+   
+/* ==========================================================================
+    Theme
+   ========================================================================== */
+  
+} 

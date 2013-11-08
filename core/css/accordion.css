@@ -23,6 +23,7 @@
   background-image: linear-gradient(top, #3779b3, #02447e);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#3779b3', EndColorStr='#02447e');
   color: #fff; }
+  
 .expandable li.notexpandable h6:after {
   float: right;
   font-family: 'FontAwesome', sans-serif;

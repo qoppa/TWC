@@ -4,7 +4,7 @@
                 
                 <h5>A CTA with Icon After the Text</h5>
                 
-                <div class="cta omega twc-icon-after icon-angle-right mobile-full">
+                <div class="cta omega twc-icon-after fa-angle-right mobile-full">
     				<a href="#" analyticsname="test">
     					<span>after button test</span>
     				</a>
@@ -22,7 +22,7 @@
     			
     			<h5>A CTA with Icon Before the Text</h5>
     			
-    			<div class="cta omega twc-icon-before icon-angle-left mobile-full">
+    			<div class="cta omega twc-icon-before fa-angle-left mobile-full">
     				<a href="#" analyticsname="test">
     					<span>before button test</span>
     				</a>
@@ -41,7 +41,7 @@
     			
     			<h5>A CTA with Icon Only</h5>
     			
-    			<div class="cta omega icon-angle-left">
+    			<div class="cta omega fa-angle-left">
     				<a href="#" analyticsname="test">
     					<span></span>
     				</a>

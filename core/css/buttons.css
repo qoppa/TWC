@@ -10,21 +10,18 @@
 /* ==========================================================================
     Module
    ========================================================================== */
-.btn, .cta {
+.btn a, .cta a {
   display: inline-block;
   padding: .675em 1em;
   border-radius: 3px;
+  border: none;
+  background: none;
+  font-family: 'TWC Round Medium',Arial,Sans-Serif;
+  font-weight: 100;
   text-align: center;
   cursor: pointer; }
 
 .btn a, .btn button, .btn input, .btn label {
-  padding: 0;
-  border: none;
-  background: none;
-  font-family: 'TWC Round Medium',Arial,Sans-Serif;
-  font-weight: 100; }
-
-.cta a, .cta button, .cta input, .cta label {
   padding: 0;
   border: none;
   background: none;

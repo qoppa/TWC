@@ -4,206 +4,263 @@
     Author: Max Quattromani
     Version: 1.8.9.9 - Updated: 9/26/2013
    ========================================================================== */
+
 /* ==========================================================================
     Layout
    ========================================================================== */
+
 /* ==========================================================================
     Module
    ========================================================================== */
-input, textarea {
-  width: 100%;
-  max-width: 100%;
-  padding: .675em 1em;
-  border: 0;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
-
+   
+input,
+textarea,
 select {
-  width: 100%;
-  max-width: 100%;
-  padding: .675em 1em;
-  border: 0;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  border: 1px solid #ccc; }
+	width: 100%;
+	max-width: 100%;
+	padding: .675em 1em;
+	border: 0;
+	border: 1px solid #ccc;
+	border-radius: 3px; }
 
-label {
-  display: inline-block;
-  vertical-align: baseline; }
+select { border: 1px solid #ccc; }
 
-input {
-  vertical-align: baseline; }
-  input[type="checkbox"], input[type="radio"] {
+label { display: inline-block; }
+
+label,
+input { vertical-align: baseline; }
+
+input[type="checkbox"],
+input[type="radio"] { 
     width: auto;
     margin: 0;
-    padding: 0;
-    border: 0; }
-  input[type="text"], input[type="search"], input[type="tel"] {
-    margin: 0; }
+	padding: 0;
+	border: 0; }
 
-select {
-  margin: 0; }
+input[type="text"],
+input[type="search"],
+input[type="tel"],
+select { margin: 0; }
 
-input.twc-text:focus {
-  color: #666; }
+input.twc-text:focus { color: #666; }
 
 .formrow {
-  display: block;
-  margin: .5em 0;
-  overflow: auto; }
+    display: block;
+    margin: .5em 0;
+    overflow: visible; }
 
 .form-item {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  margin: .5em 0; }
-  .form-item.split {
-    width: auto; }
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: .5em 0; }
+
+.form-item.split { width: auto; }
+   
+.form_field_text {
+    border: 1px solid #CCCCCC;
+    height: 18px;
+    outline: 0 none; }
 
 .support-center form {
-  position: relative;
-  top: 0; }
+    position: relative;
+    top: 0; }
 
-.text {
-  margin-bottom: 1em; }
-  .text.section {
+.form_leftcollabel label { font: bold 14px/20px "TWC Round Book", arial,helvetica,clean,sans-serif; }
+
+.form_leftcollabel p { margin:0; }
+
+.text { margin-bottom: 1em; }
+
+.text.section {
     float: none;
-    width: auto; }
-    .text.section input {
-      width: 90%; }
+	width: auto; }
+
+.text.section input { width: 90%; }
 
 .radio {
-  width: 500px;
-  float: left;
-  clear: left;
-  margin-bottom: 1.5em; }
-  .radio > .form_row:nth-child(n+2) {
+    width: 500px;
+    float: left;
+    clear: left;
+    margin-bottom: 1.5em; }
+
+.radio > .form_row:nth-child(n+2) {
     float: left;
     width: auto;
     margin-right: 40px;
     display: inline-block; }
 
-.section.end {
-  clear: left; }
+.form_leftcollabel label { font: bold 12px/20px "TWC Round Book", arial,helvetica,clean,sans-serif; }
 
-.form_leftcolmark {
-  display: none; }
+.form_rightcol input { margin: 5px 5px 1px 1px; }
 
-.text.section:nth-of-type(6), .text.section:nth-of-type(7) {
-  width: 140px; }
+.radio .form_rightcol { width: auto; }
+
+.form_rightcol { font-size: 14px; }
+
+.section.end { clear:left; }
+
+.form_leftcolmark { display: none; }
+
+.text.section:nth-of-type(6),
+.text.section:nth-of-type(7) { width: 140px; }
 
 .form_button_submit {
-  padding: 10px 15px;
-  background: #387ab4;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #387ab4), color-stop(18%, #3173ad), color-stop(74, #0d4f89), color-stop(100, #01437d));
-  background-image: -webkit-linear-gradient(top, #387ab4 0%, #3173ad 18%, #0d4f89 74%, #01437d 100%);
-  background-image: -moz-linear-gradient(top, #387ab4 0%, #3173ad 18%, #0d4f89 74%, #01437d 100%);
-  background-image: -ms-linear-gradient(top, #387ab4 0%, #3173ad 18%, #0d4f89 74%, #01437d 100%);
-  background-image: -o-linear-gradient(top, #387ab4 0%, #3173ad 18%, #0d4f89 74%, #01437d 100%);
-  background: -pie-linear-gradient(top, #387ab4 0%, #3173ad 18%, #0d4f89 74%, #01437d 100%);
-  background-image: linear-gradient(top, #387ab4 0%, #3173ad 18%, #0d4f89 74%, #01437d 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#3678b2', EndColorStr='#044680');
-  width: 94px;
-  border: 0;
-  border-radius: 5px;
-  font: lighter 1.3em "TWC Round Light", Arial, Sans-Serif;
-  color: #fff; }
+    padding: 10px 15px;
+    background: #387ab4;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #387ab4),color-stop(18%, #3173ad),color-stop(74,#0d4f89),color-stop(100,#01437d));
+    background-image: -webkit-linear-gradient(top, #387ab4 0%,#3173ad 18%,#0d4f89 74%,#01437d 100%);
+    background-image: -moz-linear-gradient(top, #387ab4 0%,#3173ad 18%,#0d4f89 74%,#01437d 100%);
+    background-image: -ms-linear-gradient(top, #387ab4 0%,#3173ad 18%,#0d4f89 74%,#01437d 100%);
+    background-image: -o-linear-gradient(top, #387ab4 0%,#3173ad 18%,#0d4f89 74%,#01437d 100%);
+    background: -pie-linear-gradient(top, #387ab4 0%,#3173ad 18%,#0d4f89 74%,#01437d 100%);
+    background-image: linear-gradient(top, #387ab4 0%,#3173ad 18%,#0d4f89 74%,#01437d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#3678b2', EndColorStr='#044680');
+    width: 94px;
+    border: 0;
+    border-radius: 5px;
+    font: lighter 1.3em "TWC Round Light", Arial, Sans-Serif;
+    color: #fff; }
 
-input:focus, textarea:focus, input:focus:invalid, textarea:focus:invalid, input.empty, textarea.empty {
-  border-color: #ccc; }
+input:focus,
+textarea:focus{ border-color: #ccc; }
+
+input:focus:invalid,
+textarea:focus:invalid { border-color: #ccc; }
 
 /*input:valid, 
-textarea:valid { border-color: #0f0; } */
-input:focus:required ~ span:after {
-  content: attr(title);
-  position: absolute;
-  left: 0;
-  bottom: -1.4em;
-  color: #f00;
-  font-weight: 700;
-  opacity: 0;
-  transition-property: opacity;
-  transition-duration: .5s;
-  transition-delay: .5s; }
-input:required:invalid ~ span:after {
-  opacity: 1; }
+textarea:valid { border-color: #0f0; } */ 
 
-.error-msg {
-  display: none;
-  color: #d10010; }
+input.empty, 
+textarea.empty { border-color: #ccc; } 
 
-#fillit {
-  display: none; }
+input:focus:required ~ span:after { 	
+	content: attr(title); 
+	position: absolute;
+	left: 0;
+	bottom: -1.4em;
+	color: #f00; 
+	font-weight: 700;
+	opacity: 0;
+	transition-property: opacity; 
+	transition-duration: .5s; 
+	transition-delay: .5s; }
+
+input:required:invalid ~ span:after { opacity: 1; }
+
+.error-msg { 
+    display: none;
+    color: #d10010; }
+
+#fillit { display: none; }
 
 /* ==========================
     Placeholder
    ========================== */
+
 /* ==========================================================================
     State
    ========================================================================== */
+
 /* ==========================================================================
    Theme
    ========================================================================== */
+   
 /* ==========================
     Browser Specific
    ========================== */
+
 /* Firefox */
-@-moz-document url-prefix() {}
-/* Webkit: Chrome/Safari */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* Webkit browsers add a 2px margin outside the chrome of form elements */
-  input[type='search'], input[type='text'], input[type='email'], input[type='textarea'], input[type='password'] {
-    -webkit-appearance: none; }
-  input[type='search']::-webkit-search-decoration, input[type='search']::-webkit-search-cancel-button {
-    -webkit-appearance: none; }
 
-  form input::-webkit-validation-bubble-message, form select::-webkit-validation-bubble-message, form textarea::-webkit-validation-bubble-message {
-    display: none; }
+@-moz-document url-prefix() {
 
-  select {
-    height: 40px; } }
+}
+
+/* Webkit: Chrome/Safari */ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+	input[type='search'],
+	input[type='text'],
+	input[type='email'],
+	input[type='textarea'],
+	input[type='password'] { -webkit-appearance: none; }
+	
+	input[type='search']::-webkit-search-decoration,
+	input[type='search']::-webkit-search-cancel-button { -webkit-appearance: none; }
+	 
+	form input::-webkit-validation-bubble-message, 
+	form select::-webkit-validation-bubble-message,
+	form textarea::-webkit-validation-bubble-message { display:none; } 
+	  
+    select { 
+        height: 40px; }
+
+}
+
 /* IE:8/9 */
-/* ie (.ie) */
-.twc-ie input[type="radio"] {
-  border: 0px !important; }
+   
+/* ie (.ie) */   
+
+.twc-ie input[type="radio"] { border: 0px !important; }
 
 /* ie8 (.ie8) */
+
 /* ie9 (.ie9) */
+
+
 /* ==========================
     Responsive Design
-   ========================== */
+   ========================== */ 
+
 /* ==========================
     Tablet
-   ========================== */
+   ========================== */ 
+
 @media (max-width: 68.6875em) {
-  /* ==========================================================================
-      Layout
-     ========================================================================== */
-  /* ==========================================================================
-      Module
-     ========================================================================== */
-  /* ==========================================================================
-      State
-     ========================================================================== */
-  /* ==========================================================================
-      Theme
-     ========================================================================== */ }
+ 
+/* ==========================================================================
+    Layout
+   ========================================================================== */
+   
+/* ==========================================================================
+    Module
+   ========================================================================== */
+  
+/* ==========================================================================
+    State
+   ========================================================================== */
+       
+/* ==========================================================================
+    Theme
+   ========================================================================== */
+
+} 
+   
 /* ==========================
     Smartphone
-   ========================== */
-@media (max-width: 31.25em) {
-  /* ==========================================================================
-      Layout
-     ========================================================================== */
-  /* ==========================================================================
-      Module
-     ========================================================================== */
-  .form-item.split {
-    width: 100%; }
+   ========================== */ 
 
-  /* ==========================================================================
-      State
-     ========================================================================== */
-  /* ==========================================================================
-      Theme
-     ========================================================================== */ }
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+    Layout
+   ========================================================================== */
+ 
+/* ==========================================================================
+    Module
+   ========================================================================== */
+
+   .form-item.split { width: 100%; }
+
+/* ==========================================================================
+    State
+   ========================================================================== */
+ 
+/* ==========================================================================
+    Theme
+   ========================================================================== */
+  
+}   
+   

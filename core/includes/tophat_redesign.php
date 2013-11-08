@@ -126,6 +126,7 @@
             </div>
         </div>
 
+        <div class="clear"></div>
         <div class="twc-container" id="header">
             <div class="twc-logo">
                 <a class="twc-logo-img" href="../" title="TWC Logo"><img src="/TWC/core/images/small_TWC_EB_Horiz_White_RGB_300.png" alt="TWC Logo" title="TWC logo"></a>
@@ -170,17 +171,79 @@
             
             </script>
             <!-- ELICIT END -->
-			
-			<div class="twc-login-module twc-contact">
-                <span class="headline">Log in with your TWC ID</span>
-                	<div class="cta omega twc-icon-after icon-angle-down">
-    					<a href="#" analyticsname="test">
-        					<span>Sign In</span>
-    					</a>
-					</div>
-                <span class="small">Forgot your sign in <a href="">information</a>?</span>
-            </div>
-            
+			<div class="signIn-module tablet-hidden">
+                <div class="twc-login-module twc-contact ">
+                    <div class="text-center">
+                        <div class="headline white">
+                            <span>Already have a TWC ID?</span>
+                        </div>
+                        <div class="cta omega twc-icon-after icon-angle-down login">
+                            <a href="#" analyticsname="test">
+                                <span>Sign In</span>
+                            </a>
+                        </div>
+                        <div class="headline">
+                            <div class="cta twc-icon-after icon-angle-down register">
+                                <a href="#">
+                                    <span>Register for a TWC ID</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Begin Login Popup -->
+                <div class="popup-module signin-popup">
+                    <div class="radio-selection left">
+                        <input type="radio" name="Residential" value="Residential">
+                        <span><b>Residential</b></span>
+                    </div>
+                    <div class="radio-selection">
+                        <input type="radio" name="Business" value="Business">
+                        <span><b>Business</b></span>
+                    </div>
+                    <form>
+                        <div class="formrow">
+                            <div class="form-item">
+                                <label for="username">TWC ID:</label>
+                                <input id="username" type="text" name="username">
+                            </div>
+                        </div>
+                        
+                        <div class="formrow">
+                            <div class="form-item">
+                                <label for="send">Password:</label>
+                                <input id="password" type="text" name="password">
+                            </div>
+                        </div>
+                        
+                        <div class="forgot">
+                            <span>Forgot your <a href="">TWC ID</a> or <a href="">Password</a>?</span>
+                        </div>
+
+
+                        <div class="formrow">
+                            <div class="form-item">
+                                <div class="cta omega">
+                                    <button type="submit">Sign In</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!--Begin Register Popup -->
+                <div class="popup-module register-popup">
+                    <span class="h5">Register for a TWC ID</span>
+                    <div class="cta omega twc-icon-after icon-angle-right">
+                        <button type="submit">Residential</button>
+                    </div>
+                    <div class="cta omega twc-icon-after icon-angle-right">
+                        <button type="submit">Business</button>
+                    </div>
+                </div>
+
+            </div>          
+
         </div>
     </header>
     <!-- End TopHat Component -->
