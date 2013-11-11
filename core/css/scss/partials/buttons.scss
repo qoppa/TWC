@@ -21,18 +21,8 @@
   cursor: pointer;
 }
 
-.btn {
-  a, button, input, label {
-    padding: 0;
-    border: none;
-    background: none;
-    font-family: 'TWC Round Medium',Arial,Sans-Serif;
-    font-weight: 100;
-  }
-}
-
-.cta {
-  a, button, input, label {
+.btn, .cta {
+  a, a span, button, input, label {
     padding: 0;
     border: none;
     background: none;
@@ -290,10 +280,12 @@
 .twc-icon-after[class*='icon-']:before {
   float: right;
   margin-left: .5em;
+  font-family: 'FontAwesome';
 }
 
 .twc-icon-before[class*='icon-']:before {
   margin-right: .5em;
+  font-family: 'FontAwesome';
 }
 
 /* ==========================

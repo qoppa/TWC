@@ -1666,14 +1666,7 @@ dd {
   text-align: center;
   cursor: pointer; }
 
-.btn a, .btn button, .btn input, .btn label {
-  padding: 0;
-  border: none;
-  background: none;
-  font-family: 'TWC Round Medium',Arial,Sans-Serif;
-  font-weight: 100; }
-
-.cta a, .cta button, .cta input, .cta label {
+.btn a, .btn a span, .btn button, .btn input, .btn label, .cta a, .cta a span, .cta button, .cta input, .cta label {
   padding: 0;
   border: none;
   background: none;
@@ -1869,10 +1862,12 @@ dd {
 /* Buttons with Icons */
 .twc-icon-after[class*='icon-']:before {
   float: right;
-  margin-left: .5em; }
+  margin-left: .5em;
+  font-family: 'FontAwesome'; }
 
 .twc-icon-before[class*='icon-']:before {
-  margin-right: .5em; }
+  margin-right: .5em;
+  font-family: 'FontAwesome'; }
 
 /* ==========================
 	Flag
