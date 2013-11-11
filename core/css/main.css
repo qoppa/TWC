@@ -1860,14 +1860,15 @@ dd {
   cursor: default; }
 
 /* Buttons with Icons */
-.twc-icon-after[class*='icon-']:before {
-  float: right;
-  margin-left: .5em;
+[class*='twc-icon']:before {
   font-family: 'FontAwesome'; }
 
+.twc-icon-after[class*='icon-']:before {
+  float: right;
+  margin-left: .5em; }
+
 .twc-icon-before[class*='icon-']:before {
-  margin-right: .5em;
-  font-family: 'FontAwesome'; }
+  margin-right: .5em; }
 
 /* ==========================
 	Flag

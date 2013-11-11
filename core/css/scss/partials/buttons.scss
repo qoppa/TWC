@@ -277,15 +277,15 @@
 
 /* Buttons with Icons */
 
+[class*='twc-icon']:before { font-family: 'FontAwesome'; }
+
 .twc-icon-after[class*='icon-']:before {
   float: right;
   margin-left: .5em;
-  font-family: 'FontAwesome';
 }
 
 .twc-icon-before[class*='icon-']:before {
   margin-right: .5em;
-  font-family: 'FontAwesome';
 }
 
 /* ==========================
