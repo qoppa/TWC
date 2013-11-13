@@ -416,6 +416,10 @@ span.flag {
    Layout
    ========================================================================== */
 
+#paymentcenterresults [class*="twc-col2_5050-c"] { width: 48.75%; }
+
+#paymentcenterresults .parsys_column .twc-col2_5050-c1 { margin-left: 0; }
+
 /* ==========================================================================
    Module
    ========================================================================== */
@@ -436,8 +440,6 @@ span.flag {
    Legend
    ========================== */
 
-.legend_icons [class*='twc-col2_5050-c'] { width: 48.75% }
-
 .stores_locations_details_legend {
 	width: 100%;
 	margin: 1em 0; }
@@ -453,7 +455,6 @@ span.flag {
 	.locate-stores-filters legend.rotate_chevron:after {
 		content: '\f107'; }
 		
-
 /* ==========================
    Search Section
    ========================== */
@@ -556,9 +557,11 @@ span.flag {
 	.tabs li.active {
 		background: #fff;
 		color: #222; }
-	
+    
 		.tabs li.active a {
 			color: #222; }
+
+.tab-content { display: none; }
 
 /*
 .stores_list_tab:before {
@@ -739,6 +742,7 @@ span.flag {
    Layout
    ========================================================================== */
 
+#paymentcenterresults [class*="twc-col2_5050-c"] { width: 100%; }
 
 /* ==========================================================================
    Module

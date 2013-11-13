@@ -1,7 +1,6 @@
 // Place page specific jQuery here
 
 $('.refineList').click(function(){
-    $('#before-filters .cta').toggleClass('disabled');
 	$('.form-filters').toggle();
 	
 	if($('.form-filters').is(':hidden')){

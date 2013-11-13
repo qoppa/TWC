@@ -146,7 +146,9 @@ span.flag {
    Module
    ========================================================================== */
 
-.location_listing b { display: block; }
+.location_listing b { 
+    display: inline-block;
+    margin-bottom: 1em; }
 
 .location_listing .read-more {
     display: block;

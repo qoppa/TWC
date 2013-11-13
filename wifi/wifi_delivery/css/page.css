@@ -252,11 +252,7 @@ li.expand-box header {
 		right: .5em;
 		font-family: 'FontAwesome', sans-serif;
 		font-size: 18px;
-		font-size: 1.8rem;
-		content:'\f107';
-		-webkit-transition: all .4s ease-in-out;
-    	   -moz-transition: all .4s ease-in-out;
-    	   	 	transition: all .4s ease-in-out; }
+		font-size: 1.8rem; }
     
     li.expand-nested ul,
 	li.expand-box ul {
@@ -648,6 +644,19 @@ h2,.h2,h3,h3,.h3,h4,.h4,h5,.h5 {
 
 	.right-rail li:not(.expand-nestd).twc-last,
     .right-rail li:not(.expand-box).twc-last { border-right: none; }
+
+#signIn { 
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid #e1e1e1;
+    background-color: #ffffff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(224, 235, 245)));
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(224, 235, 245));
+    background-image: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(224, 235, 245));
+    background-image: -o-linear-gradient(top, rgb(255, 255, 255), rgb(224, 235, 245));
+    background-image: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(224, 235, 245));
+    background-image: linear-gradient(top, rgb(255, 255, 255), rgb(224, 235, 245));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#e0ebf5'); }
 
 figure { 
     margin: 0;

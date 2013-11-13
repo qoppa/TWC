@@ -1894,200 +1894,96 @@ ul.twc-share li { border-bottom: 0; }
    Buttons
    ========================== */
 
-.btn a,
-.btn button,
-.btn input,
-.btn label,
-
-.cta a,
-.cta button,
-.cta input,
-.cta label {
-    padding: 0;
-	border: none;
-	background: none;
-	font-family: 'TWC Round Medium',Arial,Sans-Serif;
-	font-weight: 100;
-	cursor: pointer; }
-
-.btn,
-.cta { 
-    display: inline-block;
-    padding: .7em 1em;
-    border-radius: 3px;
-    behavior: url(pie/PIE.htc);
-    text-align: center; }
-
-/* Blue Buttons */
-.btn.blue,
-.cta.blue {
-	background-color: #3779b3;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#3779b3), to(#02447e));
-	background-image: -webkit-linear-gradient(top, #3779b3, #02447e);
-	background-image: -moz-linear-gradient(top, #3779b3, #02447e);
-	background-image: -o-linear-gradient(top, #3779b3, #02447e);
-	background-image: -ms-linear-gradient(top, #3779b3, #02447e);
-	background-image: linear-gradient(top, #3779b3, #02447e);
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#3779b3', EndColorStr='#02447e');
-	color: #fff; }
-
-    .btn.blue a,
-    .cta.blue a,
-    .btn.blue button,
-    .cta.blue button,
-    .btn.blue input,
-    .cta.blue input { color: #fff; }
-	
-	.btn.blue:hover,
-	.btn.blue.hover,
-	.cta.blue:hover,
-	.cta.blue.hover   {
-		background-color: #265a83;
-		background-image: -webkit-gradient(linear, left top, left bottom, from(#265a83), to(#1b405e));
-		background-image: -webkit-linear-gradient(top, #265a83, #1b405e);
-		background-image: -moz-linear-gradient(top, #265a83, #1b405e);
-		background-image: -o-linear-gradient(top, #265a83, #1b405e);
-		background-image: -ms-linear-gradient(top, #265a83, #1b405e);
-		background-image: linear-gradient(top, #265a83, #1b405e);
-		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#265a83', EndColorStr='#1b405e');
-		color: #fff; }
-
-	.btn.blue:active,
-	.btn.blue.active,
-	.btn.blue:focus,
-	.cta.blue:active,
-	.cta.blue.active,
-	.cta.blue:focus  {
-	    background: #444545;
-	    background-image: 0; }
-
-.btn.black,
-.cta.black {
-    background-color: #3e3e3e;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3e3e3e),color-stop(100%, #2b2b2b));
-    background-image: -webkit-linear-gradient(top, #3e3e3e 0%,#2b2b2b 100%);
-    background-image: -moz-linear-gradient(top, #3e3e3e 0%,#2b2b2b 100%);
-    background-image: -ms-linear-gradient(top, #3e3e3e 0%,#2b2b2b 100%);
-    background-image: -o-linear-gradient(top, #3e3e3e 0%,#2b2b2b 100%);
-    background-image: linear-gradient(top, #3e3e3e 0%,#2b2b2b 100%);
-    color: #fff; }
- 
-    .btn.black a,
-    .cta.black a,
-    .btn.black button,
-    .cta.black button,
-    .btn.black input,
-    .cta.black input { color: #fff; }
- 
-    .btn.black:hover,
-    .btn.black.hover,
-    .cta.black:hover,
-    .cta.black.hover {
-        background-color: #797979;
-	    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #797979),color-stop(100%, #6c6c6c));
-	    background-image: -webkit-linear-gradient(top, #797979 0%,#6c6c6c 100%);
-	    background-image: -moz-linear-gradient(top, #797979 0%,#6c6c6c 100%);
-	    background-image: -ms-linear-gradient(top, #797979 0%,#6c6c6c 100%);
-	    background-image: -o-linear-gradient(top, #797979 0%,#6c6c6c 100%);
-	    background-image: linear-gradient(top, #797979 0%,#6c6c6c 100%);
-	    color: #fff; }
+        /* Basic CTA setup */
+        .cta {
+            display: inline-block;
+            border-radius: 3px; }
     
-    .btn.black:active,
-    .btn.black.active,
-    .btn.black:focus,
-    .cta.black:active,
-    .cta.black.active,
-    .cta.black:focus {
-        background: #2b2b2b;
-        background-image: 0; }
 
-.btn.block,
-.cta.block { display: block; }
-
-.btn.badge,
-.cta.badge  { 
-	height: 40px;
-	width: 40px;
-	border-radius: 20px; }
+        /* CTA a holds most of the styling */
+        .cta a {
+            display: inline-block;
+            padding: .675em 1em;
+            font-family: sans-serif;
+            line-height: .5;
+            text-decoration: none; }
+        
+        /* Thematic styling */
+        .omega { background: #3376B2; }
+        
+            .omega a { color: #fff; }
     
-/* SHARE Module Buttons */
-.btn.blue.share,
-.cta.blue.share {
-	background: #4F799F;
-	margin-bottom: 1em; }
-
-.btn.blue.share:hover,
-.btn.blue.share.hover,
-.cta.blue.share:hover,
-.cta.blue.share.hover { background: #265A83; }
-
-/* Buttons with checkbox */
-.btn input[type="checkbox"],
-.cta input[type="checkbox"] {
-    float: right;
-	margin: 0;
-	margin-left: .5em; }
-
-.btn.blue.checked,
-.cta.blue.checked {
-	background-color: #19a919;
-    background-image: -moz-linear-gradient(270deg,  #33cc33 0%, #008700 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom,  color-stop(0%, #33cc33), color-stop(100%, #008700));
-    background-image: -webkit-linear-gradient(270deg,  #33cc33 0%, #008700 100%);
-    background-image: -o-linear-gradient(270deg,  #33cc33 0%, #008700 100%);
-    background-image: -ms-linear-gradient(270deg,  #33cc33 0%, #008700 100%);
-    background-image: linear-gradient(to bottom,  #33cc33 0%, #008700 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF33CC33', endColorstr='#FF008700',GradientType=0); }
-
-.btn.blue[disabled],
-.btn.blue[disabled]:hover,
-.btn.blue[disabled]:active,
-.btn.blue.disabled,
-.cta.blue[disabled],
-.cta.blue[disabled]:hover,
-.cta.blue[disabled]:active,
-.cta.blue.disabled {
-	background-color: #bcbcbc;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(188, 188, 188)), to(rgb(131, 131, 131)));
-	background-image: -webkit-linear-gradient(top, rgb(188, 188, 188), rgb(131, 131, 131));
-	background-image: -moz-linear-gradient(top, rgb(188, 188, 188), rgb(131, 131, 131));
-	background-image: -o-linear-gradient(top, rgb(188, 188, 188), rgb(131, 131, 131));
-	background-image: -ms-linear-gradient(top, rgb(188, 188, 188), rgb(131, 131, 131));
-	background-image: linear-gradient(top, rgb(188, 188, 188), rgb(131, 131, 131));
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#bcbcbc', EndColorStr='#838383'); }
-
-[disabled]:hover,
-.disabled:hover { cursor: default; }
-
-/* Buttons with Icons */	
-.twc-icon-after[class*='icon-']:before { 
-    float: right;
-    margin-left: .5em; }
-
-.twc-icon-before[class*='icon-']:before { 
-    float: left;
-    margin-right: .5em; }
+                .omega a:hover {
+                    border: none;
+                    border-radius: 3px;
+                    background-color: #265a83;
+                    background-image: -webkit-gradient(linear, left top, left bottom, from(#265a83), to(#1b405e));
+                    background-image: -webkit-linear-gradient(top, #265a83, #1b405e);
+                    background-image: -moz-linear-gradient(top, #265a83, #1b405e);
+                    background-image: -o-linear-gradient(top, #265a83, #1b405e);
+                    background-image: -ms-linear-gradient(top, #265a83, #1b405e);
+                    background-image: linear-gradient(top, #265a83, #1b405e);
+                    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#265a83', EndColorStr='#1b405e');
+                    color: #fff; }
+    
+        .black { background: #333; }
+        
+            .black a { color: #fff; }
+    
+        /* Deal with the icons and CQ5 component styling in out div */
+        div[class*='icon-']:before { display: none; }    
+        
+        /* Set the font for the actual icon by targeting the :psuedo element */
+        [class*=" icon-"]:before {
+            font-family: 'FontAwesome';
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit; }  
+         
+        /* Style the icon to appear before the cta text */        
+        span.twc-icon-before[class*='icon-']:before { 
+            float: left;
+            margin-right: .5em; }
+            
+            /* Remove properties from outer div using component styles */
+            div.span.twc-icon-before[class*='icon-']:before { 
+                float: none;
+                margin: 0; }
+        
+        /* Style the icon to appear after the cta text */  
+        span.twc-icon-after[class*='icon-']:before { 
+            float: right;
+            margin-left: .5em; }
+            
+            /* Remove properties from outer div using component styles */
+            div.span.twc-icon-after[class*='icon-']:before { 
+                float: none;
+                margin: 0; }
+        
+        
+        /* CTA :hover properties */
+        .cta.omega:hover { background: black; }
+        
+        /* CTA :active properties */
+        .cta.omega:active { background: green; }
+        
+        /* CTA disabled properties */
+        .cta.omega.disabled,
+        .cta.omega[disabled] {
+            background: grey;
+        }
+        
+            .cta.omega.disabled a,
+            .cta.omega[disabled] a {
+                pointer-events: none;
+                cursor: default;
+            }
 
 [class*='icon-'].blue-icon { color: #3376b2; }
 
 [class*='icon-'].green-icon { color: #558654; }
 
-/* Specific Buttons */
-
-	.twc-header-search .twc-search-btn {
-		float: none;
-		background: #fff;
-		filter: 0;
-		border: none;
-		border-radius: 0 3px 3px 0;
-		color: #3376b2; }
-	
-		.twc-header-search .twc-search-btn icon-search { float: right; }
-
-.btn.search-btn,
-.btn.geoloc-btn,
-.cta.search-btn,
-.cta.geoloc-btn { width: 20%; }
+[class*='icon-'].red-icon { color: #f00; }
 
 /* ==========================
     Pagination
@@ -3395,9 +3291,10 @@ video { height: auto; }
     Buttons
    ========================== */
 
-.btn.mobile-full,
-.cta.mobile-full { 
-	display: block;
+.cta.mobile-full,
+.cta.mobile-full a { 
+    display: block;
+	width: 100%;
 	float: none;
 	text-align: center; }
 
