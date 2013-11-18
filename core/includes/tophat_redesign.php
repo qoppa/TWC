@@ -57,28 +57,27 @@
                                 <div class="twc-customerLocation">
                                     <ul>
 
-                                        <li class="twc-drop-nav">
-                                            <a href="#" class="twc-icon twc-change" analyticsname="">New York, NY 10001</a>
+                                        <li class="location twc-icon-after icon-chevron-down">
+                                            <span class="white">New York, NY 10001</span>
 
-                                            <ul>
-                                                <li>
-                                                    <div class="twc-module">
-                                                        <div class="user-location">
-                                                            <form action="javascript:void(0);">
-                                                                <fieldset class="twc-search">
-                                                                    <div class="twc-search-input-wrap">
-                                                                        <input type="text" name="geolocation" placeholder="Enter Your ZIP">
-                                                                        <div class="btn blue geoloc-btn">
-                                                                            <button type="submit">GO</button>
-                                                                        </div>
+                                            <div class="popup-module location-popup">
+                                                <div class="twc-module">
+                                                    <div class="user-location">
+                                                        <form action="javascript:void(0);">
+                                                            <fieldset class="twc-search">
+                                                                <div class="twc-search-input-wrap">
+                                                                    <input type="text" name="geolocation" placeholder="Enter Your ZIP">
+                                                                    <div class="btn blue geoloc-btn">
+                                                                        <button type="submit">GO</button>
                                                                     </div>
-                                                                </fieldset>
-                                                            </form>
-                                                        </div>
+                                                                </div>
+                                                            </fieldset>
+                                                        </form>
                                                     </div>
-                                                </li>
+                                                </div>
+                                                   
 
-                                                <li class="twc-custLoc-errors">
+                                                <div class="twc-custLoc-errors">
                                                     <div class="user-location-errors">
                                                         <div class="geo-error message hidden">
                                                             <p class="twc-alert-text">We could not determine your location</p>
@@ -87,29 +86,10 @@
                                                             <br>
                                                             Make sure you entered your zip code correctly. If you entered your zip code correctly, visit <a target="_blank" href="http://cablemovers.com">cablemovers.com</a> to contact the cable company serving your area.</p>
                                                         </div>
-<!--
-
-                                                        <div class="oof-error message hidden">
-                                                            <p class="twc-alert-text">Our services may not be available in your area</p>
-
-                                                            <p>Make sure you entered your zip code correctly. If you entered your zip code correctly, visit <a target="_blank" href="http://cablemovers.com">cablemovers.com</a> to contact the cable company serving your area.</p>
-                                                        </div>
-
-                                                        <div class="noc-error message hidden">
-                                                            <p class="twc-alert-text">Cookies are not enabled</p>
-
-                                                            <p>You do not have cookies enabled. In order for us to serve you better, please enable cookies</p>
-                                                        </div>
-
-                                                        <div id="oof-header-text" class="message hidden">
-                                                            <div class="oof-error-text" style="color:#FF0000">
-                                                                Please change location
-                                                            </div>
-                                                        </div>
--->
                                                     </div>
-                                                </li>
-                                            </ul>
+                                                </div>
+                                        
+                                            </div>
                                         </li>
                                         <li>
                                         	<div class="smartlink smartLink parbase">
@@ -126,6 +106,7 @@
             </div>
         </div>
 
+        <div class="clear"></div>
         <div class="twc-container" id="header">
             <div class="twc-logo">
                 <a class="twc-logo-img" href="../" title="TWC Logo"><img src="/TWC/core/images/small_TWC_EB_Horiz_White_RGB_300.png" alt="TWC Logo" title="TWC logo"></a>
@@ -139,7 +120,28 @@
                                 <div class="smartLink"><a href=""><span class="twc-icon icon-envelope"></span> Email</a></div>
                             </li>
                             <li>
-                                <div class="smartLink"><a href=""><span class="twc-icon icon-file"></span> Pay Bill <span class="twc-icon icon-angle-down"></a></div>
+                                <div class="smartLink billpay">
+                                    <a href="#">
+                                        <span class="twc-icon icon-file"></span> Pay Bill <span class="twc-icon icon-angle-down billpay-pop">
+                                    </a>
+                                </div>
+                                <div class="popup-module billpay-popup">
+                                    <div class="headline text-left">
+                                        <div class="cta">
+                                            <a href="#">
+                                                <span class="twc-icon-after icon-angle-right">Residential</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="headline text-left">
+                                        <div class="cta">
+                                            <a href="#">
+                                                <span class="twc-icon-after icon-angle-right">Business</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -170,17 +172,142 @@
             
             </script>
             <!-- ELICIT END -->
-			
-			<div class="twc-login-module twc-contact">
-                <span class="headline">Log in with your TWC ID</span>
-                	<div class="cta blue twc-icon-after icon-angle-down">
-    					<a href="#" analyticsname="test">
-        					<span>Sign In</span>
-    					</a>
-					</div>
-                <span class="small">Forgot your sign in <a href="">information</a>?</span>
+			<div class="signIn-module mobile-hidden right">
+                <div class="twc-login-module twc-contact ">
+                    <div class="text-center">
+                        <div class="headline white">
+                            <span><b>Already have a TWC ID?</b></span>
+                        </div>
+                        <div class="cta omega twc-icon-after icon-angle-down login">
+                            <a href="#" analyticsname="test">
+                                <span>Sign In</span>
+                            </a>
+                        </div>
+                        <div>
+                            <div class="text-center register">
+                                <a href="#">
+                                    <span class="register-pop twc-icon-after icon-angle-down"><b>Register for a TWC ID</b></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Begin Login Popup -->
+                <div class="popup-module signin-popup">
+                    <div class="radio-selection left">
+                        <input type="radio" name="Residential" value="Residential">
+                        <span><b>Residential</b></span>
+                    </div>
+                    <div class="radio-selection">
+                        <input type="radio" name="Business" value="Business">
+                        <span><b>Business</b></span>
+                    </div>
+                    <form>
+                        <div class="formrow">
+                            <div class="form-item">
+                                <label for="username">TWC ID:</label>
+                                <input id="username" type="text" name="username">
+                            </div>
+                        </div>
+                        
+                        <div class="formrow">
+                            <div class="form-item">
+                                <label for="send">Password:</label>
+                                <input id="password" type="text" name="password">
+                            </div>
+                        </div>
+                        
+                        <div class="forgot">
+                            <span>Forgot your <a href="">TWC ID</a> or <a href="">Password</a>?</span>
+                        </div>
+
+
+                        <div class="formrow">
+                            <div class="form-item">
+                                <div class="cta omega">
+                                    <button type="submit">Sign In</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!--Begin Register Popup -->
+                <div class="popup-module register-popup">
+                    <span class="h5">Register for a TWC ID</span>
+                    <div class="cta omega twc-icon-after icon-angle-right">
+                        <button type="submit">Residential</button>
+                    </div>
+                    <div class="cta omega twc-icon-after icon-angle-right">
+                        <button type="submit">Business</button>
+                    </div>
+                </div>
+
             </div>
             
+            <!--Mobile Sign-in button -->
+            <div class="mobile-signIn right">
+                <div class="cta omega">
+                    <a href="#" analyticsname="test">
+                        <span>Sign In</span>
+                    </a>
+                </div>
+            </div>
+            <div class="popup-module mobile-signin-popup">
+                <div class="right">
+                    <div class="cta">
+                        <a href="#">
+                            <span class="twc-icon-after icon-remove">Close</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="radio-selection left">
+                    <input type="radio" name="Residential" value="Residential">
+                    <span><b>Residential</b></span>
+                </div>
+                <div class="radio-selection">
+                    <input type="radio" name="Business" value="Business">
+                    <span><b>Business</b></span>
+                </div>
+                <form>
+                    <div class="formrow">
+                        <div class="form-item">
+                            <label for="username">TWC ID:</label>
+                            <input id="username" type="text" name="username">
+                        </div>
+                    </div>
+                    
+                    <div class="formrow">
+                        <div class="form-item">
+                            <label for="send">Password:</label>
+                            <input id="password" type="text" name="password">
+                        </div>
+                    </div>
+                    
+                    <div class="forgot">
+                        <span>Forgot your <a href="">TWC ID</a> or <a href="">Password</a>?</span>
+                    </div>
+
+                    <div class="formrow">
+                        <div class="form-item">
+                            <div class="cta omega mobile-full">
+                                <button type="submit">Sign In</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="formrow mobile-register">
+                        <div class="form-item">
+                            <div class="cta mobile-full">
+                                <a href="#">
+                                    <span> Register for a TWC ID</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>   
+
         </div>
     </header>
     <!-- End TopHat Component -->

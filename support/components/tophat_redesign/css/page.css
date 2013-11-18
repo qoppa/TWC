@@ -1,59 +1,94 @@
+/* ==========================================================================
+   CSS code for Tophat Redesign
+   
+   Author: Qoppa
+   Version: 1.0 - Updated: 11/13/13
+   ========================================================================== */
+   
+/*
+
+ * Layout
+ 
+ * Module
+ 
+ * State
+ 
+ * Theme
+ 
+ * Browser Specific
+ 		* Safari/Chrome/Webkit
+ 		* Firefox
+ 		* Internet Explorer
+ 
+ */
+ 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
 .twc-header {
-	background-color: #2b2c2e;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#2b2c2e), to(#1b1b1d));
-	background-image: -webkit-linear-gradient(top, #2b2c2e, #1b1b1d);
-	background-image: -moz-linear-gradient(top, #2b2c2e, #1b1b1d);
-	background-image: -o-linear-gradient(top, #2b2c2e, #1b1b1d);
-	background-image: -ms-linear-gradient(top, #2b2c2e, #1b1b1d);
-	background-image: linear-gradient(top, #2b2c2e, #1b1b1d);
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#2b2c2e', EndColorStr='#1b1b1d'); }
+   background-color: #2b2c2e;
+   background-image: -webkit-gradient(linear, left top, left bottom, from(#2b2c2e), to(#1b1b1d));
+   background-image: -webkit-linear-gradient(top, #2b2c2e, #1b1b1d);
+   background-image: -moz-linear-gradient(top, #2b2c2e, #1b1b1d);
+   background-image: -o-linear-gradient(top, #2b2c2e, #1b1b1d);
+   background-image: -ms-linear-gradient(top, #2b2c2e, #1b1b1d);
+   background-image: linear-gradient(top, #2b2c2e, #1b1b1d);
+   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#2b2c2e', EndColorStr='#1b1b1d'); }
 
 .twc-top { 
-	border-bottom: none;
-	background-color: #989898;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#989898), to(#353c42));
-	background-image: -webkit-linear-gradient(top, #989898, #353c42);
-	background-image: -moz-linear-gradient(top, #989898, #353c42);
-	background-image: -o-linear-gradient(top, #989898, #353c42);
-	background-image: -ms-linear-gradient(top, #989898, #353c42);
-	background-image: linear-gradient(top, #989898, #353c42);
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#989898', EndColorStr='#353c42'); }
-	
+   border-bottom: none;
+   background-color: #989898;
+   background-image: -webkit-gradient(linear, left top, left bottom, from(#989898), to(#353c42));
+   background-image: -webkit-linear-gradient(top, #989898, #353c42);
+   background-image: -moz-linear-gradient(top, #989898, #353c42);
+   background-image: -o-linear-gradient(top, #989898, #353c42);
+   background-image: -ms-linear-gradient(top, #989898, #353c42);
+   background-image: linear-gradient(top, #989898, #353c42);
+   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#989898', EndColorStr='#353c42');
+   box-shadow: 0 5px 5px 0 #121212 }
+   
 .twc-top-nav .smartLink a {
     color: #fff;
-    font-weight: inherit; }
+    font-weight: inherit;
+    padding-right: 0.25em; }
 
-	.twc-top-nav li .smartLink {
-		border-right: 2px solid #27282a;
-		position: relative;
-		z-index: 7999; }	
-	
-		.twc-top-nav li.twc-last .smartLink { border: 0; }
+   .twc-top-nav li .smartLink {
+      border-right: 2px solid #27282a;
+      position: relative;
+      z-index: 7999; }  
+   
+      .twc-top-nav li.twc-last .smartLink { border: 0; }
 
-	.twc-top-nav li.twc-active .smartLink {
-		background: #27282a;
-		border-left: 1px solid #4D4F53;
-		border-radius: 0;
-		border-right: 1px solid #4D4F53;
-		box-shadow: 0 1px 0 0 #27282a;
-		position: relative;
-		z-index: 7999; }
-	
+   .twc-top-nav li.twc-active .smartLink {
+      background: #27282a;
+      border-left: 1px solid #4D4F53;
+      border-radius: 0;
+      border-right: 1px solid #4D4F53;
+      box-shadow: 0 8px 8px 0 #27282A;
+      position: relative;
+      z-index: 7999; }
+
+    .twc-top-nav ul li.persist ul {
+    	top: 25px;
+    	right: 31.5%; }
+   
 .twc-top .twc-container {
     overflow: inherit;
     padding: 0; }
 
+.twc-customerLocation li { padding: 0em; }
+
 .twc-customerLocation li.twc-first { 
-	padding: 0;
-	border-radius: 3px;
-	background-color: #353c42;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#353c42), to(#989898));
-	background-image: -webkit-linear-gradient(top, #353c42, #989898);
-	background-image: -moz-linear-gradient(top, #353c42, #989898);
-	background-image: -o-linear-gradient(top, #353c42, #989898);
-	background-image: -ms-linear-gradient(top, #353c42, #989898);
-	background-image: linear-gradient(top, #353c42, #989898);
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#353c42', EndColorStr='#989898'); } 
+   padding: .25em;
+   border-radius: 3px;
+   background-color: #666666; }
+
+  .twc-customerLocation li.twc-first:active { 
+    background-color: #4d4f53; }
+
+.twc-customerLocation ul li.twc-drop-nav.persist {
+   padding: 0.25em;}
 
 .twc-change { color: #fff; }
 
@@ -61,15 +96,15 @@
     float: left;
     margin-top: 0;
     width: 590px; }
-	
+   
 .twc-module ul {
     margin-bottom: .5em;
     text-align: center; }
 
 .twc-header-search .list .smartLink a {
-	color: #fff;
-	font-weight: 100; }
-	
+   color: #fff;
+   font-weight: 100; }
+   
 .twc-header-search .twc-search-input-wrap input {
     background: none repeat scroll 0 0 #FFFFFF;
     border: 0 none;
@@ -77,3 +112,272 @@
     float: left;
     overflow: hidden;
     width: 90%; }
+
+.white { color: #FFFFFF;}
+
+a.twc-change { color: #ffffff;}
+
+.headline { padding: 0.25em;}
+
+/* ==========================
+   Sign in and pop up modules
+   ========================== */
+
+.btn.blue.share {
+	background: #4F799F;
+	margin-bottom: 1em; }
+
+.btn.blue.share:hover,
+.btn.blue.share.hover{
+	background: #265A83; }
+
+.popup-module {
+	background-color: #E0EBF5;
+    background-image: -moz-linear-gradient(center top , #E0EBF5, #F8FAFC);
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 #888888;
+    max-width: 265px;
+    overflow: visible;
+    padding: 1em;
+    left: 68.5%;
+    position: absolute;
+    z-index: 99999; }
+
+
+	.popup-module:before {
+	    border-bottom: 8px solid #E1EBF5;
+	    border-left: 8px solid rgba(0, 0, 0, 0);
+	    border-right: 8px solid rgba(0, 0, 0, 0);
+	    bottom: 100%;
+	    content: "";
+	    left: 48%;
+	    position: absolute; }
+
+  	.popup-module.signin-popup{
+  		top: 125px;
+  		left: 70%; }
+
+  	.popup-module.register-popup{
+  		top: 150px;
+  		left: 70%; }
+
+    .popup-module.billpay-popup{
+      top: 80px;
+      left: 48%; }
+
+    .popup-module.location-popup{
+      top: 33px;
+      left: -25%; }
+
+.mobile-signIn-popup { display: none;}
+
+.register-popup{ display: none;}
+
+.signin-popup { display: none;}
+
+.billpay-popup { display: none;}
+
+.location-popup { display: none;}
+
+.location { cursor: pointer;}
+
+.register { padding: .25em;}
+	
+.radio-selection {
+	margin-right: 1.5em; }
+
+.forgot { margin: 1em 0em;}
+
+.signIn-module {
+   display: inline-block;
+   padding: 0.25em 1em;
+   box-shadow: 1px 1px 20px 8px #4D4F53 inset; }
+
+label { line-height: 2; }
+
+input, 
+textarea,
+select {
+	width: 100%;
+	max-width: 100%;
+	border: 1px solid #e6e6e7;
+	border-radius: 2px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	-webkit-appearance: none; }  
+
+.formrow {
+	overflow: auto;
+	display: block;
+	margin: 1em 0; }
+
+.form-item {
+	display: inline;
+	margin-bottom: 1em; }
+
+.mobile-signIn { display: none;}
+
+.popup-module.mobile-signin-popup {display: none;}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* layout styles are being handled by base main.css */
+
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+/* ==========================
+   Browser Specific
+   ========================== */
+
+/* Firefox */
+
+@-moz-document url-prefix() {
+
+}
+
+/* Webkit: Chrome/Safari */ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+}
+
+/* IE: 6/7/8/9 */
+   
+/* ie (.ie) */   
+
+/* ie6 (.ie6) */
+
+/* prevent BG image flicker upon hover */
+
+/* ie7 (.ie7) */
+
+/* ie8 (.ie8) */
+
+/* ie9 (.ie9) */
+
+
+/* ==========================
+	Responsive Design
+   ========================== */ 
+
+/* Tablet */   
+
+@media (max-width: 68.6875em) {
+ 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.signIn { display: none;}
+
+.signIn-module { display: none;}
+
+.mobile-signIn { display: block;}
+
+.mobile-signin-popup { display: none;}
+
+.popup-module:before{ display: none;}
+
+.popup-module.mobile-signin-popup{
+  top: 110px;
+  left: 0;
+  width: 100%;
+  max-width: 100%; }
+ 
+.mobile-register { border-top: 1px solid #e6e6e7; }
+
+
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+  
+   
+/* ==========================================================================
+   State
+   ========================================================================== */
+
+
+
+
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */	
+
+} /* End Tablet Breakpoint */
+   
+/* SmartPhone */   
+
+@media (max-width: 31.25em) {
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+ 
+  .mobile-signIn { display: block;}
+
+  .mobile-signin-popup { display: none;}
+
+  .popup-module:before{ display: none;}
+
+  .popup-module.mobile-signin-popup{
+    top: 110px;
+    left: 0;
+    width: 100%;
+    max-width: 100%; }
+ 
+ .mobile-register { border-top: 1px solid #e6e6e7; }
+ 
+   
+/* ==========================================================================
+   Module
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   State
+   ========================================================================== */
+   
+   
+   
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+  
+  
+  
+  
+   		
+} /* End SmartPhone Breakpoint */
+
+   
+   
+   
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+    
